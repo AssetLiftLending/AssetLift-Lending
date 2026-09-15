@@ -1,3 +1,5 @@
+import scheduledPosts from '@/lib/data/seo-scheduled-posts.json';
+
 export const BASE_URL = 'https://www.assetliftlending.com';
 
 export const PRIORITY_STATE_SLUGS = new Set(['new-york', 'new-jersey', 'connecticut']);
@@ -46,7 +48,14 @@ export const NOINDEX_STATIC_PATHS = new Set([
   '/tools/term-sheet-pricer',
 ]);
 
+// Posts a person reviewed, approved and published from the AssetLift CRM SEO Hub
+// (source: 'crm', indexable: true). Automated pipeline posts stay out unless listed below.
+const CRM_REVIEWED_BLOG_SLUGS = (scheduledPosts as Array<{ slug: string; source?: string; indexable?: boolean }>)
+  .filter((post) => post.source === 'crm' && post.indexable === true)
+  .map((post) => post.slug);
+
 export const INDEXABLE_BLOG_SLUGS = new Set([
+  ...CRM_REVIEWED_BLOG_SLUGS,
   'dscr-loans-explained',
   'how-to-qualify-for-dscr-loan',
   'dscr-loan-for-rental-property',

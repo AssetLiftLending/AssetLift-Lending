@@ -18,6 +18,10 @@ export interface BlogPost {
     content: string;
   }>;
   faqs: Array<{ question: string; answer: string }>;
+  /** Set on posts published from the AssetLift CRM after human review. */
+  source?: 'crm';
+  indexable?: boolean;
+  crmContentId?: string;
 }
 
 const SCHEDULED_BLOG_POSTS = scheduledBlogPosts as BlogPost[];
