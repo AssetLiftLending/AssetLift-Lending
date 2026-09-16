@@ -198,17 +198,17 @@ export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<A
   );
 
   if (published) {
-    const backlinkCurrent = await fetchRepoFile('public/seo/backlink-queue.json');
+    const backlinkCurrent = await fetchRepoFile('internal/seo/data/backlink-queue.json');
     await writeRepoFile(
-      'public/seo/backlink-queue.json',
+      'internal/seo/data/backlink-queue.json',
       stringifyWithTrailingNewline(backlinkQueuePayload),
       'chore(seo): refresh backlink queue',
       backlinkCurrent.sha,
     );
 
-    const consoleCurrent = await fetchRepoFile('public/seo/search-console-status.json');
+    const consoleCurrent = await fetchRepoFile('internal/seo/data/search-console-status.json');
     await writeRepoFile(
-      'public/seo/search-console-status.json',
+      'internal/seo/data/search-console-status.json',
       stringifyWithTrailingNewline(searchConsolePayload),
       'chore(seo): refresh search console status',
       consoleCurrent.sha,
@@ -254,9 +254,9 @@ export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<A
       metricsCurrent.sha,
     );
 
-    const outreachCurrent = await fetchRepoFile('public/seo/backlink-outreach.json');
+    const outreachCurrent = await fetchRepoFile('internal/seo/data/backlink-outreach.json');
     await writeRepoFile(
-      'public/seo/backlink-outreach.json',
+      'internal/seo/data/backlink-outreach.json',
       stringifyWithTrailingNewline(backlinkOutreachPayload),
       'chore(seo): refresh backlink outreach batch',
       outreachCurrent.sha,

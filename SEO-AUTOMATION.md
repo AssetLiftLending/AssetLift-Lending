@@ -86,13 +86,13 @@ The authority job will still run without the Google vars, but it will only repor
 Generated artifacts and content are written to:
 
 - `lib/data/seo-scheduled-posts.json`
-- `public/seo/health.json`
-- `public/seo/content-backlog.json`
-- `public/seo/conversion-ideas.json`
-- `public/seo/backlink-queue.json`
-- `public/seo/backlink-outreach.json`
-- `public/seo/search-console-status.json`
-- `public/seo/last-run.json`
+- `internal/seo/data/health.json`
+- `internal/seo/data/content-backlog.json`
+- `internal/seo/data/conversion-ideas.json`
+- `internal/seo/data/backlink-queue.json`
+- `internal/seo/data/backlink-outreach.json`
+- `internal/seo/data/search-console-status.json`
+- `internal/seo/data/last-run.json`
 
 ## Internal Status Page
 

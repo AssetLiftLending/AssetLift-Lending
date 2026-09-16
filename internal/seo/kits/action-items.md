@@ -171,4 +171,4 @@ These are being built right now and will be deployed to your site:
 
 ---
 
-*This document is also available at: https://www.assetliftlending.com/action-items.md*
+*This document is internal and lives in the repository at `internal/seo/kits/action-items.md`. It is not published on the public website.*

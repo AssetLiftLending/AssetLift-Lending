@@ -4,17 +4,17 @@ export const SEO_BASE_URL = 'https://www.assetliftlending.com';
 
 export const SEO_ARTIFACT_PATHS = {
   scheduledPosts: 'lib/data/seo-scheduled-posts.json',
-  health: 'public/seo/health.json',
-  backlog: 'public/seo/content-backlog.json',
-  ideas: 'public/seo/conversion-ideas.json',
-  backlinkQueue: 'public/seo/backlink-queue.json',
-  backlinkOutreach: 'public/seo/backlink-outreach.json',
-  searchConsoleStatus: 'public/seo/search-console-status.json',
-  opportunities: 'public/seo/opportunities.json',
-  actionQueue: 'public/seo/action-queue.json',
-  metricsHistory: 'public/seo/metrics-history.json',
-  jobStatus: 'public/seo/job-status.json',
-  lastRun: 'public/seo/last-run.json',
+  health: 'internal/seo/data/health.json',
+  backlog: 'internal/seo/data/content-backlog.json',
+  ideas: 'internal/seo/data/conversion-ideas.json',
+  backlinkQueue: 'internal/seo/data/backlink-queue.json',
+  backlinkOutreach: 'internal/seo/data/backlink-outreach.json',
+  searchConsoleStatus: 'internal/seo/data/search-console-status.json',
+  opportunities: 'internal/seo/data/opportunities.json',
+  actionQueue: 'internal/seo/data/action-queue.json',
+  metricsHistory: 'internal/seo/data/metrics-history.json',
+  jobStatus: 'internal/seo/data/job-status.json',
+  lastRun: 'internal/seo/data/last-run.json',
 } as const;
 
 export const SEO_JOBS: Record<string, SeoJobConfig> = {
