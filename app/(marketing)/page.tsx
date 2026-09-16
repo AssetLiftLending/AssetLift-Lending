@@ -173,21 +173,6 @@ export default function HomePage() {
         </section>
         <LoanPrograms />
         <WhyAssetLift />
-        <section className="py-20">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-4xl rounded-xl border border-dashed border-border bg-card p-8">
-              <p className="mb-3 text-sm font-semibold text-primary">
-                Funded deals
-              </p>
-              <h2 className="mb-3 text-3xl font-bold tracking-tight">Verified deal examples will appear here.</h2>
-              <p className="text-muted-foreground">
-                This section is reserved for real funded loans once AssetLift supplies approved
-                property details, loan structure, dates, and permission to publish. No borrower
-                result or funded-loan amount has been fabricated.
-              </p>
-            </div>
-          </div>
-        </section>
         <HowItWorks />
         <MarketsPreview />
         <section className="py-20">
@@ -205,25 +190,7 @@ export default function HomePage() {
                   construction scenarios for real estate investors. The site preserves approved
                   licensing and funding-role language on the legal and disclosure pages.
                 </p>
-                <p>
-                  Yisroel biography and headshot placeholders remain pending owner-approved copy,
-                  credentials, and media.
-                </p>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="py-20">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-4xl rounded-xl border border-dashed border-border bg-card p-8">
-              <p className="mb-3 text-sm font-semibold text-primary">
-                Verified reviews
-              </p>
-              <h2 className="mb-3 text-3xl font-bold tracking-tight">Review integration pending verified sources.</h2>
-              <p className="text-muted-foreground">
-                Borrower testimonials and aggregate rating schema should be added only after the
-                business provides verifiable reviews and publishing approval.
-              </p>
             </div>
           </div>
         </section>

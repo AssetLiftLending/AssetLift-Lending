@@ -6,8 +6,8 @@ This is the execution order for off-site links that are most likely to help craw
 
 Use the existing source material in:
 
-- `/public/directory-submission-kit.md`
-- `/public/publishing-kit.md`
+- `internal/seo/kits/directory-submission-kit.md`
+- `internal/seo/kits/publishing-kit.md`
 
 Submit or complete these first:
 

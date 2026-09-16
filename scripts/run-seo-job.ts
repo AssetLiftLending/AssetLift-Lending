@@ -7,7 +7,7 @@
  * access token is needed. Set SEO_DRY_RUN=true to preview without committing.
  *
  * Every run emits structured, timestamped logs and (when not a dry run) records
- * the outcome to public/seo/job-status.json so failures are visible in the repo
+ * the outcome to internal/seo/data/job-status.json so failures are visible in the repo
  * rather than only in the Actions logs.
  */
 import { runSeoJob } from '../lib/seo/run';

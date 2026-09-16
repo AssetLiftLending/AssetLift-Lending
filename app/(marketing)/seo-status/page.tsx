@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { createMetadata } from '@/lib/metadata';
-import health from '@/public/seo/health.json';
-import backlog from '@/public/seo/content-backlog.json';
-import ideas from '@/public/seo/conversion-ideas.json';
-import lastRun from '@/public/seo/last-run.json';
-import backlinkQueue from '@/public/seo/backlink-queue.json';
-import backlinkOutreach from '@/public/seo/backlink-outreach.json';
-import searchConsoleStatus from '@/public/seo/search-console-status.json';
+import health from '@/internal/seo/data/health.json';
+import backlog from '@/internal/seo/data/content-backlog.json';
+import ideas from '@/internal/seo/data/conversion-ideas.json';
+import lastRun from '@/internal/seo/data/last-run.json';
+import backlinkQueue from '@/internal/seo/data/backlink-queue.json';
+import backlinkOutreach from '@/internal/seo/data/backlink-outreach.json';
+import searchConsoleStatus from '@/internal/seo/data/search-console-status.json';
 import { SEO_AUTHORITY_SCHEDULE, SEO_DAILY_PRIORITY_MAP, SEO_JOBS } from '@/lib/seo/config';
 
 export const metadata: Metadata = createMetadata({
