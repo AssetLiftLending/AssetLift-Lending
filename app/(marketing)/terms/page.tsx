@@ -2,6 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { createMetadata } from '@/lib/metadata';
+// A carrier compares the consent checkbox, this page and the campaign
+// submission, and rejects the campaign if they disagree. These sentences are
+// read from the same module the checkbox uses so the two cannot drift apart.
+import {
+  SMS_CONSENT_NOT_A_CONDITION,
+  MESSAGE_AND_DATA_RATES,
+} from '@/lib/sms-consent';
 
 export const metadata: Metadata = createMetadata({
   title: 'Terms of Service',
@@ -97,8 +104,9 @@ export default function TermsPage() {
               </p>
               <p className="mb-3">
                 By opting in, you agree to receive text messages from AssetLift Lending about your
-                financing inquiry. Message frequency varies. Message and data rates may apply.
-                Consent is not a condition of any purchase or service.
+                loan inquiry, including application updates, document requests and appointment
+                reminders. Message frequency varies. {MESSAGE_AND_DATA_RATES}{' '}
+                {SMS_CONSENT_NOT_A_CONDITION}
               </p>
               <p className="mb-3">
                 You can opt out at any time by replying STOP. For help, reply HELP or contact
@@ -108,9 +116,9 @@ export default function TermsPage() {
               <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Programme description</h3>
               <p>
                 AssetLift Lending sends text messages to people who have asked us about financing.
-                Messages include replies to your inquiry, updates on your loan application, requests
-                for documents your file needs, appointment reminders, and occasional messages about
-                financing options that may suit you.
+                Messages relate to your own loan inquiry: replies to what you asked us, updates on
+                your loan application, requests for documents your file needs, and appointment
+                reminders. We do not send promotional or marketing text messages to this programme.
               </p>
 
               <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">How you opt in</h3>
@@ -182,10 +190,10 @@ export default function TermsPage() {
               </p>
               <blockquote className="border-l-4 border-primary/60 bg-secondary/20 px-4 py-3 italic">
                 &ldquo;Is it alright if I text you at this number about your loan inquiry?
-                We&apos;ll send updates, document requests and appointment reminders, and sometimes
-                financing options that may suit you. Message frequency varies and message and data
-                rates may apply. You can reply STOP at any time to stop the messages, or HELP for
-                help. Saying yes isn&apos;t a condition of getting a loan from us.&rdquo;
+                We&apos;ll send application updates, document requests and appointment reminders.
+                Message frequency varies and message and data rates may apply. You can reply STOP at
+                any time to stop the messages, or HELP for help. Saying yes isn&apos;t a condition of
+                getting a loan from us.&rdquo;
               </blockquote>
             </section>
 
