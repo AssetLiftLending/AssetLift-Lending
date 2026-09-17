@@ -125,15 +125,9 @@ export default function Hero() {
         message: `Homepage short form. Completed projects: ${form.completedProjects || 'Not specified'}`,
       });
 
-      if (!success) {
-        setError('We could not send the form. Please call or text (929) 639-2284.');
-        return;
-      }
-
-      gtagReportConversion();
-      gtagEvent('form_submitted', { form_name: 'homepage_hero', loan_type: form.loanType });
-      gtagEvent('generate_lead', { currency: 'USD', value });
-      metaTrackLead({ currency: 'USD', value });
+      // The CRM is an independent delivery channel from the notification email,
+      // so push before the email result is considered. Otherwise a failed send
+      // returns early and the lead never reaches the CRM either.
       pushToGHL({
         name: form.name,
         email: form.email,
@@ -148,6 +142,16 @@ export default function Hero() {
         smsConsent: consent.smsConsent,
         smsConsentAt: consent.smsConsentAt ?? undefined,
       });
+
+      if (!success) {
+        setError('We could not send the form. Please call or text (929) 639-2284.');
+        return;
+      }
+
+      gtagReportConversion();
+      gtagEvent('form_submitted', { form_name: 'homepage_hero', loan_type: form.loanType });
+      gtagEvent('generate_lead', { currency: 'USD', value });
+      metaTrackLead({ currency: 'USD', value });
 
       setSubmitted(true);
     } finally {

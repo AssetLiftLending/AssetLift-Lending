@@ -12,6 +12,7 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: "", contact: "", message: "" });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   const isValid = form.name.trim().length >= 2 && form.contact.trim().length >= 5 && form.message.trim().length >= 5;
 
@@ -19,8 +20,9 @@ export default function ContactForm() {
     e.preventDefault();
     if (!isValid) return;
     setSubmitting(true);
+    setFailed(false);
     try {
-      await sendNotification("form", {
+      const notified = await sendNotification("form", {
         name: form.name,
         phone: form.contact,
         email: form.contact,
@@ -34,7 +36,13 @@ export default function ContactForm() {
         propertyAddress: "",
         message: form.message,
       });
-      setSubmitted(true);
+      // Only confirm receipt if the message actually went out. Showing the
+      // success panel on a failed send silently loses the enquiry.
+      if (notified) {
+        setSubmitted(true);
+      } else {
+        setFailed(true);
+      }
     } finally {
       setSubmitting(false);
     }
@@ -100,6 +108,19 @@ export default function ContactForm() {
           </>
         )}
       </Button>
+      {failed && (
+        <p className="text-sm text-destructive">
+          We couldn&apos;t send that just now. Please call or text{" "}
+          <a href="tel:+19296392284" className="underline font-semibold">
+            (929) 639-2284
+          </a>{" "}
+          or email{" "}
+          <a href="mailto:info@assetliftlending.com" className="underline font-semibold">
+            info@assetliftlending.com
+          </a>
+          .
+        </p>
+      )}
     </form>
   );
 }

@@ -219,6 +219,25 @@ const ApplyForm = () => {
         message: formData.dealOverview || "",
       });
 
+      // The CRM is an independent delivery channel from the notification email.
+      // Push regardless of the email result, otherwise an SMTP outage drops the
+      // lead entirely instead of just delaying the notification.
+      pushToGHL({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        loanType: formData.strategy,
+        propertyAddress: formData.location,
+        purchasePrice: formData.purchasePrice,
+        arv: formData.arv || undefined,
+        rehabAmount: formData.rehabAmount || undefined,
+        creditScore: formData.creditScore || undefined,
+        notes: formData.dealOverview || undefined,
+        source: 'apply-form',
+        smsConsent: consent.smsConsent,
+        smsConsentAt: consent.smsConsentAt ?? undefined,
+      });
+
       if (success) {
         gtagReportConversion();
         gtagEvent('generate_lead', {
@@ -228,21 +247,6 @@ const ApplyForm = () => {
         metaTrackLead({
           currency: 'USD',
           value: Number(formData.purchasePrice.replace(/\D/g, '')),
-        });
-        pushToGHL({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          loanType: formData.strategy,
-          propertyAddress: formData.location,
-          purchasePrice: formData.purchasePrice,
-          arv: formData.arv || undefined,
-          rehabAmount: formData.rehabAmount || undefined,
-          creditScore: formData.creditScore || undefined,
-          notes: formData.dealOverview || undefined,
-          source: 'apply-form',
-          smsConsent: consent.smsConsent,
-          smsConsentAt: consent.smsConsentAt ?? undefined,
         });
 
         setIsSubmitted(true);
