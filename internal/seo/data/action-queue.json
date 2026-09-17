@@ -1,76 +1,76 @@
 {
-  "generatedAt": "2026-09-16T13:13:15.531Z",
+  "generatedAt": "2026-09-17T13:07:33.114Z",
   "connected": true,
-  "summary": "15 prioritized actions from real Search Console demand (top priority: /).",
+  "summary": "14 prioritized actions from real Search Console demand (top priority: /).",
   "items": [
     {
       "type": "improve-meta",
       "target": "/",
       "category": "General",
-      "priority": 908,
-      "impressions": 454,
+      "priority": 924,
+      "impressions": 462,
       "position": 19.3,
-      "rationale": "454 impressions at position 19.3 but only 8 clicks.",
+      "rationale": "462 impressions at position 19.3 but only 8 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "Hawaii",
       "category": "Geo",
-      "priority": 840,
-      "impressions": 840,
+      "priority": 873,
+      "impressions": 873,
       "position": 0,
-      "rationale": "840 impressions across 18 queries mention Hawaii.",
+      "rationale": "873 impressions across 21 queries mention Hawaii.",
       "action": "Add genuine Hawaii market coverage (state page plus top-metro city pages) to capture this demand."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Colorado",
-      "category": "Geo",
-      "priority": 273,
-      "impressions": 273,
-      "position": 0,
-      "rationale": "273 impressions across 12 queries mention Colorado.",
-      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 271,
-      "impressions": 271,
+      "priority": 266,
+      "impressions": 266,
       "position": 0,
-      "rationale": "271 impressions across 7 queries mention New York.",
+      "rationale": "266 impressions across 8 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Colorado",
+      "category": "Geo",
+      "priority": 257,
+      "impressions": 257,
+      "position": 0,
+      "rationale": "257 impressions across 12 queries mention Colorado.",
+      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "North Carolina",
       "category": "Geo",
-      "priority": 256,
-      "impressions": 256,
+      "priority": 252,
+      "impressions": 252,
       "position": 0,
-      "rationale": "256 impressions across 7 queries mention North Carolina.",
+      "rationale": "252 impressions across 7 queries mention North Carolina.",
       "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 253,
-      "impressions": 253,
+      "priority": 221,
+      "impressions": 221,
       "position": 0,
-      "rationale": "253 impressions across 12 queries mention New Jersey.",
+      "rationale": "221 impressions across 11 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 226,
-      "impressions": 226,
+      "priority": 218,
+      "impressions": 218,
       "position": 0,
-      "rationale": "226 impressions across 6 queries mention Connecticut.",
+      "rationale": "218 impressions across 6 queries mention Connecticut.",
       "action": "Add genuine Connecticut market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
@@ -95,42 +95,42 @@
     },
     {
       "type": "improve-meta",
-      "target": "/lending/new-jersey/ocean-county",
-      "category": "General",
-      "priority": 74,
-      "impressions": 37,
-      "position": 19.4,
-      "rationale": "37 impressions at position 19.4 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
       "target": "/blog/dscr-loan-llc-vs-personal-name",
       "category": "DSCR / Rental",
-      "priority": 64,
-      "impressions": 32,
-      "position": 8.7,
-      "rationale": "32 impressions at position 8.7 but only 0 clicks.",
+      "priority": 66,
+      "impressions": 33,
+      "position": 8.6,
+      "rationale": "33 impressions at position 8.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/blog/hard-money-loan-points-fees-explained",
       "category": "Hard Money",
-      "priority": 56,
-      "impressions": 28,
-      "position": 9.9,
-      "rationale": "28 impressions at position 9.9 but only 0 clicks.",
+      "priority": 52,
+      "impressions": 26,
+      "position": 9,
+      "rationale": "26 impressions at position 9 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/lending/new-jersey/ocean-county",
+      "category": "General",
+      "priority": 46,
+      "impressions": 23,
+      "position": 17.6,
+      "rationale": "23 impressions at position 17.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
       "target": "hard+money+loans+ocean+county+nj",
       "category": "Hard Money",
-      "priority": 50,
-      "impressions": 33,
-      "position": 19.7,
-      "rationale": "Ranking at position 19.7 with 33 impressions — within striking distance of page 1.",
+      "priority": 29,
+      "impressions": 19,
+      "position": 17.8,
+      "rationale": "Ranking at position 17.8 with 19 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -142,16 +142,6 @@
       "position": 7.6,
       "rationale": "Ranking at position 7.6 with 15 impressions — within striking distance of page 1.",
       "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
-    },
-    {
-      "type": "expand-content",
-      "target": "hard money newark",
-      "category": "Hard Money",
-      "priority": 8,
-      "impressions": 5,
-      "position": 16.8,
-      "rationale": "Ranking at position 16.8 with 5 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
 }
