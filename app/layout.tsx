@@ -7,6 +7,8 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import MetaPixel from "@/components/MetaPixel";
 import AnalyticsPageTracker from "@/components/AnalyticsPageTracker";
 import ChatBot from "@/components/ChatBot";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.assetliftlending.com"),
@@ -138,6 +140,8 @@ export default function RootLayout({
         </Providers>
         <GoogleAnalytics />
         <MetaPixel />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
