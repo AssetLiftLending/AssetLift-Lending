@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
   title: 'Terms of Service',
   description:
-    'Terms of service for AssetLift Lending. Review our website terms, loan disclaimers, and conditions of use.',
+    'Terms of service for AssetLift Lending. Review our website terms, loan disclaimers, SMS terms, and conditions of use.',
   path: '/terms',
 });
 
@@ -87,6 +88,95 @@ export default function TermsPage() {
                 compensation disclosures where applicable, and state-specific notices provided in
                 connection with the actual loan structure.
               </p>
+            </section>
+
+            <section id="sms-terms">
+              <h2 className="text-2xl font-bold text-foreground mb-3">SMS Terms</h2>
+              <p className="mb-3">
+                These SMS Terms apply to the AssetLift Lending text messaging programme.
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Programme description</h3>
+              <p>
+                AssetLift Lending sends text messages to people who have asked us about financing.
+                Messages include replies to your inquiry, updates on your loan application, requests
+                for documents your file needs, appointment reminders, and occasional messages about
+                financing options that may suit you.
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">How you opt in</h3>
+              <p>
+                You opt in by ticking the consent box beside your mobile number on our{' '}
+                <Link href="/apply" className="underline hover:text-primary transition-colors">
+                  loan inquiry form
+                </Link>
+                , by telling one of our staff on a phone call that you agree to be texted, or by
+                texting us first. The box is never ticked for you.{' '}
+                <strong className="text-foreground">
+                  Consent to receive text messages is not a condition of any loan or service.
+                </strong>
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Message frequency and cost</h3>
+              <p>
+                Message frequency varies and depends on where your loan inquiry stands.{' '}
+                <strong className="text-foreground">Message and data rates may apply.</strong>{' '}
+                AssetLift Lending does not charge you for the messages themselves; any charge comes
+                from your mobile carrier under your own plan.
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">How to stop messages</h3>
+              <p>
+                Reply <strong className="text-foreground">STOP</strong> to any message from us at any
+                time. You may also reply STOPALL, UNSUBSCRIBE, CANCEL, END or QUIT. We will send one
+                confirmation that you have been unsubscribed and then stop messaging you. To start
+                again, reply <strong className="text-foreground">START</strong>.
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">How to get help</h3>
+              <p>
+                Reply <strong className="text-foreground">HELP</strong> to any message, call{' '}
+                <a href="tel:+15166898127" className="underline hover:text-primary transition-colors">
+                  +1 (516) 689-8127
+                </a>
+                , or email{' '}
+                <a href="mailto:info@assetliftlending.com" className="underline hover:text-primary transition-colors">
+                  info@assetliftlending.com
+                </a>
+                .
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Carriers and delivery</h3>
+              <p>
+                Carriers are not liable for delayed or undelivered messages. Delivery depends on your
+                carrier and your handset, and we cannot guarantee every message will arrive.
+                Supported carriers may change without notice.
+              </p>
+
+              <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Your privacy</h3>
+              <p>
+                We do not sell or share your SMS opt-in data or personal information with third
+                parties for marketing purposes. See our{' '}
+                <Link href="/privacy" className="underline hover:text-primary transition-colors">
+                  Privacy Policy
+                </Link>{' '}
+                for the full detail.
+              </p>
+
+              <h3 id="verbal-consent" className="text-lg font-semibold text-foreground mt-5 mb-2">
+                Verbal consent script
+              </h3>
+              <p className="mb-3">
+                When consent is taken on a phone call, our staff read the following and record your
+                answer:
+              </p>
+              <blockquote className="border-l-4 border-primary/60 bg-secondary/20 px-4 py-3 italic">
+                &ldquo;Is it alright if I text you at this number about your loan inquiry?
+                We&apos;ll send updates, document requests and appointment reminders, and sometimes
+                financing options that may suit you. Message frequency varies and message and data
+                rates may apply. You can reply STOP at any time to stop the messages, or HELP for
+                help. Saying yes isn&apos;t a condition of getting a loan from us.&rdquo;
+              </blockquote>
             </section>
 
             <section>

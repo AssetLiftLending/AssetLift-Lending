@@ -16,6 +16,13 @@ export interface GHLDealPayload {
   flipsCompleted?: string;
   notes?: string;
   source?: 'apply-form' | 'hero-form' | 'portal';
+  /**
+   * Whether this person ticked the SMS consent box, and when. Without it nobody
+   * downstream can tell a lead who may be texted from one who may not, and the
+   * safe assumption — do not text — is the one that loses deals.
+   */
+  smsConsent?: boolean;
+  smsConsentAt?: string;
 }
 
 export async function syncDealToGHL(deal: GHLDealPayload): Promise<void> {

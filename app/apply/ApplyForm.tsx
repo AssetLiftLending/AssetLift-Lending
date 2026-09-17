@@ -20,6 +20,11 @@ import { sendNotification } from "@/services/notificationService";
 import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
 import { metaTrackLead } from "@/lib/meta-pixel";
 import { pushToGHL } from "@/services/ghlService";
+import {
+  SMS_CONSENT_TEXT,
+  SMS_CONSENT_NOT_A_CONDITION,
+  buildSmsConsentRecord,
+} from "@/lib/sms-consent";
 
 interface FormData {
   name: string;
@@ -54,6 +59,9 @@ const ApplyForm = () => {
     dealOverview: "",
   });
   const [errors, setErrors] = useState<Partial<FormData>>({});
+  // Deliberately starts unchecked and is never required to submit: carriers reject
+  // a campaign whose consent box is pre-ticked or gates the form.
+  const [smsConsent, setSmsConsent] = useState(false);
 
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -190,8 +198,13 @@ const ApplyForm = () => {
 
     setIsSubmitting(true);
 
+    // Captured once, so the timestamp and wording sent to the notification email
+    // and to the CRM describe the same act of consent.
+    const consent = buildSmsConsentRecord(smsConsent, "apply-form");
+
     try {
       const success = await sendNotification("form", {
+        ...consent,
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -228,6 +241,8 @@ const ApplyForm = () => {
           creditScore: formData.creditScore || undefined,
           notes: formData.dealOverview || undefined,
           source: 'apply-form',
+          smsConsent: consent.smsConsent,
+          smsConsentAt: consent.smsConsentAt ?? undefined,
         });
 
         setIsSubmitted(true);
@@ -622,9 +637,30 @@ const ApplyForm = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-secondary/15 p-5 text-sm text-muted-foreground">
-              By submitting, you agree to be contacted about your loan inquiry. This form is for
-              business-purpose investment property financing only.
+            <div className="space-y-4 rounded-3xl border border-border bg-secondary/15 p-5 text-sm text-muted-foreground">
+              <label htmlFor="smsConsent" className="flex cursor-pointer items-start gap-3">
+                <input
+                  id="smsConsent"
+                  name="smsConsent"
+                  type="checkbox"
+                  checked={smsConsent}
+                  onChange={(e) => setSmsConsent(e.target.checked)}
+                  className="mt-0.5 h-5 w-5 flex-shrink-0 cursor-pointer rounded border-border accent-primary"
+                />
+                <span className="leading-relaxed">
+                  {SMS_CONSENT_TEXT}{" "}
+                  <span className="font-medium text-foreground">{SMS_CONSENT_NOT_A_CONDITION}</span>{" "}
+                  See our{" "}
+                  <Link href="/privacy" className="underline hover:text-foreground">Privacy Policy</Link>
+                  {" "}and{" "}
+                  <Link href="/terms" className="underline hover:text-foreground">Terms &amp; Conditions</Link>.
+                </span>
+              </label>
+
+              <p className="border-t border-border pt-4 leading-relaxed">
+                By submitting, you agree to be contacted about your loan inquiry. This form is for
+                business-purpose investment property financing only.
+              </p>
             </div>
 
             <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>

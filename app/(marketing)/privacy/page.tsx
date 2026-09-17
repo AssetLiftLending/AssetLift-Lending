@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { createMetadata } from '@/lib/metadata';
 
@@ -58,6 +59,30 @@ export default function PrivacyPage() {
             </section>
 
             <section>
+              <h2 className="text-2xl font-bold text-foreground mb-3">Text Messaging and SMS Opt-In Data</h2>
+              <p className="mb-3">
+                <strong className="text-foreground">
+                  We do not sell or share your SMS opt-in data or personal information with third
+                  parties for marketing purposes.
+                </strong>{' '}
+                Your mobile number and your agreement to be texted are used solely so that AssetLift
+                Lending can communicate with you about your loan inquiry. They are never sold,
+                rented, or passed to any third party for that party&apos;s own marketing, and they
+                are not shared with lead buyers or affiliates for marketing purposes.
+              </p>
+              <p>
+                Text messages are optional and are never a condition of any loan or service. You can
+                stop them at any time by replying STOP to any message from us, or reply HELP for
+                help. Texts are sent from +1 (516) 689-8127. Full details are in the SMS Terms
+                section of our{' '}
+                <Link href="/terms" className="underline hover:text-foreground">
+                  Terms &amp; Conditions
+                </Link>
+                .
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-bold text-foreground mb-3">How We Share Information</h2>
               <p>
                 We do not sell your personal information. We may share information with service
@@ -92,7 +117,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold text-foreground mb-3">Contact</h2>
               <p>
                 If you have questions about this Privacy Policy, contact AssetLift Lending at
-                `info@assetliftlending.com` or `+1 (929) 639-2284`.
+                info@assetliftlending.com or +1 (929) 639-2284.
               </p>
             </section>
           </div>
