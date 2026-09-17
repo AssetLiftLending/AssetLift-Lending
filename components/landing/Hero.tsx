@@ -128,7 +128,7 @@ export default function Hero() {
       // The CRM is an independent delivery channel from the notification email,
       // so push before the email result is considered. Otherwise a failed send
       // returns early and the lead never reaches the CRM either.
-      pushToGHL({
+      await pushToGHL({
         name: form.name,
         email: form.email,
         phone: form.phone,

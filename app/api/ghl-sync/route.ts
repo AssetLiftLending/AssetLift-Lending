@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { syncDealToGHL } from '@/lib/ghl-sync';
+import { syncLeadToCrm } from '@/lib/crm-sync';
+import { sendSyncFailureAlert } from '@/lib/mailer';
+
+export const runtime = 'nodejs';
 
 // This endpoint is intentionally public: it receives lead submissions from
 // the hero form, apply form, and portal. Abuse is limited by strict payload
@@ -22,6 +26,8 @@ const dealSchema = z.object({
   flipsCompleted: z.string().trim().max(20).optional(),
   notes: z.string().trim().max(2000).optional(),
   source: z.enum(['apply-form', 'hero-form', 'portal']).optional(),
+  smsConsent: z.boolean().optional(),
+  smsConsentAt: z.string().trim().max(40).optional(),
 });
 
 const RATE_LIMIT = 5; // submissions per window per IP
@@ -61,15 +67,66 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false }, { status: 429 });
   }
 
-  try {
-    const parsed = dealSchema.safeParse(await req.json());
-    if (!parsed.success) {
-      return NextResponse.json({ success: false }, { status: 400 });
-    }
-    await syncDealToGHL(parsed.data);
-    return NextResponse.json({ success: true });
-  } catch (err) {
-    console.error('[GHL] Sync route error:', err);
-    return NextResponse.json({ success: false });
+  const parsed = dealSchema.safeParse(await req.json().catch(() => null));
+  if (!parsed.success) {
+    return NextResponse.json({ success: false, error: 'invalid payload' }, { status: 400 });
   }
+  const deal = parsed.data;
+
+  // The CRM is the durable record, so it is written first and independently of
+  // GoHighLevel. Each destination reports its own outcome: one being down must
+  // never stop the other from receiving the lead.
+  const result = {
+    crm: { ok: false, error: null as string | null, contactId: null as string | null },
+    ghl: { ok: false, error: null as string | null, contactId: null as string | null },
+  };
+
+  try {
+    const crm = await syncLeadToCrm(deal);
+    result.crm.ok = true;
+    result.crm.contactId = crm.contactId;
+  } catch (err) {
+    const message = (err as Error).message;
+    result.crm.error = message;
+    console.error('[CRM] Lead sync failed:', message, { email: deal.email, source: deal.source });
+  }
+
+  try {
+    result.ghl.contactId = await syncDealToGHL(deal);
+    result.ghl.ok = true;
+  } catch (err) {
+    const message = (err as Error).message;
+    result.ghl.error = message;
+    console.error('[GHL] Lead sync failed:', message, { email: deal.email, source: deal.source });
+  }
+
+  // A lead that reached no downstream system exists only in the notification
+  // email, so say so loudly rather than letting it look delivered.
+  const failed: string[] = [];
+  if (!result.crm.ok) failed.push('CRM');
+  if (!result.ghl.ok) failed.push('GoHighLevel');
+
+  if (failed.length > 0) {
+    try {
+      await sendSyncFailureAlert({
+        subject:
+          failed.length === 2
+            ? 'GHL SYNC FAILED - lead saved by email only'
+            : `${failed[0]} SYNC FAILED - lead saved by email only`,
+        system: failed.join(' and '),
+        error: [result.crm.error && `CRM: ${result.crm.error}`, result.ghl.error && `GHL: ${result.ghl.error}`]
+          .filter(Boolean)
+          .join('\n\n'),
+        lead: deal,
+      });
+    } catch (alertErr) {
+      // Nothing left to fall back to; make sure it is at least in the logs.
+      console.error('[ALERT] Could not send sync-failure alert:', (alertErr as Error).message);
+    }
+  }
+
+  // 207 signals "partially delivered" so a failure is visible to the caller
+  // without implying the lead was lost — the email path still has it.
+  const status = failed.length === 0 ? 200 : 207;
+  return NextResponse.json({ success: failed.length === 0, ...result }, { status });
 }

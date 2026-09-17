@@ -222,7 +222,7 @@ const ApplyForm = () => {
       // The CRM is an independent delivery channel from the notification email.
       // Push regardless of the email result, otherwise an SMTP outage drops the
       // lead entirely instead of just delaying the notification.
-      pushToGHL({
+      await pushToGHL({
         name: formData.name,
         email: formData.email,
         phone: formData.phone,

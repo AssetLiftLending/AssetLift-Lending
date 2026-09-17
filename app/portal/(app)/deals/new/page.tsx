@@ -51,7 +51,7 @@ export default function NewDealPage() {
   const valid = form.borrowerName && form.borrowerEmail && form.borrowerPhone &&
     form.loanType && form.propertyAddress && form.purchasePrice && form.creditScore;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!valid || !form.loanType) return;
 
@@ -79,7 +79,9 @@ export default function NewDealPage() {
     };
 
     addDeal(deal);
-    pushToGHL({
+    // Awaited before navigating: router.push tears down this page, which would
+    // cancel an in-flight unawaited request and drop the deal silently.
+    await pushToGHL({
       name: form.borrowerName,
       email: form.borrowerEmail,
       phone: form.borrowerPhone,
