@@ -23,9 +23,9 @@ export const SMS_BUSINESS_PHONE = '+1 (516) 689-8127';
  */
 export const SMS_CONSENT_TEXT =
   `I agree to receive text messages from ${SMS_BRAND_NAME} about my loan inquiry, ` +
-  'including application updates, document requests, appointment reminders and ' +
-  'occasional financing offers. Message frequency varies. Message and data rates ' +
-  'may apply. Reply STOP to opt out or HELP for help.';
+  'including application updates, document requests, and appointment reminders. ' +
+  'Message frequency varies. Message and data rates may apply. Reply STOP to opt ' +
+  'out or HELP for help.';
 
 /** Carriers require this to be visible wherever consent is collected. */
 export const SMS_CONSENT_NOT_A_CONDITION =
