@@ -14,8 +14,24 @@
 
 export const SMS_BRAND_NAME = 'AssetLift Lending';
 
-/** The number texts are sent from. */
+/**
+ * The number texts are sent from. This is not a support line and is not
+ * published anywhere on the site — a reviewer checking a number we display
+ * cannot corroborate it, so HELP and opt-out point at SMS_SUPPORT_PHONE below.
+ */
 export const SMS_BUSINESS_PHONE = '+1 (516) 689-8127';
+
+/**
+ * The number a recipient reaches a human on, quoted wherever HELP or opt-out
+ * instructions appear. It must be the business line published across the rest
+ * of the site: a carrier compares the HELP contact in the SMS terms against the
+ * company's public contact details, and a number that appears nowhere else
+ * reads as inconsistent.
+ */
+export const SMS_SUPPORT_PHONE = '+1 (929) 639-2284';
+
+/** Same number, formatted for a tel: href. */
+export const SMS_SUPPORT_PHONE_TEL = '+19296392284';
 
 /**
  * Shown beside the consent checkbox, and quoted verbatim in the campaign

@@ -8,6 +8,8 @@ import { createMetadata } from '@/lib/metadata';
 import {
   SMS_CONSENT_NOT_A_CONDITION,
   MESSAGE_AND_DATA_RATES,
+  SMS_SUPPORT_PHONE,
+  SMS_SUPPORT_PHONE_TEL,
 } from '@/lib/sms-consent';
 
 export const metadata: Metadata = createMetadata({
@@ -110,7 +112,7 @@ export default function TermsPage() {
               </p>
               <p className="mb-3">
                 You can opt out at any time by replying STOP. For help, reply HELP or contact
-                info@assetliftlending.com / 929-639-2284.
+                info@assetliftlending.com / {SMS_SUPPORT_PHONE}.
               </p>
 
               <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Programme description</h3>
@@ -154,8 +156,11 @@ export default function TermsPage() {
               <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">How to get help</h3>
               <p>
                 Reply <strong className="text-foreground">HELP</strong> to any message, call{' '}
-                <a href="tel:+15166898127" className="underline hover:text-primary transition-colors">
-                  +1 (516) 689-8127
+                <a
+                  href={`tel:${SMS_SUPPORT_PHONE_TEL}`}
+                  className="underline hover:text-primary transition-colors"
+                >
+                  {SMS_SUPPORT_PHONE}
                 </a>
                 , or email{' '}
                 <a href="mailto:info@assetliftlending.com" className="underline hover:text-primary transition-colors">
