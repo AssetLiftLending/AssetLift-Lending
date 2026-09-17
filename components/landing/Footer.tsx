@@ -124,7 +124,7 @@ const Footer = () => {
             </Link>
             <span>|</span>
             <Link href="/terms" className="hover:text-primary transition-colors">
-              Terms
+              Terms &amp; Conditions
             </Link>
             <span>|</span>
             <Link href="/licensing" className="hover:text-primary transition-colors">

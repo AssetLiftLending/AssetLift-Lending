@@ -21,7 +21,7 @@ export default function PrivacyPage() {
 
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">Privacy Policy</h1>
           <p className="text-muted-foreground text-lg mb-10">
-            Last updated March 18, 2026.
+            Last updated September 17, 2026.
           </p>
 
           <div className="space-y-10 text-muted-foreground leading-relaxed">
@@ -33,6 +33,18 @@ export default function PrivacyPage() {
                 and chatbot interactions. This can include your name, email address, phone number,
                 company or entity information, property information, investment details, and any
                 documents you choose to submit in connection with a lending inquiry.
+              </p>
+              <p className="mt-3">
+                Our quote and loan inquiry forms specifically collect your{' '}
+                <strong className="text-foreground">name, email address, phone number</strong>, and{' '}
+                <strong className="text-foreground">property details</strong> such as the property
+                state or address, loan type, purchase price or value, rehab budget, credit range,
+                and number of completed projects. We use your phone number to contact you about the
+                inquiry you submitted &mdash; by call, and{' '}
+                <strong className="text-foreground">
+                  by SMS text message only if you tick the optional consent box on the form
+                </strong>{' '}
+                or otherwise agree to be texted.
               </p>
             </section>
 
@@ -73,7 +85,9 @@ export default function PrivacyPage() {
               <p>
                 Text messages are optional and are never a condition of any loan or service. You can
                 stop them at any time by replying STOP to any message from us, or reply HELP for
-                help. Texts are sent from +1 (516) 689-8127. Full details are in the SMS Terms
+                help. You may also get help by emailing info@assetliftlending.com or calling
+                +1 (929) 639-2284. Texts are sent from +1 (516) 689-8127. Full details are in the
+                SMS Program Terms
                 section of our{' '}
                 <Link href="/terms" className="underline hover:text-foreground">
                   Terms &amp; Conditions
@@ -90,6 +104,13 @@ export default function PrivacyPage() {
                 compliance advisors, and other parties involved in evaluating or servicing a
                 lending request when necessary for business operations, compliance, or transaction
                 execution.
+              </p>
+              <p className="mt-3">
+                <strong className="text-foreground">Mobile information:</strong> No mobile
+                information will be shared with third parties or affiliates for marketing or
+                promotional purposes. All the above categories exclude text messaging originator
+                opt-in data and consent; this information will not be shared with any third
+                parties.
               </p>
             </section>
 
@@ -117,7 +138,8 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold text-foreground mb-3">Contact</h2>
               <p>
                 If you have questions about this Privacy Policy, contact AssetLift Lending at
-                info@assetliftlending.com or +1 (929) 639-2284.
+                info@assetliftlending.com or +1 (929) 639-2284, or write to us at 215-03 Jamaica
+                Ave #1021, Queens Village, NY 11428.
               </p>
             </section>
           </div>
