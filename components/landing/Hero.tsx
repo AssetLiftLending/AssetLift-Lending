@@ -17,6 +17,11 @@ import { sendNotification } from '@/services/notificationService';
 import { gtagEvent, gtagReportConversion } from '@/lib/gtag';
 import { metaTrackLead } from '@/lib/meta-pixel';
 import { pushToGHL } from '@/services/ghlService';
+import {
+  SMS_CONSENT_TEXT,
+  SMS_CONSENT_NOT_A_CONDITION,
+  buildSmsConsentRecord,
+} from '@/lib/sms-consent';
 
 const trustPoints = [
   { icon: Clock3, text: 'Fast initial review' },
@@ -61,6 +66,9 @@ export default function Hero() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  // Starts false and is deliberately absent from `isValid`: a pre-ticked box, or
+  // one that blocks submission, is not valid consent for A2P purposes.
+  const [smsConsent, setSmsConsent] = useState(false);
   const started = useRef(false);
 
   const update = (name: keyof typeof initialForm, value: string) => {
@@ -97,9 +105,12 @@ export default function Hero() {
     }
 
     setSubmitting(true);
+    // Captured once so the email and the CRM describe the same act of consent.
+    const consent = buildSmsConsentRecord(smsConsent, 'homepage-hero-form');
     try {
       const value = Number(form.purchasePrice.replace(/\D/g, ''));
       const success = await sendNotification('form', {
+        ...consent,
         name: form.name,
         phone: form.phone,
         email: form.email,
@@ -134,6 +145,8 @@ export default function Hero() {
         creditScore: form.creditRange,
         flipsCompleted: form.completedProjects,
         source: 'hero-form',
+        smsConsent: consent.smsConsent,
+        smsConsentAt: consent.smsConsentAt ?? undefined,
       });
 
       setSubmitted(true);
@@ -307,6 +320,33 @@ export default function Hero() {
                         {error}
                       </p>
                     )}
+
+                    <label
+                      htmlFor="hero-sms-consent"
+                      className="flex cursor-pointer items-start gap-2.5 rounded-lg border border-border bg-background/40 p-3 text-left text-xs leading-relaxed text-muted-foreground"
+                    >
+                      <input
+                        id="hero-sms-consent"
+                        name="smsConsent"
+                        type="checkbox"
+                        checked={smsConsent}
+                        onChange={(event) => setSmsConsent(event.target.checked)}
+                        className="mt-0.5 h-4 w-4 flex-shrink-0 cursor-pointer rounded border-border accent-primary"
+                      />
+                      <span>
+                        {SMS_CONSENT_TEXT}{' '}
+                        <span className="font-medium text-foreground">{SMS_CONSENT_NOT_A_CONDITION}</span>{' '}
+                        See our{' '}
+                        <Link href="/privacy" className="underline hover:text-foreground">
+                          Privacy Policy
+                        </Link>{' '}
+                        and{' '}
+                        <Link href="/terms" className="underline hover:text-foreground">
+                          Terms &amp; Conditions
+                        </Link>
+                        .
+                      </span>
+                    </label>
 
                     <Button type="submit" size="lg" className="w-full rounded-lg" disabled={submitting}>
                       {submitting ? 'Sending...' : 'Get My Loan Options'}

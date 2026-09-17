@@ -91,9 +91,18 @@ export default function TermsPage() {
             </section>
 
             <section id="sms-terms">
-              <h2 className="text-2xl font-bold text-foreground mb-3">SMS Terms</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-3">SMS Program Terms</h2>
               <p className="mb-3">
-                These SMS Terms apply to the AssetLift Lending text messaging programme.
+                These SMS Program Terms apply to the AssetLift Lending text messaging programme.
+              </p>
+              <p className="mb-3">
+                By opting in, you agree to receive text messages from AssetLift Lending about your
+                financing inquiry. Message frequency varies. Message and data rates may apply.
+                Consent is not a condition of any purchase or service.
+              </p>
+              <p className="mb-3">
+                You can opt out at any time by replying STOP. For help, reply HELP or contact
+                info@assetliftlending.com / 929-639-2284.
               </p>
 
               <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">Programme description</h3>
@@ -106,7 +115,8 @@ export default function TermsPage() {
 
               <h3 className="text-lg font-semibold text-foreground mt-5 mb-2">How you opt in</h3>
               <p>
-                You opt in by ticking the consent box beside your mobile number on our{' '}
+                You opt in by ticking the consent box above the submit button on the quote form
+                on our home page or on our{' '}
                 <Link href="/apply" className="underline hover:text-primary transition-colors">
                   loan inquiry form
                 </Link>
