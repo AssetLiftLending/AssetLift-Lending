@@ -199,6 +199,11 @@ export async function POST(req: NextRequest) {
         <p><strong>Program:</strong> ${payload.program || 'General Inquiry'}</p>
         <p><strong>Loan Purpose:</strong> ${payload.loanPurpose || 'N/A'}</p>
         <p><strong>Preferred Contact:</strong> ${payload.contactMethod || 'N/A'}</p>
+        <p><strong>Text message consent:</strong> ${
+          payload.smsConsent
+            ? `GRANTED ${payload.smsConsentAt || ''} — this lead may be texted`
+            : 'NOT granted — do not text this lead, call or email only'
+        }</p>
         <p><strong>Purchase Price / Refi:</strong> $${payload.loanAmount || 'N/A'}</p>
         <p><strong>Projected ARV:</strong> $${payload.arv || 'N/A'}</p>
         <p><strong>Rehab Amount:</strong> $${payload.rehabAmount || 'N/A'}</p>
