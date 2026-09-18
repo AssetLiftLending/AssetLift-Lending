@@ -7,6 +7,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CheckCircle, Send } from "lucide-react";
 import { sendNotification } from "@/services/notificationService";
+import { pushToGHL } from "@/services/ghlService";
+
+/**
+ * This form asks for "phone or email" in one box, so work out which it is
+ * rather than storing the same string in both fields. A CRM that thinks a phone
+ * number is an email address cannot dedupe or contact anyone.
+ */
+function splitContact(value: string): { email?: string; phone?: string } {
+  const trimmed = value.trim();
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed) ? { email: trimmed } : { phone: trimmed };
+}
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", contact: "", message: "" });
@@ -36,6 +47,16 @@ export default function ContactForm() {
         propertyAddress: "",
         message: form.message,
       });
+
+      // Record the enquiry in the CRM independently of the email. This is a
+      // general enquiry rather than a deal, so it carries no loan details.
+      await pushToGHL({
+        name: form.name,
+        ...splitContact(form.contact),
+        notes: form.message,
+        source: 'contact-form',
+      });
+
       // Only confirm receipt if the message actually went out. Showing the
       // success panel on a failed send silently loses the enquiry.
       if (notified) {

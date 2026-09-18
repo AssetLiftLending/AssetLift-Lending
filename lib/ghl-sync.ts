@@ -4,18 +4,24 @@ const GHL_VERSION = '2021-07-28';
 
 export interface GHLDealPayload {
   name: string;
-  email: string;
-  phone: string;
-  loanType: string;
-  propertyAddress: string;
-  purchasePrice: string;
+  /** At least one of email or phone must be present — both may not be. */
+  email?: string;
+  phone?: string;
+  /**
+   * Deal details, absent on a general enquiry. The contact form and the chatbot
+   * capture someone worth calling back without capturing a deal, and requiring
+   * these would have meant discarding those leads rather than recording them.
+   */
+  loanType?: string;
+  propertyAddress?: string;
+  purchasePrice?: string;
   loanAmount?: string;
   arv?: string;
   rehabAmount?: string;
   creditScore?: string;
   flipsCompleted?: string;
   notes?: string;
-  source?: 'apply-form' | 'hero-form' | 'portal';
+  source?: 'apply-form' | 'hero-form' | 'portal' | 'contact-form' | 'borrower-package' | 'chatbot';
   /**
    * Whether this person ticked the SMS consent box, and when. Without it nobody
    * downstream can tell a lead who may be texted from one who may not, and the
@@ -37,13 +43,24 @@ export class GhlSyncError extends Error {
   }
 }
 
+/**
+ * Whether GoHighLevel is wired up at all.
+ *
+ * GoHighLevel is optional: the CRM is the system of record, and a site running
+ * without a GHL token is a supported configuration, not a fault. Callers check
+ * this first so an unconfigured integration is skipped silently instead of
+ * raising a failure alert on every single lead.
+ */
+export function isGhlConfigured(): boolean {
+  return Boolean(process.env.GHL_API_KEY);
+}
+
 export async function syncDealToGHL(deal: GHLDealPayload): Promise<string> {
   const apiKey = process.env.GHL_API_KEY;
   if (!apiKey) {
     throw new GhlSyncError(
       `GHL_API_KEY is not set, so nothing was sent to location ${LOCATION_ID}. ` +
-        'Add a GoHighLevel private integration token (contacts read/write + opportunities) ' +
-        'to the Vercel environment and redeploy.',
+        'Call isGhlConfigured() before syncing to skip an unconfigured integration.',
     );
   }
 
@@ -83,8 +100,10 @@ export async function syncDealToGHL(deal: GHLDealPayload): Promise<string> {
   if (createRes.ok) {
     const body = await createRes.json();
     contactId = body.contact?.id ?? null;
-  } else if (createRes.status === 422 || createRes.status === 400) {
-    // Contact may already exist — search by email
+  } else if ((createRes.status === 422 || createRes.status === 400) && deal.email) {
+    // Contact may already exist — search by email. Only possible when we have
+    // one: a phone-only lead cannot be looked up this way, so it falls through
+    // to the error below rather than silently matching the wrong person.
     const searchRes = await fetch(
       `${GHL_BASE}/contacts/?locationId=${LOCATION_ID}&email=${encodeURIComponent(deal.email)}`,
       { headers }
@@ -116,14 +135,14 @@ export async function syncDealToGHL(deal: GHLDealPayload): Promise<string> {
 
   // Step 2: Add a structured note with all deal details
   const loanLabel = deal.loanType
-    .replace(/-/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase());
+    ? deal.loanType.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+    : null;
 
   const noteLines: string[] = [
-    `DEAL SUBMISSION — ${loanLabel}`,
+    loanLabel ? `DEAL SUBMISSION — ${loanLabel}` : 'GENERAL ENQUIRY',
     `---`,
-    `Property: ${deal.propertyAddress}`,
-    `Purchase Price: $${deal.purchasePrice}`,
+    deal.propertyAddress ? `Property: ${deal.propertyAddress}` : '',
+    deal.purchasePrice ? `Purchase Price: $${deal.purchasePrice}` : '',
     deal.loanAmount ? `Loan Amount: $${deal.loanAmount}` : '',
     deal.arv ? `ARV: $${deal.arv}` : '',
     deal.rehabAmount ? `Rehab Budget: $${deal.rehabAmount}` : '',

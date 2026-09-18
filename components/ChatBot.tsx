@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { getGeminiResponse } from '@/services/geminiService';
 import { sendNotification } from '@/services/notificationService';
+import { pushToGHL } from '@/services/ghlService';
 import { Message } from '@/lib/types';
 
 const WHATSAPP_URL =
@@ -98,11 +99,25 @@ const ChatBot = () => {
     setInput('');
     setIsLoading(true);
 
-    const hasEmail = /[^@\s]+@[^@\s]+\.[^@\s]+/.test(input);
-    const hasPhone = /(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/.test(input);
+    const emailMatch = input.match(/[^@\s]+@[^@\s]+\.[^@\s]+/);
+    const phoneMatch = input.match(/(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/);
+    const hasEmail = Boolean(emailMatch);
+    const hasPhone = Boolean(phoneMatch);
 
     if (hasEmail || hasPhone) {
       setContactState('captured');
+
+      // Someone who hands over contact details in the chat is a lead, and until
+      // now they existed only in a transcript email. The chat never asks for a
+      // name, so the record is labelled by where it came from rather than
+      // inventing one, and the message is kept as the note.
+      void pushToGHL({
+        name: 'Chatbot enquiry',
+        email: emailMatch?.[0],
+        phone: phoneMatch?.[0],
+        notes: `Shared contact details in the site chatbot.\n\nTheir message: ${userMsg.text}`,
+        source: 'chatbot',
+      });
     }
 
     const result = await getGeminiResponse(updatedHistory);

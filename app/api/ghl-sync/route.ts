@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { syncDealToGHL } from '@/lib/ghl-sync';
+import { syncDealToGHL, isGhlConfigured } from '@/lib/ghl-sync';
 import { syncLeadToCrm } from '@/lib/crm-sync';
 import { sendSyncFailureAlert } from '@/lib/mailer';
 
@@ -12,23 +12,32 @@ export const runtime = 'nodejs';
 
 const money = z.string().trim().max(20);
 
-const dealSchema = z.object({
-  name: z.string().trim().min(1).max(120),
-  email: z.string().trim().email().max(254),
-  phone: z.string().trim().min(7).max(30),
-  loanType: z.string().trim().min(1).max(60),
-  propertyAddress: z.string().trim().min(1).max(250),
-  purchasePrice: money,
-  loanAmount: money.optional(),
-  arv: money.optional(),
-  rehabAmount: money.optional(),
-  creditScore: z.string().trim().max(20).optional(),
-  flipsCompleted: z.string().trim().max(20).optional(),
-  notes: z.string().trim().max(2000).optional(),
-  source: z.enum(['apply-form', 'hero-form', 'portal']).optional(),
-  smsConsent: z.boolean().optional(),
-  smsConsentAt: z.string().trim().max(40).optional(),
-});
+// Deal details are optional: the contact form and the chatbot produce a lead
+// worth calling back without producing a deal. What cannot be optional is a way
+// to reach the person, which is enforced by the refinement below.
+const dealSchema = z
+  .object({
+    name: z.string().trim().min(1).max(120),
+    email: z.string().trim().email().max(254).optional(),
+    phone: z.string().trim().min(7).max(30).optional(),
+    loanType: z.string().trim().min(1).max(60).optional(),
+    propertyAddress: z.string().trim().min(1).max(250).optional(),
+    purchasePrice: money.optional(),
+    loanAmount: money.optional(),
+    arv: money.optional(),
+    rehabAmount: money.optional(),
+    creditScore: z.string().trim().max(20).optional(),
+    flipsCompleted: z.string().trim().max(20).optional(),
+    notes: z.string().trim().max(2000).optional(),
+    source: z
+      .enum(['apply-form', 'hero-form', 'portal', 'contact-form', 'borrower-package', 'chatbot'])
+      .optional(),
+    smsConsent: z.boolean().optional(),
+    smsConsentAt: z.string().trim().max(40).optional(),
+  })
+  .refine(d => Boolean(d.email || d.phone), {
+    message: 'a lead needs at least an email address or a phone number',
+  });
 
 const RATE_LIMIT = 5; // submissions per window per IP
 const WINDOW_MS = 60_000;
@@ -78,7 +87,13 @@ export async function POST(req: NextRequest) {
   // never stop the other from receiving the lead.
   const result = {
     crm: { ok: false, error: null as string | null, contactId: null as string | null },
-    ghl: { ok: false, error: null as string | null, contactId: null as string | null },
+    ghl: {
+      ok: false,
+      /** True when GoHighLevel is simply not configured, which is not a fault. */
+      skipped: false,
+      error: null as string | null,
+      contactId: null as string | null,
+    },
   };
 
   try {
@@ -91,28 +106,31 @@ export async function POST(req: NextRequest) {
     console.error('[CRM] Lead sync failed:', message, { email: deal.email, source: deal.source });
   }
 
-  try {
-    result.ghl.contactId = await syncDealToGHL(deal);
-    result.ghl.ok = true;
-  } catch (err) {
-    const message = (err as Error).message;
-    result.ghl.error = message;
-    console.error('[GHL] Lead sync failed:', message, { email: deal.email, source: deal.source });
+  // GoHighLevel is optional. When no token is configured this is a deliberate
+  // setup, not a failure, and alerting on it would send an email per lead.
+  if (isGhlConfigured()) {
+    try {
+      result.ghl.contactId = await syncDealToGHL(deal);
+      result.ghl.ok = true;
+    } catch (err) {
+      const message = (err as Error).message;
+      result.ghl.error = message;
+      console.error('[GHL] Lead sync failed:', message, { email: deal.email, source: deal.source });
+    }
+  } else {
+    result.ghl.skipped = true;
   }
 
   // A lead that reached no downstream system exists only in the notification
   // email, so say so loudly rather than letting it look delivered.
   const failed: string[] = [];
   if (!result.crm.ok) failed.push('CRM');
-  if (!result.ghl.ok) failed.push('GoHighLevel');
+  if (!result.ghl.ok && !result.ghl.skipped) failed.push('GoHighLevel');
 
   if (failed.length > 0) {
     try {
       await sendSyncFailureAlert({
-        subject:
-          failed.length === 2
-            ? 'GHL SYNC FAILED - lead saved by email only'
-            : `${failed[0]} SYNC FAILED - lead saved by email only`,
+        subject: `${failed.join(' + ')} SYNC FAILED - lead saved by email only`,
         system: failed.join(' and '),
         error: [result.crm.error && `CRM: ${result.crm.error}`, result.ghl.error && `GHL: ${result.ghl.error}`]
           .filter(Boolean)

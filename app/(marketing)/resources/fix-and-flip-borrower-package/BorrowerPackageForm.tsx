@@ -27,6 +27,7 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
 import { sendFormNotification } from '@/services/notificationService';
+import { pushToGHL } from '@/services/ghlService';
 
 type UploadField =
   | 'llcDocumentsFile'
@@ -358,6 +359,22 @@ export default function BorrowerPackageForm() {
       }
 
       const success = await sendFormNotification(submission);
+
+      // Record in the CRM regardless of the email result. The uploaded files
+      // only travel by email, but the borrower and their deal belong in the CRM
+      // either way — that is what someone follows up from.
+      await pushToGHL({
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        loanType: 'fix-flip',
+        propertyAddress: form.propertyAddress,
+        purchasePrice: form.purchasePrice,
+        arv: form.arv || undefined,
+        rehabAmount: form.rehabAmount || undefined,
+        notes: form.notes || undefined,
+        source: 'borrower-package',
+      });
 
       if (!success) {
         toast({
