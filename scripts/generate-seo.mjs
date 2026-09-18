@@ -82,6 +82,50 @@ const KEYWORD_BANK = [
   { slug: 'fix-and-flip-wholesaling-difference', keyword: 'fix and flip vs wholesaling real estate which is better', category: 'Fix & Flip' },
   { slug: 'hard-money-loan-apartment-building', keyword: 'hard money loan for apartment building small multifamily', category: 'Hard Money' },
   { slug: 'dscr-loan-self-employed-investor', keyword: 'DSCR loan for self employed real estate investor', category: 'DSCR Rental' },
+
+  // Added 2026-09-17, after the bank ran dry and publishing stalled for seven
+  // weeks. These deliberately avoid head terms like "hard money loans", which
+  // established lenders hold: each one is a specific question a borrower asks
+  // when they already intend to transact, so the traffic is lower but converts.
+  { slug: 'hard-money-loan-for-auction-property', keyword: 'hard money loan to buy a foreclosure at auction', category: 'Hard Money' },
+  { slug: 'proof-of-funds-letter-cash-offer', keyword: 'how to get a proof of funds letter for a cash offer', category: 'Hard Money' },
+  { slug: 'hard-money-loan-for-land-purchase', keyword: 'hard money loan for raw land purchase', category: 'Hard Money' },
+  { slug: 'transactional-funding-double-closing', keyword: 'transactional funding for a double closing explained', category: 'Hard Money' },
+  { slug: 'hard-money-loan-second-position', keyword: 'second position hard money loan for investors', category: 'Hard Money' },
+  { slug: 'blanket-loan-cross-collateralization', keyword: 'blanket loan cross collateralization for rental portfolios', category: 'Hard Money' },
+  { slug: 'hard-money-loan-personal-guarantee', keyword: 'when does a hard money lender require a personal guarantee', category: 'Hard Money' },
+  { slug: 'hard-money-loan-appraisal-who-pays', keyword: 'who pays for the appraisal on a hard money loan', category: 'Hard Money' },
+  { slug: 'interest-reserve-hard-money-loan', keyword: 'how an interest reserve works on a hard money loan', category: 'Hard Money' },
+  { slug: 'hard-money-loan-mixed-use-property', keyword: 'hard money loan for a mixed use property', category: 'Hard Money' },
+  { slug: 'heloc-vs-hard-money-loan', keyword: 'HELOC vs hard money loan for real estate investors', category: 'Hard Money' },
+  { slug: 'hard-money-loan-for-1031-exchange', keyword: 'using a hard money loan in a 1031 exchange', category: 'Hard Money' },
+  { slug: 'commercial-hard-money-loan-guide', keyword: 'commercial hard money loan requirements and terms', category: 'Hard Money' },
+  { slug: 'hard-money-loan-default-what-happens', keyword: 'what happens if you default on a hard money loan', category: 'Hard Money' },
+
+  { slug: 'dscr-loan-foreign-national', keyword: 'DSCR loan for foreign national investors', category: 'DSCR Rental' },
+  { slug: 'dscr-loan-itin-borrower', keyword: 'DSCR loan for an ITIN borrower', category: 'DSCR Rental' },
+  { slug: 'dscr-loan-duplex-triplex-fourplex', keyword: 'DSCR loan for a duplex triplex or fourplex', category: 'DSCR Rental' },
+  { slug: 'dscr-loan-prepayment-penalty-structures', keyword: 'DSCR loan prepayment penalty structures explained', category: 'DSCR Rental' },
+  { slug: 'rent-schedule-1007-appraisal', keyword: 'form 1007 rent schedule appraisal for DSCR loans', category: 'DSCR Rental' },
+  { slug: 'dscr-loan-minimum-loan-amount', keyword: 'DSCR loan minimum loan amount small balance rentals', category: 'DSCR Rental' },
+  { slug: 'dscr-loan-vacant-lease-up-property', keyword: 'DSCR loan on a vacant or lease up rental property', category: 'DSCR Rental' },
+  { slug: 'how-to-improve-dscr-ratio', keyword: 'how to improve your DSCR ratio before applying', category: 'DSCR Rental' },
+
+  { slug: 'what-happens-if-your-flip-doesnt-sell', keyword: 'what happens if your flip does not sell in time', category: 'Fix & Flip' },
+  { slug: 'fix-and-flip-taxes-dealer-status', keyword: 'fix and flip taxes and dealer status explained', category: 'Fix & Flip' },
+  { slug: 'gap-funding-fix-and-flip', keyword: 'gap funding for a fix and flip deal', category: 'Fix & Flip' },
+  { slug: 'title-seasoning-flip-resale', keyword: 'title seasoning rules when reselling a flip', category: 'Fix & Flip' },
+  { slug: 'fix-and-flip-draw-inspection-process', keyword: 'fix and flip draw inspection process step by step', category: 'Fix & Flip' },
+  { slug: 'flip-to-rental-conversion-refinance', keyword: 'converting a flip into a rental and refinancing', category: 'Fix & Flip' },
+
+  { slug: 'bridge-loan-to-avoid-maturity-default', keyword: 'using a bridge loan to pay off a maturing loan', category: 'Bridge Loans' },
+  { slug: 'bridge-loan-for-partnership-buyout', keyword: 'bridge loan for a real estate partnership buyout', category: 'Bridge Loans' },
+
+  { slug: 'construction-loan-cost-overrun-options', keyword: 'what to do about a construction loan cost overrun', category: 'Construction' },
+  { slug: 'builders-risk-insurance-construction-loan', keyword: 'builders risk insurance requirements for a construction loan', category: 'Construction' },
+  { slug: 'spec-home-construction-financing', keyword: 'spec home construction financing for builders', category: 'Construction' },
+
+  { slug: 'how-to-read-a-loan-term-sheet', keyword: 'how to read a hard money loan term sheet', category: 'Guide' },
 ];
 
 // ─── Helpers ───────────────────────────────────────────────────────────────────
@@ -205,8 +249,24 @@ async function main() {
   const target = KEYWORD_BANK.find(k => !existingSlugs.has(k.slug));
 
   if (!target) {
-    console.log('All keywords in the bank are already covered. Add more keywords to KEYWORD_BANK.');
-    process.exit(0);
+    // Exit non-zero so the workflow goes red and GitHub emails us. Exiting 0
+    // here meant the job reported success while publishing nothing, and that
+    // is exactly how this went unnoticed from 2026-07-28 to 2026-09-17.
+    console.error(
+      'KEYWORD_BANK is exhausted: every keyword already has a post, so no ' +
+        'content can be generated. Publishing is STOPPED until new keywords ' +
+        'are added to KEYWORD_BANK in scripts/generate-seo.mjs.',
+    );
+    process.exit(1);
+  }
+
+  // Warn before it runs dry, so the bank can be topped up without a red run.
+  const remaining = KEYWORD_BANK.filter(k => !existingSlugs.has(k.slug)).length;
+  if (remaining <= 7) {
+    console.warn(
+      `WARNING: only ${remaining} unused keyword(s) left in KEYWORD_BANK. ` +
+        'Top it up soon or daily publishing will stop.',
+    );
   }
 
   console.log(`Generating post for: "${target.keyword}" (slug: ${target.slug})`);
