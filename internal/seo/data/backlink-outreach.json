@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-19T12:19:41.741Z",
-  "anchorRotationIndex": 5,
-  "pageRotationIndex": 11,
+  "generatedAt": "2026-09-20T12:54:54.482Z",
+  "anchorRotationIndex": 2,
+  "pageRotationIndex": 12,
   "items": [
     {
       "platform": "Google Business Profile",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/hudson-county",
-      "anchorTheme": "NY DSCR loans",
+      "targetUrl": "https://www.assetliftlending.com/blog/how-experienced-flippers-package-deals-for-fast-approval",
+      "anchorTheme": "New Jersey hard money lender",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Highest priority entity listing. Must be fully verified and kept active with NY/NJ investor lending language."
     },
     {
       "platform": "LLMs.txt / AI crawler reference",
-      "targetUrl": "https://www.assetliftlending.com/blog/how-experienced-flippers-package-deals-for-fast-approval",
-      "anchorTheme": "NJ DSCR loans",
+      "targetUrl": "https://www.assetliftlending.com/blog/dscr-loan-file-checklist-portfolio-investors",
+      "anchorTheme": "NY fix and flip loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Keep AI-readable entity, product, contact, and citation facts current for AI crawlers that inspect llms.txt-style files."
     },
     {
       "platform": "LLMs-full.txt / AI citation source",
-      "targetUrl": "https://www.assetliftlending.com/blog/dscr-loan-file-checklist-portfolio-investors",
-      "anchorTheme": "private lender for experienced investors",
+      "targetUrl": "https://www.assetliftlending.com/markets",
+      "anchorTheme": "NJ fix and flip loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Maintain a comprehensive AI-readable site summary for systems that use web retrieval or citation-oriented crawling."
     },
     {
       "platform": "LinkedIn Company Page",
-      "targetUrl": "https://www.assetliftlending.com/markets",
-      "anchorTheme": "AssetLift Lending",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-york/fix-and-flip-loans",
+      "anchorTheme": "NY DSCR loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Use company overview plus application link."
     }
