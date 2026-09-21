@@ -3688,5 +3688,59 @@
         "answer": "AssetLift Lending provides financing for raw land purchases in 46 U.S. states. We do not currently lend in Alaska, North Dakota, South Dakota, or Vermont."
       }
     ]
+  },
+  {
+    "slug": "transactional-funding-double-closing",
+    "title": "Transactional Funding for a Double Closing Explained: Your Guide",
+    "description": "Unlock the power of transactional funding for a double closing. Learn how to execute profitable deals with minimal capital, explained by AssetLift Lending.",
+    "publishedAt": "2026-09-21T16:22:24.885Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "Hard Money",
+    "tags": [
+      "transactional funding",
+      "double closing",
+      "hard money loans",
+      "real estate investing",
+      "wholesale real estate"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "The Double Closing: A Strategic Play for Savvy Investors",
+        "content": "You're an experienced investor, so you understand the power of controlling a deal without necessarily owning it long-term. The double closing is a prime example of this strategy, allowing you to act as a middleman and profit from the spread between two simultaneous transactions: A to B (seller to you) and B to C (you to end buyer). This isn't just about wholesaling; it's about mitigating risk by eliminating assignment fees and often presenting a cleaner transaction to the end buyer. Imagine you’ve found a distressed property for $200,000. You've simultaneously lined up an end buyer willing to pay $230,000. That $30,000 spread is your profit. The challenge? You need to close on the A to B transaction before closing on B to C, and that requires funding, even if only for a few hours. This is where transactional funding becomes your critical leverage, enabling you to execute these high-speed, high-profit maneuvers across the 46 states AssetLift serves."
+      },
+      {
+        "heading": "What is Transactional Funding for a Double Closing?",
+        "content": "Transactional funding is a short-term, asset-based loan specifically designed to facilitate a double closing. It provides the capital needed to purchase a property from the original seller (Transaction A to B) and then immediately sell it to an end buyer (Transaction B to C) on the same day, or within a very short timeframe, typically 24-72 hours. Unlike traditional hard money or bridge loans, transactional funding is not intended for long-term holding or rehab. Its sole purpose is to bridge the financial gap for that brief period. For example, if you're buying a property for $200,000, a transactional lender might provide 100% of that purchase price. The fees are generally a percentage of the loan amount, commonly ranging from 1% to 3%, plus some flat fees, depending on the lender and the complexity of the deal. This minimal cost allows you to leverage a substantial sum of money for a very short duration, securing your profit without tying up your own capital."
+      },
+      {
+        "heading": "The Mechanics: How a Transactional Fund Works in Practice",
+        "content": "Let’s walk through a practical example. You have a contract to buy a property for $250,000 (Contract A-B) and a second contract to sell it for $285,000 (Contract B-C) to an eager investor, all closing on the same day. You approach AssetLift for transactional funding. We would assess the deal, focusing heavily on the B-C contract and the clear profit margin. Our funding would cover the $250,000 needed for the A-B closing. At the closing table, the transactional funds are wired to the original seller. Simultaneously, the end buyer's funds for the $285,000 purchase are wired to the title company. The title company then disburses the original $250,000 plus the transactional funding fee (say, 1.5% or $3,750) back to the transactional lender, and your profit of $31,250 ($285,000 - $250,000 - $3,750) is wired to your account. This entire process typically occurs within hours, making it an incredibly efficient way to monetize your deal-finding skills without needing significant upfront capital. It's crucial that both closings are coordinated by the same title company or closing attorney to ensure a seamless, simultaneous transfer of funds and deeds."
+      },
+      {
+        "heading": "Key Considerations & When to Use Transactional Funding",
+        "content": "While transactional funding is powerful, it’s not a silver bullet for every deal. It's best suited for scenarios where you have a rock-solid B-C buyer and a clear, substantial profit margin. Lenders like AssetLift will scrutinize your B-C contract to ensure the deal is viable and the exit strategy is firm. Your end buyer must be ready to close quickly, ideally with cash or an already approved hard money loan. Transactional funding is not typically for deals where you plan to take title, perform renovations, and then resell; for those, our fix-and-flip loans (up to 95% LTC on purchase, 100% rehab funded) or bridge loans (up to 80% LTV) are more appropriate. Also, be aware of state-specific double closing regulations. Some states have stricter rules regarding the time between closings or disclosure requirements. Always consult with your title company or attorney to ensure compliance. A strong credit score, typically 660+, can also make the process smoother for future financing needs, though transactional funding is primarily asset-based. Our loan range from $100K to $5M is flexible enough to cover most transactional funding needs, subject to underwriting."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the typical cost of transactional funding?",
+        "answer": "Transactional funding costs generally range from 1% to 3% of the loan amount, plus some flat fees. For a $200,000 loan, this could mean $2,000 to $6,000, paid only for a few hours of use."
+      },
+      {
+        "question": "Can I use transactional funding for a fix-and-flip project?",
+        "answer": "No, transactional funding is designed for same-day double closings. For fix-and-flip projects where you plan to hold and renovate, AssetLift offers specialized fix-and-flip loans, funding up to 95% of the purchase and 100% of the rehab costs."
+      },
+      {
+        "question": "What are the requirements for securing transactional funding?",
+        "answer": "The primary requirement is a solid, non-contingent B-C contract with a clear profit margin. Lenders will verify the end buyer's ability to close. The property's value and your experience also factor in, though less heavily than with other loan types."
+      },
+      {
+        "question": "Is transactional funding available in all 50 states?",
+        "answer": "AssetLift Lending provides transactional funding and other investor loans across 46 U.S. states. We currently do not operate in Alaska, North Dakota, South Dakota, or Vermont."
+      }
+    ]
   }
 ]
