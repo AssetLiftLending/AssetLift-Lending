@@ -220,7 +220,7 @@ export default function LoanProductPage({ product, directAnswer, cta, checklist 
   const isDscr = product.slug === 'dscr-rental';
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-clip">
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container px-4 md:px-6">
@@ -230,8 +230,8 @@ export default function LoanProductPage({ product, directAnswer, cta, checklist 
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-              <div>
+            <div className="grid min-w-0 gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+              <div className="min-w-0">
                 <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">
                   {product.heroSubtitle}
                 </p>
@@ -277,7 +277,7 @@ export default function LoanProductPage({ product, directAnswer, cta, checklist 
               </div>
 
               {(isFixAndFlip || isDscr) && (
-                <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+                <div className="min-w-0 rounded-3xl border border-border bg-card p-6 shadow-sm">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
                     {isDscr ? 'DSCR Quick Terms' : 'Borrower Quick Start'}
                   </p>

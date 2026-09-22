@@ -71,7 +71,7 @@ export default function DSCRCalculator() {
                 <Calculator className="w-8 h-8 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                DSCR Calculator
+                DSCR Loan Calculator
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-5">Calculate rental property payment coverage before requesting terms.</p>
               <div className="mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-5 text-left leading-relaxed">A DSCR loan calculator divides a rental property's qualifying monthly income by its monthly debt obligation. Enter rent, principal and interest, property taxes, insurance, HOA dues, and any vacancy factor the program uses. A higher ratio shows more payment coverage, but lenders also review value, credit, reserves, property condition, lease support, and loan purpose.</div>
