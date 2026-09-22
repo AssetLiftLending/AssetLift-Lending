@@ -8,9 +8,9 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'ground-up-construction')!;
 
 export const metadata: Metadata = createMetadata({
-  title: 'Ground-Up Construction Loans | Up to 85% LTC',
+  title: 'Ground-Up Construction Financing for Investors',
   description:
-    'Finance land, vertical construction, and draw-based project costs with ground-up construction loans for builders and real estate investors.',
+    'Finance land acquisition and vertical construction for non-owner-occupied investment projects. See required plans, budget, permits, experience, and draws.',
   path: '/loans/ground-up-construction',
 });
 
@@ -19,7 +19,7 @@ export default function GroundUpConstructionPage() {
     '@context': 'https://schema.org',
     '@type': 'LoanOrCredit',
     name: product.title,
-    description: product.description,
+    description: 'Ground-up construction financing funds a new investment property from land or teardown through completion.',
     category: 'Ground-Up Construction Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
     url: 'https://www.assetliftlending.com/loans/ground-up-construction',
@@ -33,7 +33,7 @@ export default function GroundUpConstructionPage() {
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
     areaServed: 'US',
     url: 'https://www.assetliftlending.com/loans/ground-up-construction',
-    description: product.description,
+    description: 'Ground-up construction financing funds a new investment property from land or teardown through completion.',
   };
 
   const faqSchema = {
@@ -66,7 +66,12 @@ export default function GroundUpConstructionPage() {
       <div className="container px-4 md:px-6 pt-32">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/loans' }, { label: 'Ground-Up Construction' }]} />
       </div>
-      <LoanProductPage product={product} />
+      <LoanProductPage
+        product={{ ...product, heroTitle: 'Ground-Up Construction Financing' }}
+        directAnswer="Ground-up construction financing funds a new investment property from land or teardown through completion. Lenders review the land basis, plans, permits, line-item budget, licensed contractor, borrower experience, completed value, local demand, equity, reserves, timeline, and exit. Construction funds are generally released in verified draws, and terms depend on the project, borrower, title, valuation, and market."
+        checklist={['Address or land details', 'Acquisition basis', 'Plans and permit status', 'Line-item budget', 'Licensed contractor', 'Completed-value support', 'Borrower experience', 'Equity and reserves']}
+        cta={{ heading: 'Get the construction file reviewed', copy: 'Send the address or land details, acquisition basis, plans and permit status, line-item budget, contractor, completed-value support, borrower experience, equity, reserves, requested loan amount, and target closing date.', primaryLabel: 'Request Construction Terms', primaryHref: '/apply?loanPurpose=ground-up-construction&source=ground-up-construction-page', secondaryLabel: 'See the File Checklist', secondaryHref: '/blog/ground-up-construction-loan-requirements' }}
+      />
     </>
   );
 }

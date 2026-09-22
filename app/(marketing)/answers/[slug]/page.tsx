@@ -72,6 +72,14 @@ export default async function AnswerPage({ params }: Props) {
     ],
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.assetliftlending.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Answers', item: 'https://www.assetliftlending.com/answers' },
+      { '@type': 'ListItem', position: 3, name: answer.title, item: `https://www.assetliftlending.com/answers/${answer.slug}` },
+    ],
+  };
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -91,6 +99,7 @@ export default async function AnswerPage({ params }: Props) {
     <>
       <JsonLd data={faqSchema} />
       <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbSchema} />
 
       <div className="container px-4 md:px-6 pt-32">
         <Breadcrumbs

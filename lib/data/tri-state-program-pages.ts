@@ -78,12 +78,12 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'NY',
     programSlug: 'dscr-loans',
     programName: 'DSCR Rental Loans',
-    title: 'New York DSCR Loans | Rental Investor Lender',
+    title: 'DSCR Loans in New York for Rental Properties',
     description:
-      'New York DSCR loans for rental investors buying, refinancing, or cashing out non-owner-occupied rental properties based on property cash flow.',
-    h1: 'New York DSCR Loans for Rental Investors',
+      'New York DSCR loans for non-owner-occupied rental purchases and refinances. Qualify from property cash flow and request terms for your NY property.',
+    h1: 'DSCR Loans in New York',
     intro:
-      'AssetLift reviews New York DSCR rental loan scenarios for investors who want the property income to drive qualification. The best files show rent support, realistic expenses, and a clean ownership or refinance plan.',
+      "A New York DSCR loan finances a non-owner-occupied rental property using property income to measure payment coverage instead of relying mainly on the borrower's W-2 income. Lenders review rent, principal and interest, New York property taxes, insurance, HOA or common charges, value, credit, reserves, entity documents, property condition, and whether the request is a purchase, refinance, or cash-out refinance.",
     markets: ['New York City', 'Long Island', 'Westchester', 'Hudson Valley', 'Buffalo', 'Rochester', 'Syracuse'],
     fit: [
       ...sharedQualification,

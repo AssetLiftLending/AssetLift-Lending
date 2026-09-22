@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Send, CheckCircle, Phone, Mail, BadgeCheck, Clock3, ShieldCheck } from "lucide-react";
@@ -42,6 +43,7 @@ interface FormData {
 }
 
 const ApplyForm = () => {
+  const searchParams = useSearchParams();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<FormData>({
@@ -67,6 +69,15 @@ const ApplyForm = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const addressWrapperRef = useRef<HTMLDivElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    const source = searchParams.get('source') || undefined;
+    const rawPurpose = searchParams.get('loanPurpose');
+    const strategy = searchParams.get('strategy') || (rawPurpose === 'dscr' ? 'rental' : rawPurpose === 'fix-and-flip' ? 'fix-flip' : rawPurpose === 'ground-up-construction' ? 'ground-up' : '');
+    const purpose = rawPurpose === 'refinance' || rawPurpose === 'purchase' ? rawPurpose : '';
+    setFormData((prev) => ({ ...prev, strategy: strategy || prev.strategy, loanPurpose: purpose || prev.loanPurpose, purchasePrice: searchParams.get('purchasePrice') || prev.purchasePrice, arv: searchParams.get('arv') || prev.arv, rehabAmount: searchParams.get('rehabAmount') || prev.rehabAmount, location: searchParams.get('state') ? `${prev.location || ''}${prev.location ? ', ' : ''}${searchParams.get('state')}` : prev.location, dealOverview: searchParams.get('rent') ? `Calculator values - rent: $${searchParams.get('rent')}; mortgage P&I: $${searchParams.get('mortgage') || '0'}; taxes: $${searchParams.get('taxes') || '0'}; insurance: $${searchParams.get('insurance') || '0'}; HOA: $${searchParams.get('hoa') || '0'}; vacancy: ${searchParams.get('vacancy') || '0'}%.` : prev.dealOverview }));
+    if (source || rawPurpose) gtagEvent('quote_started', { source, query_intent: rawPurpose });
+  }, [searchParams]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -240,6 +251,7 @@ const ApplyForm = () => {
 
       if (success) {
         gtagReportConversion();
+        gtagEvent('quote_submitted', { source: searchParams.get('source') || 'apply', query_intent: searchParams.get('loanPurpose') || formData.strategy });
         gtagEvent('generate_lead', {
           currency: 'USD',
           value: Number(formData.purchasePrice.replace(/\D/g, '')),

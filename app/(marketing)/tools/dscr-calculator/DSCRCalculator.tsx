@@ -16,6 +16,7 @@ export default function DSCRCalculator() {
   const [monthlyHoa, setMonthlyHoa] = useState('');
   const [vacancy, setVacancy] = useState('5');
   const trackedUse = useRef(false);
+  const trackedBand = useRef('');
 
   const rent = parseFloat(monthlyRent) || 0;
   const mortgage = parseFloat(monthlyMortgage) || 0;
@@ -36,7 +37,7 @@ export default function DSCRCalculator() {
   useEffect(() => {
     if (hasValues && !trackedUse.current) {
       trackedUse.current = true;
-      gtagEvent('calculator_used', { calculator: 'dscr' });
+      gtagEvent('calculator_started', { calculator: 'dscr', query: 'dscr loan calculator' });
     }
   }, [hasValues]);
 
@@ -48,6 +49,17 @@ export default function DSCRCalculator() {
   };
 
   const status = getDSCRStatus(dscr);
+
+  useEffect(() => {
+    if (!hasValues) return;
+    gtagEvent('calculator_completed', { calculator: 'dscr', result_band: status.label });
+    if (trackedBand.current !== status.label) {
+      trackedBand.current = status.label;
+      gtagEvent('calculator_result_band', { calculator: 'dscr', result_band: status.label });
+    }
+  }, [hasValues, status.label]);
+
+  const applyParams = new URLSearchParams({ loanPurpose: 'dscr', source: 'dscr-calculator', strategy: 'rental', rent: monthlyRent, mortgage: monthlyMortgage, taxes: monthlyTaxes, insurance: monthlyInsurance, hoa: monthlyHoa, vacancy }).toString();
 
   return (
     <div className="min-h-screen">
@@ -61,10 +73,8 @@ export default function DSCRCalculator() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
                 DSCR Calculator
               </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Calculate your Debt Service Coverage Ratio to see if your rental property qualifies
-                for a DSCR loan. No income verification required.
-              </p>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-5">Calculate rental property payment coverage before requesting terms.</p>
+              <div className="mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-5 text-left leading-relaxed">A DSCR loan calculator divides a rental property's qualifying monthly income by its monthly debt obligation. Enter rent, principal and interest, property taxes, insurance, HOA dues, and any vacancy factor the program uses. A higher ratio shows more payment coverage, but lenders also review value, credit, reserves, property condition, lease support, and loan purpose.</div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -231,15 +241,17 @@ export default function DSCRCalculator() {
                 </div>
 
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
-                  <p className="font-semibold mb-2">Ready to lock in your DSCR loan?</p>
+                  <p className="font-semibold mb-2">Use your result to request terms</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Get the property income, expenses, leverage, and borrower profile reviewed.
+                    Keep the rent, payment, taxes, insurance, HOA, purchase price or value, requested loan amount, and property address you entered. Send the scenario without retyping the numbers.
                   </p>
                   <Button asChild size="lg" className="glow-primary">
-                    <Link href="/apply">
-                      Apply for DSCR Loan <ArrowRight className="ml-2 w-4 h-4" />
+                    <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'dscr', result_band: status.label })}>
+                      Request DSCR Terms <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>
+                  <Button asChild variant="outline" className="mt-3"><Link href="/loans/dscr-rental">See DSCR Loan Options</Link></Button>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only.</p>
                 </div>
               </div>
             </div>
