@@ -16,31 +16,22 @@ export const metadata: Metadata = createMetadata({
 });
 
 const PRIORITY_STATE_SLUGS = [
-  "florida",
-  "texas",
-  "california",
-  "georgia",
-  "north-carolina",
-  "arizona",
+  "new-jersey",
+  "new-york",
+  "connecticut",
 ];
 
 const PRIORITY_CITY_SLUGS = [
-  "miami",
-  "fort-lauderdale",
-  "st-petersburg",
-  "west-palm-beach",
-  "boca-raton",
-  "sarasota",
-  "tampa",
-  "austin",
-  "dallas",
-  "plano",
-  "arlington",
-  "scottsdale",
-  "chandler",
-  "long-beach",
-  "atlanta",
-  "charlotte",
+  "camden-county",
+  "camden",
+  "cherry-hill",
+  "pennsauken",
+  "newark",
+  "jersey-city",
+  "queens",
+  "westchester-county",
+  "bridgeport",
+  "new-haven",
 ];
 
 export default function MarketsPage() {

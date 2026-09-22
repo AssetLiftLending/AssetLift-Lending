@@ -53,7 +53,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return createMetadata({
     title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
-    description: `Hard money loans in ${city.cityName}, ${city.stateAbbreviation}. Fix & flip, bridge, and DSCR rental financing for ${city.cityName} investors. Close in as fast as 5 business days.`,
+    description: `Business-purpose hard money, fix-and-flip, bridge, and DSCR rental loans for non-owner-occupied investment properties in ${city.cityName}, ${city.stateAbbreviation}.`,
+    keywords: [
+      `hard money lender ${city.cityName} ${city.stateAbbreviation}`,
+      `fix and flip loans ${city.cityName}`,
+      `DSCR loans ${city.cityName}`,
+      `investment property loans ${city.cityName}`,
+    ],
     path: `/lending/${city.stateSlug}/${city.citySlug}`,
     noIndex: !shouldIndexCity(city.stateSlug, city.citySlug),
   });
@@ -112,9 +118,11 @@ export default async function CityLendingPage({ params }: Props) {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'FinancialService',
     name: `AssetLift Lending - ${city.cityName}, ${city.stateAbbreviation}`,
-    description: `Hard money loans and private lending in ${city.cityName}, ${city.stateName}`,
+    description: `Business-purpose investment property financing in ${city.cityName}, ${city.stateName}`,
+    telephone: '+1-929-639-2284',
+    email: 'info@assetliftlending.com',
     url: `https://www.assetliftlending.com/lending/${city.stateSlug}/${city.citySlug}`,
     areaServed: {
       '@type': 'City',
