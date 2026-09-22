@@ -70,10 +70,6 @@ export default function HomePage() {
       addressCountry: 'US',
     },
     areaServed: { '@type': 'Country', name: 'United States' },
-    founder: [
-      { '@type': 'Person', name: 'Yaakov Pentelnik' },
-      { '@type': 'Person', name: 'Yisroel Pentelnik' },
-    ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
