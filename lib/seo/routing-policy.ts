@@ -89,6 +89,7 @@ export const INDEXABLE_ANSWER_SLUGS = new Set([
   'best-hard-money-lender-fix-and-flip',
   'best-dscr-lender-no-income-verification',
   'fix-and-flip-loans-100-percent-rehab-funding',
+  'asset-based-loan-companies-real-estate-investors',
 ]);
 
 export function isPriorityStatePath(path: string) {

@@ -17,6 +17,7 @@ export default function FlipCalculator() {
   const [closingCostPercent, setClosingCostPercent] = useState('3');
   const [sellingCostPercent, setSellingCostPercent] = useState('6');
   const trackedUse = useRef(false);
+  const trackedBand = useRef('');
 
   const purchase = parseFloat(purchasePrice) || 0;
   const rehab = parseFloat(rehabCost) || 0;
@@ -36,13 +37,22 @@ export default function FlipCalculator() {
   const roi = totalInvestment > 0 ? (grossProfit / (purchase * 0.05 + rehab + closingCosts)) * 100 : 0;
 
   const hasValues = purchase > 0 && afterRepair > 0;
+  const marginBand = roi >= 20 ? '20% plus' : roi >= 10 ? '10% to 19.9%' : roi >= 0 ? '0% to 9.9%' : 'negative';
 
   useEffect(() => {
     if (hasValues && !trackedUse.current) {
       trackedUse.current = true;
-      gtagEvent('calculator_used', { calculator: 'fix_and_flip' });
+      gtagEvent('calculator_started', { calculator: 'fix_and_flip', query: 'fix and flip loan calculator' });
     }
   }, [hasValues]);
+
+  useEffect(() => {
+    if (!hasValues) return;
+    gtagEvent('calculator_completed', { calculator: 'fix_and_flip', margin_band: marginBand });
+    if (trackedBand.current !== marginBand) { trackedBand.current = marginBand; gtagEvent('calculator_margin_band', { calculator: 'fix_and_flip', margin_band: marginBand }); }
+  }, [hasValues, marginBand]);
+
+  const applyParams = new URLSearchParams({ loanPurpose: 'fix-and-flip', source: 'fix-and-flip-calculator', strategy: 'fix-flip', purchasePrice, rehabAmount: rehabCost, arv, holdingMonths, interestRate, closingCostPercent, sellingCostPercent }).toString();
 
   return (
     <div className="min-h-screen">
@@ -54,12 +64,10 @@ export default function FlipCalculator() {
                 <Calculator className="w-8 h-8 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                Fix & Flip Calculator
+                Fix and Flip Loan Calculator
               </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Estimate your profit, ROI, and total costs before you make an offer. Adjust the
-                numbers to model different scenarios.
-              </p>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-5">Estimate total project cost and projected profit before requesting terms.</p>
+              <div className="mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-5 text-left leading-relaxed">A fix-and-flip loan calculator estimates total project cost and potential profit from the purchase price, rehab budget, financing costs, holding expenses, selling costs, and after-repair value. It helps an investor test the margin before requesting terms, but lenders still review local comparable sales, scope, contractor plan, borrower experience, liquidity, reserves, title, property condition, and the proposed exit.</div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -208,15 +216,17 @@ export default function FlipCalculator() {
                 </div>
 
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
-                  <p className="font-semibold mb-2">Like these numbers?</p>
+                  <p className="font-semibold mb-2">Turn this calculation into a loan review</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Get your numbers reviewed against actual borrower, property, and exit details.
+                    Keep the purchase price, rehab budget, ARV, financing assumptions, hold period, and projected margin you entered. Add the property address, current photos, borrower experience, requested loan amount, and target closing date.
                   </p>
                   <Button asChild size="lg" className="glow-primary">
-                    <Link href="/apply">
-                      Apply for Flip Financing <ArrowRight className="ml-2 w-4 h-4" />
+                    <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'fix_and_flip', margin_band: marginBand })}>
+                      Request Fix-and-Flip Terms <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>
+                  <Button asChild variant="outline" className="mt-3"><Link href="/resources/fix-and-flip-deal-checklist">Download the Deal Checklist</Link></Button>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only.</p>
                 </div>
               </div>
             </div>

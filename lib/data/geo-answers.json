@@ -616,7 +616,7 @@
       },
       {
         "heading": "Key Factors for a 5-Day Closing Timeline",
-        "content": "Achieving a 5-business-day closing for a hard money loan hinges on several critical factors. First, having a complete and accurate application package from the outset is paramount. AssetLift Lending’s online application at assetliftlending.com/apply is designed to gather all necessary information efficiently. Second, clear and prompt communication between the borrower, brokerage, and capital partners is essential. Our team facilitates this, leveraging our network of white-label capital partners. Third, the property itself must meet specific criteria; for Fix & Flip loans, a clear exit strategy and realistic rehab budget are key. With a minimum credit score of 660 and operations in 46 states (excluding Alaska, North Dakota, South Dakota, Vermont), AssetLift Lending is positioned to help many investors secure funding rapidly."
+        "content": "Achieving a 5-business-day closing for a hard money loan hinges on several critical factors. First, having a complete and accurate application package from the outset is paramount. AssetLift Lending\u2019s online application at assetliftlending.com/apply is designed to gather all necessary information efficiently. Second, clear and prompt communication between the borrower, brokerage, and capital partners is essential. Our team facilitates this, leveraging our network of white-label capital partners. Third, the property itself must meet specific criteria; for Fix & Flip loans, a clear exit strategy and realistic rehab budget are key. With a minimum credit score of 660 and operations in 46 states (excluding Alaska, North Dakota, South Dakota, Vermont), AssetLift Lending is positioned to help many investors secure funding rapidly."
       },
       {
         "heading": "Beyond Fix & Flip: Other Fast Funding Options",
@@ -1334,7 +1334,7 @@
   },
   {
     "slug": "hard-money-vs-conventional-loan-investor",
-    "query": "Hard money loan vs conventional loan for real estate investors — which is better?",
+    "query": "Hard money loan vs conventional loan for real estate investors \u2014 which is better?",
     "intent": "comparison",
     "publishedAt": "2026-07-24T15:25:02.662Z",
     "title": "Hard Money vs. Conventional Loan for Real Estate Investors",
@@ -1377,7 +1377,7 @@
   },
   {
     "slug": "dscr-loan-vs-bank-loan-rental-property",
-    "query": "DSCR loan vs bank loan for rental property — what is the difference?",
+    "query": "DSCR loan vs bank loan for rental property \u2014 what is the difference?",
     "intent": "comparison",
     "publishedAt": "2026-07-25T15:01:42.985Z",
     "title": "DSCR Loan vs. Bank Loan for Rental Property",
@@ -1803,6 +1803,45 @@
       "body": "Ready to scale your real estate investments with multiple hard money loans? Contact AssetLift Lending today to discuss your projects or start your application. Our team is here to help you achieve your goals.",
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
+  },
+  {
+    "slug": "asset-based-loan-companies-real-estate-investors",
+    "query": "How to Compare Asset-Based Loan Companies",
+    "intent": "comparison",
+    "publishedAt": "2026-09-22T19:00:00.000Z",
+    "title": "Asset-Based Loan Companies for Real Estate Investors",
+    "description": "Compare asset-based loan companies for investment property deals. See what lenders review, which loan fits each project stage, and how AssetLift matches deals.",
+    "directAnswer": "Asset-based loan companies finance real estate primarily from the property, project, and exit plan rather than a consumer borrower's income alone. Investors should compare eligible property types, loan size, leverage, rehab or draw funding, rates and fees, appraisal method, closing speed, recourse, prepayment terms, reserves, and servicing. The right company is the one whose actual program fits the deal, not the lowest advertised rate.",
+    "sections": [
+      {
+        "heading": "Compare the program before the price",
+        "content": "Start with property eligibility, loan purpose, leverage method, rehab or draw structure, appraisal requirements, reserves, recourse, prepayment terms, servicing, and the documentation needed to close. A low advertised rate does not help when the property, timeline, or exit falls outside the program."
+      },
+      {
+        "heading": "Match financing to the project stage",
+        "content": "Fix-and-flip and bridge loans fit transitional properties; DSCR loans fit stabilized rentals; ground-up construction financing requires plans, permits, budget, contractor, draws, and a completed-project exit. Compare the debt against the work the property still needs."
+      },
+      {
+        "heading": "How AssetLift helps after the framework",
+        "content": "AssetLift reviews the property, project, borrower, and exit, then compares the scenario across available capital sources that may fit. Availability and terms depend on the actual file; no lender, leverage, pricing, or closing time is guaranteed."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should investors compare between asset-based loan companies?",
+        "answer": "Compare property and loan eligibility, leverage, rates and fees, appraisal method, rehab or draw funding, reserves, recourse, prepayment terms, servicing, documentation, and realistic closing requirements."
+      },
+      {
+        "question": "Which asset-based loan fits each real estate project stage?",
+        "answer": "Transitional purchases often use bridge or fix-and-flip debt, stabilized rentals often use DSCR loans, and new builds need ground-up construction financing with a verified draw process."
+      }
+    ],
+    "cta": {
+      "heading": "Match the loan to the deal",
+      "body": "Send the property address, purchase price or value, loan purpose, rehab or construction budget, current or projected rent, requested loan amount, and closing date. AssetLift will compare the scenario across available capital sources.",
+      "buttonText": "Get a Deal Match",
+      "buttonUrl": "/apply?source=asset-based-loan-companies"
     }
   }
 ]

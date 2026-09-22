@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import DSCRCalculator from './DSCRCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'DSCR Calculator | Rental Property Loan Eligibility',
+  title: 'DSCR Loan Calculator for Rental Properties',
   description:
-    'Use our free DSCR calculator to measure rental income coverage and estimate eligibility for DSCR rental property loans and refinance deals.',
+    'Calculate rental property DSCR from rent, mortgage payment, taxes, insurance, HOA dues, and vacancy. Review the ratio, then request DSCR loan terms.',
   path: '/tools/dscr-calculator',
 });
 
@@ -106,6 +106,7 @@ export default function DSCRCalculatorPage() {
           <h2 className="text-3xl font-bold tracking-tight mb-6">
             What This DSCR Calculator Does
           </h2>
+          <div className="mb-6 flex flex-wrap gap-3 text-sm">{[['DSCR loans for rental properties','/loans/dscr-rental'],['New York DSCR loans','/lending/new-york/dscr-loans'],['New Jersey DSCR loans','/lending/new-jersey/dscr-loans'],['Connecticut DSCR loans','/lending/connecticut/dscr-loans'],['Rental income calculation','/blog/dscr-loan-rental-income-calculation'],['How to qualify','/blog/how-to-qualify-for-dscr-loan']].map(([label,href]) => <Link key={href} href={href} className="rounded-full border border-border px-3 py-2 hover:border-primary/50">{label}</Link>)}</div>
           <p className="text-muted-foreground leading-relaxed">
             The debt service coverage ratio (DSCR) measures whether a rental property generates enough
             income to cover its monthly debt obligations. This calculator takes your gross monthly rent,

@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FlipCalculator from './FlipCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fix & Flip Calculator | House Flip Profit Estimator',
+  title: 'Fix and Flip Loan Calculator | Costs & Profit',
   description:
-    'Use our free fix and flip calculator to estimate rehab costs, holding costs, projected resale value, and profit on your next house flip.',
+    'Calculate purchase, rehab, financing, holding, selling costs, and projected flip profit. Review the deal, then request fix-and-flip loan terms.',
   path: '/tools/fix-and-flip-calculator',
 });
 
@@ -106,6 +106,7 @@ export default function FixAndFlipCalculatorPage() {
           <h2 className="text-3xl font-bold tracking-tight mb-6">
             What This Fix and Flip Calculator Does
           </h2>
+          <div className="mb-6 flex flex-wrap gap-3 text-sm">{[['Fix & Flip Loans','/loans/fix-and-flip'],['Calculate ARV','/blog/how-to-calculate-after-repair-value'],['Rehab draw process','/blog/fix-and-flip-loan-rehab-draw-process'],['Loan requirements','/blog/fix-and-flip-loan-requirements'],['Deal checklist','/resources/fix-and-flip-deal-checklist'],['Borrower package','/resources/fix-and-flip-borrower-package']].map(([label,href]) => <Link key={href} href={href} className="rounded-full border border-border px-3 py-2 hover:border-primary/50">{label}</Link>)}</div>
           <p className="text-muted-foreground leading-relaxed">
             This calculator models the full cost structure of a house flip so you can see whether
             the projected spread justifies the risk before you submit an offer. Enter the purchase

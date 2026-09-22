@@ -14,6 +14,9 @@ import type { LoanProduct } from '@/lib/data/loan-products';
 
 interface LoanProductPageProps {
   product: LoanProduct;
+  directAnswer?: string;
+  cta?: { heading: string; copy: string; primaryLabel: string; primaryHref: string; secondaryLabel: string; secondaryHref: string };
+  checklist?: string[];
 }
 
 const RELATED_GUIDES: Record<
@@ -211,7 +214,7 @@ const PRODUCT_INSIGHTS: Record<
   },
 };
 
-export default function LoanProductPage({ product }: LoanProductPageProps) {
+export default function LoanProductPage({ product, directAnswer, cta, checklist }: LoanProductPageProps) {
   const insights = PRODUCT_INSIGHTS[product.slug];
   const isFixAndFlip = product.slug === 'fix-and-flip';
   const isDscr = product.slug === 'dscr-rental';
@@ -238,6 +241,11 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
                 <p data-speakable className="text-lg text-muted-foreground max-w-2xl mb-6 leading-relaxed">
                   {product.description}
                 </p>
+                {directAnswer && (
+                  <div data-speakable className="mb-6 rounded-2xl border border-primary/20 bg-primary/5 p-5 text-base leading-relaxed text-foreground">
+                    {directAnswer}
+                  </div>
+                )}
                 {isFixAndFlip && (
                   <div className="mb-8 rounded-2xl border border-border bg-secondary/25 p-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-3">
@@ -324,6 +332,21 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
           </motion.div>
         </div>
       </section>
+
+      {checklist && cta && (
+        <section className="pb-16">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto grid max-w-5xl gap-6 rounded-3xl border border-border bg-card p-6 md:grid-cols-[1fr_0.9fr] md:p-8">
+              <div><h2 className="mb-4 text-2xl font-bold">What to send</h2><div className="grid gap-3 sm:grid-cols-2">{checklist.map((item) => <div key={item} className="flex gap-2 text-sm text-muted-foreground"><Check className="h-4 w-4 shrink-0 text-primary" />{item}</div>)}</div></div>
+              <div><h2 className="mb-3 text-2xl font-bold">{cta.heading}</h2><p className="mb-5 text-sm leading-relaxed text-muted-foreground">{cta.copy}</p><p className="mb-5 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only.</p><div className="flex flex-col gap-3 sm:flex-row"><Button asChild><Link href={cta.primaryHref}>{cta.primaryLabel}</Link></Button><Button asChild variant="outline"><Link href={cta.secondaryHref}>{cta.secondaryLabel}</Link></Button></div></div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {cta && !checklist && (
+        <section className="pb-16"><div className="container px-4 md:px-6"><div className="mx-auto max-w-5xl rounded-3xl border border-border bg-card p-6 md:p-8"><h2 className="mb-3 text-2xl font-bold">{cta.heading}</h2><p className="mb-4 max-w-3xl text-muted-foreground">{cta.copy}</p><p className="mb-5 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only.</p><div className="flex flex-col gap-3 sm:flex-row"><Button asChild><Link href={cta.primaryHref}>{cta.primaryLabel}</Link></Button><Button asChild variant="outline"><Link href={cta.secondaryHref}>{cta.secondaryLabel}</Link></Button></div></div></div></section>
+      )}
 
       {/* Key Stats */}
       <section className="py-12 bg-secondary/30">

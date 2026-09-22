@@ -92,10 +92,10 @@ export default function TriStateProgramPage({ page }: Props) {
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/apply"
+                  href={page.programSlug === 'dscr-loans' ? `/apply?loanPurpose=dscr&state=${page.stateAbbreviation}&source=${page.stateSlug}-dscr` : '/apply'}
                   className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
                 >
-                  Upload Your Scenario Now
+                  {page.programSlug === 'dscr-loans' ? `Request ${page.stateName} DSCR Terms` : 'Upload Your Scenario Now'}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
                 <a
@@ -122,6 +122,10 @@ export default function TriStateProgramPage({ page }: Props) {
           </div>
         </div>
       </section>
+
+      {page.stateSlug === 'new-york' && page.programSlug === 'dscr-loans' && (
+        <section className="pb-14"><div className="container px-4 md:px-6"><div className="rounded-3xl border border-border bg-card p-6 md:p-8"><h2 className="mb-3 text-2xl font-bold">Review a New York rental property</h2><p className="mb-4 max-w-4xl text-muted-foreground">Send the property address, purchase price or current value, monthly rent, taxes, insurance, HOA or common charges, requested loan amount, entity details, and target closing date.</p><p className="mb-5 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only. Long-term lease support and short-term-rental assumptions are reviewed separately.</p><div className="flex flex-col gap-3 sm:flex-row"><Link href="/apply?loanPurpose=dscr&state=NY&source=new-york-dscr" className="rounded-lg bg-primary px-6 py-3 text-center font-semibold text-primary-foreground">Request New York DSCR Terms</Link><Link href="/tools/dscr-calculator" className="rounded-lg border border-border px-6 py-3 text-center font-semibold">Calculate DSCR</Link></div></div></div></section>
+      )}
 
       <section className="py-14 md:py-18 bg-secondary/25">
         <div className="container px-4 md:px-6">
