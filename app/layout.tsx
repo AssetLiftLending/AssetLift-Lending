@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/assetlift-mark.png", type: "image/png" }],
     apple: "/apple-touch-icon.png",
   },
 };
