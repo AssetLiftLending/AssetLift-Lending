@@ -19,7 +19,7 @@ export const SMS_BRAND_NAME = 'AssetLift Lending';
  * published anywhere on the site — a reviewer checking a number we display
  * cannot corroborate it, so HELP and opt-out point at SMS_SUPPORT_PHONE below.
  */
-export const SMS_BUSINESS_PHONE = '+1 (516) 689-8127';
+export const SMS_BUSINESS_PHONE = '+1 (929) 639-2284';
 
 /**
  * The number a recipient reaches a human on, quoted wherever HELP or opt-out
