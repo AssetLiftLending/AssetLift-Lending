@@ -154,6 +154,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100vw;
   height: 100%;
   perspective: 1000px;
   perspective-origin: 50% 25%;
