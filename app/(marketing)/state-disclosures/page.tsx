@@ -5,7 +5,7 @@ import { createMetadata } from '@/lib/metadata';
 import { STATES } from '@/lib/data/states';
 
 export const metadata: Metadata = createMetadata({
-  title: 'State Disclosures | AssetLift Lending',
+  title: 'State Disclosures',
   description:
     'Review AssetLift Lending state-by-state website disclosures for business-purpose investment-property financing, coverage, and execution-model notes.',
   path: '/state-disclosures',

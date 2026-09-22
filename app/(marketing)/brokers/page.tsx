@@ -4,7 +4,7 @@ import { ArrowRight, BriefcaseBusiness, FileText, Handshake, LockKeyhole, Upload
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Broker Partners | Submit Investor Deals | AssetLift Lending',
+  title: 'Broker Partners | Submit Investor Deals',
   description:
     'AssetLift Lending works with mortgage brokers, commercial brokers, and referral partners on fix and flip, DSCR, bridge, construction, and commercial lending scenarios.',
   alternates: {
