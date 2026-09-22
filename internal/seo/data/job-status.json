@@ -1,6 +1,7 @@
 {
-  "generatedAt": "2026-09-22T17:33:44.834Z",
-  "job": "audit",
-  "ok": true,
-  "durationMs": 4454
+  "generatedAt": "2026-09-22T19:42:17.716Z",
+  "job": "strategy",
+  "ok": false,
+  "durationMs": 1819,
+  "error": "GitHub write failed for internal/seo/data/content-backlog.json: 409 {\"message\":\"is at c601b8f6fe1e8fb5012e7e74ea3c28a25e2bfcb9 but expected 7f5e329e07277e26cd5cc300b9e2260a37400021\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}"
 }
