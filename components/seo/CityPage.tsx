@@ -113,6 +113,42 @@ const PRIORITY_CITY_GUIDANCE: Record<
       "Model the deal so it still works if resale or lease-up takes longer than planned",
     ],
   },
+  'new-jersey/camden-county': {
+    lenderView:
+      "Camden County is not one uniform market. A lender will separate Camden, Pennsauken, Cherry Hill, Haddonfield, Voorhees, and the smaller boroughs because purchase basis, rents, taxes, condition, and resale liquidity differ. The cleanest files use municipality-level comps, a line-item scope, current taxes and insurance, and one clear sale or refinance exit.",
+    borrowerFocus: [
+      'Use nearby sales or rent comps that match the municipality, property type, unit count, and condition',
+      'Send a line-item scope, current photos, contractor plan, taxes, insurance, reserves, and tenant status',
+      'Choose the debt for the stage of the property: rehab or bridge first, DSCR after stabilization',
+    ],
+  },
+  'new-jersey/cherry-hill': {
+    lenderView:
+      "Cherry Hill files usually depend on disciplined basis, close resale comps, property taxes, permit timing, and a renovation level that matches the local buyer or tenant pool. Higher values can support strong exits, but they also leave less room for an inflated ARV or an overbuilt scope.",
+    borrowerFocus: [
+      'Use recent Cherry Hill comps that match neighborhood, style, size, condition, and buyer price band',
+      'Confirm zoning and permit requirements before finalizing the scope or closing timeline',
+      'Model taxes, insurance, carrying costs, and reserves before asking for maximum leverage',
+    ],
+  },
+  'new-jersey/pennsauken': {
+    lenderView:
+      "Pennsauken can support flips, small multifamily, and rental strategies, but the file needs clean legal-unit information, tenant status, local comps, and a plan for township resale, inspection, rental-registration, or zoning requirements. Lenders want to see those items before they become closing or refinance surprises.",
+    borrowerFocus: [
+      'Document legal unit count, current occupancy, leases or market rents, and property condition',
+      'Check township sale inspection, rental registration, property maintenance, and zoning requirements early',
+      'Use Pennsauken comps and realistic taxes, insurance, scope, reserves, and exit timing',
+    ],
+  },
+  'new-jersey/camden': {
+    lenderView:
+      "Camden files are highly block- and condition-sensitive. A low purchase price does not make a loan safe by itself. Lenders need tight comps, title clarity, a controlled rehab scope, a realistic tenant or buyer profile, reserves, and a credible sale or DSCR refinance plan.",
+    borrowerFocus: [
+      'Use block-level value and rent support instead of broad Camden County averages',
+      'Address title, property condition, tenant status, taxes, insurance, contractor plan, and reserves upfront',
+      'Show that the exit still works if rehab, lease-up, or resale takes longer than planned',
+    ],
+  },
   'new-jersey/newark': {
     lenderView:
       "Newark can work well for experienced investors, especially on 2-4 unit, mixed-use, and value-add rental files, but lenders pay close attention to tenant status, taxes, municipal items, and block-level comps. The strongest Newark files show a real rent or resale path and do not rely on broad Essex County averages.",

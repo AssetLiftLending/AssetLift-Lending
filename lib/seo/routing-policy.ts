@@ -5,6 +5,10 @@ export const BASE_URL = 'https://www.assetliftlending.com';
 export const PRIORITY_STATE_SLUGS = new Set(['new-york', 'new-jersey', 'connecticut']);
 
 export const PRIORITY_CITY_PATHS = new Set([
+  '/lending/new-jersey/camden-county',
+  '/lending/new-jersey/camden',
+  '/lending/new-jersey/cherry-hill',
+  '/lending/new-jersey/pennsauken',
   '/lending/new-york/brooklyn',
   '/lending/new-york/buffalo',
   '/lending/new-york/rochester',
