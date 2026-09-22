@@ -236,12 +236,12 @@ export default function Hero() {
           <div className="w-full max-w-md justify-self-end text-foreground">
             <div className="rounded-2xl border border-white/25 bg-background/94 p-6 shadow-[0_24px_70px_rgba(0,0,0,0.34)] backdrop-blur-xl sm:p-7">
               {submitted ? (
-                <div className="py-8 text-center">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/15">
-                    <CheckCircle className="h-7 w-7 text-primary" />
+                <div className="py-12 text-center sm:py-14">
+                  <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-primary/15">
+                    <CheckCircle className="h-10 w-10 text-primary" />
                   </div>
-                  <h2 className="mb-2 text-xl font-bold">We received your scenario.</h2>
-                  <p className="mb-6 text-sm text-muted-foreground">
+                  <h2 className="mb-3 text-2xl font-bold sm:text-3xl">We received your scenario.</h2>
+                  <p className="mb-8 text-base leading-relaxed text-muted-foreground">
                     AssetLift will review it and follow up with preliminary options.
                   </p>
                   <Button asChild className="w-full">
