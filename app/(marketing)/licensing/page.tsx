@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Licensing & Disclosures | AssetLift Lending',
+  title: 'Licensing & Disclosures',
   description:
     'Review AssetLift Lending licensing information, lending disclosures, compliance details, and regulatory information for investment-property loans.',
   path: '/licensing',
