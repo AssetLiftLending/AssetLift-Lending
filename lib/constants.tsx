@@ -31,7 +31,7 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
       'Spec builds, infills, neighborhood developments',
       'Pay no interest on undrawn construction funds'
     ],
-    otherOptions: 'BUILD2RENT\u00AE: Flexible DSCR options',
+    otherOptions: 'Build-to-Rent: Flexible DSCR options',
     color: 'bg-charcoal',
     icon: 'ðŸ—ï¸'
   },

@@ -44,7 +44,7 @@ const LoanPrograms = () => {
         "Spec builds, infills, neighborhood developments",
         terms.groundUp.drawStructure,
       ],
-      otherOptions: "BUILD2RENT\u00AE: Flexible DSCR options",
+      otherOptions: "Build-to-Rent: Flexible DSCR options",
       href: "/loans/ground-up-construction",
       Icon: Building2,
     },
