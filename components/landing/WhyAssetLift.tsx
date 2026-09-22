@@ -32,7 +32,7 @@ const proofCards = [
 
 const WhyAssetLift = () => {
   return (
-    <section className="py-20 md:py-28 relative">
+    <section className="relative overflow-x-clip py-20 md:py-28">
       <div className="container px-4 md:px-6">
         <div className="mx-auto mb-16 grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <motion.div
@@ -63,16 +63,16 @@ const WhyAssetLift = () => {
           </motion.div>
 
           <motion.div
-            className="divide-y divide-border"
+            className="min-w-0 divide-y divide-border"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
             {proofCards.map((card) => (
-              <div key={card.title} className="flex gap-4 py-6 first:pt-0">
+              <div key={card.title} className="flex min-w-0 gap-4 py-6 first:pt-0">
                 <card.icon className="mt-1 h-5 w-5 shrink-0 text-primary" />
-                <div>
+                <div className="min-w-0">
                   <h3 className="mb-1.5 text-xl font-semibold">{card.title}</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground">{card.content}</p>
                 </div>
