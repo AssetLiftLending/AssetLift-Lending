@@ -86,7 +86,7 @@ export default function PrivacyPage() {
                 Text messages are optional and are never a condition of any loan or service. You can
                 stop them at any time by replying STOP to any message from us, or reply HELP for
                 help. You may also get help by emailing info@assetliftlending.com or calling
-                +1 (929) 639-2284. Texts are sent from +1 (516) 689-8127. Full details are in the
+                +1 (929) 639-2284. Full details are in the
                 SMS Program Terms
                 section of our{' '}
                 <Link href="/terms" className="underline hover:text-foreground">
