@@ -1,11 +1,20 @@
 {
-  "generatedAt": "2026-09-22T09:08:13.914Z",
-  "job": "audit",
-  "published": false,
-  "changedUrls": [],
+  "generatedAt": "2026-09-22T13:11:00.363Z",
+  "job": "authority",
+  "published": true,
+  "changedUrls": [
+    "https://www.assetliftlending.com/sitemap.xml"
+  ],
   "notes": [
-    "Job label: SEO Audit",
-    "Schedule slot: 04:05 UTC and 13:05 UTC / 00:05 ET and 09:05 ET during DST",
-    "Focus keywords: hard money lender, DSCR loans, fix and flip loans"
+    "Backlink queue refreshed from existing authority plan.",
+    "Sitemap submitted to Google Search Console successfully.",
+    "Found 3 striking-distance queries and 2 pages with weak click-through over the last 28 days.",
+    "11 prioritized actions from real Search Console demand (top priority: /).",
+    "AI visibility targets refreshed: llms.txt, llms-full.txt, entity facts, product pages, and high-authority citation targets.",
+    "AI platforms such as ChatGPT, Perplexity, Claude, Gemini, and Copilot generally discover brands through crawlable pages, citations, backlinks, structured data, and trusted third-party mentions; this job improves those inputs but cannot force inclusion in a model index.",
+    "This job cannot create third-party backlinks by itself; it can only keep the queue current and update submission status.",
+    "Google Search Console sitemap submission is supported here. Google indexing for ordinary webpages is not directly force-triggered via the public Indexing API.",
+    "Anchor rotation index: 3",
+    "Page rotation index: 13"
   ]
 }
