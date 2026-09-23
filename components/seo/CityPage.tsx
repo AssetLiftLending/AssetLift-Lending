@@ -152,19 +152,19 @@ const PRIORITY_CITY_GUIDANCE: Record<
   },
   'new-jersey/newark': {
     lenderView:
-      "Newark can work well for experienced investors, especially on 2-4 unit, mixed-use, and value-add rental files, but lenders pay close attention to tenant status, taxes, municipal items, and block-level comps. The strongest Newark files show a real rent or resale path and do not rely on broad Essex County averages.",
+      "Newark works well for experienced investors on two- to four-family, mixed-use, and value-add rental files, but lenders look hard at neighborhood, tenant status, taxes, and municipal timing. The Ironbound and Forest Hill behave very differently from the South and West Wards. Because a Certificate of Code Compliance is needed before a new tenancy, lease-up and resale plans should include inspection time.",
     borrowerFocus: [
-      "Document tenant status, rent support, taxes, insurance, and municipal timing early",
-      "Use very local comps because values can move materially by neighborhood and property type",
-      "Show reserves for hold time, rehab variance, and DSCR refinance timing if the exit is rental debt",
+      "Use block- and neighborhood-level comps, not citywide averages",
+      "Document legal unit count, tenant status, rents, taxes, and insurance up front",
+      "Build the Certificate of Code Compliance inspection into the lease-up or resale timeline",
     ],
   },
   'new-jersey/jersey-city': {
     lenderView:
-      "Jersey City files usually get reviewed through the lens of high basis, tight comps, condo or HOA restrictions, taxes, and exit liquidity. Lenders like the depth of demand, but they still need a borrower who understands the exact submarket, whether the asset is a condo, multifamily, or mixed-use property.",
+      "Jersey City files are reviewed around neighborhood, unit mix, tenant status, and exit liquidity. Downtown, Journal Square, The Heights, Greenville, and Bergen-Lafayette have different values, rents, and buyer pools. Lenders like the rental depth, but they need the legal unit count, certificate of occupancy status, rent-control status, and condo or HOA rules settled before they size the loan.",
     borrowerFocus: [
       "Separate Downtown, Journal Square, The Heights, Greenville, and Bergen-Lafayette comps",
-      "Confirm HOA, condo, insurance, and tax assumptions before asking for maximum leverage",
+      "Confirm legal units, certificate of occupancy, rent-control status, and HOA rules early",
       "Support DSCR files with leases, rent rolls, and conservative payment coverage",
     ],
   },
@@ -206,11 +206,11 @@ const PRIORITY_CITY_GUIDANCE: Record<
   },
   'new-york/nassau-county': {
     lenderView:
-      "Nassau County files tend to be reviewed around suburban buyer demand, higher basis, taxes, and town-specific resale comps. Lenders like strong liquidity and clean exit support because small differences in purchase basis or renovation scope can change margin materially.",
+      "Nassau County files are reviewed around high basis, heavy property taxes, and town- or village-level resale comps. Hempstead, Freeport, Valley Stream, Levittown, and the North Shore villages all price differently. Lenders like the depth of buyer demand, but a small miss on ARV or carrying cost can erase the margin, and rental plans need to account for local registration rules and any rent-stabilized units.",
     borrowerFocus: [
-      "Keep ARV comps town-specific instead of relying on broad Long Island averages",
-      "Model taxes, insurance, and hold costs carefully before requesting max leverage",
-      "Match the scope and finish level to the local buyer pool and price band",
+      "Keep ARV comps inside the same town or village instead of using Long Island averages",
+      "Put current property taxes and insurance into the flip budget and the DSCR payment from day one",
+      "Confirm rental registration and rent-stabilization status before planning a hold",
     ],
   },
   'new-york/westchester-county': {
@@ -220,6 +220,24 @@ const PRIORITY_CITY_GUIDANCE: Record<
       "Use municipality-specific comps and rent support",
       "Budget property taxes and insurance with care because they can change DSCR and flip margin",
       "Show reserves and a payoff path that still works if approvals or resale timing stretches",
+    ],
+  },
+  'new-york/yonkers': {
+    lenderView:
+      "Yonkers files turn on building type and regulation status. A free-market two- or three-family underwrites very differently from an older apartment building that may carry rent-stabilized units. Lenders want the rent roll, leases, legal unit count, taxes, and insurance up front, plus comps from the same part of the city, since Getty Square, Park Hill, Crestwood, and Northwest Yonkers price differently.",
+    borrowerFocus: [
+      "Confirm rent-stabilization status for any building of six or more units built before 1974",
+      "Send the rent roll, leases, legal unit count, taxes, and insurance with the first request",
+      "Use comps from the same neighborhood and property type",
+    ],
+  },
+  'new-jersey/ocean-county': {
+    lenderView:
+      "Ocean County files split between year-round suburban markets and shore properties. Toms River, Brick, Jackson, and Lakewood underwrite on conventional resale and rent comps, while barrier-island and bayfront deals turn on flood zone, insurance cost, and seasonal demand. Lenders want the exact township, the property use, and an insurance quote before sizing leverage.",
+    borrowerFocus: [
+      "Get a flood zone determination and insurance quote early on shore properties",
+      "Underwrite seasonal rental income conservatively and document any rental history",
+      "Confirm township rental registration and inspection requirements before lease-up",
     ],
   },
 };
