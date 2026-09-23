@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { CITIES } from '@/lib/data/cities';
+import { shouldIndexCity } from '@/lib/seo/routing-policy';
 import { STATES, type StateData } from '@/lib/data/states';
 
 interface LocationPageProps {
@@ -105,7 +106,10 @@ const PRIORITY_STATE_GUIDANCE: Record<
 };
 
 export default function LocationPage({ state }: LocationPageProps) {
-  const stateCities = CITIES.filter((city) => city.stateSlug === state.slug);
+  const stateCities = CITIES.filter((city) => city.stateSlug === state.slug).sort(
+    (a, b) =>
+      Number(shouldIndexCity(b.stateSlug, b.citySlug)) - Number(shouldIndexCity(a.stateSlug, a.citySlug)),
+  );
   const nearbyStates = STATES.filter((entry) => entry.slug !== state.slug).slice(0, 8);
   const stateGuidance = PRIORITY_STATE_GUIDANCE[state.slug];
 

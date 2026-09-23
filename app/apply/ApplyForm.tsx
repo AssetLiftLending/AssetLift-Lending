@@ -338,7 +338,7 @@ const ApplyForm = () => {
         >
           <div className="mb-6 lg:hidden">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Loan Application</p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight">Submit your deal.</h1>
+            <p className="mt-2 text-3xl font-bold tracking-tight">Submit your deal.</p>
             <p className="mt-2 text-sm text-muted-foreground">
               Start with the application. Add the basics now and the team can ask for anything else after review.
             </p>
