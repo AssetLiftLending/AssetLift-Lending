@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { TRI_STATE_HUB_CONTENT } from '@/lib/data/tri-state-hub-content';
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +12,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { CITIES } from '@/lib/data/cities';
-import { TRI_STATE_HUB_CONTENT } from '@/lib/data/tri-state-hub-content';
 import { STATES, type StateData } from '@/lib/data/states';
 
 interface LocationPageProps {
@@ -109,6 +109,7 @@ export default function LocationPage({ state }: LocationPageProps) {
   const stateCities = CITIES.filter((city) => city.stateSlug === state.slug);
   const nearbyStates = STATES.filter((entry) => entry.slug !== state.slug).slice(0, 8);
   const stateGuidance = PRIORITY_STATE_GUIDANCE[state.slug];
+
   const hub = TRI_STATE_HUB_CONTENT[state.slug];
 
   return (
