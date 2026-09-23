@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { TRI_STATE_HUB_CONTENT } from '@/lib/data/tri-state-hub-content';
 import {
   Accordion,
   AccordionContent,
@@ -112,6 +113,8 @@ export default function LocationPage({ state }: LocationPageProps) {
   );
   const nearbyStates = STATES.filter((entry) => entry.slug !== state.slug).slice(0, 8);
   const stateGuidance = PRIORITY_STATE_GUIDANCE[state.slug];
+
+  const hub = TRI_STATE_HUB_CONTENT[state.slug];
 
   return (
     <div className="min-h-screen">
@@ -404,6 +407,67 @@ export default function LocationPage({ state }: LocationPageProps) {
                       <p className="text-muted-foreground">{item}</p>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {hub && (
+        <section className="py-16 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto space-y-12">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Investor lending across {state.name}, region by region</h2>
+                <p className="text-muted-foreground text-lg leading-relaxed">{hub.intro}</p>
+              </div>
+              <div className="grid gap-6 md:grid-cols-2">
+                {hub.regions.map((region) => (
+                  <div key={region.name} className="bg-card border border-border rounded-xl p-6">
+                    <h3 className="font-semibold text-xl mb-1">{region.name}</h3>
+                    <p className="text-sm text-primary mb-3">{region.markets}</p>
+                    <p className="text-muted-foreground leading-relaxed">{region.detail}</p>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">How {state.name} investor deals usually get structured</h2>
+                <div className="grid gap-6 md:grid-cols-3">
+                  {hub.structures.map((item) => (
+                    <div key={item.title} className="bg-card border border-border rounded-xl p-6">
+                      <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{item.detail}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="grid gap-8 md:grid-cols-2">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4">What to send with a {state.name} deal</h2>
+                  <ul className="space-y-3">
+                    {hub.fileChecklist.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-muted-foreground">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4">{state.name} programs and local pages</h2>
+                  <div className="grid gap-3">
+                    {hub.localLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium hover:border-primary/50 transition-colors"
+                      >
+                        <span>{link.label}</span>
+                        <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
