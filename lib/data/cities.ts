@@ -2933,7 +2933,7 @@ export const CITIES: CityData[] = [
       { question: "What should I send for a Newark fix-and-flip quote?", answer: "Send the address, contract or target price, photos, line-item scope, nearby comparable sales, tenant status, taxes, insurance, borrower experience, reserves, and target closing date. Neighborhood-level comps matter because values change quickly across the city." },
       { question: "Does AssetLift finance owner-occupied Newark homes?", answer: "No. AssetLift's programs are for business-purpose, non-owner-occupied investment properties only." },
     ],
-  }
+  },
   {
     cityName: "Jersey City",
     citySlug: "jersey-city",
@@ -2952,7 +2952,7 @@ export const CITIES: CityData[] = [
       { question: "Does AssetLift use citywide comps for Jersey City?", answer: "No. Downtown, Journal Square, The Heights, Greenville, and Bergen-Lafayette behave very differently. Underwriting uses nearby sales and rents that match the neighborhood, property type, unit count, and condition." },
       { question: "Are AssetLift loans consumer mortgages?", answer: "No. AssetLift provides business-purpose financing for non-owner-occupied investment properties, not consumer or owner-occupied mortgages." },
     ],
-  }
+  },
   {
     cityName: "Paterson",
     citySlug: "paterson",
@@ -3141,7 +3141,7 @@ export const CITIES: CityData[] = [
       { question: "What local rules should Ocean County landlords check?", answer: "Many townships require landlord registration and rental inspections. Toms River, for example, requires annual landlord registration and a rental certificate of inspection. Confirm the current rules for the exact township." },
       { question: "Does AssetLift finance owner-occupied or second homes?", answer: "No. AssetLift's programs are business-purpose financing for non-owner-occupied investment properties only." },
     ],
-  }
+  },
   {
     cityName: "Trenton",
     citySlug: "trenton",
@@ -3371,7 +3371,7 @@ export const CITIES: CityData[] = [
       { question: "Do Nassau County rentals need a permit or registration?", answer: "It depends on the municipality. The Town of Hempstead requires rental dwelling units to be registered, and other towns and villages have their own rules. Some Nassau municipalities have also adopted rent stabilization for buildings of six or more units built before 1974. Confirm the requirements for the exact property." },
       { question: "Are AssetLift loans available for owner-occupied homes?", answer: "No. AssetLift's programs are business-purpose financing for non-owner-occupied investment properties only." },
     ],
-  }
+  },
   {
     cityName: "Suffolk County",
     citySlug: "suffolk-county",
@@ -3424,7 +3424,7 @@ export const CITIES: CityData[] = [
       { question: "What should I send for a Yonkers quote?", answer: "Send the address, contract or target price, photos, line-item scope, nearby comparable sales, rent roll and leases, regulation status, taxes, insurance, borrower experience, reserves, and target closing date." },
       { question: "Are AssetLift loans available for owner-occupied homes?", answer: "No. AssetLift's programs are business-purpose financing for non-owner-occupied investment properties only." },
     ],
-  }
+  },
   {
     cityName: "Albany",
     citySlug: "albany",
