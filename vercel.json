@@ -23,5 +23,6 @@
       "destination": "https://www.assetliftlending.com/:path*",
       "permanent": true
     }
-  ]
+  ],
+  "ignoreCommand": "bash scripts/vercel-ignore-build.sh"
 }
