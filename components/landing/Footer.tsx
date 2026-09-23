@@ -6,6 +6,11 @@ const FEATURED_MARKETS = [
   { label: "New York", href: "/lending/new-york" },
   { label: "New Jersey", href: "/lending/new-jersey" },
   { label: "Connecticut", href: "/lending/connecticut" },
+  { label: "Camden County, NJ", href: "/lending/new-jersey/camden-county" },
+  { label: "Cherry Hill, NJ", href: "/lending/new-jersey/cherry-hill" },
+  { label: "Pennsauken, NJ", href: "/lending/new-jersey/pennsauken" },
+  { label: "Camden, NJ", href: "/lending/new-jersey/camden" },
+  { label: "Brooklyn, NY", href: "/lending/new-york/brooklyn" },
   { label: "State Disclosures", href: "/state-disclosures" },
 ];
 
@@ -67,7 +72,7 @@ const Footer = () => {
                 <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
               </li>
               <li>
-                <Link href="/compare" className="hover:text-primary transition-colors">Compare</Link>
+                <Link href="/answers/asset-based-loan-companies-real-estate-investors" className="hover:text-primary transition-colors">Asset-Based Lenders</Link>
               </li>
               <li>
                 <Link href="/faq" className="hover:text-primary transition-colors">FAQ</Link>

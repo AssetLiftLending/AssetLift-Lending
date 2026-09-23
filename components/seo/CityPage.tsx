@@ -14,6 +14,7 @@ import type { CityData } from '@/lib/data/cities';
 
 interface CityPageProps {
   city: CityData;
+  nearby?: Array<{ label: string; href: string }>;
 }
 
 const PRIORITY_CITY_GUIDANCE: Record<
@@ -223,7 +224,7 @@ const PRIORITY_CITY_GUIDANCE: Record<
   },
 };
 
-export default function CityPage({ city }: CityPageProps) {
+export default function CityPage({ city, nearby = [] }: CityPageProps) {
   const cityGuidance = PRIORITY_CITY_GUIDANCE[`${city.stateSlug}/${city.citySlug}`];
 
   return (
@@ -551,6 +552,31 @@ export default function CityPage({ city }: CityPageProps) {
           </Accordion>
         </div>
       </section>
+
+      {nearby.length > 0 && (
+        <section className="py-12 md:py-16">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">More {city.stateName} markets we cover</h2>
+              <p className="text-muted-foreground mb-6">
+                Local lending pages for nearby {city.stateName} investor markets, plus the statewide hub.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {[...nearby, { label: `All ${city.stateName} lending`, href: `/lending/${city.stateSlug}` }].map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span>{link.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="py-16 md:py-24">

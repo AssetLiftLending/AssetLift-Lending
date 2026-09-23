@@ -159,7 +159,15 @@ export default async function CityLendingPage({ params }: Props) {
           ]}
         />
       </div>
-      <CityPage city={city} />
+      <CityPage
+        city={city}
+        nearby={CITIES.filter(
+          (c) =>
+            c.stateSlug === city.stateSlug &&
+            c.citySlug !== city.citySlug &&
+            shouldIndexCity(c.stateSlug, c.citySlug),
+        ).map((c) => ({ label: `${c.cityName}, ${c.stateAbbreviation}`, href: `/lending/${c.stateSlug}/${c.citySlug}` }))}
+      />
     </>
   );
 }
