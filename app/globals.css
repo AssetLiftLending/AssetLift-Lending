@@ -257,16 +257,16 @@
   opacity: 1 !important;
 }
 
-.nav-transparent nav > a,
-.nav-transparent nav > div > button,
-.nav-transparent nav a[aria-label="Call us"],
-.nav-transparent .md\:hidden button {
+.dark .nav-transparent nav > a,
+.dark .nav-transparent nav > div > button,
+.dark .nav-transparent nav a[aria-label="Call us"],
+.dark .nav-transparent .md\:hidden button {
   color: rgb(255 255 255 / 0.92);
 }
 
-.nav-transparent nav > a:hover,
-.nav-transparent nav > div > button:hover,
-.nav-transparent nav a[aria-label="Call us"]:hover {
+.dark .nav-transparent nav > a:hover,
+.dark .nav-transparent nav > div > button:hover,
+.dark .nav-transparent nav a[aria-label="Call us"]:hover {
   color: hsl(var(--primary));
 }
 
