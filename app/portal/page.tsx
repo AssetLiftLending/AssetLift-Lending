@@ -38,7 +38,7 @@ export default function PortalLoginPage() {
     <div className="min-h-screen bg-zinc-950 flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="flex justify-center mb-8">
-          <Logo size={48} />
+          <Logo size={48} surface="dark" />
         </div>
 
         <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
