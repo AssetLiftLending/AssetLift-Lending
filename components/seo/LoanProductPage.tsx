@@ -31,6 +31,9 @@ const RELATED_GUIDES: Record<
     { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
     { label: 'Borrower Package', href: '/resources/fix-and-flip-borrower-package' },
     { label: 'Fix and Flip vs BRRRR Strategy', href: '/compare/fix-and-flip-vs-brrrr-strategy' },
+    { label: 'Asset-Based Loan Companies for Investors', href: '/answers/asset-based-loan-companies-real-estate-investors' },
+    { label: 'Fix & Flip Loans in Camden County, NJ', href: '/lending/new-jersey/camden-county' },
+    { label: 'Fix & Flip Loans in Cherry Hill, NJ', href: '/lending/new-jersey/cherry-hill' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   'dscr-rental': [
@@ -44,6 +47,8 @@ const RELATED_GUIDES: Record<
     { label: 'Asset-Based Loan Companies for Investors', href: '/answers/asset-based-loan-companies-real-estate-investors' },
     { label: 'DSCR Loans in New York', href: '/lending/new-york/dscr-loans' },
     { label: 'DSCR Loans in New Jersey', href: '/lending/new-jersey/dscr-loans' },
+    { label: 'DSCR Loans in Camden, NJ', href: '/lending/new-jersey/camden' },
+    { label: 'DSCR Loans in Pennsauken, NJ', href: '/lending/new-jersey/pennsauken' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   bridge: [

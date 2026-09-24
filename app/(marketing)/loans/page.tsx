@@ -139,6 +139,28 @@ export default function LoansHubPage() {
             </div>
           </div>
 
+          {/* Investor resources */}
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Investor Resources</h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                { label: 'Asset-Based Loan Companies for Real Estate Investors', href: '/answers/asset-based-loan-companies-real-estate-investors' },
+                { label: 'Compare Lenders and Loan Options', href: '/compare' },
+                { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
+                { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
+              ].map((resource) => (
+                <Link
+                  key={resource.href}
+                  href={resource.href}
+                  className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <span className="font-medium">{resource.label}</span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0" />
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Fund Your Next Deal?</h2>

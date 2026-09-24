@@ -19,6 +19,7 @@ const FEATURED_CITY_SLUGS = [
   "union-county",
   "middlesex-county",
   "monmouth-county",
+  "ocean-county",
   "new-haven",
 ];
 
