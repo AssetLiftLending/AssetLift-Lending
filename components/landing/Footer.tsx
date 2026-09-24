@@ -11,6 +11,11 @@ const FEATURED_MARKETS = [
   { label: "Pennsauken, NJ", href: "/lending/new-jersey/pennsauken" },
   { label: "Camden, NJ", href: "/lending/new-jersey/camden" },
   { label: "Brooklyn, NY", href: "/lending/new-york/brooklyn" },
+  { label: "Nassau County, NY", href: "/lending/new-york/nassau-county" },
+  { label: "Yonkers, NY", href: "/lending/new-york/yonkers" },
+  { label: "Jersey City, NJ", href: "/lending/new-jersey/jersey-city" },
+  { label: "Newark, NJ", href: "/lending/new-jersey/newark" },
+  { label: "Ocean County, NJ", href: "/lending/new-jersey/ocean-county" },
   { label: "State Disclosures", href: "/state-disclosures" },
 ];
 
