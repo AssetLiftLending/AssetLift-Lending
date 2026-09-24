@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-23T13:25:29.567Z",
-  "anchorRotationIndex": 7,
-  "pageRotationIndex": 7,
+  "generatedAt": "2026-09-24T13:20:30.174Z",
+  "anchorRotationIndex": 6,
+  "pageRotationIndex": 9,
   "items": [
     {
       "platform": "Google Business Profile",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/dscr-loans",
-      "anchorTheme": "private lender for experienced investors",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/jersey-city",
+      "anchorTheme": "NJ DSCR loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Highest priority entity listing. Must be fully verified and kept active with NY/NJ investor lending language."
     },
     {
       "platform": "LLMs.txt / AI crawler reference",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/newark",
-      "anchorTheme": "AssetLift Lending",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/bergen-county",
+      "anchorTheme": "private lender for experienced investors",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Keep AI-readable entity, product, contact, and citation facts current for AI crawlers that inspect llms.txt-style files."
     },
     {
       "platform": "LLMs-full.txt / AI citation source",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/jersey-city",
-      "anchorTheme": "New York hard money lender",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/hudson-county",
+      "anchorTheme": "AssetLift Lending",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Maintain a comprehensive AI-readable site summary for systems that use web retrieval or citation-oriented crawling."
     },
     {
       "platform": "LinkedIn Company Page",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/bergen-county",
-      "anchorTheme": "New Jersey hard money lender",
+      "targetUrl": "https://www.assetliftlending.com/blog/how-experienced-flippers-package-deals-for-fast-approval",
+      "anchorTheme": "New York hard money lender",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Use company overview plus application link."
     }
