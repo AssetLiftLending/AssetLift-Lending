@@ -132,10 +132,17 @@ const ChatBot = () => {
     setMessages((prev) => [...prev, modelMsg]);
     setIsLoading(false);
 
-    if (contactState === 'none' && (cleanedText.toLowerCase().includes('email') || cleanedText.toLowerCase().includes('address'))) {
-      setContactState('asked_email');
-    } else if (contactState === 'asked_email' && (cleanedText.toLowerCase().includes('phone') || cleanedText.toLowerCase().includes('cell'))) {
-      setContactState('asked_phone');
+    // Only advance the contact-capture state on a real analyst reply. The
+    // connection-error fallback mentions "email" too, and letting it flip the
+    // state turns the input placeholder into "Enter your email..." after
+    // every failed answer.
+    const isConnectionFallback = cleanedText.startsWith('Connection issue');
+    if (!isConnectionFallback) {
+      if (contactState === 'none' && (cleanedText.toLowerCase().includes('email') || cleanedText.toLowerCase().includes('address'))) {
+        setContactState('asked_email');
+      } else if (contactState === 'asked_email' && (cleanedText.toLowerCase().includes('phone') || cleanedText.toLowerCase().includes('cell'))) {
+        setContactState('asked_phone');
+      }
     }
 
     if (cleanedText.toLowerCase().includes('summary') || cleanedText.toLowerCase().includes('loan amount') || hasEmail || hasPhone) {
