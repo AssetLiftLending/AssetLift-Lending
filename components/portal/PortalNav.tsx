@@ -24,7 +24,7 @@ export default function PortalNav() {
   return (
     <aside className="w-56 shrink-0 min-h-screen bg-zinc-900 border-r border-zinc-800 flex flex-col">
       <div className="h-16 flex items-center px-5 border-b border-zinc-800">
-        <Logo size={32} />
+        <Logo size={32} surface="dark" />
         <span className="ml-2 text-xs font-semibold text-zinc-400 uppercase tracking-widest">Broker Portal</span>
       </div>
 
