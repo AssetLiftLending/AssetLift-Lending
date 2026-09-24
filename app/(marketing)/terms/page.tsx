@@ -226,6 +226,42 @@ export default function TermsPage() {
             </section>
 
             <section>
+              <h2 className="text-2xl font-bold text-foreground mb-3">SMS/Text Messaging Terms</h2>
+              <p className="mb-3">
+                AssetLift Lending offers an optional text messaging program for customers who
+                request it. If you opt in - by checking the SMS consent box on our quote form or by
+                asking us by phone - we will text you about your loan inquiry, including application
+                updates, document requests, and appointment reminders.
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Message frequency varies based on your inquiry activity.</li>
+                <li>
+                  Message and data rates may apply. Contact your wireless carrier for details.
+                </li>
+                <li>
+                  You can cancel at any time: reply STOP to any message and we will stop texting
+                  you. You may also email info@assetliftlending.com to opt out.
+                </li>
+                <li>
+                  Reply HELP for help, or contact us at info@assetliftlending.com or (929) 639-2284.
+                </li>
+                <li>
+                  Consent to receive texts is not a condition of any loan, quote, or service from
+                  AssetLift Lending.
+                </li>
+                <li>Carriers are not liable for delayed or undelivered messages.</li>
+                <li>
+                  Our{' '}
+                  <Link href="/privacy" className="underline hover:text-primary transition-colors">
+                    Privacy Policy
+                  </Link>{' '}
+                  (assetliftlending.com/privacy) describes how we handle your information, including
+                  your mobile number.
+                </li>
+              </ul>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-bold text-foreground mb-3">Limitation of Liability</h2>
               <p>
                 To the fullest extent permitted by applicable law, AssetLift Lending and its

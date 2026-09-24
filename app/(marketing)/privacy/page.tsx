@@ -46,6 +46,16 @@ export default function PrivacyPage() {
                 </strong>{' '}
                 or otherwise agree to be texted.
               </p>
+              <p className="mt-3">
+                <strong className="text-foreground">Mobile information:</strong> If you opt in to
+                text messages (via the consent checkbox on our quote form or by phone), we collect
+                your mobile number and consent record (including timestamp) so we can send you
+                service-related texts about your inquiry, as described in our{' '}
+                <Link href="/terms" className="underline hover:text-foreground">
+                  SMS/Text Messaging Terms
+                </Link>
+                .
+              </p>
             </section>
 
             <section>
@@ -111,6 +121,13 @@ export default function PrivacyPage() {
                 promotional purposes. All the above categories exclude text messaging originator
                 opt-in data and consent; this information will not be shared with any third
                 parties.
+              </p>
+              <p className="mt-3">
+                No mobile information will be shared with third parties or affiliates for marketing
+                or promotional purposes. Text messaging originator opt-in data and consent will not
+                be shared with any third parties, except as needed with the vendors who deliver our
+                text messages (for example, our messaging service provider) and who are bound to use
+                it only for that purpose.
               </p>
             </section>
 
