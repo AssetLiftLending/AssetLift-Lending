@@ -6,6 +6,12 @@ export const PRIORITY_STATE_SLUGS = new Set(['new-york', 'new-jersey', 'connecti
 
 export const PRIORITY_CITY_PATHS = new Set([
   '/lending/new-jersey/camden-county',
+  '/lending/new-jersey/ocean-county',
+  '/lending/new-jersey/lakewood',
+  '/lending/new-jersey/toms-river',
+  '/lending/new-jersey/brick',
+  '/lending/new-jersey/jackson',
+  '/lending/new-jersey/howell',
   '/lending/new-jersey/camden',
   '/lending/new-jersey/cherry-hill',
   '/lending/new-jersey/pennsauken',

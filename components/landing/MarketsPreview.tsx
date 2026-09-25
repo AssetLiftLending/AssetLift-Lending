@@ -20,6 +20,7 @@ const FEATURED_CITY_SLUGS = [
   "middlesex-county",
   "monmouth-county",
   "ocean-county",
+  "lakewood",
   "new-haven",
 ];
 
