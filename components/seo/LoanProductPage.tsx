@@ -34,6 +34,8 @@ const RELATED_GUIDES: Record<
     { label: 'Asset-Based Loan Companies for Investors', href: '/answers/asset-based-loan-companies-real-estate-investors' },
     { label: 'Fix & Flip Loans in Camden County, NJ', href: '/lending/new-jersey/camden-county' },
     { label: 'Fix & Flip Loans in Cherry Hill, NJ', href: '/lending/new-jersey/cherry-hill' },
+    { label: 'Fix & Flip Loans in Lakewood, NJ', href: '/lending/new-jersey/lakewood' },
+    { label: 'Fix & Flip Loans in Freehold, NJ', href: '/lending/new-jersey/freehold' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   'dscr-rental': [
@@ -49,6 +51,8 @@ const RELATED_GUIDES: Record<
     { label: 'DSCR Loans in New Jersey', href: '/lending/new-jersey/dscr-loans' },
     { label: 'DSCR Loans in Camden, NJ', href: '/lending/new-jersey/camden' },
     { label: 'DSCR Loans in Pennsauken, NJ', href: '/lending/new-jersey/pennsauken' },
+    { label: 'DSCR Loans in Toms River, NJ', href: '/lending/new-jersey/toms-river' },
+    { label: 'DSCR Loans in Edison, NJ', href: '/lending/new-jersey/edison' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   bridge: [
@@ -58,6 +62,8 @@ const RELATED_GUIDES: Record<
     { label: 'BRRRR to DSCR Refinance Guide', href: '/blog/brrrr-refinance-into-dscr-loan' },
     { label: 'Hard Money Prepayment Penalties', href: '/blog/hard-money-lender-prepayment-penalty' },
     { label: 'How It Works', href: '/how-it-works' },
+    { label: 'Bridge Loans in Red Bank, NJ', href: '/lending/new-jersey/red-bank' },
+    { label: 'Bridge Loans in New Brunswick, NJ', href: '/lending/new-jersey/new-brunswick' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   'ground-up-construction': [
@@ -66,6 +72,8 @@ const RELATED_GUIDES: Record<
     { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
     { label: 'Hard Money Loan Rates 2026', href: '/blog/hard-money-loan-rates-2026' },
     { label: 'How It Works', href: '/how-it-works' },
+    { label: 'Construction Loans in Howell, NJ', href: '/lending/new-jersey/howell' },
+    { label: 'Construction Loans in Woodbridge, NJ', href: '/lending/new-jersey/woodbridge' },
     { label: 'View all loan programs', href: '/loans' },
   ],
 };
