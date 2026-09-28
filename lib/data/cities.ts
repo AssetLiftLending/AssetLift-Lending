@@ -3725,6 +3725,8 @@ export const CITIES: CityData[] = [
       { question: "What should I send for a Gloucester County fix-and-flip quote?", answer: "Send the property address, purchase contract or target price, line-item rehab budget, current photos, after-repair value support from nearby comparable sales, borrower experience, liquidity, and the target closing date. A complete file gets a more useful answer than an address alone." },
       { question: "Can a Gloucester County rental qualify for a DSCR loan?", answer: "Yes. A stabilized non-owner-occupied rental can qualify when documented or supported market rent covers the proposed payment under the applicable program. Taxes, insurance, HOA dues, value, credit, reserves, entity documents, and property condition also affect the result." },
       { question: "Does AssetLift use countywide comps for Gloucester County deals?", answer: "No. Gloucester County includes markets with different values and rental profiles. Underwriting should use nearby comparable sales or rents that match the municipality, neighborhood, property type, unit count, condition, and timing of the subject property." },
+    ],
+  },
   // Texas counties (staged build - publish gated on NJ/NY indexing)
   {
     cityName: "Harris County",
