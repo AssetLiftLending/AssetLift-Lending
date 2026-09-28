@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact AssetLift Lending | Hard Money Loan Quotes',
+  title: 'Contact | Hard Money Loan Quotes',
   description:
     'Contact AssetLift Lending for fast hard money loan quotes on fix and flip, DSCR, bridge, construction, and commercial lending deals. Call, email, or apply online today.',
   path: '/contact',

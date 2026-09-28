@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
-  title: 'How Funding Works | Direct Lending, Brokered Loans, and Capital Partners',
+  title: 'How Funding Works | Direct & Brokered',
   description:
     'Learn how AssetLift Lending handles direct private lending, brokered transactions, and capital-partner execution for business-purpose real estate investment loans.',
   path: '/how-funding-works',
