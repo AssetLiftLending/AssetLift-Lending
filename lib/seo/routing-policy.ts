@@ -25,7 +25,6 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/new-jersey/pennsauken',
   '/lending/new-jersey/jersey-city',
   '/lending/new-jersey/newark',
-  '/lending/new-jersey/ocean-county',
   '/lending/new-york/nassau-county',
   '/lending/new-york/yonkers',
   '/lending/new-york/brooklyn',
