@@ -11,11 +11,15 @@ import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = createMetadata({
-  title: "Private Real Estate Lending for Investors",
+  title: "Hard Money & Private Real Estate Lender | AssetLift Lending",
   description:
-    "Private lending for real estate investors. Fix and flip, DSCR rental, bridge, and ground-up construction loans for business-purpose investment properties.",
+    "Hard money and private lending for real estate investors - fix & flip, DSCR, bridge, and construction loans in Camden County, South Jersey, and nationwide.",
   path: "/",
   keywords: [
+    "hard money lender",
+    "hard money lender new jersey",
+    "private money lender",
+    "hard money loans camden county nj",
     "fix and flip loans",
     "DSCR loans",
     "experienced real estate investor loans",
@@ -69,7 +73,11 @@ export default function HomePage() {
       addressRegion: 'NY',
       addressCountry: 'US',
     },
-    areaServed: { '@type': 'Country', name: 'United States' },
+    areaServed: [
+      { '@type': 'Country', name: 'United States' },
+      { '@type': 'State', name: 'New Jersey' },
+      { '@type': 'AdministrativeArea', name: 'Camden County, NJ' },
+    ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',

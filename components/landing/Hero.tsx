@@ -180,12 +180,13 @@ export default function Hero() {
               Private lending for real estate investors
             </p>
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:mb-6 sm:text-5xl md:text-6xl">
-              Capital That Keeps Investor Deals Moving
+              Private Money &amp; Hard Money Lender for Real Estate Investors
             </h1>
             <p className="mb-4 max-w-2xl text-base text-white/85 sm:text-lg md:text-xl">
-              Fix &amp; flip, DSCR rental, bridge, and ground-up construction financing for
-              business-purpose investment properties. Send the deal and get preliminary options
-              within 24 hours.
+              Capital that keeps investor deals moving: fix &amp; flip, DSCR rental, bridge, and
+              ground-up construction financing for business-purpose investment properties.
+              Serving Camden County and South Jersey first, lending nationwide. Send the deal
+              and get preliminary options within 24 hours.
             </p>
             <p className="mb-6 max-w-2xl text-xs text-white/75 sm:text-sm md:text-base">
               Maximum leverage depends on credit, experience, liquidity, property, rent support,
