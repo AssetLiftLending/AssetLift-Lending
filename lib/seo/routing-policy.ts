@@ -206,6 +206,10 @@ export const INDEXABLE_COMPARISON_SLUGS = new Set([
   'fix-and-flip-vs-brrrr-strategy',
   'dscr-loans-vs-conventional-rental-loans',
   'bridge-loans-vs-hard-money-loans',
+  'assetlift-alternatives-kiavi',
+  'assetlift-alternatives-lima-one',
+  'assetlift-alternatives-rcn-capital',
+  'assetlift-alternatives-visio-lending',
 ]);
 
 export const INDEXABLE_ANSWER_SLUGS = new Set([
