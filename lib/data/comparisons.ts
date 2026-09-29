@@ -1919,6 +1919,246 @@ export const COMPARISONS: Comparison[] = [
       },
     ],
   },
+
+  {
+    "slug": "assetlift-alternatives-kiavi",
+  "title": "AssetLift Lending vs Kiavi Alternatives | AssetLift Lending",
+  "description": "Compare Kiavi and AssetLift Lending for real estate investment financing. Review product fit, service approach, and what to verify before choosing a lender.",
+  "publishedAt": "2026-09-29",
+  "heroTitle": "AssetLift Lending vs Kiavi: Alternatives and Fit",
+  "introText": "Kiavi is one option real estate investors may compare when arranging financing. This guide summarizes publicly stated product scope and helps borrowers evaluate whether AssetLift Lending or another lender fits a specific property and exit plan. It is a factual starting point, not a ranking or recommendation; lender terms and availability can change.",
+  "comparisonTable": [
+    {
+      "feature": "Published product focus",
+      "optionA": "AssetLift Lending: fix-and-flip, bridge, DSCR rental, and ground-up construction financing for eligible business-purpose investment properties.",
+      "optionB": "Fix-and-flip, bridge, and rental/DSCR loan options"
+    },
+    {
+      "feature": "How to assess fit",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionB": "Digital application and property-based underwriting"
+    },
+    {
+      "feature": "Geographic eligibility",
+      "optionA": "AssetLift describes coverage in 46 states; verify current eligibility for the property and product.",
+      "optionB": "Published coverage includes New Jersey"
+    },
+    {
+      "feature": "Terms and approval",
+      "optionA": "Available terms depend on underwriting, property, borrower, program, and transaction.",
+      "optionB": "Current product terms and qualification are set by Kiavi and vary by file."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What Kiavi publicly says it offers (source: https://www.kiavi.com/)",
+      "content": "Kiavi’s public pages describe fix-and-flip, bridge, rental, and new-construction financing, list New Jersey among states served, and describe an online platform and property-based underwriting. Sources: https://www.kiavi.com/states-kiavi-lends-in/ and https://www.kiavi.com/."
+    },
+    {
+      "heading": "Compare the deal, not just the headline",
+      "content": "Before choosing, compare the same property and financing need across lenders: eligible property type and location, purchase or as-is valuation, rehab or construction funding and draw rules, leverage basis, total fees, term and extension options, prepayment terms, reserves, servicing, and realistic closing conditions. Public marketing pages are not binding offers; request a current written term sheet for your exact scenario."
+    },
+    {
+      "heading": "How AssetLift Lending fits into the comparison",
+      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+    }
+  ],
+  "verdict": "There is no universal winner. Compare Kiavi’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
+  "faqs": [
+    {
+      "question": "Is Kiavi a direct competitor to AssetLift Lending?",
+      "answer": "Kiavi publicly offers real estate investor financing products that overlap with some AssetLift Lending programs. Product availability and exact overlap depend on property, state, and program."
+    },
+    {
+      "question": "How do I compare Kiavi with AssetLift Lending?",
+      "answer": "Request current written terms for the same property and compare eligibility, loan basis, leverage, project funding, all fees, term, prepayment conditions, reserves, servicing, and closing requirements."
+    },
+    {
+      "question": "Does AssetLift Lending guarantee better terms than Kiavi?",
+      "answer": "No. Terms are transaction-specific and subject to underwriting; this guide is for comparison and does not promise approval, pricing, leverage, or timing."
+    }
+  ]
+}
+  ,
+  {
+    "slug": "assetlift-alternatives-lima-one",
+  "title": "AssetLift Lending vs Lima One Capital Alternatives | AssetLift Lending",
+  "description": "Compare Lima One Capital and AssetLift Lending for real estate investment financing. Review product fit, service approach, and what to verify before choosing a lender.",
+  "publishedAt": "2026-09-29",
+  "heroTitle": "AssetLift Lending vs Lima One Capital: Alternatives and Fit",
+  "introText": "Lima One Capital is one option real estate investors may compare when arranging financing. This guide summarizes publicly stated product scope and helps borrowers evaluate whether AssetLift Lending or another lender fits a specific property and exit plan. It is a factual starting point, not a ranking or recommendation; lender terms and availability can change.",
+  "comparisonTable": [
+    {
+      "feature": "Published product focus",
+      "optionA": "AssetLift Lending: fix-and-flip, bridge, DSCR rental, and ground-up construction financing for eligible business-purpose investment properties.",
+      "optionB": "Fix-and-flip, bridge, new construction, rental, multifamily"
+    },
+    {
+      "feature": "How to assess fit",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionB": "Broad published product menu"
+    },
+    {
+      "feature": "Geographic eligibility",
+      "optionA": "AssetLift describes coverage in 46 states; verify current eligibility for the property and product.",
+      "optionB": "New Jersey-specific page and coverage"
+    },
+    {
+      "feature": "Terms and approval",
+      "optionA": "Available terms depend on underwriting, property, borrower, program, and transaction.",
+      "optionB": "Current terms and qualification are set by Lima One and vary by program and file."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What Lima One Capital publicly says it offers (source: https://www.limaone.com/new-jersey-hard-money-lender/)",
+      "content": "Lima One Capital has a New Jersey investor lending page and lists fix-and-flip, Bridge Plus, new-construction, rental, and multifamily products. Source: https://www.limaone.com/new-jersey-hard-money-lender/."
+    },
+    {
+      "heading": "Compare the deal, not just the headline",
+      "content": "Before choosing, compare the same property and financing need across lenders: eligible property type and location, purchase or as-is valuation, rehab or construction funding and draw rules, leverage basis, total fees, term and extension options, prepayment terms, reserves, servicing, and realistic closing conditions. Public marketing pages are not binding offers; request a current written term sheet for your exact scenario."
+    },
+    {
+      "heading": "How AssetLift Lending fits into the comparison",
+      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+    }
+  ],
+  "verdict": "There is no universal winner. Compare Lima One Capital’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
+  "faqs": [
+    {
+      "question": "Is Lima One Capital a direct competitor to AssetLift Lending?",
+      "answer": "Lima One Capital publicly offers real estate investor financing products that overlap with some AssetLift Lending programs. Product availability and exact overlap depend on property, state, and program."
+    },
+    {
+      "question": "How do I compare Lima One Capital with AssetLift Lending?",
+      "answer": "Request current written terms for the same property and compare eligibility, loan basis, leverage, project funding, all fees, term, prepayment conditions, reserves, servicing, and closing requirements."
+    },
+    {
+      "question": "Does AssetLift Lending guarantee better terms than Lima One Capital?",
+      "answer": "No. Terms are transaction-specific and subject to underwriting; this guide is for comparison and does not promise approval, pricing, leverage, or timing."
+    }
+  ]
+}
+  ,
+  {
+    "slug": "assetlift-alternatives-rcn-capital",
+  "title": "AssetLift Lending vs RCN Capital Alternatives | AssetLift Lending",
+  "description": "Compare RCN Capital and AssetLift Lending for real estate investment financing. Review product fit, service approach, and what to verify before choosing a lender.",
+  "publishedAt": "2026-09-29",
+  "heroTitle": "AssetLift Lending vs RCN Capital: Alternatives and Fit",
+  "introText": "RCN Capital is one option real estate investors may compare when arranging financing. This guide summarizes publicly stated product scope and helps borrowers evaluate whether AssetLift Lending or another lender fits a specific property and exit plan. It is a factual starting point, not a ranking or recommendation; lender terms and availability can change.",
+  "comparisonTable": [
+    {
+      "feature": "Published product focus",
+      "optionA": "AssetLift Lending: fix-and-flip, bridge, DSCR rental, and ground-up construction financing for eligible business-purpose investment properties.",
+      "optionB": "Fix-and-flip, bridge, rental/DSCR, new construction"
+    },
+    {
+      "feature": "How to assess fit",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionB": "Published program terms by product"
+    },
+    {
+      "feature": "Geographic eligibility",
+      "optionA": "AssetLift describes coverage in 46 states; verify current eligibility for the property and product.",
+      "optionB": "Verify New Jersey eligibility with RCN for the property and program"
+    },
+    {
+      "feature": "Terms and approval",
+      "optionA": "Available terms depend on underwriting, property, borrower, program, and transaction.",
+      "optionB": "Current terms and qualification are set by RCN and vary by program and file."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What RCN Capital publicly says it offers (source: https://rcncapital.com/loan-programs)",
+      "content": "RCN Capital publishes fix-and-flip, bridge, rental, and new-construction loan programs. Its program pages describe property, leverage, and borrower requirements by product. Source: https://rcncapital.com/loan-programs."
+    },
+    {
+      "heading": "Compare the deal, not just the headline",
+      "content": "Before choosing, compare the same property and financing need across lenders: eligible property type and location, purchase or as-is valuation, rehab or construction funding and draw rules, leverage basis, total fees, term and extension options, prepayment terms, reserves, servicing, and realistic closing conditions. Public marketing pages are not binding offers; request a current written term sheet for your exact scenario."
+    },
+    {
+      "heading": "How AssetLift Lending fits into the comparison",
+      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+    }
+  ],
+  "verdict": "There is no universal winner. Compare RCN Capital’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
+  "faqs": [
+    {
+      "question": "Is RCN Capital a direct competitor to AssetLift Lending?",
+      "answer": "RCN Capital publicly offers real estate investor financing products that overlap with some AssetLift Lending programs. Product availability and exact overlap depend on property, state, and program."
+    },
+    {
+      "question": "How do I compare RCN Capital with AssetLift Lending?",
+      "answer": "Request current written terms for the same property and compare eligibility, loan basis, leverage, project funding, all fees, term, prepayment conditions, reserves, servicing, and closing requirements."
+    },
+    {
+      "question": "Does AssetLift Lending guarantee better terms than RCN Capital?",
+      "answer": "No. Terms are transaction-specific and subject to underwriting; this guide is for comparison and does not promise approval, pricing, leverage, or timing."
+    }
+  ]
+}
+  ,
+  {
+    "slug": "assetlift-alternatives-visio-lending",
+  "title": "AssetLift Lending vs Visio Lending Alternatives | AssetLift Lending",
+  "description": "Compare Visio Lending and AssetLift Lending for real estate investment financing. Review product fit, service approach, and what to verify before choosing a lender.",
+  "publishedAt": "2026-09-29",
+  "heroTitle": "AssetLift Lending vs Visio Lending: Alternatives and Fit",
+  "introText": "Visio Lending is one option real estate investors may compare when arranging financing. This guide summarizes publicly stated product scope and helps borrowers evaluate whether AssetLift Lending or another lender fits a specific property and exit plan. It is a factual starting point, not a ranking or recommendation; lender terms and availability can change.",
+  "comparisonTable": [
+    {
+      "feature": "Published product focus",
+      "optionA": "AssetLift Lending: fix-and-flip, bridge, DSCR rental, and ground-up construction financing for eligible business-purpose investment properties.",
+      "optionB": "Long-term rental and short-term rental financing"
+    },
+    {
+      "feature": "How to assess fit",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionB": "Specialized rental focus"
+    },
+    {
+      "feature": "Geographic eligibility",
+      "optionA": "AssetLift describes coverage in 46 states; verify current eligibility for the property and product.",
+      "optionB": "Confirm New Jersey property and product eligibility directly"
+    },
+    {
+      "feature": "Terms and approval",
+      "optionA": "Available terms depend on underwriting, property, borrower, program, and transaction.",
+      "optionB": "Current terms and qualification are set by Visio and vary by program and file."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What Visio Lending publicly says it offers (source: https://visiolending.com/services/)",
+      "content": "Visio Lending focuses on rental-property financing, including long-term and short-term rental products. Its services page describes qualification based on property cash flow rather than personal income. Source: https://visiolending.com/services/."
+    },
+    {
+      "heading": "Compare the deal, not just the headline",
+      "content": "Before choosing, compare the same property and financing need across lenders: eligible property type and location, purchase or as-is valuation, rehab or construction funding and draw rules, leverage basis, total fees, term and extension options, prepayment terms, reserves, servicing, and realistic closing conditions. Public marketing pages are not binding offers; request a current written term sheet for your exact scenario."
+    },
+    {
+      "heading": "How AssetLift Lending fits into the comparison",
+      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+    }
+  ],
+  "verdict": "There is no universal winner. Compare Visio Lending’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
+  "faqs": [
+    {
+      "question": "Is Visio Lending a direct competitor to AssetLift Lending?",
+      "answer": "Visio Lending publicly offers real estate investor financing products that overlap with some AssetLift Lending programs. Product availability and exact overlap depend on property, state, and program."
+    },
+    {
+      "question": "How do I compare Visio Lending with AssetLift Lending?",
+      "answer": "Request current written terms for the same property and compare eligibility, loan basis, leverage, project funding, all fees, term, prepayment conditions, reserves, servicing, and closing requirements."
+    },
+    {
+      "question": "Does AssetLift Lending guarantee better terms than Visio Lending?",
+      "answer": "No. Terms are transaction-specific and subject to underwriting; this guide is for comparison and does not promise approval, pricing, leverage, or timing."
+    }
+  ]
+}
 ];
 
 
