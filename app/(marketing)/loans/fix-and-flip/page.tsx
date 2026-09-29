@@ -8,9 +8,9 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'fix-and-flip')!;
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fix & Flip Loans | Up to 95% LTC on Purchase',
+  title: 'Fix and Flip Loans | Up to 95% LTC, 100% Rehab',
   description:
-    'Fix and flip loans with up to 95% LTC on the purchase and 100% rehab funding. Close in as fast as 5 business days. 46 states.',
+    'Fix and flip loans up to 95% LTC on purchase and 100% rehab funding. Close in as fast as 5 business days. Business-purpose, 46 states.',
   path: '/loans/fix-and-flip',
 });
 

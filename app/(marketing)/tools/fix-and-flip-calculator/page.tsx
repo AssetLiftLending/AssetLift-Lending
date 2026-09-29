@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FlipCalculator from './FlipCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fix and Flip Loan Calculator | Costs & Profit',
+  title: 'Fix and Flip Calculator | Rehab Costs, Profit & MAO',
   description:
-    'Calculate purchase, rehab, financing, holding, selling costs, and projected flip profit. Review the deal, then request fix-and-flip loan terms.',
+    'Free fix and flip calculator: purchase, rehab, financing, holding, and selling costs, plus projected profit and max allowable offer. Then request loan terms.',
   path: '/tools/fix-and-flip-calculator',
 });
 

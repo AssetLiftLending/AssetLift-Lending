@@ -8,9 +8,9 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'ground-up-construction')!;
 
 export const metadata: Metadata = createMetadata({
-  title: 'Ground-Up Construction Financing for Investors',
+  title: 'Ground Up Construction Loans | Financing for Investors',
   description:
-    'Finance land acquisition and vertical construction for non-owner-occupied investment projects. See required plans, budget, permits, experience, and draws.',
+    'Ground up construction loans for investors: land acquisition and vertical construction financing with draw schedules. Business-purpose, non-owner-occupied projects.',
   path: '/loans/ground-up-construction',
 });
 
