@@ -1,66 +1,76 @@
 {
-  "generatedAt": "2026-09-28T16:32:19.602Z",
+  "generatedAt": "2026-09-29T14:40:59.981Z",
   "connected": true,
-  "summary": "14 prioritized actions from real Search Console demand (top priority: Hawaii).",
+  "summary": "18 prioritized actions from real Search Console demand (top priority: /).",
   "items": [
+    {
+      "type": "improve-meta",
+      "target": "/",
+      "category": "General",
+      "priority": 614,
+      "impressions": 307,
+      "position": 19.7,
+      "rationale": "307 impressions at position 19.7 but only 6 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
     {
       "type": "build-demand-page",
       "target": "Hawaii",
       "category": "Geo",
-      "priority": 388,
-      "impressions": 388,
+      "priority": 356,
+      "impressions": 356,
       "position": 0,
-      "rationale": "388 impressions across 20 queries mention Hawaii.",
+      "rationale": "356 impressions across 19 queries mention Hawaii.",
       "action": "Add genuine Hawaii market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "build-demand-page",
       "target": "North Carolina",
       "category": "Geo",
-      "priority": 232,
-      "impressions": 232,
+      "priority": 222,
+      "impressions": 222,
       "position": 0,
-      "rationale": "232 impressions across 10 queries mention North Carolina.",
+      "rationale": "222 impressions across 10 queries mention North Carolina.",
       "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 217,
-      "impressions": 217,
+      "priority": 208,
+      "impressions": 208,
       "position": 0,
-      "rationale": "217 impressions across 13 queries mention Connecticut.",
+      "rationale": "208 impressions across 14 queries mention Connecticut.",
       "action": "Add genuine Connecticut market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 217,
-      "impressions": 217,
+      "priority": 206,
+      "impressions": 206,
       "position": 0,
-      "rationale": "217 impressions across 11 queries mention New York.",
+      "rationale": "206 impressions across 11 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 169,
-      "impressions": 169,
+      "priority": 171,
+      "impressions": 171,
       "position": 0,
-      "rationale": "169 impressions across 11 queries mention New Jersey.",
+      "rationale": "171 impressions across 11 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/contact",
       "category": "General",
-      "priority": 160,
-      "impressions": 80,
-      "position": 14.3,
-      "rationale": "80 impressions at position 14.3 but only 0 clicks.",
+      "priority": 158,
+      "impressions": 79,
+      "position": 14.5,
+      "rationale": "79 impressions at position 14.5 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -77,10 +87,10 @@
       "type": "improve-meta",
       "target": "/blog/dscr-loan-llc-vs-personal-name",
       "category": "DSCR / Rental",
-      "priority": 64,
-      "impressions": 32,
-      "position": 8,
-      "rationale": "32 impressions at position 8 but only 0 clicks.",
+      "priority": 62,
+      "impressions": 31,
+      "position": 7.9,
+      "rationale": "31 impressions at position 7.9 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -104,14 +114,14 @@
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
-      "type": "build-demand-page",
-      "target": "Colorado",
-      "category": "Geo",
-      "priority": 44,
-      "impressions": 44,
-      "position": 0,
-      "rationale": "44 impressions across 4 queries mention Colorado.",
-      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "type": "improve-meta",
+      "target": "/lending/new-york/nassau-county",
+      "category": "General",
+      "priority": 50,
+      "impressions": 25,
+      "position": 18.4,
+      "rationale": "25 impressions at position 18.4 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
@@ -124,6 +134,16 @@
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
+      "type": "build-demand-page",
+      "target": "Colorado",
+      "category": "Geo",
+      "priority": 31,
+      "impressions": 31,
+      "position": 0,
+      "rationale": "31 impressions across 3 queries mention Colorado.",
+      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
       "type": "add-internal-links",
       "target": "debt service coverage ratio calculator",
       "category": "General",
@@ -131,6 +151,26 @@
       "impressions": 15,
       "position": 7.6,
       "rationale": "Ranking at position 7.6 with 15 impressions — within striking distance of page 1.",
+      "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+    },
+    {
+      "type": "expand-content",
+      "target": "fix and flip loans hawaii",
+      "category": "Fix & Flip",
+      "priority": 23,
+      "impressions": 15,
+      "position": 18.9,
+      "rationale": "Ranking at position 18.9 with 15 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "add-internal-links",
+      "target": "asheville hard money lenders",
+      "category": "Hard Money",
+      "priority": 12,
+      "impressions": 8,
+      "position": 5.1,
+      "rationale": "Ranking at position 5.1 with 8 impressions — within striking distance of page 1.",
       "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
     },
     {
