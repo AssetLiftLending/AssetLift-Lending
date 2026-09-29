@@ -4,7 +4,7 @@ import { createMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
-const title = 'Asset-Based Lending for Real Estate Investors | AssetLift Lending';
+const title = 'Asset-Based Lending for Real Estate Investors';
 const description = 'Asset-based real estate loans for non-owner-occupied investment properties. Compare fix-and-flip, bridge, DSCR rental, and ground-up construction financing from AssetLift Lending.';
 const pageUrl = 'https://www.assetliftlending.com/loans/asset-based-lending';
 
