@@ -333,3 +333,10 @@
     color: black !important;
   }
 }
+
+/* Phones: keep the chat widget above the sticky Call / Text / Get Terms bar. */
+@media (max-width: 767px) {
+  body[data-sticky-cta] .chatbot-root {
+    bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  }
+}

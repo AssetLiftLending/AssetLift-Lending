@@ -157,7 +157,7 @@ const ChatBot = () => {
   /* =========== Deal Analyst Chat Panel =========== */
   if (chatOpen) {
     return (
-      <div className="fixed bottom-3 right-3 z-50 flex flex-col items-end sm:bottom-6 sm:right-6">
+      <div className="chatbot-root fixed bottom-3 right-3 z-50 flex flex-col items-end sm:bottom-6 sm:right-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -270,7 +270,7 @@ const ChatBot = () => {
 
   /* =========== Parent Bubble + Expandable Menu =========== */
   return (
-    <div className="fixed bottom-3 right-3 z-50 flex flex-col items-end gap-2 sm:bottom-6 sm:right-6 sm:gap-3">
+    <div className="chatbot-root fixed bottom-3 right-3 z-50 flex flex-col items-end gap-2 sm:bottom-6 sm:right-6 sm:gap-3">
       <AnimatePresence>
         {menuOpen && (
           <motion.div
