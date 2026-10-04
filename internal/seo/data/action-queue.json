@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:07:33.653Z",
+  "generatedAt": "2026-10-04T13:46:42.695Z",
   "connected": true,
   "summary": "24 prioritized actions from real Search Console demand (top priority: /).",
   "items": [
@@ -7,70 +7,70 @@
       "type": "improve-meta",
       "target": "/",
       "category": "General",
-      "priority": 502,
-      "impressions": 251,
-      "position": 18.2,
-      "rationale": "251 impressions at position 18.2 but only 3 clicks.",
+      "priority": 472,
+      "impressions": 236,
+      "position": 17.8,
+      "rationale": "236 impressions at position 17.8 but only 3 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "Hawaii",
       "category": "Geo",
-      "priority": 241,
-      "impressions": 241,
+      "priority": 207,
+      "impressions": 207,
       "position": 0,
-      "rationale": "241 impressions across 16 queries mention Hawaii.",
+      "rationale": "207 impressions across 14 queries mention Hawaii.",
       "action": "Add genuine Hawaii market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 182,
-      "impressions": 182,
+      "priority": 183,
+      "impressions": 183,
       "position": 0,
-      "rationale": "182 impressions across 13 queries mention New Jersey.",
+      "rationale": "183 impressions across 14 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "North Carolina",
-      "category": "Geo",
-      "priority": 178,
-      "impressions": 178,
-      "position": 0,
-      "rationale": "178 impressions across 8 queries mention North Carolina.",
-      "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 176,
-      "impressions": 176,
+      "priority": 171,
+      "impressions": 171,
       "position": 0,
-      "rationale": "176 impressions across 13 queries mention Connecticut.",
+      "rationale": "171 impressions across 13 queries mention Connecticut.",
       "action": "Add genuine Connecticut market coverage (state page plus top-metro city pages) to capture this demand."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "North Carolina",
+      "category": "Geo",
+      "priority": 169,
+      "impressions": 169,
+      "position": 0,
+      "rationale": "169 impressions across 8 queries mention North Carolina.",
+      "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 168,
-      "impressions": 168,
+      "priority": 162,
+      "impressions": 162,
       "position": 0,
-      "rationale": "168 impressions across 10 queries mention New York.",
+      "rationale": "162 impressions across 10 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/contact",
       "category": "General",
-      "priority": 148,
-      "impressions": 74,
+      "priority": 144,
+      "impressions": 72,
       "position": 14.1,
-      "rationale": "74 impressions at position 14.1 but only 0 clicks.",
+      "rationale": "72 impressions at position 14.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -147,20 +147,10 @@
       "type": "expand-content",
       "target": "equipment financing hawaii",
       "category": "General",
-      "priority": 24,
-      "impressions": 16,
-      "position": 15.5,
-      "rationale": "Ranking at position 15.5 with 16 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
-      "target": "fix and flip loan hawaii",
-      "category": "Fix & Flip",
       "priority": 23,
       "impressions": 15,
-      "position": 18.8,
-      "rationale": "Ranking at position 18.8 with 15 impressions — within striking distance of page 1.",
+      "position": 16.5,
+      "rationale": "Ranking at position 16.5 with 15 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -175,12 +165,12 @@
     },
     {
       "type": "expand-content",
-      "target": "fix and flip loans hawaii",
+      "target": "fix and flip loan hawaii",
       "category": "Fix & Flip",
-      "priority": 17,
-      "impressions": 11,
-      "position": 17.8,
-      "rationale": "Ranking at position 17.8 with 11 impressions — within striking distance of page 1.",
+      "priority": 18,
+      "impressions": 12,
+      "position": 17.7,
+      "rationale": "Ranking at position 17.7 with 12 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -194,13 +184,23 @@
       "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
     },
     {
+      "type": "expand-content",
+      "target": "fix and flip loans hawaii",
+      "category": "Fix & Flip",
+      "priority": 15,
+      "impressions": 10,
+      "position": 18.9,
+      "rationale": "Ranking at position 18.9 with 10 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
       "type": "build-demand-page",
       "target": "Washington",
       "category": "Geo",
-      "priority": 14,
-      "impressions": 14,
+      "priority": 13,
+      "impressions": 13,
       "position": 0,
-      "rationale": "14 impressions across 1 queries mention Washington.",
+      "rationale": "13 impressions across 1 queries mention Washington.",
       "action": "Strengthen the Washington state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
