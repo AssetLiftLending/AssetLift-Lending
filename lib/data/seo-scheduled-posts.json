@@ -4390,5 +4390,59 @@
         "answer": "AssetLift Lending provides DSCR loans for ITIN borrowers in 46 U.S. states. We currently do not lend in Alaska, North Dakota, South Dakota, or Vermont. Always verify state availability for your specific property location."
       }
     ]
+  },
+  {
+    "slug": "dscr-loan-duplex-triplex-fourplex",
+    "title": "Unlock Multifamily Potential with a DSCR Loan for Duplex, Triplex, or Fourplex",
+    "description": "Discover how a DSCR loan for a duplex, triplex, or fourplex can expand your real estate portfolio without income verification. Learn LTVs, rates, and...",
+    "publishedAt": "2026-10-04T15:15:11.356Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "DSCR Rental",
+    "tags": [
+      "DSCR loan",
+      "duplex",
+      "triplex",
+      "fourplex",
+      "multifamily investment"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "Why DSCR Loans Are a Game Changer for 2-4 Unit Properties",
+        "content": "For the savvy real estate investor, a DSCR loan for a duplex, triplex, or fourplex isn't just another financing option; it's a strategic tool. Unlike conventional mortgages that scrutinize personal income, DSCR loans focus squarely on the property's ability to generate sufficient rental income to cover its debt service. This means less paperwork for you, faster approvals, and the ability to scale your portfolio without hitting personal income ceilings. We're talking about LTVs up to 85% on purchases and 80% on cash-out refinances, with rates starting as low as 5.85% for well-qualified borrowers. Imagine acquiring a cash-flowing triplex in Phoenix, Arizona, with just 15% down, and having the loan approved based on projected rents rather than your tax returns. This flexibility allows experienced investors to rapidly expand their holdings across the 46 states we serve, from Florida to California."
+      },
+      {
+        "heading": "Understanding the DSCR Metric: Your Path to Approval",
+        "content": "The Debt Service Coverage Ratio (DSCR) is the cornerstone of these loans. It’s a straightforward calculation: Net Operating Income (NOI) divided by your total debt service (principal and interest). Lenders typically look for a DSCR of 1.20x or higher, meaning the property's NOI is 120% of the monthly mortgage payment. For example, if a fourplex generates $6,000 in monthly NOI and its proposed mortgage payment is $5,000, your DSCR would be 1.20x ($6,000 / $5,000). A stronger DSCR, say 1.30x or 1.40x, often translates to better loan terms, including lower interest rates. We've seen scenarios where a DSCR of 1.35x on a well-located duplex in Dallas, Texas, allowed an investor to secure a rate 25 basis points lower than a comparable property with a 1.15x DSCR. This metric empowers you to evaluate potential acquisitions with a laser focus on their inherent profitability."
+      },
+      {
+        "heading": "Loan Structure and Requirements: What to Expect",
+        "content": "When pursuing a DSCR loan for a duplex, triplex, or fourplex, expect a streamlined process compared to traditional lending. While personal income isn't a primary factor, we do require a minimum credit score, typically 660, though higher scores unlock the most favorable terms. Loan amounts range from $100,000 up to $5,000,000, catering to a wide array of investment properties. For a purchase, you can expect LTVs up to 85%, meaning a minimum down payment of 15%. For cash-out refinances, an 80% LTV is standard. Let's say you own a triplex in Charlotte, North Carolina, valued at $750,000 with an existing mortgage of $300,000. A cash-out refi at 80% LTV could potentially release up to $300,000 in tax-free capital ($750,000 * 0.80 - $300,000), which you could then deploy into your next acquisition, subject to underwriting and appraisal. This capital efficiency is a significant advantage for scaling investors."
+      },
+      {
+        "heading": "Beyond the Numbers: Strategic Advantages for Multifamily Investors",
+        "content": "The real power of a DSCR loan extends beyond its favorable terms. For investors building a substantial portfolio, avoiding personal income verification means your borrowing capacity isn't constrained by your W-2 or tax returns. This is crucial for serial acquirers who might have significant assets but fluctuating personal income. Furthermore, these loans are often non-recourse or limited recourse, meaning your personal assets may be protected beyond the collateral property itself, offering an added layer of security. This flexibility, coupled with competitive rates and high LTVs, makes DSCR loans ideal for investors looking to acquire a 2-4 unit property, refinance an existing one, or even pull cash out for new ventures. Whether you're targeting a duplex in Denver, Colorado, or a fourplex in Atlanta, Georgia, a DSCR loan provides the financial leverage to accelerate your growth and build lasting wealth."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the minimum DSCR required for a duplex, triplex, or fourplex?",
+        "answer": "Lenders typically require a minimum DSCR of 1.20x, meaning the property's net operating income must be at least 120% of the monthly debt service. A higher DSCR, like 1.30x or 1.35x, often results in more favorable loan terms and interest rates."
+      },
+      {
+        "question": "What are the typical LTVs for DSCR loans on 2-4 unit properties?",
+        "answer": "For purchases, you can typically secure up to 85% LTV, requiring a minimum 15% down payment. For cash-out refinances, LTVs generally go up to 80%. These high LTVs allow investors to maximize leverage and preserve capital."
+      },
+      {
+        "question": "Does my personal income or employment history matter for a DSCR loan?",
+        "answer": "No, that's a key benefit. DSCR loans are primarily based on the property's rental income and its ability to cover debt service. Your personal income and employment history are not typically verified, simplifying the application process significantly."
+      },
+      {
+        "question": "What credit score do I need for a DSCR loan on a multifamily property?",
+        "answer": "While DSCR loans don't focus on personal income, a minimum credit score of 660 is generally required. Borrowers with higher credit scores, often above 700 or 720, are likely to qualify for the most competitive interest rates and terms, subject to underwriting."
+      }
+    ]
   }
 ]
