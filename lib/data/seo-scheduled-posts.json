@@ -4498,5 +4498,59 @@
         "answer": "AssetLift Lending offers a range of DSCR loan products, and while many include standard prepayment penalty structures, we can explore options with no or limited prepayment penalties subject to underwriting and market availability. These options may affect the interest rate or other loan terms."
       }
     ]
+  },
+  {
+    "slug": "rent-schedule-1007-appraisal",
+    "title": "Form 1007 Rent Schedule Appraisal for DSCR Loans: Investor's Guide",
+    "description": "Master the Form 1007 Rent Schedule appraisal for DSCR loans. Learn how it impacts your investment property's cash flow and loan eligibility.",
+    "publishedAt": "2026-10-06T16:38:34.111Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "DSCR Rental",
+    "tags": [
+      "DSCR loans",
+      "Form 1007",
+      "rent schedule",
+      "appraisal",
+      "real estate investing"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "Understanding the Form 1007 Rent Schedule in DSCR Lending",
+        "content": "When you're securing a DSCR loan from AssetLift Lending for your investment property across our 46-state footprint, the Form 1007 Rent Schedule isn't just a formality; it's a critical component that directly influences your loan's viability. This document, officially titled 'Single-Family Comparable Rent Schedule,' provides an appraiser's independent opinion of a property's market rent. Unlike traditional mortgages where borrower income is paramount, DSCR loans hinge on the property's ability to generate sufficient income to cover its debt service. The 1007 is the backbone of establishing that income. For example, if you're looking at a $500,000 property with a projected monthly PITI of $2,500, and the 1007 estimates market rent at $3,000, your DSCR would be 1.2 ($3,000 / $2,500). A DSCR below 1.0, say $2,200 rent on that same PITI, would likely render the property ineligible for DSCR financing, as it indicates negative cash flow. We typically look for a DSCR of 1.15 or higher, though some programs allow slightly lower, subject to other compensating factors and LTV."
+      },
+      {
+        "heading": "How Appraisers Determine Market Rent on the Form 1007",
+        "content": "The appraiser's methodology for completing the Form 1007 is rigorous and data-driven. They identify at least three, but often four to six, comparable rental properties (comps) that have recently leased in the subject property's market area. These comps are typically within a 1-mile radius, rented within the last 6-12 months, and share similar characteristics: number of bedrooms/bathrooms, square footage, age, condition, and amenities. For instance, if your subject property is a 3-bed, 2-bath, 1,800 sq ft home built in 2005, the appraiser will seek similar homes. Adjustments are then made for any differences. A comp with an extra bathroom might be adjusted downwards by $50-$100/month, while a superior location could warrant an upward adjustment. The appraiser then synthesizes these adjusted rents to arrive at a conclusive market rent estimate. This isn't just a guess; it's an expert opinion backed by verifiable market data, directly impacting the LTV (Loan-to-Value) we can offer, which can go up to 85% for purchases or 80% for cash-out refinances on DSCR loans."
+      },
+      {
+        "heading": "Impact on DSCR Calculation and Loan Eligibility",
+        "content": "The market rent established on the Form 1007 is the numerator in your DSCR calculation. A higher market rent directly translates to a stronger DSCR, increasing your chances of approval and potentially securing more favorable terms. Let's say your PITI is $2,000. If the 1007 comes in at $2,200, your DSCR is 1.10. If it comes in at $2,400, your DSCR jumps to 1.20. This difference can be crucial. For AssetLift Lending, a DSCR typically needs to be 1.0 or greater, with 1.15 being a common target for optimal pricing, though we have programs that can accommodate a DSCR as low as 0.75 in specific scenarios, usually with a slightly lower LTV or higher interest rate. If the appraiser's market rent estimate falls short, it can necessitate a larger down payment to meet LTV requirements, or in some cases, make the property ineligible for DSCR financing under our standard guidelines. This is why accurately assessing potential rental income before engaging in a purchase or refinance is paramount for investors."
+      },
+      {
+        "heading": "Strategies for Investors: Mitigating 1007 Risks and Maximizing DSCR",
+        "content": "As an experienced investor, you know that due diligence is key. Before applying for a DSCR loan, conduct your own preliminary rent analysis. Utilize tools like Rentometer, Zillow, or local property management companies to get a realistic range. When speaking with your AssetLift loan officer, provide any strong rental comps you've identified; while appraisers are independent, relevant data can be helpful context. Ensure your property is show-ready and well-maintained before the appraisal, as condition can subtly influence an appraiser's perception of marketability and, thus, rentability. If the initial Form 1007 comes in lower than expected, don't panic. There are often avenues to challenge or request a reconsideration of value, provided you have strong, verifiable comps that the appraiser may have overlooked. We've seen situations where providing 2-3 truly superior comps not initially used can lead to a successful reconsideration, potentially boosting the market rent by $100-$200/month and significantly improving the DSCR. Remember, our DSCR loan programs are designed to be flexible, with rates starting from 5.85% and loan amounts from $100,000 to $5,000,000, subject to underwriting and credit scores typically above 660."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the primary purpose of Form 1007 in a DSCR loan application?",
+        "answer": "The Form 1007, or Single-Family Comparable Rent Schedule, provides an independent appraiser's estimate of a property's market rent. This market rent is the critical factor in calculating the property's Debt Service Coverage Ratio (DSCR), which determines its eligibility and terms for a DSCR loan."
+      },
+      {
+        "question": "How many comparable properties does an appraiser typically use for the 1007?",
+        "answer": "Appraisers typically use at least three, but often four to six, recently leased comparable rental properties. These comps are chosen based on their proximity, similar characteristics (beds/baths, square footage, age, condition), and recent rental dates, usually within the last 6-12 months."
+      },
+      {
+        "question": "Can a low Form 1007 market rent derail my DSCR loan application?",
+        "answer": "Yes, a low Form 1007 market rent can significantly impact your DSCR calculation. If the resulting DSCR falls below the lender's minimum threshold (e.g., 1.0 or 1.15 for optimal terms), it could lead to a requirement for a larger down payment, a higher interest rate, or in some cases, render the property ineligible for DSCR financing, subject to underwriting."
+      },
+      {
+        "question": "What if I disagree with the market rent estimate on my Form 1007?",
+        "answer": "If you disagree with the Form 1007's market rent estimate, you can typically request a reconsideration of value. This involves providing strong, verifiable, and relevant rental comparables that the appraiser may have overlooked, along with a written explanation, to support a higher market rent. This process is subject to lender review and appraiser's discretion."
+      }
+    ]
   }
 ]
