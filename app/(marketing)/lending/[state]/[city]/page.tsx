@@ -52,7 +52,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
 
   return createMetadata({
-    title: city.metadataTitle ?? `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
+    title: city.metadataTitle?.replace(/\s*\|\s*AssetLift Lending$/, '')
+      ?? `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
     description: city.metadataDescription ?? `Business-purpose hard money, fix-and-flip, bridge, and DSCR rental loans for non-owner-occupied investment properties in ${city.cityName}, ${city.stateAbbreviation}.`,
     keywords: [
       `hard money lender ${city.cityName} ${city.stateAbbreviation}`,
