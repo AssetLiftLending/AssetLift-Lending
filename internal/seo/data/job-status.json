@@ -1,7 +1,6 @@
 {
-  "generatedAt": "2026-10-07T15:17:25.489Z",
-  "job": "authority",
-  "ok": false,
-  "durationMs": 3544,
-  "error": "GitHub write failed for internal/seo/data/backlink-queue.json: 500 "
+  "generatedAt": "2026-10-07T17:23:46.659Z",
+  "job": "audit",
+  "ok": true,
+  "durationMs": 5280
 }
