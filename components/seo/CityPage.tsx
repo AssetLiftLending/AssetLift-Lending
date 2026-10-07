@@ -24,6 +24,15 @@ const PRIORITY_CITY_GUIDANCE: Record<
     borrowerFocus: string[];
   }
 > = {
+  'georgia/macon-bibb-county': {
+    lenderView:
+      "Macon-Bibb County’s market statistics span different areas and property types, so they are context rather than a substitute for comps. A review should be anchored to recent sales near the subject, a line-item scope, taxes, insurance, and a sale or rental exit that fits that property. Before building or changing a property, check parcel-specific zoning, zoning-compliance and building-permit requirements with Macon-Bibb Planning & Zoning; historic or CBD zoning may also bring Design Review Board review.",
+    borrowerFocus: [
+      "Use recent nearby sales that match the subject’s property type, condition, size, and location instead of the county or city median as an ARV",
+      "For rehab, submit a line-item scope, contractor details, current photos, reserves, taxes, insurance, and a sale or refinance exit",
+      "Check zoning compliance and permit requirements for the parcel and scope before relying on a construction timeline",
+    ],
+  },
   'florida/miami': {
     lenderView:
       "Miami files usually get underwritten through the lens of complexity as much as upside. Lenders know the city can produce strong profits, but they also know condo rules, insurance cost, title friction, and luxury-market variability can erode margin quickly. The strongest Miami files usually involve clean title, realistic HOA and carrying-cost assumptions, and a neighborhood-specific exit strategy rather than a broad 'South Florida appreciation' story.",
@@ -267,7 +276,7 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
               Hard Money Loans in {city.cityName}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mb-8">
-              Fast, flexible real estate investment financing for {city.cityName} investors. Fix & flip, bridge, DSCR rental, and construction loans with responses within 24 hours and closings in as fast as 5 days.
+              {city.heroDescription ?? `Fast, flexible real estate investment financing for ${city.cityName} investors. Fix & flip, bridge, DSCR rental, and construction loans with responses within 24 hours and closings in as fast as 5 days.`}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
@@ -284,28 +293,71 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
       </section>
 
       {/* Quick Stats */}
+      {!city.marketEvidence && (
       <section className="py-12 bg-secondary/30">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
-              <div className="text-sm text-muted-foreground">Max LTC</div>
-            </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
-              <div className="text-sm text-muted-foreground">Days to Close</div>
-            </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">{city.medianHomePrice}</div>
-              <div className="text-sm text-muted-foreground">Median Home Price</div>
-            </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">{city.population}</div>
-              <div className="text-sm text-muted-foreground">Population</div>
-            </div>
+            {city.marketEvidence ? city.marketEvidence.map((item) => (
+              <div key={`${item.label}-${item.value}`}>
+                <div className="text-2xl md:text-3xl font-bold text-primary">{item.value}</div>
+                <div className="text-sm text-muted-foreground">{item.label}</div>
+              </div>
+            )) : (
+              <>
+                <div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
+                  <div className="text-sm text-muted-foreground">Max LTC</div>
+                </div>
+                <div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
+                  <div className="text-sm text-muted-foreground">Days to Close</div>
+                </div>
+                <div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">{city.medianHomePrice}</div>
+                  <div className="text-sm text-muted-foreground">Median Home Price</div>
+                </div>
+                <div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">{city.population}</div>
+                  <div className="text-sm text-muted-foreground">Population</div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
+      )}
+
+      {city.marketEvidence && (
+        <section className="py-12 md:py-16" aria-labelledby="local-market-evidence">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto">
+              <h2 id="local-market-evidence" className="text-3xl md:text-4xl font-bold mb-6">
+                Local market evidence for {city.cityName}
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {city.marketEvidence.map((item) => (
+                  <div key={`${item.label}-${item.value}`} className="rounded-xl border border-border bg-card p-5">
+                    <p className="text-sm text-muted-foreground">{item.label}</p>
+                    <p className="text-2xl font-bold text-primary mt-1">{item.value}</p>
+                    <p className="text-sm text-muted-foreground mt-2">{item.context}</p>
+                    <a href={item.sourceUrl} target="_blank" rel="noreferrer" className="inline-block text-sm font-medium text-primary underline mt-3">Source: {item.sourceLabel}</a>
+                  </div>
+                ))}
+              </div>
+              {city.marketEvidenceNote && (
+                <p className="text-sm text-muted-foreground mt-4">{city.marketEvidenceNote}</p>
+              )}
+              {city.marketSources && (
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                  {city.marketSources.map((source) => (
+                    <a key={source.href} href={source.href} target="_blank" rel="noreferrer" className="font-medium text-primary underline">{source.label}</a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Market Overview */}
       <section className="py-16 md:py-24">
@@ -331,6 +383,7 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
       </section>
 
       {/* Top Neighborhoods */}
+      {!city.hideNeighborhoods && (
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -353,6 +406,7 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
           </div>
         </div>
       </section>
+      )}
 
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
@@ -383,6 +437,30 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
         </div>
       </section>
 
+      {city.localExecution ? (
+        <section className="py-16 md:py-24 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{city.localExecution.heading}</h2>
+                <p className="text-muted-foreground text-lg leading-relaxed">{city.localExecution.intro}</p>
+              </div>
+              <div className="rounded-2xl border border-border bg-card p-6">
+                <h3 className="text-xl font-semibold mb-4">What to verify on this deal</h3>
+                <ul className="space-y-3">
+                  {city.localExecution.checklist.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-muted-foreground"><span className="text-primary font-bold">•</span><span>{item}</span></li>
+                  ))}
+                </ul>
+                {city.marketSources?.map((source) => (
+                  <a key={source.href} href={source.href} target="_blank" rel="noreferrer" className="inline-block text-sm font-medium text-primary underline mt-4 mr-4">{source.label}</a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : (
+      <>
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 max-w-5xl mx-auto">
@@ -485,6 +563,8 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
           </div>
         </div>
       </section>
+      </>
+      )}
 
       {cityGuidance && (
         <section className="py-16 md:py-24 bg-secondary/20">
@@ -524,12 +604,12 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
             Loan Programs Available in {city.cityName}
           </h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
+            {(city.programSummaries ?? [
               { title: 'Fix & Flip Loans', desc: 'Up to 95% LTC on purchase with 100% rehab funding. 13-19 month terms.', href: '/loans/fix-and-flip' },
               { title: 'Ground-Up Construction', desc: 'Up to 90% LTC with 100% construction funding. 19-24 month terms.', href: '/loans/ground-up-construction' },
               { title: 'DSCR Rental Loans', desc: 'Up to 85% LTV. 30-year fixed rate. No income verification.', href: '/loans/dscr-rental' },
               { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 5 days. Flexible exit strategies.', href: '/loans/bridge' },
-            ].map((program, i) => (
+            ]).map((program, i) => (
               <Link
                 key={i}
                 href={program.href}
@@ -603,7 +683,7 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
             Ready to Invest in {city.cityName}?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-            Get funded for your next {city.cityName} deal. Hear back within 24 hours, usually within a few hours.
+            {city.ctaDescription ?? `Get funded for your next ${city.cityName} deal. Hear back within 24 hours, usually within a few hours.`}
           </p>
           <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-10 py-6 sm:py-7 glow-primary">
             <Link href="/apply">

@@ -52,8 +52,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
 
   return createMetadata({
-    title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
-    description: `Business-purpose hard money, fix-and-flip, bridge, and DSCR rental loans for non-owner-occupied investment properties in ${city.cityName}, ${city.stateAbbreviation}.`,
+    title: city.metadataTitle ?? `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
+    description: city.metadataDescription ?? `Business-purpose hard money, fix-and-flip, bridge, and DSCR rental loans for non-owner-occupied investment properties in ${city.cityName}, ${city.stateAbbreviation}.`,
     keywords: [
       `hard money lender ${city.cityName} ${city.stateAbbreviation}`,
       `fix and flip loans ${city.cityName}`,
@@ -124,14 +124,17 @@ export default async function CityLendingPage({ params }: Props) {
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
     url: `https://www.assetliftlending.com/lending/${city.stateSlug}/${city.citySlug}`,
-    areaServed: {
-      '@type': 'City',
-      name: city.cityName,
-      containedInPlace: {
-        '@type': 'State',
-        name: city.stateName,
-      },
-    },
+    areaServed: city.areaServedType === 'AdministrativeArea'
+      ? {
+          '@type': 'AdministrativeArea',
+          name: city.cityName,
+          containedInPlace: { '@type': 'State', name: city.stateName },
+        }
+      : {
+          '@type': 'City',
+          name: city.cityName,
+          containedInPlace: { '@type': 'State', name: city.stateName },
+        },
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
   };
 

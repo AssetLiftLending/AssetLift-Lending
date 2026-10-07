@@ -43,6 +43,7 @@ const PRIORITY_CITY_SLUGS = [
   "jersey-city",
   "queens",
   "westchester-county",
+  "macon-bibb-county",
   "bridgeport",
   "new-haven",
 ];
