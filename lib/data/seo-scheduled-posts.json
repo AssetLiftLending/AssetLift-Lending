@@ -4552,5 +4552,59 @@
         "answer": "If you disagree with the Form 1007's market rent estimate, you can typically request a reconsideration of value. This involves providing strong, verifiable, and relevant rental comparables that the appraiser may have overlooked, along with a written explanation, to support a higher market rent. This process is subject to lender review and appraiser's discretion."
       }
     ]
+  },
+  {
+    "slug": "dscr-loan-minimum-loan-amount",
+    "title": "DSCR Loan Minimums for Small Balance Rentals: What Investors Need",
+    "description": "Unpack DSCR loan minimum loan amounts for small balance rental properties. AssetLift Lending offers competitive terms for investors across 46 states.",
+    "publishedAt": "2026-10-07T17:22:18.002Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "7 min read",
+    "category": "DSCR Rental",
+    "tags": [
+      "DSCR loan",
+      "minimum loan amount",
+      "small balance rentals",
+      "rental property financing",
+      "real estate investment"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "Understanding DSCR Loan Minimums for Small Balance Deals",
+        "content": "As an experienced real estate investor, you know that financing smaller rental properties can sometimes be a puzzle, especially when dealing with conventional lenders. This is where DSCR loans shine, offering a streamlined path for investors looking to scale their portfolios without the personal income verification hurdles. At AssetLift Lending, we understand the nuances of the market across 46 U.S. states and tailor our DSCR programs to meet diverse investor needs. While DSCR loans generally target rental properties, the 'small balance' segment often raises questions about minimum loan amounts. Our typical DSCR loan minimum starts at $100,000, making it accessible for single-family homes, condos, and even small multi-unit properties in most markets. This threshold ensures we can efficiently underwrite and service these loans, providing competitive rates from 5.85% and LTVs up to 85% for purchases, or 80% for cash-out refinances."
+      },
+      {
+        "heading": "Why Minimums Exist: Lender Economics and Risk Management",
+        "content": "Lenders establish minimum loan amounts not to exclude investors, but due to the fixed costs associated with originating and servicing a loan. Regardless of whether a loan is $50,000 or $500,000, there are baseline expenses for underwriting, legal review, document preparation, and ongoing servicing. For loans below a certain threshold, these fixed costs can make the loan unprofitable or necessitate significantly higher interest rates to compensate, which would be detrimental to the borrower. At AssetLift, our $100,000 minimum for DSCR loans strikes a balance, allowing us to offer competitive rates and terms while maintaining operational efficiency. This minimum ensures that we can provide a robust, investor-friendly product without passing excessive overhead costs onto you. It's a pragmatic approach to ensuring sustainable lending practices for both AssetLift and our valued investor clients across the 46 states we serve."
+      },
+      {
+        "heading": "Navigating Properties Below the Typical $100K DSCR Minimum",
+        "content": "What happens if you're eyeing a rental property that appraises for, say, $80,000, and your equity contribution would push the loan amount below the $100,000 DSCR minimum? This is a common scenario for investors targeting lower-cost markets or specific property types. While a standalone DSCR loan for $80,000 might not be feasible with AssetLift, there are strategic options. Consider bundling multiple smaller properties into a single portfolio loan, if applicable and the combined loan amount meets or exceeds our $100,000 minimum. Another strategy is to bring less down payment, if your LTV allows, to increase the loan amount. For instance, an 85% LTV on an $80,000 purchase would yield a $68,000 loan, which is still below the threshold. However, if you're purchasing a $150,000 property but only need $90,000, exploring a slightly higher loan amount to meet the minimum could be beneficial, subject to your investment strategy and underwriting approval."
+      },
+      {
+        "heading": "Beyond Loan Minimums: Key DSCR Loan Considerations",
+        "content": "While the DSCR loan minimum loan amount is a critical factor, it's just one piece of the puzzle. Investors should also focus on the property's Debt Service Coverage Ratio itself. We typically look for a DSCR of 1.20x or higher, meaning the property's gross rental income must be at least 120% of its principal, interest, taxes, insurance, and HOA dues. Your credit score is also important; a minimum FICO of 660 is generally required for our DSCR programs. We also assess your experience as an investor and your liquidity. AssetLift Lending offers DSCR loans for various property types, including 1-4 unit properties, multi-family (5+ units), and even short-term rentals, across 46 states. Understanding these broader criteria ensures a smoother application process and a higher likelihood of securing the financing you need to expand your real estate portfolio effectively."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the typical minimum DSCR loan amount offered by AssetLift Lending?",
+        "answer": "AssetLift Lending's typical DSCR loan minimum starts at $100,000. This threshold helps us maintain competitive rates, starting from 5.85%, and efficient service for our investors across 46 states."
+      },
+      {
+        "question": "Can I get a DSCR loan for a property valued under $100,000?",
+        "answer": "Generally, a single DSCR loan for a property valued under $100,000 that results in a loan amount below our $100,000 minimum is not feasible. However, investors can explore bundling multiple properties into a portfolio loan to meet the minimum, subject to underwriting."
+      },
+      {
+        "question": "What credit score is required for a DSCR loan with AssetLift Lending?",
+        "answer": "For most of our DSCR loan programs, a minimum credit score (FICO) of 660 is generally required. This helps demonstrate a track record of responsible financial management, essential for investor loans."
+      },
+      {
+        "question": "What LTVs are available for DSCR loans on purchases and refinances?",
+        "answer": "AssetLift Lending offers DSCR loans with LTVs up to 85% for purchases and up to 80% for cash-out refinances. These percentages are subject to property type, DSCR ratio, and overall underwriting approval."
+      }
+    ]
   }
 ]
