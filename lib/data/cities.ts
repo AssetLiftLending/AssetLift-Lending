@@ -15,6 +15,19 @@ export interface CityData {
   investmentHighlight: string;
   topNeighborhoods: string[];
   faqs: CityFAQ[];
+  /** Market-specific facts with source and metric-period labeling. */
+  marketEvidence?: Array<{ label: string; value: string; context: string; sourceLabel: string; sourceUrl: string }>;
+  marketEvidenceNote?: string;
+  areaServedType?: 'City' | 'AdministrativeArea';
+  programSummaries?: Array<{ title: string; desc: string; href: string }>;
+  heroDescription?: string;
+  marketSources?: Array<{ label: string; href: string }>;
+  ctaDescription?: string;
+  metadataTitle?: string;
+  metadataDescription?: string;
+  neighborhoodsHeading?: string;
+  hideNeighborhoods?: boolean;
+  localExecution?: { heading: string; intro: string; checklist: string[] };
 }
 
 export const CITIES: CityData[] = [
@@ -625,6 +638,62 @@ export const CITIES: CityData[] = [
         answer:
           "Absolutely. Neighborhoods near Fort Moore, including Benning Hills and South Columbus, are popular for fix-and-flip projects targeting military families and civilian employees. Hard money lenders are familiar with these submarkets and regularly finance renovation projects.",
       },
+    ],
+  },
+
+  // Georgia investor-pilot market: Macon-Bibb County
+  {
+    cityName: "Macon-Bibb County",
+    citySlug: "macon-bibb-county",
+    stateSlug: "georgia",
+    stateName: "Georgia",
+    stateAbbreviation: "GA",
+    population: "157,556 (2025 estimate)",
+    medianHomePrice: "$219,855 median sale price",
+    overview: "Macon-Bibb combines city neighborhoods and county areas with different property types and resale profiles. A Macon-wide median is useful context, not a valuation for an individual address: support the after-repair value with recent nearby sales that match property type, condition, size, and location. The observed local investor dataset also shows substantial recorded flip activity, making a properly supported acquisition-and-rehab file more informative than a statewide-market pitch.",
+    heroDescription: "Business-purpose financing review for Macon-Bibb County investment properties. AssetLift reviews qualifying fix-and-flip, bridge, DSCR rental, and residential construction scenarios. Terms and execution depend on underwriting, the property, and the available program.",
+    ctaDescription: "Send the property address, purchase basis, scope, comps, rent support if applicable, taxes, insurance, requested amount, and exit plan for an initial review. A review is not an approval or commitment to lend.",
+    metadataTitle: "Hard Money Loans Macon-Bibb County, GA | AssetLift Lending",
+    metadataDescription: "Macon-Bibb County hard money, fix-and-flip, bridge and DSCR rental financing review for non-owner-occupied investment properties. Local data, deal preparation and permit guidance from AssetLift Lending.",
+    hideNeighborhoods: true,
+    localExecution: {
+      heading: "Macon-Bibb due diligence before requesting financing",
+      intro: "Macon and the unincorporated parts of Bibb County share a consolidated government, but individual parcels still sit in specific zoning districts. Macon-Bibb Planning & Zoning says zoning compliance is required for construction; its permit guidance says construction above $2,500 requires a building permit. Properties in historic or Central Business District zoning may require Design Review Board review. Confirm the current requirements for the address and scope with the County before basing a closing or construction schedule on them.",
+      checklist: [
+        "Pull recent nearby sales for the same property type and condition; do not use the Macon-wide median as an after-repair valuation",
+        "Identify the parcel's zoning and ask Planning & Zoning whether zoning compliance, building permit, or Design Review Board review applies",
+        "For a flip request, prepare contract, dated photos, line-item work scope, contractor details, reserves, title contact, and sale exit",
+        "For a rental request, add supported market rent or leases, taxes, insurance, occupancy, and full payment assumptions for DSCR review",
+      ],
+    },
+    investmentHighlight: "The U.S. Census Bureau estimates Macon-Bibb County's 2025 population at 157,556 and reports 2020-2024 median owner-occupied value of $174,500 and median gross rent of $1,066. Redfin separately reports Macon's $219,855 median sale price over the three months ending August 2026 and 478 August sales. SFR Analytics reports 4,604 tracked investors and 1,316 observed exits or flips in Macon-Bibb County. These are different geographies, periods, and measures; the proprietary investor dataset is not a county census or a typical property budget.",
+    topNeighborhoods: ["Downtown Macon", "Intown Historic District", "Vineville", "Cherokee Heights", "Beall's Hill", "Pleasant Hill", "East Macon", "Ingleside Village"],
+    marketEvidence: [
+      { label: "Macon median sale price", value: "$219,855", context: "Three-month period ending Aug 2026; 478 sales in Aug. City-level sales statistic, not an ARV for a subject property.", sourceLabel: "Redfin", sourceUrl: "https://www.redfin.com/city/36061/GA/Macon-Bibb/housing-market" },
+      { label: "Tracked local investors", value: "4,604", context: "SFR Analytics market dataset; viewed Oct 7, 2026.", sourceLabel: "SFR Analytics", sourceUrl: "https://sfranalytics.com/investors/ga/macon-bibb-county-ga" },
+      { label: "Observed exits or flips", value: "1,316", context: "SFR Analytics tracked transactions; proprietary dataset, not a full deed-record census.", sourceLabel: "SFR Analytics", sourceUrl: "https://sfranalytics.com/investors/ga/macon-bibb-county-ga" },
+      { label: "Median owner-occupied value", value: "$174,500", context: "Macon-Bibb County ACS 2020-2024; Census estimate, not a current subject valuation.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/maconbibbcountygeorgia" },
+      { label: "Median gross rent", value: "$1,066/mo", context: "Macon-Bibb County ACS 2020-2024; market-wide statistic, not a rent comp for a specific property.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/maconbibbcountygeorgia" },
+    ],
+    marketEvidenceNote: "Sources measure different things and periods. Redfin's median sale price is for Macon city over the trailing three months ending Aug 2026; Census housing and rent values are 2020-2024 county estimates; SFR Analytics reports proprietary tracked activity for Macon-Bibb County. Use current subject-property comps, budget, rent evidence, taxes, and insurance for underwriting.",
+    marketSources: [
+      { label: "Macon-Bibb Planning & Zoning: permits and zoning compliance", href: "https://mbpz.org/permitprocess/" },
+      { label: "Macon-Bibb historic districts and design review", href: "https://mbpz.org/design/" },
+    ],
+    areaServedType: "AdministrativeArea",
+    programSummaries: [
+      { title: "Fix & Flip Loans", desc: "Published program terms list up to 95% LTC on purchase and up to 100% of approved rehab, with total leverage capped at 70-75% of ARV. Terms depend on underwriting and the transaction.", href: "/loans/fix-and-flip" },
+      { title: "DSCR Rental Loans", desc: "Qualifying purchases may reach up to 85% LTV; cash-out refinances may reach up to 80% LTV. Rent support, credit, property, reserves, and program rules affect terms.", href: "/loans/dscr-rental" },
+      { title: "Bridge Financing", desc: "For eligible transitional investment property scenarios. Leverage, amount, timing, and the exit plan are reviewed against the specific file.", href: "/loans/bridge" },
+      { title: "Ground-Up Construction", desc: "For qualifying residential investment construction projects with a documented budget, plans, permits, contractor, equity, and exit.", href: "/loans/ground-up-construction" },
+    ],
+    faqs: [
+      { question: "Can AssetLift review a Macon-Bibb fix-and-flip loan?", answer: "AssetLift reviews business-purpose financing for qualifying non-owner-occupied investment properties in Georgia. A flip request is evaluated on acquisition basis, nearby comparable sales, line-item rehab scope, borrower profile, liquidity, title, and the exit plan. Published fix-and-flip terms include up to 95% LTC on purchase and up to 100% of approved rehab, subject to a total 70-75% ARV cap and underwriting; that is not a guaranteed structure for a particular Macon deal." },
+      { question: "Does Macon's median sale price set my property's ARV?", answer: "No. Redfin's $219,855 median sale statistic covers Macon over the three months ending August 2026. It is market context, not a valuation. Support an ARV with recent nearby sold comparables that match property type, size, condition, and location." },
+      { question: "Can a Macon-Bibb rental qualify for a DSCR loan?", answer: "A qualifying non-owner-occupied rental can be reviewed under DSCR programs using supported property rent relative to the full proposed housing payment. Taxes, insurance, HOA dues, value, credit, reserves, property condition, and program rules affect eligibility and terms. Published program limits may reach 85% LTV on purchases and 80% on cash-out refinances, subject to underwriting." },
+      { question: "What should I check before renovating a Macon-Bibb property?", answer: "Confirm the parcel's zoning and permit requirements with Macon-Bibb Planning & Zoning before relying on a scope or schedule. The county says construction requires zoning compliance; construction exceeding $2,500 requires a building permit. Properties zoned H or CBD may need Design Review Board approval. Requirements depend on the parcel and project, so check with the county rather than treating this summary as a permit decision." },
+      { question: "What should I send for an initial Macon-Bibb flip review?", answer: "Send the property address, purchase contract or target price, current photos, a line-item rehab budget, contractor information, recent nearby ARV comps, borrower experience, liquidity, title contact, and target closing date. For a rental or refinance, include current or supported rent, taxes, insurance, leases if available, and the requested exit." },
+      { question: "Does AssetLift finance owner-occupied homes in Macon?", answer: "No. The programs described here are business-purpose financing for non-owner-occupied investment properties only." },
     ],
   },
 
