@@ -297,31 +297,24 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
       <section className="py-12 bg-secondary/30">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {city.marketEvidence ? city.marketEvidence.map((item) => (
-              <div key={`${item.label}-${item.value}`}>
-                <div className="text-2xl md:text-3xl font-bold text-primary">{item.value}</div>
-                <div className="text-sm text-muted-foreground">{item.label}</div>
+            <>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
+                <div className="text-sm text-muted-foreground">Max LTC</div>
               </div>
-            )) : (
-              <>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
-                  <div className="text-sm text-muted-foreground">Max LTC</div>
-                </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
-                  <div className="text-sm text-muted-foreground">Days to Close</div>
-                </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">{city.medianHomePrice}</div>
-                  <div className="text-sm text-muted-foreground">Median Home Price</div>
-                </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">{city.population}</div>
-                  <div className="text-sm text-muted-foreground">Population</div>
-                </div>
-              </>
-            )}
+              <div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
+                <div className="text-sm text-muted-foreground">Days to Close</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">{city.medianHomePrice}</div>
+                <div className="text-sm text-muted-foreground">Median Home Price</div>
+              </div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">{city.population}</div>
+                <div className="text-sm text-muted-foreground">Population</div>
+              </div>
+            </>
           </div>
         </div>
       </section>
