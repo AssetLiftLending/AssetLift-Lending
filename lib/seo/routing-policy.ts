@@ -139,6 +139,9 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/georgia/macon-bibb-county',
   '/lending/georgia/brunswick-glynn-county',
   '/lending/connecticut/stamford',
+  '/lending/connecticut/new-haven',
+  '/lending/connecticut/bridgeport',
+  '/lending/connecticut/hartford',
 ]);
 
 export const INDEXABLE_STATIC_PATHS = new Set([
