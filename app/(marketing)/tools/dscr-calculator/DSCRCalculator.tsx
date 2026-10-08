@@ -6,14 +6,14 @@ import { ArrowRight, Info } from 'lucide-react';
 import { gtagEvent } from '@/lib/gtag';
 
 export default function DSCRCalculator() {
-  const [monthlyRent, setMonthlyRent] = useState('');
-  const [purchasePrice, setPurchasePrice] = useState('');
-  const [loanAmount, setLoanAmount] = useState('');
+  const [monthlyRent, setMonthlyRent] = useState('3200');
+  const [purchasePrice, setPurchasePrice] = useState('485000');
+  const [loanAmount, setLoanAmount] = useState('388000');
   const [purchaseClosingPct, setPurchaseClosingPct] = useState('3');
-  const [monthlyMortgage, setMonthlyMortgage] = useState('');
-  const [monthlyTaxes, setMonthlyTaxes] = useState('');
-  const [monthlyInsurance, setMonthlyInsurance] = useState('');
-  const [monthlyHoa, setMonthlyHoa] = useState('');
+  const [monthlyMortgage, setMonthlyMortgage] = useState('2050');
+  const [monthlyTaxes, setMonthlyTaxes] = useState('350');
+  const [monthlyInsurance, setMonthlyInsurance] = useState('150');
+  const [monthlyHoa, setMonthlyHoa] = useState('100');
   const [vacancy, setVacancy] = useState('5');
   const trackedUse = useRef(false);
   const trackedBand = useRef('');
@@ -71,7 +71,7 @@ export default function DSCRCalculator() {
   const tipClass = 'ml-1 inline-flex h-4 w-4 cursor-help items-center justify-center rounded-full border border-muted-foreground/50 text-muted-foreground';
   const fields: { id: string; label: string; hint: string; value: string; change: (value: string) => void; placeholder: string; suffix?: string }[] = [
     { id: 'purchasePrice', label: 'Purchase price', hint: 'Enter the property purchase price. This is only used for the planning cash-to-close estimate.', value: purchasePrice, change: setPurchasePrice, placeholder: '485,000' },
-    { id: 'loanAmount', label: 'Loan amount', hint: 'Enter the proposed loan amount. No loan-to-value or leverage is assumed by the calculator.', value: loanAmount, change: setLoanAmount, placeholder: '0 if no loan' },
+    { id: 'loanAmount', label: 'Loan amount (editable default $388,000)', hint: 'The $388,000 starting value is 80% of the example purchase price, only as a planning assumption. No leverage is inferred from your scenario; replace it with your proposed loan amount.', value: loanAmount, change: setLoanAmount, placeholder: '0 if no loan' },
     { id: 'purchaseClosingPct', label: 'Purchase closing costs (default 3%)', hint: 'The 3% starting value is a planning assumption applied to purchase price. Replace it with a property-specific estimate; actual costs vary.', value: purchaseClosingPct, change: setPurchaseClosingPct, placeholder: '3', suffix: '%' },
     { id: 'rent', label: 'Monthly gross rent', hint: 'Enter current contract rent or a supported market-rent estimate before vacancy.', value: monthlyRent, change: setMonthlyRent, placeholder: '3,200' },
     { id: 'mortgage', label: 'Monthly principal & interest', hint: 'Enter P&I only. Add property taxes and insurance in their separate fields.', value: monthlyMortgage, change: setMonthlyMortgage, placeholder: '2,050' },
@@ -126,8 +126,8 @@ export default function DSCRCalculator() {
               <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Monthly PITIA</span><strong className="mt-1 block text-base">{hasValues ? currency(totalDebt) : '—'}</strong></div>
               <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Vacancy assumption</span><strong className="mt-1 block text-base">{vacancyPct}%</strong></div>
             </div>
-            <div className="mt-3 rounded-lg border border-gold/50 bg-gold/10 p-3">
-              <div className="flex items-center justify-between gap-3"><span className="text-xs font-semibold text-white/85">Estimated cash to close</span><strong className="text-lg">{hasCashInputs ? currency(estimatedCashToClose) : 'Enter valid price + loan'}</strong></div>
+            <div className="mt-3 rounded-lg border border-white/15 bg-white/5 p-3">
+              <div className="flex items-center justify-between gap-3"><span className="text-xs font-semibold text-white/85">Estimated cash to close</span><strong className={hasCashInputs ? 'text-lg' : 'text-xs font-medium text-white/70'}>{hasCashInputs ? currency(estimatedCashToClose) : 'Enter price + loan'}</strong></div>
               <p className="mt-1 text-[10px] leading-relaxed text-white/70">Planning estimate: purchase price − entered loan amount + the editable {closingPct}% closing-cost assumption. Not a quote. Excludes lender fees, prepaid/escrow items, rehab, and other costs.</p>
             </div>
             <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'dscr', result_band: status.label })} className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-gold px-4 py-3 text-center text-sm font-bold text-charcoal transition-colors hover:bg-gold-dark">
