@@ -271,39 +271,47 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
       'DSCR rental loans in Connecticut for experienced investors buying or refinancing non-owner-occupied rental properties based on cash flow.',
     h1: 'Connecticut DSCR Loans for Rental Investors',
     intro:
-      'AssetLift reviews Connecticut DSCR rental loans for investors who want rental income to support qualification. Strong files show accurate rent, tax, insurance, and expense assumptions before requesting terms.',
+      'AssetLift Lending reviews business-purpose DSCR scenarios for non-owner-occupied Connecticut rentals. Model the actual monthly rent against principal, interest, property taxes, insurance, and any association charges included by the applicable program; for small multifamily, document each legal unit, lease, vacancy, and expense. DSCR is one input to underwriting, not a stand-alone approval test. Leverage, rate, reserves, eligibility, and documentation depend on the property, borrower, current program, and complete file.',
     markets: ['Stamford', 'Bridgeport', 'New Haven', 'Hartford', 'Norwalk', 'Waterbury', 'Danbury'],
     fit: [
       ...sharedQualification,
-      'Rental acquisitions, refinances, and cash-out requests',
-      'Properties with actual leases or defensible market rent support',
+      'Non-owner-occupied rental purchases, rate-term refinances, and qualifying cash-out scenarios',
+      'Properties with documented leases or supportable market-rent evidence and clear legal use',
     ],
     localNotes: [
-      'Connecticut property taxes and insurance can affect DSCR more than borrowers expect.',
-      "Small multifamily properties should show each unit's rent and occupancy clearly.",
-      'Higher-priced Fairfield County rentals need conservative debt sizing and liquidity support.',
+      'Use the latest property tax bill or municipality-specific estimate; do not substitute a county or statewide average.',
+      'Get an insurance quote for the actual property and coverage, and identify HOA/common charges before estimating payment coverage.',
+      'For 2-4 unit properties, verify legal unit count, leases, unit-by-unit rent, utility responsibility, vacancy, and current condition.',
+      'Fairfield County rents and values vary by town and property type; support assumptions with property-specific rent evidence and nearby comparable rentals.',
     ],
     whatToPrepare: [
-      'Monthly rent or lease details',
-      'Property taxes, insurance, and HOA if applicable',
-      'Estimated value or purchase price',
-      'Requested loan amount and ownership structure',
+      'Property address, purchase contract or refinance purpose, current value, and requested loan amount',
+      'Current lease(s), rent roll, or a supportable market-rent estimate; separate each unit and occupancy status',
+      'Property tax bill or estimate, insurance quote, HOA/common charges, and other payment inputs',
+      'Borrower/entity and ownership details, requested vesting, credit and liquidity information as requested',
+      'For refinances: current payoff, ownership/seasoning details, and documented use of any cash-out proceeds',
+      'A rent and expense downside case for vacancy, repairs, tax/insurance changes, or lower market rent',
     ],
     faqs: [
       {
         question: 'Can Connecticut rental investors use DSCR loans?',
         answer:
-          'Yes. DSCR rental loans can work for Connecticut investment properties when the property cash flow, credit, leverage, and reserves meet program guidelines.',
+          'AssetLift Lending reviews non-owner-occupied Connecticut rental scenarios. A DSCR calculation is one part of review; eligibility, leverage, rate, reserves, and required documentation depend on the property, borrower, rent support, and current program. Request project-specific written terms.',
       },
       {
         question: 'Do Connecticut DSCR loans require tax returns?',
         answer:
-          'DSCR programs generally focus on property cash flow instead of personal income documentation, but the property, borrower, and entity still need underwriting review.',
+          'Some DSCR programs emphasize property cash flow rather than personal income documentation, but borrower, credit, liquidity, entity, property, and other file requirements still vary. Confirm which documents apply to your specific program and transaction.',
+      },
+      {
+        question: 'How should I estimate rent for a Connecticut DSCR file?',
+        answer:
+          'Start with current leases where available; otherwise ask which rent evidence the lender accepts and use comparable rentals that match the property, unit mix, condition, and location. Keep taxes, insurance, HOA/common charges, vacancy, and operating costs explicit; a calculator estimate is not lender approval.',
       },
       {
         question: 'Can I refinance a Connecticut rental into a DSCR loan?',
         answer:
-          'Yes. Rate-term and cash-out refinance scenarios may be available for qualifying Connecticut rental properties.',
+          'A rate-term or cash-out refinance may be considered, but it is a separate application. Qualification depends on value, rent, completed condition, ownership and seasoning rules, borrower eligibility, payoff, reserves, and the takeout program’s current guidelines; refinancing is not guaranteed.',
       },
     ],
   },
