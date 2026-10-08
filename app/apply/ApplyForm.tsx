@@ -74,9 +74,45 @@ const ApplyForm = () => {
     queryRef.current = searchParams;
     const source = searchParams.get('source') || undefined;
     const rawPurpose = searchParams.get('loanPurpose');
-    const strategy = searchParams.get('strategy') || (rawPurpose === 'dscr' ? 'rental' : rawPurpose === 'fix-and-flip' ? 'fix-flip' : rawPurpose === 'ground-up-construction' ? 'ground-up' : '');
+    const strategy = searchParams.get('strategy') || (source === 'dscr-calculator' || rawPurpose === 'dscr' ? 'rental' : source === 'fix-and-flip-calculator' || rawPurpose === 'fix-and-flip' ? 'fix-flip' : rawPurpose === 'ground-up-construction' ? 'ground-up' : '');
     const purpose = rawPurpose === 'refinance' || rawPurpose === 'purchase' ? rawPurpose : '';
-    setFormData((prev) => ({ ...prev, strategy: strategy || prev.strategy, loanPurpose: purpose || prev.loanPurpose, purchasePrice: searchParams.get('purchasePrice') || prev.purchasePrice, arv: searchParams.get('arv') || prev.arv, rehabAmount: searchParams.get('rehabAmount') || prev.rehabAmount, location: searchParams.get('state') ? `${prev.location || ''}${prev.location ? ', ' : ''}${searchParams.get('state')}` : prev.location, dealOverview: searchParams.get('rent') ? `Calculator values - rent: $${searchParams.get('rent')}; mortgage P&I: $${searchParams.get('mortgage') || '0'}; taxes: $${searchParams.get('taxes') || '0'}; insurance: $${searchParams.get('insurance') || '0'}; HOA: $${searchParams.get('hoa') || '0'}; vacancy: ${searchParams.get('vacancy') || '0'}%.` : prev.dealOverview }));
+    const calculatorSummary = source === 'dscr-calculator'
+      ? [
+          `DSCR calculator scenario (${purpose || 'purchase'}):`,
+          `current value / purchase price: $${searchParams.get('purchasePrice') || '0'}`,
+          `leverage: ${searchParams.get('leverage') || '0'}%; derived loan amount: $${searchParams.get('loanAmount') || '0'}`,
+          ...(purpose === 'refinance' ? [`existing loan payoff: $${searchParams.get('refiPayoff') || '0'}`] : []),
+          `gross monthly rent: $${searchParams.get('rent') || '0'}`,
+          `monthly P&I: $${searchParams.get('mortgage') || '0'}`,
+          `monthly property taxes: $${searchParams.get('taxes') || '0'}`,
+          `monthly insurance: $${searchParams.get('insurance') || '0'}`,
+          `monthly HOA: $${searchParams.get('hoa') || '0'}`,
+          `vacancy assumption: ${searchParams.get('vacancy') || '0'}%`,
+          `closing-cost assumption: ${searchParams.get('closingCostPercent') || '0'}%`,
+          purpose === 'refinance'
+            ? `estimated net at close after payoff and modeled closing costs: $${searchParams.get('netAtClose') || '0'}`
+            : `DSCR: ${searchParams.get('dscr') || '0'}x; effective rent after vacancy: $${searchParams.get('effectiveRent') || '0'} / month; modeled monthly payment: $${searchParams.get('monthlyPayment') || '0'}`,
+            `estimated cash to close: $${searchParams.get('cashToClose') || '0'}`,
+        ].join('; ')
+      : source === 'fix-and-flip-calculator'
+        ? [
+            'Fix-and-flip calculator scenario:',
+            `purchase price: $${searchParams.get('purchasePrice') || '0'}`,
+            `rehab budget: $${searchParams.get('rehabAmount') || '0'}`,
+            `ARV: $${searchParams.get('arv') || '0'}`,
+            `purchase financing: ${searchParams.get('purchaseFinancingPercent') || '0'}%; derived purchase loan: $${searchParams.get('loanAmount') || '0'}`,
+            `hold period: ${searchParams.get('holdingMonths') || '0'} months`,
+            `annual interest assumption: ${searchParams.get('interestRate') || '0'}%`,
+            `purchase closing-cost assumption: ${searchParams.get('closingCostPercent') || '0'}%`,
+            `selling-cost assumption: ${searchParams.get('sellingCostPercent') || '0'}%`,
+            `estimated modeled cash needed: $${searchParams.get('cashNeeded') || '0'}`,
+            `modeled profit: $${searchParams.get('grossProfit') || '0'}; ROI on modeled cash: ${searchParams.get('roi') || '0'}%`,
+            `modeled total costs: $${searchParams.get('totalCosts') || '0'}; modeled holding interest: $${searchParams.get('holdingCosts') || '0'}; selling costs: $${searchParams.get('sellingCosts') || '0'}`,
+          ].join('; ')
+        : searchParams.get('rent')
+          ? `Calculator values - rent: $${searchParams.get('rent')}; mortgage P&I: $${searchParams.get('mortgage') || '0'}; taxes: $${searchParams.get('taxes') || '0'}; insurance: $${searchParams.get('insurance') || '0'}; HOA: $${searchParams.get('hoa') || '0'}; vacancy: ${searchParams.get('vacancy') || '0'}%.`
+          : '';
+    setFormData((prev) => ({ ...prev, strategy: strategy || prev.strategy, loanPurpose: purpose || prev.loanPurpose, purchasePrice: searchParams.get('purchasePrice') ? formatCurrency(searchParams.get('purchasePrice') || '') : prev.purchasePrice, arv: searchParams.get('arv') ? formatCurrency(searchParams.get('arv') || '') : prev.arv, rehabAmount: searchParams.get('rehabAmount') ? formatCurrency(searchParams.get('rehabAmount') || '') : prev.rehabAmount, location: searchParams.get('state') ? `${prev.location || ''}${prev.location ? ', ' : ''}${searchParams.get('state')}` : prev.location, dealOverview: calculatorSummary || prev.dealOverview }));
     if (source || rawPurpose) gtagEvent('quote_started', { source, query_intent: rawPurpose });
   }, []);
 
