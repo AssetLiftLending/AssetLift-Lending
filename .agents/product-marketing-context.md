@@ -4,10 +4,10 @@
 
 ## Product Overview
 **One-liner:** Private lending for real estate investors -- fix & flip, DSCR rental, bridge, and construction loans in 46 states.
-**What it does:** AssetLift Lending is primarily a mortgage broker that white-labels lending through capital partners, providing fast private financing for non-owner-occupied investment properties. They also do some direct lending when it's the best fit. Loan amounts range from $100K to $5M with closings possible in as fast as 5 business days.
-**Product category:** Mortgage broker / White-label private lender
+**What it does:** AssetLift Lending is a private lender providing fast private financing for non-owner-occupied investment properties. Loan amounts range from $100K to $5M with closings possible in as fast as 5 business days.
+**Product category:** Private lender (funded with capital partners)
 **Product type:** Financial services (lending)
-**Business model:** Primarily a broker model -- revenue from origination and broker fees on deals placed through white-label capital partners. Some direct lending with interest income on balance-sheet loans. No SaaS component.
+**Business model:** Private lender funding loans with our capital partners. Revenue from origination fees and interest income. No SaaS component.
 
 ## Target Audience
 **Target companies:** Individual real estate investors, small to mid-size fix-and-flip operators, rental portfolio builders, real estate developers (residential)
@@ -53,12 +53,12 @@
 ## Differentiation
 **Key differentiators:**
 - Response within 24 hours (usually hours) -- faster than most competitors
-- Hybrid broker/lender model: primarily brokers through white-label capital partners, with some direct lending -- borrowers get a seamless branded experience either way
+- Private lender funded with capital partners -- borrowers get a seamless branded experience
 - Work with first-time investors on a case-by-case basis (many lenders won't)
 - 46-state coverage with local market knowledge (city/state landing pages)
 - Full spectrum of loan products under one roof (flip, rental, bridge, construction)
 
-**How we do it differently:** White-label broker model means access to multiple capital sources with institutional-style underwriting, combined with the speed and flexibility of a private lender. Borrowers deal with AssetLift as their lender while we match them to the best capital partner behind the scenes.
+**How we do it differently:** Capital-partner funding means access to multiple capital sources with institutional-style underwriting, combined with the speed and flexibility of a private lender. Borrowers deal with AssetLift as their lender.
 **Why that's better:** Borrowers get the right capital structure for their deal, not forced into a one-size-fits-all product.
 **Why customers choose us:** Speed, responsiveness, and a team that understands real estate investing from the operator's perspective.
 
@@ -131,7 +131,7 @@
 | Theme | Proof |
 |-------|-------|
 | Speed | Many files close in as fast as 5 business days; response within 24 hours |
-| Flexibility | Lend directly + broker through capital partners; work with first-timers |
+| Flexibility | Fund directly with capital partners; work with first-timers |
 | Coverage | 46 states, 4 loan products, $100K-$5M range |
 | Investor-first | Asset-based underwriting, no W-2 required for DSCR |
 

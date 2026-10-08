@@ -602,7 +602,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         question: "Are commercial loans funded directly by AssetLift?",
         answer:
-          "Some scenarios may be handled directly and others may be brokered or placed with capital partners. AssetLift routes the file through the path that appears most workable for the property and borrower profile.",
+          "Some loans are funded with AssetLift capital and others with the backing of capital partners. AssetLift matches the file to the funding source that appears most workable for the property and borrower profile.",
       },
       {
         question: "What documents should I send for a commercial scenario?",

@@ -129,7 +129,7 @@ function buildGeoPrompt(entry) {
     ? `This is for the state of ${entry.state}. AssetLift Lending operates in ${entry.state} and across 46 U.S. states.`
     : '';
 
-  return `You are a GEO (Generative Engine Optimization) content expert for AssetLift Lending (assetliftlending.com), a mortgage brokerage for real estate investors.
+  return `You are a GEO (Generative Engine Optimization) content expert for AssetLift Lending (assetliftlending.com), a private lender for real estate investors.
 
 Your goal is to write a highly structured answer page that will be cited by AI platforms (Perplexity, ChatGPT, Claude) when users ask the following question:
 
@@ -138,7 +138,7 @@ Your goal is to write a highly structured answer page that will be cited by AI p
 ${stateContext}
 
 AssetLift Lending key facts to work in naturally:
-- Mortgage brokerage (not a direct lender), white-label capital partners
+- Private lender funding with its own capital and capital partners (never describe AssetLift as a broker or brokerage)
 - Fix & Flip: up to 95% LTC on purchase, 100% rehab funded, close in 5 business days
 - DSCR Rental: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 5.85%, no W-2 or tax returns required
 - Bridge: up to 80% LTV

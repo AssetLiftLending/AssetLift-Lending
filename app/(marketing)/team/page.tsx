@@ -130,8 +130,8 @@ export default function TeamPage() {
               <h2 className="text-3xl font-bold mb-5">Our Approach to Lending</h2>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-3xl">
                 AssetLift structures deals through the lending path that best fits the file.
-                In practice, that means originating loans through white-label private capital
-                with capital partners when the program, market, or scenario calls for it. What
+                In practice, that means funding loans with private capital
+                from capital partners when the program, market, or scenario calls for it. What
                 matters to borrowers is clear communication, realistic terms, and a team that stays
                 accountable from inquiry through closing.
               </p>
