@@ -44,6 +44,7 @@ const PRIORITY_CITY_SLUGS = [
   "queens",
   "westchester-county",
   "tyler-smith-county",
+  "brunswick-glynn-county",
   "macon-bibb-county",
   "bridgeport",
   "new-haven",
