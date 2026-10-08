@@ -224,39 +224,47 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
       'Fix and flip loans in Connecticut for experienced investors. Fast review for Stamford, Bridgeport, New Haven, Hartford, and nearby markets.',
     h1: 'Connecticut Fix & Flip Loans for Experienced Investors',
     intro:
-      'AssetLift reviews Connecticut fix and flip scenarios for experienced investors who need acquisition and rehab capital for non-owner-occupied properties. The best files show tight local comps, a disciplined renovation scope, and enough reserves for carrying costs.',
+      'AssetLift Lending reviews business-purpose fix-and-flip scenarios for non-owner-occupied Connecticut properties. Build the submission around the actual municipality and property: purchase basis, legal use and unit count, condition, line-item work scope, contractor plan, local after-repair-value comparables, borrower contribution, reserves, and a realistic sale or refinance payoff plan. Purchase leverage, eligible rehab advances, draw rules, fees, and timing depend on valuation, scope, borrower profile, current program, and written terms.',
     markets: ['Stamford', 'Bridgeport', 'New Haven', 'Hartford', 'Norwalk', 'Waterbury', 'Danbury'],
     fit: [
       ...sharedQualification,
-      'Purchase and renovation projects with realistic resale comps',
-      'Experienced operators with contractor plans and closing timelines ready',
+      'Non-owner-occupied acquisition and renovation projects with supportable local resale value',
+      'Operators who can document the scope, contractor responsibilities, funding needs, and downside exit plan',
     ],
     localNotes: [
-      'Fairfield County files can work well, but high basis and taxes make conservative ARV support important.',
-      'New Haven, Bridgeport, and Hartford deals need neighborhood-specific resale and rent analysis.',
-      'Older properties should account for mechanical, environmental, and permit risk before closing.',
+      'Fairfield County projects span different price points; use nearby closed sales matched for property type, size, condition, and finish rather than county-wide averages.',
+      'For New Haven, Bridgeport, and Hartford, verify legal unit count, occupancy, municipal permits/code status, taxes, insurance, and rent or resale evidence for the immediate neighborhood.',
+      'For paid work disturbing painted surfaces in pre-1978 housing, check the EPA RRP rule, applicable firm certification, training, work practices, and pre-renovation notice before pricing the scope.',
+      'Budget closing costs, interest, utilities, taxes, insurance, permit costs, contingency, selling costs, and cash needed before or between rehab draws.',
     ],
     whatToPrepare: [
-      'Purchase basis and closing deadline',
-      'Rehab budget, contractor plan, and contingency',
-      'ARV comps from the immediate market',
-      'Exit timeline and reserves',
+      'Property address, purchase contract or ownership details, and target closing date',
+      'Legal unit/occupancy details, current condition, and required municipal approvals',
+      'Line-item rehab scope, contractor bids and responsibilities, permit needs, sequencing, and contingency',
+      'Recent nearby closed sales supporting the proposed ARV, with adjustments explained',
+      'Borrower/entity details, proof of contribution and reserves, and a sale or refinance downside plan',
+      'Questions on eligible costs, draw inspections, reimbursement timing, fees, maturity, and payoff terms',
     ],
     faqs: [
       {
-        question: 'Do you fund fix and flip loans in Connecticut?',
+        question: 'Do you review fix-and-flip projects in Connecticut?',
         answer:
-          'Yes. AssetLift reviews Connecticut fix and flip loan scenarios for experienced investors buying non-owner-occupied investment properties.',
+          'AssetLift Lending reviews business-purpose, non-owner-occupied Connecticut fix-and-flip scenarios. Eligibility and terms depend on the property, borrower, scope, valuation, title, and current program; request project-specific written terms before committing to a purchase.',
       },
       {
-        question: 'Which Connecticut markets are a fit?',
+        question: 'What should a Connecticut flip file include?',
         answer:
-          'We review deals in Stamford, Bridgeport, New Haven, Hartford, Norwalk, Waterbury, Danbury, and other Connecticut markets when the file is well-supported.',
+          'Prepare the address and contract, legal use and occupancy information, an itemized scope and contractor plan, local closed-sale comparables, borrower contribution and reserves, taxes, insurance, permit status, and a realistic sale or refinance payoff plan. For pre-1978 renovations that disturb painted surfaces, check applicable EPA RRP requirements.',
       },
       {
-        question: 'How fast can a Connecticut flip loan close?',
+        question: 'How quickly can a Connecticut fix-and-flip loan close?',
         answer:
-          'Many files can close quickly when title, valuation, insurance, borrower documents, and the scope of work are ready, subject to underwriting and file complexity.',
+          'Timing depends on title, valuation, insurance, permits, borrower documents, scope review, third parties, and file complexity. Confirm an expected timeline for the complete project in writing; do not rely on a general estimate for a contract deadline.',
+      },
+      {
+        question: 'Can rehab funds cover the entire renovation budget?',
+        answer:
+          'Eligible rehab costs, borrower contribution, draw inspections, reimbursement mechanics, timing, fees, and any retainage depend on the approved scope and written terms. Ask whether contractors must be paid before a draw and keep funds for excluded items, change orders, and timing gaps.',
       },
     ],
   },
