@@ -135,6 +135,7 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/new-york/binghamton',
   '/lending/new-york/niagara-falls',
   '/lending/new-york/ithaca',
+  '/lending/texas/tyler-smith-county',
   '/lending/georgia/macon-bibb-county',
 ]);
 
