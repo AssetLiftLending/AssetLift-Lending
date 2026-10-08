@@ -160,26 +160,26 @@ export const STATES: StateData[] = [
     abbreviation: "CT",
     slug: "connecticut",
     overview:
-      "Connecticut offers a unique blend of commuter-driven demand from New York City, historic housing stock ripe for renovation, and waterfront markets along Long Island Sound. Cities like Hartford, New Haven, and Bridgeport provide affordable multifamily investment opportunities, while Fairfield County commands premium prices from Manhattan transplants. The post-pandemic migration wave significantly boosted suburban markets.",
+      "Connecticut is not one investor market. Fairfield County, the New Haven and Hartford areas, and eastern Connecticut differ in property type, value, rent, taxes, and resale depth. Underwrite the exact municipality and neighborhood: verify legal unit count and occupancy, obtain local tax and insurance figures, and support the exit with nearby closed sales or documented rent. Older homes may need added diligence on condition, permits, lead-safe work, utilities, and title.",
     topCities: ["Hartford", "New Haven", "Bridgeport", "Stamford", "Waterbury"],
     medianHomePrice: "$405,000",
     marketHighlight:
-      "Connecticut saw a 40% increase in home sales to NYC-area transplants since 2020, transforming sleepy suburban markets into competitive investing territory.",
+      "For renovation projects in pre-1978 housing, check whether paid work that disturbs painted surfaces falls under EPA’s Renovation, Repair and Painting (RRP) rule. Connecticut DPH says the federal RRP program applies in Connecticut; verify the applicable firm certification, training, lead-safe work practices, and pre-renovation notice before setting the scope or budget.",
     faqs: [
       {
-        question: "How does Connecticut's foreclosure process affect hard money lending?",
+        question: "What should investors know about foreclosure and loan terms in Connecticut?",
         answer:
-          "Connecticut is a judicial foreclosure state, meaning foreclosures go through the court system and can take 12 to 18 months. This longer timeline means lenders may require slightly lower LTVs (60-70%) to account for the extended process in case of borrower default.",
+          "Connecticut foreclosure matters are handled through the court system, which provides forms and procedures for strict foreclosure and foreclosure by sale. Do not assume a standard timeline or a particular effect on available loan terms: case duration and lender terms vary. Review payoff, maturity, default, and extension provisions with qualified counsel and get project-specific financing terms in writing.",
       },
       {
-        question: "Are there hard money loans available for multifamily properties in Connecticut?",
+        question: "What should I check before renovating an older Connecticut multifamily property?",
         answer:
-          "Absolutely. Connecticut's cities like Hartford, New Haven, and Bridgeport have robust multifamily markets with strong rental demand. AssetLift finances 2-4 unit properties and small apartment buildings for both acquisition and renovation projects.",
+          "Confirm the legal unit count, occupancy, municipal permits and code status, property taxes, insurance, utility setup, title, and local sale or rent comparables. For pre-1978 housing, check EPA RRP obligations before work disturbs painted surfaces. Financing eligibility and terms depend on the property, scope, borrower, valuation, and current program; request written terms for the specific project.",
       },
       {
-        question: "What exit strategies work best for hard money borrowers in Connecticut?",
+        question: "How should I plan a Connecticut investment-loan exit?",
         answer:
-          "The most common exit strategies in Connecticut are selling the renovated property (particularly in Fairfield County), refinancing into a long-term rental loan (common in Hartford and New Haven), or refinancing into a conventional mortgage once the property is stabilized and seasoned.",
+          "Model a sale using nearby closed sales and include a longer marketing period and lower price in the downside case. If the plan is a rental refinance, verify unit legality, realistic rent, taxes, insurance, operating costs, and lease-up needs. A refinance is a separate application subject to the property's completed condition, valuation, rent support, borrower eligibility, and the takeout lender's rules; it is not guaranteed.",
       },
     ],
   },
