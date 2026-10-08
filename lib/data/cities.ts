@@ -697,6 +697,66 @@ export const CITIES: CityData[] = [
     ],
   },
 
+  // Texas pilot: Tyler and Smith County
+  {
+    cityName: "Tyler & Smith County",
+    citySlug: "tyler-smith-county",
+    stateSlug: "texas",
+    stateName: "Texas",
+    stateAbbreviation: "TX",
+    population: "113,723 (Tyler city, 2025 estimate)",
+    medianHomePrice: "$289,808 median sale price",
+    overview: "Tyler is the principal city in Smith County, but the city's housing statistics are not countywide pricing guidance. Distinguish a Tyler parcel from nearby Smith County communities and use sales close to the subject for ARV support. AssetLift reviews qualifying business-purpose financing for non-owner-occupied fix-and-flip, bridge, DSCR rental, and residential investment scenarios; actual coverage and terms are subject to current program rules and underwriting.",
+    topNeighborhoods: [],
+    investmentHighlight: "The Census Bureau estimates Tyler city at 113,723 people in 2025, up 7.4% from the 2020 estimate base; Smith County is estimated at 252,549, up 8.2%. SFR Analytics reports 875 tracked Tyler investors and 479 observed exits or flips, a proprietary dataset rather than a complete ownership or transaction census. Redfin reported a $289,808 Tyler median sale price over the three months ending August 2026, down 6.5% year over year, with 328 sales in August. The recent city trend makes current comps more useful than an older countywide average.",
+    heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Tyler and Smith County, Texas. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; approval, terms, and execution depend on the deal and underwriting.",
+    ctaDescription: "For an initial review, send the Tyler-area property address, purchase basis, current photos, line-item work scope, recent nearby sales, supported rent if applicable, property-tax and insurance figures, requested amount, and sale or refinance exit. A review is not approval or a commitment to lend.",
+    metadataTitle: "Hard Money Loans Tyler & Smith County, TX | AssetLift Lending",
+    metadataDescription: "Tyler and Smith County, TX investment-property financing review with local market data, City of Tyler permit and zoning guidance, and published AssetLift Lending terms.",
+    hideNeighborhoods: true,
+    areaServedType: "AdministrativeArea",
+    marketEvidence: [
+      { label: "Tyler city population", value: "113,723", context: "U.S. Census Bureau 2025 estimate; +7.4% from the 2020 estimate base.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/fact/table/tylercitytexas/PST045225" },
+      { label: "Smith County population", value: "252,549", context: "U.S. Census Bureau 2025 estimate; +8.2% from the 2020 estimate base.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/fact/table/smithcountytexas/PST045225" },
+      { label: "Tyler median sale price", value: "$289,808", context: "Redfin three-month period ending Aug 2026; down 6.5% YoY, with 328 city sales in August. Not an ARV.", sourceLabel: "Redfin", sourceUrl: "https://www.redfin.com/city/18838/TX/Tyler/housing-market" },
+      { label: "Tyler typical home value", value: "$258,734", context: "Zillow Home Value Index result, updated Aug 31, 2026; different method and metric from Redfin median sales.", sourceLabel: "Zillow", sourceUrl: "https://www.zillow.com/home-values/41324/tyler-tx/" },
+      { label: "Tracked local investors", value: "875", context: "SFR Analytics Tyler dataset; viewed Oct 7, 2026.", sourceLabel: "SFR Analytics", sourceUrl: "https://sfranalytics.com/investors/tx/tyler-tx" },
+      { label: "Observed exits or flips", value: "479", context: "SFR Analytics proprietary tracked transactions; not a complete local deed census.", sourceLabel: "SFR Analytics", sourceUrl: "https://sfranalytics.com/investors/tx/tyler-tx" },
+    ],
+    marketEvidenceNote: "City vs county population and city housing price metrics have different scopes. Redfin reports completed sales; Zillow's index estimates typical home value. SFR Analytics tracks observed investor and transaction records; its lender and exit counts are not a census. For a financing request, use recent comparable sales for the subject area and current parcel-specific rent, tax, and insurance evidence.",
+    marketSources: [
+      { label: "City of Tyler planning and zoning information", href: "https://www.cityoftyler.org/City-Government/Development-Planning/Planning-and-Zoning-Information" },
+      { label: "Tyler development and permit FAQs", href: "https://www.cityoftyler.org/City-Government/Development-Planning/Property-Owners/Development-Planning-FAQs" },
+      { label: "Tyler permits and residential forms", href: "https://www.cityoftyler.org/City-Government/Development-Planning/Property-Owners/Forms-and-Applications" },
+    ],
+    programSummaries: [
+      { title: "Fix & Flip Loans", desc: "Published terms: up to 95% LTC on purchase and up to 100% of approved rehab; total leverage is generally capped at 70-75% of ARV. Actual proceeds depend on underwriting and deal strength.", href: "/loans/fix-and-flip" },
+      { title: "DSCR Rental Loans", desc: "Published program limits may reach 85% LTV on purchases and 80% LTV on cash-out refinance scenarios. Rent support, full payment, property, reserves, and program rules affect terms.", href: "/loans/dscr-rental" },
+      { title: "Bridge Financing", desc: "For eligible transitional investment-property needs. Leverage, payoff plan, title, valuation, borrower, and file complexity are reviewed for each request.", href: "/loans/bridge" },
+      { title: "Ground-Up Construction", desc: "Qualifying residential investment projects are reviewed with plans, budget, contractor, permits, equity, valuation, and exit; construction draws and leverage depend on underwriting.", href: "/loans/ground-up-construction" },
+    ],
+    localExecution: {
+      heading: "Tyler deal prep: confirm zoning, permits, and review timing",
+      intro: "Inside Tyler city limits, the City of Tyler directs property owners to check parcel zoning, allowed uses, setbacks, permits, and inspections through its Development & Planning resources. Its FAQ states that correctly submitted residential permit materials can take up to two business days for prescreening and about five business days for review; corrections restart review timing. That is the city's review timeline, not a promise about financing or total project duration. Smith County or another municipality may have different processes, so establish jurisdiction for the property first.",
+      checklist: [
+        "Use current sales close to the property and within the same property type and submarket; do not carry city or county averages into ARV",
+        "For Tyler city parcels, check zoning, permitted use, setbacks, and permit requirements by address; confirm which agency has jurisdiction outside city limits",
+        "Allow time for complete permit submissions and possible correction rounds; City of Tyler's published residential review estimate assumes correctly submitted documents",
+        "For DSCR review, document lease or supported rent and the full payment inputs, including current property taxes, insurance, and HOA dues if any",
+      ],
+    },
+    faqs: [
+      { question: "Is Tyler's $289,808 median sale price a loan valuation for my property?", answer: "No. Redfin's figure covers Tyler city sales over the three months ending August 2026 and is market context, not a subject-property appraisal or ARV. Redfin reported 328 sales in August and a 6.5% year-over-year decrease; its city statistic also differs from Smith County data and Zillow's typical-value index. Use recent nearby sales that match the address, type, size, and condition." },
+      { question: "Do Tyler city building-permit review times determine my project or loan closing date?", answer: "No. The City of Tyler says correctly submitted residential permit materials take up to two business days for prescreening and about five business days for review, and that corrections restart the review time. That estimate is specific to city permit review; it is not a financing timeline or a guarantee of the full permit process. Confirm address jurisdiction and current requirements with the city or county." },
+      { question: "What should I check before a Tyler rehab begins?", answer: "For property within Tyler, verify zoning classification, allowed use, setbacks, required permits, and inspection steps through the City's Planning & Zoning and Development & Planning resources. The city offers online permit and plan submission. For a Smith County property outside the city, confirm the responsible local authority instead of assuming Tyler's rules apply." },
+      { question: "Can AssetLift review fix-and-flip financing for a Smith County investment property?", answer: "AssetLift reviews qualifying business-purpose financing for non-owner-occupied properties. Published fix-and-flip terms include up to 95% LTC on purchase and up to 100% of approved rehab, with total leverage generally capped at 70-75% of ARV. The actual structure depends on valuation, scope, experience, liquidity, credit, title, insurance, and exit plan; maximum published terms are not guaranteed." },
+      { question: "Can a Tyler rental be considered for DSCR financing?", answer: "A qualifying non-owner-occupied rental can be reviewed under DSCR programs using supported rent against the full proposed payment. Include current taxes, insurance, HOA dues if applicable, lease or rent support, and reserves. Published limits may reach 85% LTV on purchases and 80% on cash-out refinances, subject to property cash flow and underwriting." },
+      { question: "What should I send for an initial Tyler-area loan review?", answer: "Send the property address and jurisdiction, purchase contract or target basis, photos, line-item rehab scope and contractor information, recent comparable sales, borrower experience and liquidity, title contact, and planned sale or refinance exit. For a rental, include lease or market-rent support, taxes, insurance, HOA dues, and requested loan amount." },
+      { question: "Does AssetLift finance owner-occupied homes in Tyler?", answer: "No. The programs described here are business-purpose financing for non-owner-occupied investment properties only." },
+    ],
+  },
+
+
   // North Carolina (3 cities)
   {
     cityName: "Charlotte",
