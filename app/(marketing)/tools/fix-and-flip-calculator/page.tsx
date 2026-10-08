@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FlipCalculator from './FlipCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fix and Flip Calculator | Rehab Costs, Profit & MAO',
+  title: 'Free Fix and Flip Calculator',
   description:
-    'Free fix and flip calculator: purchase, rehab, financing, holding, and selling costs, plus projected profit and max allowable offer. Then request loan terms.',
+    'Use this free fix and flip calculator to estimate project costs, cash needed, profit, and ROI from purchase, rehab, financing, hold, and sale assumptions.',
   path: '/tools/fix-and-flip-calculator',
 });
 

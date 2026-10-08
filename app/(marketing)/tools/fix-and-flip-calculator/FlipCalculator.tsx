@@ -2,10 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Calculator, DollarSign, TrendingUp, AlertCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { ArrowRight, Info } from 'lucide-react';
 import { gtagEvent } from '@/lib/gtag';
 
 export default function FlipCalculator() {
@@ -16,25 +13,28 @@ export default function FlipCalculator() {
   const [interestRate, setInterestRate] = useState('10');
   const [closingCostPercent, setClosingCostPercent] = useState('3');
   const [sellingCostPercent, setSellingCostPercent] = useState('6');
+  const [purchaseFinancingPercent, setPurchaseFinancingPercent] = useState('95');
   const trackedUse = useRef(false);
   const trackedBand = useRef('');
 
   const purchase = parseFloat(purchasePrice) || 0;
   const rehab = parseFloat(rehabCost) || 0;
   const afterRepair = parseFloat(arv) || 0;
-  const months = parseFloat(holdingMonths) || 6;
-  const rate = parseFloat(interestRate) || 10;
-  const closingPct = parseFloat(closingCostPercent) || 3;
-  const sellingPct = parseFloat(sellingCostPercent) || 6;
+  const months = Number.isFinite(Number.parseFloat(holdingMonths)) ? Math.max(0, Number.parseFloat(holdingMonths)) : 6;
+  const rate = Number.isFinite(Number.parseFloat(interestRate)) ? Math.max(0, Number.parseFloat(interestRate)) : 10;
+  const closingPct = Number.isFinite(Number.parseFloat(closingCostPercent)) ? Math.max(0, Number.parseFloat(closingCostPercent)) : 3;
+  const sellingPct = Number.isFinite(Number.parseFloat(sellingCostPercent)) ? Math.max(0, Number.parseFloat(sellingCostPercent)) : 6;
+  const financingPct = Number.isFinite(Number.parseFloat(purchaseFinancingPercent)) ? Math.min(100, Math.max(0, Number.parseFloat(purchaseFinancingPercent))) : 95;
 
   const totalInvestment = purchase + rehab;
-  const loanAmount = purchase * 0.95;
+  const loanAmount = purchase * financingPct / 100;
   const closingCosts = purchase * (closingPct / 100);
   const holdingCosts = loanAmount * (rate / 100 / 12) * months;
   const sellingCosts = afterRepair * (sellingPct / 100);
   const totalCosts = totalInvestment + closingCosts + holdingCosts + sellingCosts;
   const grossProfit = afterRepair - totalCosts;
-  const roi = totalInvestment > 0 ? (grossProfit / (purchase * 0.05 + rehab + closingCosts)) * 100 : 0;
+  const estimatedCashNeeded = purchase - loanAmount + rehab + closingCosts;
+  const roi = estimatedCashNeeded > 0 ? (grossProfit / estimatedCashNeeded) * 100 : 0;
 
   const hasValues = purchase > 0 && afterRepair > 0;
   const marginBand = roi >= 20 ? '20% plus' : roi >= 10 ? '10% to 19.9%' : roi >= 0 ? '0% to 9.9%' : 'negative';
@@ -52,191 +52,64 @@ export default function FlipCalculator() {
     if (trackedBand.current !== marginBand) { trackedBand.current = marginBand; gtagEvent('calculator_margin_band', { calculator: 'fix_and_flip', margin_band: marginBand }); }
   }, [hasValues, marginBand]);
 
-  const applyParams = new URLSearchParams({ loanPurpose: 'fix-and-flip', source: 'fix-and-flip-calculator', strategy: 'fix-flip', purchasePrice, rehabAmount: rehabCost, arv, holdingMonths, interestRate, closingCostPercent, sellingCostPercent }).toString();
+  const applyParams = new URLSearchParams({ loanPurpose: 'fix-and-flip', source: 'fix-and-flip-calculator', strategy: 'fix-flip', purchasePrice, rehabAmount: rehabCost, arv, holdingMonths, interestRate, closingCostPercent, sellingCostPercent, purchaseFinancingPercent }).toString();
+
+  const currency = (value: number) => `$${Math.round(value).toLocaleString()}`;
+  const inputClass = 'h-11 w-full rounded-md border border-input bg-background px-3 text-base font-semibold text-foreground shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring';
+  const tipClass = 'ml-1 inline-flex h-4 w-4 cursor-help items-center justify-center rounded-full border border-muted-foreground/50 text-muted-foreground';
+  const fields: { id: string; label: string; hint: string; value: string; change: (value: string) => void; placeholder: string; suffix?: string }[] = [
+    { id: 'purchase', label: 'Purchase price', hint: 'Contract purchase price, before purchase closing costs.', value: purchasePrice, change: setPurchasePrice, placeholder: '280,000' },
+    { id: 'rehab', label: 'Rehab budget', hint: 'Current estimated construction budget; add contingency elsewhere because it is not included.', value: rehabCost, change: setRehabCost, placeholder: '55,000' },
+    { id: 'arv', label: 'After-repair value (ARV)', hint: 'Supported expected resale value after work is complete.', value: arv, change: setArv, placeholder: '420,000' },
+    { id: 'months', label: 'Hold period', suffix: 'mo', hint: 'Estimated months from purchase through sale. Interest is modeled as simple monthly interest.', value: holdingMonths, change: setHoldingMonths, placeholder: '6' },
+    { id: 'rate', label: 'Annual interest rate', suffix: '%', hint: 'Illustrative annual interest rate applied to 95% of purchase price; actual loan structure and fees may differ.', value: interestRate, change: setInterestRate, placeholder: '10' },
+    { id: 'closing', label: 'Purchase closing costs', suffix: '%', hint: 'Estimated percentage of purchase price. Does not include every possible lender, title, tax, or escrow charge.', value: closingCostPercent, change: setClosingCostPercent, placeholder: '3' },
+    { id: 'selling', label: 'Selling costs', suffix: '%', hint: 'Estimated percentage of ARV for sale costs; actual commissions, transfer taxes, concessions, and fees vary.', value: sellingCostPercent, change: setSellingCostPercent, placeholder: '6' },
+    { id: 'financing', label: 'Purchase financing (default 95%)', suffix: '%', hint: 'Editable assumed share of purchase price financed. The default matches the previous calculator assumption; actual leverage varies by lender and deal.', value: purchaseFinancingPercent, change: setPurchaseFinancingPercent, placeholder: '95' },
+  ];
 
   return (
-    <div className="min-h-screen">
-      <section className="py-12 md:py-20">
-        <div className="container px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-                <Calculator className="w-8 h-8 text-primary" />
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                Fix and Flip Loan Calculator
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-5">Estimate total project cost and projected profit before requesting terms.</p>
-              <div className="mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-5 text-left leading-relaxed">This tool estimates a fix-and-flip scenario from the purchase price, rehab budget, financing assumptions, hold period, transaction costs, and after-repair value. The result is only as complete as the inputs: it is not a loan quote, approval, or full cash-to-close calculation. Lenders also review local comps, scope, title, condition, borrower and project details, liquidity, and exit.</div>
+    <div className="min-h-screen bg-background">
+      <section className="container px-4 pb-8 pt-6 md:px-6 md:pb-12 md:pt-10">
+        <div className="mb-5 text-xs text-muted-foreground">Tools / Property renovation</div>
+        <div className="mb-6 max-w-3xl">
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.14em] text-gold">Free investor tool</p>
+          <h1 className="mb-2 text-3xl font-bold tracking-tight text-charcoal md:text-4xl">Free fix and flip calculator</h1>
+          <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">Pressure-test the purchase, rehab, carry, and sale assumptions in your deal. Estimates recalculate as you edit.</p>
+        </div>
+        <div className="grid items-start gap-4 lg:grid-cols-[1.2fr_0.8fr] lg:gap-6">
+          <section className="order-2 rounded-xl border border-border bg-card p-4 shadow-sm md:p-6 lg:order-1" aria-labelledby="flip-input-title">
+            <h2 id="flip-input-title" className="text-lg font-bold text-charcoal">Deal assumptions</h2>
+            <p className="mb-5 mt-1 text-xs text-muted-foreground">Use property-specific estimates; defaults are illustrative.</p>
+            <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2">
+              {fields.map((field) => (
+                <div key={field.id}>
+                  <label htmlFor={field.id} className="mb-1.5 flex min-h-8 items-start text-xs font-semibold leading-4 text-foreground">{field.label}<span className={tipClass} tabIndex={0} role="img" aria-label={`Help: ${field.hint}`} title={field.hint}><Info className="h-2.5 w-2.5" /></span></label>
+                  <div className="relative"><input id={field.id} className={`${inputClass} ${field.suffix ? 'pr-10' : ''}`} type="number" inputMode="decimal" min="0" step="any" placeholder={field.placeholder} value={field.value} onChange={(event) => field.change(event.target.value)} />{field.suffix && <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm font-semibold text-muted-foreground">{field.suffix}</span>}</div>
+                </div>
+              ))}
             </div>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Inputs */}
-              <div className="bg-card border border-border rounded-xl p-6 md:p-8 space-y-6">
-                <h2 className="font-semibold text-lg flex items-center gap-2">
-                  <DollarSign className="w-5 h-5 text-primary" />
-                  Deal Numbers
-                </h2>
-
-                <div className="space-y-4">
-                  <div>
-                    <Label htmlFor="purchase">Purchase Price ($)</Label>
-                    <Input
-                      id="purchase"
-                      type="number"
-                      placeholder="250000"
-                      value={purchasePrice}
-                      onChange={(e) => setPurchasePrice(e.target.value)}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="rehab">Renovation Budget ($)</Label>
-                    <Input
-                      id="rehab"
-                      type="number"
-                      placeholder="50000"
-                      value={rehabCost}
-                      onChange={(e) => setRehabCost(e.target.value)}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="arv">After-Repair Value ($)</Label>
-                    <Input
-                      id="arv"
-                      type="number"
-                      placeholder="400000"
-                      value={arv}
-                      onChange={(e) => setArv(e.target.value)}
-                    />
-                  </div>
-                </div>
-
-                <h2 className="font-semibold text-lg pt-2">Assumptions</h2>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="months">Hold Period (months)</Label>
-                    <Input
-                      id="months"
-                      type="number"
-                      value={holdingMonths}
-                      onChange={(e) => setHoldingMonths(e.target.value)}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="rate">Interest Rate (%)</Label>
-                    <Input
-                      id="rate"
-                      type="number"
-                      step="0.1"
-                      value={interestRate}
-                      onChange={(e) => setInterestRate(e.target.value)}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="closing">Closing Costs (%)</Label>
-                    <Input
-                      id="closing"
-                      type="number"
-                      step="0.1"
-                      value={closingCostPercent}
-                      onChange={(e) => setClosingCostPercent(e.target.value)}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="selling">Selling Costs (%)</Label>
-                    <Input
-                      id="selling"
-                      type="number"
-                      step="0.1"
-                      value={sellingCostPercent}
-                      onChange={(e) => setSellingCostPercent(e.target.value)}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Results */}
-              <div className="space-y-6">
-                <div className="bg-card border border-border rounded-xl p-6 md:p-8">
-                  <h2 className="font-semibold text-lg flex items-center gap-2 mb-6">
-                    <TrendingUp className="w-5 h-5 text-primary" />
-                    Projected Results
-                  </h2>
-
-                  {hasValues ? (
-                    <div className="space-y-4">
-                      <div className="flex justify-between py-3 border-b border-border">
-                        <span className="text-muted-foreground">Total Investment</span>
-                        <span className="font-semibold">${totalInvestment.toLocaleString()}</span>
-                      </div>
-                      <div className="flex justify-between py-3 border-b border-border">
-                        <span className="text-muted-foreground">Closing Costs</span>
-                        <span className="font-semibold">${closingCosts.toLocaleString()}</span>
-                      </div>
-                      <div className="flex justify-between py-3 border-b border-border">
-                        <span className="text-muted-foreground">Holding Costs ({months}mo)</span>
-                        <span className="font-semibold">${Math.round(holdingCosts).toLocaleString()}</span>
-                      </div>
-                      <div className="flex justify-between py-3 border-b border-border">
-                        <span className="text-muted-foreground">Selling Costs</span>
-                        <span className="font-semibold">${Math.round(sellingCosts).toLocaleString()}</span>
-                      </div>
-                      <div className="flex justify-between py-3 border-b border-border">
-                        <span className="text-muted-foreground">Total All-In Cost</span>
-                        <span className="font-semibold">${Math.round(totalCosts).toLocaleString()}</span>
-                      </div>
-                      <div className="flex justify-between py-4 bg-primary/5 rounded-lg px-4 -mx-4">
-                        <span className="font-bold text-lg">Estimated Profit</span>
-                        <span
-                          className={`font-bold text-lg ${
-                            grossProfit >= 0 ? 'text-green-500' : 'text-red-500'
-                          }`}
-                        >
-                          ${Math.round(grossProfit).toLocaleString()}
-                        </span>
-                      </div>
-                      <div className="flex justify-between py-3">
-                        <span className="text-muted-foreground">Cash-on-Cash ROI</span>
-                        <span
-                          className={`font-bold ${
-                            roi >= 0 ? 'text-green-500' : 'text-red-500'
-                          }`}
-                        >
-                          {roi.toFixed(1)}%
-                        </span>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <AlertCircle className="w-5 h-5" />
-                      <p>Enter your purchase price and ARV to see projected results.</p>
-                    </div>
-                  )}
-                </div>
-
-                <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
-                  <p className="font-semibold mb-2">Turn this calculation into a loan review</p>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    The calculation is a planning estimate. For a deal review, include the property
-                    address, recent closed comps, current photos, itemized rehab scope, contractor plan,
-                    taxes, insurance, other carrying costs, borrower experience, proposed financing,
-                    reserves, and target closing date. Lender leverage, rate, fees, and draw structure
-                    are set only after review of the complete file.
-                  </p>
-                  <Button asChild size="lg" className="glow-primary">
-                    <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'fix_and_flip', margin_band: marginBand })}>
-                      Request Fix-and-Flip Terms <ArrowRight className="ml-2 w-4 h-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" className="mt-3"><Link href="/resources/fix-and-flip-deal-checklist">Download the Deal Checklist</Link></Button>
-                  <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only.</p>
-                </div>
-              </div>
+          </section>
+          <aside className="order-1 rounded-2xl bg-charcoal p-5 text-white shadow-lg md:p-6 lg:sticky lg:top-5 lg:order-2" aria-live="polite" aria-label="Live fix and flip estimate">
+            <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-gold">Estimated project profit</p>
+            <div className={`mt-1 text-4xl font-extrabold tracking-tight md:text-5xl ${grossProfit >= 0 ? 'text-white' : 'text-rose-300'}`}>{hasValues ? currency(grossProfit) : '—'}</div>
+            <p className="mt-2 text-xs text-white/70">After modeled purchase, rehab, carry, and selling costs</p>
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Estimated cash needed</span><strong className="mt-1 block text-base">{hasValues ? currency(estimatedCashNeeded) : '—'}</strong></div>
+              <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Estimated ROI on modeled cash</span><strong className="mt-1 block text-base">{hasValues ? `${roi.toFixed(1)}%` : '—'}</strong></div>
+              <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">All-in modeled costs</span><strong className="mt-1 block text-base">{hasValues ? currency(totalCosts) : '—'}</strong></div>
+              <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Hold period</span><strong className="mt-1 block text-base">{months} months</strong></div>
             </div>
-          </div>
+            <div className="mt-4 rounded-lg bg-white/5 p-3 text-xs leading-relaxed text-white/75">Cash estimate = purchase-price equity from the financing assumption + full rehab budget + modeled purchase closing costs. Excludes interest/carry reserves, lender and draw fees, taxes, insurance, utilities, contingency, and other costs.</div>
+            <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'fix_and_flip', margin_band: marginBand })} className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-gold px-4 py-3 text-center text-sm font-bold text-charcoal transition-colors hover:bg-gold-dark">Review my flip scenario <ArrowRight className="h-4 w-4" /></Link>
+            <p className="mt-3 text-[10px] leading-relaxed text-white/70">Planning estimate only, not a loan quote, approval, or full cash-to-close estimate. Financing and actual costs depend on lender, property, market, and project details.</p>
+          </aside>
+        </div>
+        <div className="mt-4 rounded-xl border border-border bg-card p-4 text-xs leading-relaxed text-muted-foreground md:mt-6 md:p-5"><span className="mr-2 inline-block rounded bg-gold/15 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-gold-dark">Model assumptions</span>Purchase financing defaults to the previous 95% assumption and is editable; interest is simple interest on that modeled loan amount for the hold period. Total costs include purchase + rehab, purchase closing costs, modeled interest, and selling costs. Profit excludes costs not entered or described here; independently verify every deal expense.</div>
+      </section>
 
-          <div className="max-w-4xl mx-auto mt-16 space-y-8">
+      <section className="container px-4 pb-10 md:px-6">
+        <div className="max-w-4xl mx-auto mt-8 space-y-8">
             <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 How to Underwrite a Flip More Realistically
@@ -307,7 +180,6 @@ export default function FlipCalculator() {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </div>
   );

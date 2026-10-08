@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import DSCRCalculator from './DSCRCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Free DSCR Calculator for Rental Property | AssetLift Lending',
+  title: 'Free DSCR Calculator for Rental Property',
   description:
     'Use this free DSCR rental property calculator to estimate rent coverage after vacancy, taxes, insurance, HOA dues, and principal and interest.',
   path: '/tools/dscr-calculator',
