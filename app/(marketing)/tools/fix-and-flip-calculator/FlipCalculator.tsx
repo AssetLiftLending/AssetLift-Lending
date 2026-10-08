@@ -30,11 +30,13 @@ function NumericControl({ id, label, value, onChange, min, max, step, display, h
       <div className="flex items-center justify-between gap-3">
         <label htmlFor={id} className="min-w-0 text-xs text-white/75">{label}</label>
         <div className="flex shrink-0 items-center rounded-lg border border-white/15 bg-white/[0.04] px-2 focus-within:border-gold/70 focus-within:ring-1 focus-within:ring-gold/40">
-          <input id={id} aria-label={`${label}, enter a number`} className="w-[108px] bg-transparent py-2 text-right text-sm font-bold tabular-nums text-white outline-none" type="number" inputMode="decimal" min={min} max={max} step={step} value={value} onChange={(event) => onChange(event.target.value)} />
+          {currencyValue && <span className="pr-0.5 text-xs font-semibold text-white/55">$</span>}
+          <input id={id} aria-label={`${label}, enter a number`} className={`${percentValue ? 'w-[72px]' : 'w-[88px]'} bg-transparent py-2 text-right text-sm font-bold tabular-nums text-white outline-none`} type="number" inputMode="decimal" min={min} max={max} step={step} value={value} onChange={(event) => setNumericValue(event.target.value)} />
+          {percentValue && <span className="pl-0.5 text-xs font-semibold text-white/55">%</span>}
         </div>
       </div>
       <input aria-label={`${label} slider`} className="mt-2 h-1.5 w-full cursor-pointer accent-gold" type="range" min={rangeMin} max={rangeMax} step={rangeStep} value={n} onChange={(event) => onChange(event.target.value)} />
-      <div className="flex justify-between text-[9px] tabular-nums text-white/40"><span>{display(rangeMin)}</span><span>{display(rangeMax)}</span></div>
+      <div className="flex justify-between text-[9px] tabular-nums text-white/40"><span>{display(min)}</span><span>{display(max)}</span></div>
       {helper && <p className="mt-1 text-[10px] leading-relaxed text-white/45">{helper}</p>}
     </div>
   );
