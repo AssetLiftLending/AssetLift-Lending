@@ -47,7 +47,7 @@ const WhyAssetLift = () => {
               <span className="gradient-text">AssetLift Lending</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The pitch is simple: move faster than a bank, stay cleaner than a messy broker chain,
+              The pitch is simple: move faster than a bank, stay more organized than a patchwork of middlemen,
               and give investors a financing process that feels organized from the first call to funding.
             </p>
             <div className="mt-8 border-t border-border pt-6">

@@ -62,8 +62,7 @@ export default function StateDisclosuresPage() {
               availability.
             </p>
             <p className="text-muted-foreground">
-              In every state, actual licensing, lender-or-broker role, table-funding posture,
-              white-label structure, and required disclosures should be confirmed against the exact
+              In every state, actual licensing, funding structure, and required disclosures should be confirmed against the exact
               transaction, entity, and program before advertising or closing a loan.
             </p>
           </div>

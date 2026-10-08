@@ -18,12 +18,12 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
         answer: "We lend in 46 U.S. states. We currently do not operate in Alaska, North Dakota, South Dakota, or Vermont. We are heavily focused on high-growth urban and suburban markets."
       },
       {
-        question: "Are you a direct lender or a broker?",
-        answer: "It depends on the transaction. AssetLift may provide direct lending on some deals, and some deals may be brokered or placed with capital partners depending on the program, market, borrower profile, and actual file structure. Borrowers should not assume every transaction is funded through the same channel."
+        question: "Are you a direct lender?",
+        answer: "AssetLift Lending is a private lender. We fund loans with our own capital and with the backing of our capital partners, depending on the program, market, borrower profile, and file. Your loan documents identify the lender of record and funding source."
       },
       {
         question: "Do you work with mortgage brokers?",
-        answer: "Yes, we work with qualified mortgage brokers and loan officers. If you are a broker, contact us about our wholesale lending programs and competitive broker compensation."
+        answer: "Yes, we accept deals from qualified mortgage brokers and loan officers. If you are a broker, contact us about submitting a deal."
       },
     ],
   },

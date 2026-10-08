@@ -4,9 +4,9 @@ import { ArrowRight, BriefcaseBusiness, FileText, Handshake, LockKeyhole, Upload
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Broker Partners | Submit Investor Deals',
+  title: 'Deal Partners | AssetLift Lending',
   description:
-    'AssetLift Lending works with mortgage brokers, commercial brokers, and referral partners on fix and flip, DSCR, bridge, construction, and commercial lending scenarios.',
+    'AssetLift Lending accepts deal submissions from mortgage brokers, commercial brokers, and referral partners on fix and flip, DSCR, bridge, construction, and commercial loans AssetLift funds.',
   alternates: {
     canonical: 'https://www.assetliftlending.com/brokers',
   },
@@ -21,7 +21,7 @@ const STEPS = [
   },
   {
     title: 'Track the file',
-    description: 'Use the broker portal to see each deal status from submitted through term sheet, docs, closing, and funded.',
+    description: 'Use the partner portal to see each deal status from submitted through term sheet, docs, closing, and funded.',
     icon: FileText,
   },
   {
@@ -40,20 +40,20 @@ export default function BrokersPage() {
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 <Handshake className="h-4 w-4" />
-                Broker Partners
+                Deal Partners
               </div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-normal text-foreground md:text-6xl">
-                We work with brokers on investor lending deals.
+                We accept deal submissions from brokers and referral partners.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-                AssetLift Lending helps brokers place fix and flip, DSCR rental, bridge, ground-up construction,
-                and commercial lending scenarios for real estate investors. Submit the deal, track the file, and keep
-                term sheets organized in one portal.
+                Brokers and referral partners can send AssetLift fix and flip, DSCR rental, bridge, ground-up construction,
+                and commercial scenarios for real estate investors. AssetLift reviews and funds the loan. Submit the deal,
+                track the file, and keep term sheets organized in one portal.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" className="rounded-full font-bold">
                   <Link href="/portal">
-                    Broker Login
+                    Partner Login
                     <LockKeyhole className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -67,12 +67,12 @@ export default function BrokersPage() {
             </div>
 
             <div className="rounded-xl border border-border bg-card p-6">
-              <h2 className="text-lg font-bold text-foreground">Broker portal includes</h2>
+              <h2 className="text-lg font-bold text-foreground">Partner portal includes</h2>
               <div className="mt-5 space-y-4">
                 {[
-                  'Deal list by borrower, broker, property, loan type, and status',
+                  'Deal list by borrower, partner, property, loan type, and status',
                   'Pipeline stages for submitted, review, term sheet, docs, closing, and funded',
-                  'Broker contact fields for each file',
+                  'Partner contact fields for each file',
                   'Term sheet upload and download on each deal record',
                 ].map((item) => (
                   <div key={item} className="flex gap-3">

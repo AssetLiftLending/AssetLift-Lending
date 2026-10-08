@@ -18,7 +18,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
-    description: 'Private lending for real estate investors, with some deals brokered with capital partners',
+    description: 'Private lending for real estate investors, funded with our capital partners',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -62,10 +62,10 @@ export default function AboutPage() {
               About <span className="gradient-text">AssetLift Lending</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              AssetLift Lending is a mortgage brokerage built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank. We operate as a broker with white-label capital partners, which means we can match each deal to the right lending source instead of forcing every file into one lender&apos;s credit box.
+              AssetLift Lending is a private lender built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank. We fund deals with our capital partners, which means we can match each deal to the right source of capital instead of forcing every file into one credit box.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. The brothers saw an opportunity to build a brokerage that combined hands-on real estate knowledge with access to multiple capital sources, giving borrowers better options and faster execution.
+              Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. The brothers saw an opportunity to build a lender that combined hands-on real estate knowledge with access to multiple capital sources, giving borrowers better options and faster execution.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to match each file to the lending approach that best fits the strategy.
@@ -90,26 +90,26 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-3">Yisroel Pentelnik</h3>
                 <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Yisroel focuses on operations, underwriting workflow, and making sure the borrower experience at AssetLift stays fast and transparent as the company scales. He is the person making sure files move through the pipeline without unnecessary delays, that borrowers get honest feedback early, and that the team maintains the responsiveness that sets AssetLift apart from larger shops. His operational discipline keeps the brokerage running efficiently across 46 states.
+                  Yisroel focuses on operations, underwriting workflow, and making sure the borrower experience at AssetLift stays fast and transparent as the company scales. He is the person making sure files move through the pipeline without unnecessary delays, that borrowers get honest feedback early, and that the team maintains the responsiveness that sets AssetLift apart from larger shops. His operational discipline keeps the company running efficiently across 46 states.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Hybrid Broker Model */}
+          {/* Capital partner model */}
           <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-5">The Hybrid Broker Model: Why It Matters</h2>
+            <h2 className="text-3xl font-bold mb-5">Our Capital Partner Model: Why It Matters</h2>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              Most borrowers do not care whether their lender is a direct lender, a fund, or a broker. They care about rate, speed, and whether the deal actually closes. But the structure behind the scenes matters more than most people realize, because it determines how flexible the lender can be when the file does not fit neatly into a standard box.
+              Most borrowers do not care how their lender is structured. They care about rate, speed, and whether the deal actually closes. But the structure behind the scenes matters more than most people realize, because it determines how flexible the lender can be when the file does not fit neatly into a standard box.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              AssetLift operates as a mortgage brokerage with white-label capital partners. In practice, that means we are not locked into a single lender&apos;s guidelines. If one capital source cannot do the deal because of property type, borrower experience, leverage, or geography, we have other options. A direct lender that turns you down has nowhere else to send the file. A broker with the right relationships can usually find a fit.
+              AssetLift funds loans with the backing of our capital partners. In practice, that means we are not locked into a single set of guidelines. If one capital source cannot do the deal because of property type, borrower experience, leverage, or geography, we have other options. A lender with only one source of capital has nowhere else to turn when a file does not fit. We usually can find a fit.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              This model also lets us be more competitive on pricing. Because we work with multiple capital sources, we can shop the deal internally and present the borrower with the best available terms rather than the only available terms. For repeat investors doing multiple deals a year, that difference in rate or leverage can add up to tens of thousands of dollars in savings.
+              This model also lets us be more competitive on pricing. Because we work with multiple capital sources, we can shop the deal internally and offer the borrower the best available terms rather than the only available terms. For repeat investors doing multiple deals a year, that difference in rate or leverage can add up to tens of thousands of dollars in savings.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              The tradeoff is that we have to be selective about which capital partners we work with. We vet our lending sources for reliability, speed, and fair dealing, because our reputation depends on the borrower&apos;s experience from application through payoff. If a capital partner cannot close on time or creates unnecessary friction, we stop sending them deals.
+              The tradeoff is that we have to be selective about which capital partners we work with. We vet our capital sources for reliability, speed, and fair dealing, because our reputation depends on the borrower&apos;s experience from application through payoff. If a capital partner cannot close on time or creates unnecessary friction, we stop working with them.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Structure</p>
-                <p className="text-muted-foreground">Mortgage brokerage with white-label capital partners</p>
+                <p className="text-muted-foreground">Private lender funding with capital partners</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Phone</p>
@@ -148,7 +148,7 @@ export default function AboutPage() {
             {[
               { icon: Zap, title: 'Speed', desc: 'Every inquiry gets a response within 24 hours, usually within a few hours. Many deals close in as few as 5 business days, subject to underwriting, valuation, title, and file complexity. We know that in competitive markets, a slow lender costs you the deal.' },
               { icon: Shield, title: 'Transparency', desc: 'No hidden fees, no bait-and-switch term sheets. We surface potential issues early in the process so you can make informed decisions before you spend more time or money on the file. If we cannot do the deal, we tell you upfront.' },
-              { icon: Users, title: 'Flexibility', desc: 'We focus on experienced investors and organized borrowers with real deals, clear numbers, and executable exit plans. Because we broker through multiple capital partners, we can find solutions for files that a single direct lender would decline. Different deal, different source, same service.' },
+              { icon: Users, title: 'Flexibility', desc: 'We focus on experienced investors and organized borrowers with real deals, clear numbers, and executable exit plans. Because we fund through multiple capital partners, we can find solutions for files that a single-source lender would decline. Different deal, different source, same service.' },
               { icon: Award, title: 'Expertise', desc: 'Our founders and team bring hands-on real estate investing experience to every file. We understand rehab scopes, ARV analysis, rental market dynamics, and exit strategies because we have been on the borrower side of the table.' },
             ].map((value, i) => (
               <div key={i} className="bg-card border border-border rounded-xl p-6 text-center">

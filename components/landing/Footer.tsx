@@ -58,10 +58,10 @@ const Footer = () => {
                 <Link href="/apply" className="hover:text-primary transition-colors">Apply Now</Link>
               </li>
               <li>
-                <Link href="/brokers" className="hover:text-primary transition-colors">Broker Partners</Link>
+                <Link href="/brokers" className="hover:text-primary transition-colors">Deal Partners</Link>
               </li>
               <li>
-                <Link href="/portal" className="hover:text-primary transition-colors">Broker Login</Link>
+                <Link href="/portal" className="hover:text-primary transition-colors">Partner Login</Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>

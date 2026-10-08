@@ -104,7 +104,7 @@ const PROGRAMS = [
 
 const FAQS = [
   { q: 'What is AssetLift Lending?', a: 'AssetLift Lending is a table-funded real estate lender based in Queens, New York specializing in investment property financing for real estate investors across 46 U.S. states.' },
-  { q: 'Is AssetLift Lending a direct lender or a broker?', a: 'AssetLift Lending is a table-funded real estate lender that originates loans through white-label private capital partners. Loans close in AssetLift\'s name — borrowers deal with AssetLift as their lender throughout.' },
+  { q: 'Is AssetLift Lending a direct lender?', a: 'AssetLift Lending is a private real estate lender that funds loans with its own capital and with the backing of private capital partners. Loans close in AssetLift\'s name — borrowers deal with AssetLift as their lender throughout.' },
   { q: 'What is the minimum credit score?', a: '660 for most programs including fix and flip and DSCR rental loans.' },
   { q: 'What loan amounts does AssetLift offer?', a: 'AssetLift funds loans from $100,000 to $5,000,000 for qualifying investment property scenarios.' },
   { q: 'Does AssetLift require income documentation?', a: 'DSCR loans require no personal income verification — they qualify based on property cash flow. Fix and flip loans may require minimal documentation.' },
@@ -131,7 +131,7 @@ export default function AIContextPage() {
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm">
             {[
               ['Company', 'AssetLift Lending'],
-              ['Type', 'Table-funded lender / White-label originator'],
+              ['Type', 'Private real estate lender'],
               ['Founders', 'Yaakov Pentelnik & Yisroel Pentelnik'],
               ['Headquarters', 'Queens, New York'],
               ['States served', '46 U.S. states'],

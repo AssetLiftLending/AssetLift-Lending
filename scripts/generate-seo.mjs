@@ -175,7 +175,7 @@ async function callGemini(prompt, attempt = 1) {
 // ─── Prompt ────────────────────────────────────────────────────────────────────
 
 function buildPrompt(entry) {
-  return `You are an expert content writer for AssetLift Lending (assetliftlending.com), a mortgage brokerage that provides hard money loans, DSCR loans, fix-and-flip loans, bridge loans, and ground-up construction financing for real estate investors across 46 U.S. states.
+  return `You are an expert content writer for AssetLift Lending (assetliftlending.com), a private lender that provides hard money loans, DSCR loans, fix-and-flip loans, bridge loans, and ground-up construction financing for real estate investors across 46 U.S. states.
 
 Write a comprehensive, authoritative blog post targeting the keyword: "${entry.keyword}"
 

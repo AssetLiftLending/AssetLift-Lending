@@ -103,7 +103,7 @@ export default function FAQPage() {
                 {
                   label: 'How Funding Works',
                   href: '/how-funding-works',
-                  description: 'See how direct lending, brokered transactions, and partner-capital execution may differ.',
+                  description: 'See how AssetLift funds loans with its own capital and with capital partners.',
                 },
               ].map((resource) => (
                 <Link

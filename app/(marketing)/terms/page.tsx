@@ -71,8 +71,8 @@ export default function TermsPage() {
                   Rates, terms, fees, and leverage are subject to change without notice.
                 </li>
                 <li>
-                  Loan programs may be funded directly, brokered, or placed with third-party
-                  lending partners depending on the transaction.
+                  Loan programs may be funded with AssetLift capital or with the backing of capital
+                  partners depending on the transaction.
                 </li>
                 <li>
                   Past performance of funded loans does not guarantee future results.
@@ -88,9 +88,9 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-foreground mb-3">Execution and Funding Channels</h2>
               <p className="mb-4">
                 Website references to lending products, rates, timelines, or program availability
-                do not mean that every transaction is funded directly by AssetLift Lending. Depending
-                on the transaction, AssetLift may act in a lending, brokering, referral, or
-                capital-partner placement capacity to help move the file toward closing.
+                are not a commitment to lend. Depending on the transaction, AssetLift funds loans
+                with its own capital or with the backing of capital partners to move the file
+                toward closing.
               </p>
               <p>
                 Borrowers should review all transaction-specific disclosures, lender documents,

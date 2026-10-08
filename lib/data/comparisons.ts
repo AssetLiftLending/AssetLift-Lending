@@ -1046,7 +1046,7 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Execution Model vs Platform Model: Why It Matters for Your Deal",
         content:
-          "AssetLift Lending may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market. Borrowers still benefit from a coordinated process and a single team helping move the file forward. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, AssetLift's flexible execution model can create a faster and more workable path because the file can be matched to the most realistic capital route instead of forcing a single structure on every borrower.",
+          "AssetLift Lending funds loans with its own capital and with the backing of capital partners, depending on the deal, program, and market. Borrowers still benefit from a coordinated process and a single team helping move the file forward. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, AssetLift's flexible funding model can create a faster and more workable path because the file can be matched to the most realistic source of capital instead of forcing a single structure on every borrower.",
       },
     ],
     verdict:
@@ -1075,7 +1075,7 @@ export const COMPARISONS: Comparison[] = [
       {
         question: "How does AssetLift execute loans?",
         answer:
-          "AssetLift may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market.",
+          "AssetLift funds loans with its own capital and with the backing of capital partners, depending on the deal, program, and market.",
       },
       {
         question: "Which lender is better for first-time real estate investors?",
