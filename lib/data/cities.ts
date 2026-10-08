@@ -641,6 +641,66 @@ export const CITIES: CityData[] = [
     ],
   },
 
+  // Georgia pilot: Brunswick and Glynn County coastal investment coverage
+  {
+    cityName: "Brunswick & Glynn County",
+    citySlug: "brunswick-glynn-county",
+    stateSlug: "georgia",
+    stateName: "Georgia",
+    stateAbbreviation: "GA",
+    population: "87,599 (Glynn County, 2025 estimate)",
+    medianHomePrice: "$448,435 county median sale price",
+    overview: "Brunswick is Glynn County's mainland county seat; the county also includes coastal communities such as St. Simons Island and Jekyll Island. A countywide housing statistic spans very different locations and property types, so underwrite the address using nearby sales, not a county median or a coastal label. AssetLift reviews business-purpose financing for qualifying non-owner-occupied acquisition, renovation, bridge, and rental scenarios, subject to the property, program, and underwriting.",
+    topNeighborhoods: [],
+    investmentHighlight: "SFR Analytics' proprietary Brunswick-St. Simons dataset reports 3,657 tracked investors and 469 observed exits or flips, alongside 40 distinct lenders. It is observed dataset activity, not a full deed census. Housing measures vary sharply by scope: Redfin reported a $448,435 Glynn County median sale price for the three months ending June 2026, while Zillow's typical-value index for Glynn County was $357,032 on Aug. 31, 2026; Redfin's Brunswick city median was $214,858 over the three months ending August 2026. These are different geographies and measures, not interchangeable ARVs.",
+    heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Brunswick and Glynn County. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and execution depend on the property and underwriting.",
+    ctaDescription: "For an initial review, send the property address, purchase basis, photos, line-item scope, nearby sales, taxes, insurance including any flood coverage, requested amount, and sale or rental exit. An initial review is not approval or a commitment to lend.",
+    metadataTitle: "Hard Money Loans Glynn County, GA | AssetLift Lending",
+    metadataDescription: "Brunswick and Glynn County, GA investment-property financing review. Local housing data, flood-zone and permit due diligence, and published AssetLift Lending program terms.",
+    hideNeighborhoods: true,
+    areaServedType: "AdministrativeArea",
+    marketEvidence: [
+      { label: "Glynn County population", value: "87,599", context: "U.S. Census Bureau 2025 estimate; county geography, not Brunswick city alone.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/glynncountygeorgia" },
+      { label: "Brunswick median sale price", value: "$214,858", context: "Redfin three-month period ending Aug 2026; 41 city sales in August. City sales metric, not an ARV.", sourceLabel: "Redfin", sourceUrl: "https://www.redfin.com/city/2995/GA/Brunswick/housing-market" },
+      { label: "Glynn County median sale price", value: "$448,435", context: "Redfin three-month period ending June 2026; 144 sales in June. County median is affected by location/property mix.", sourceLabel: "Redfin", sourceUrl: "https://www.redfin.com/county/566/GA/Glynn-County/housing-market" },
+      { label: "Glynn County typical home value", value: "$357,032", context: "Zillow Home Value Index, Aug 31, 2026. Different measure from Redfin's median sale price.", sourceLabel: "Zillow", sourceUrl: "https://www.zillow.com/home-values/525/glynn-county-ga/" },
+      { label: "Tracked investors", value: "3,657", context: "SFR Analytics Brunswick-St. Simons market dataset; viewed Oct 7, 2026.", sourceLabel: "SFR Analytics", sourceUrl: "https://sfranalytics.com/investors/ga/brunswick-st-simons-ga" },
+      { label: "Observed exits or flips", value: "469", context: "SFR Analytics proprietary tracked transactions; not a full deed-record census.", sourceLabel: "SFR Analytics", sourceUrl: "https://sfranalytics.com/investors/ga/brunswick-st-simons-ga" },
+    ],
+    marketEvidenceNote: "The metrics above do not describe the same geography or method. Redfin sale medians, Zillow's typical-value index, Census population, and SFR Analytics' tracked-investor counts are separate measures. The SFR dataset's reported $1.74M average deal size may reflect large transactions and is not a typical home price. Use recent subject-property comparables, verified rent, taxes, and insurance for underwriting.",
+    marketSources: [
+      { label: "Glynn County floodplain permit and insurance guidance", href: "https://www.glynncounty.org/government/departments/building-permitting-inspections/glynn-countys-flood-protection-program" },
+      { label: "Glynn County Planning & Zoning", href: "https://glynncounty.org/194/Planning-Zoning" },
+      { label: "City of Brunswick Building Permits & Inspections", href: "https://www.brunswickga.org/planning/page/building-permits-inspections" },
+      { label: "City of Brunswick building-code FAQ", href: "https://www.brunswickga.org/planning/page/faq-building-codes-permits" },
+    ],
+    programSummaries: [
+      { title: "Fix & Flip Loans", desc: "Published terms: up to 95% LTC on purchase and up to 100% of approved rehab; total leverage is generally capped at 70-75% of ARV. Underwriting and deal strength control actual proceeds.", href: "/loans/fix-and-flip" },
+      { title: "DSCR Rental Loans", desc: "Published program limits may reach 85% LTV on purchases and 80% LTV on cash-out refinance scenarios. Supported rent, taxes, insurance, value, credit, reserves, and program rules affect qualification.", href: "/loans/dscr-rental" },
+      { title: "Bridge Financing", desc: "For eligible transitional investment-property scenarios; leverage and payoff plan are reviewed against collateral, title, borrower, valuation, and file complexity.", href: "/loans/bridge" },
+      { title: "Ground-Up Construction", desc: "Qualifying residential investment projects are reviewed with plans, budget, contractor, permits, equity, valuation, and exit; draws and leverage depend on underwriting.", href: "/loans/ground-up-construction" },
+    ],
+    localExecution: {
+      heading: "Coastal due diligence: parcel, flood zone, permit jurisdiction",
+      intro: "Brunswick city and unincorporated Glynn County have separate permitting resources, so first establish which government has jurisdiction over the parcel. Glynn County says all development in a mapped floodplain, including alterations, requires a permit; it also calls for an elevation certificate for a building permit in a floodplain. Its guidance says standard homeowner insurance does not cover flood loss. In the City of Brunswick, building permits and inspections cover construction and code compliance, and city guidance notes the area is hurricane-prone. Verify the exact parcel's flood zone, permit path, insurance availability and cost, and any applicable coastal restrictions before fixing a scope or timeline.",
+      checklist: [
+        "Confirm whether the parcel is within Brunswick city limits or under Glynn County permitting; don't assume county and city rules are interchangeable",
+        "Check the current FEMA and local flood maps, elevation information, flood-insurance requirements and quotes, and any floodplain development permit before sizing carry costs",
+        "For work in a county floodplain, ask Glynn County about permits and elevation-certificate requirements; for city parcels, confirm the City of Brunswick permit checklist and inspections",
+        "Separate mainland Brunswick comps and rents from island or other coastal submarkets; match property type, condition, location, and intended exit",
+      ],
+    },
+    faqs: [
+      { question: "Does the Glynn County median price apply to a Brunswick or island property's ARV?", answer: "No. Redfin's $448,435 Glynn County median sale price for the three months ending June 2026 reflects a countywide mix. Redfin separately reported $214,858 for Brunswick city over the three months ending August 2026, while Zillow's Glynn County typical-value index was $357,032 on August 31. Those measures have different geographies and methods. Build an ARV from recent comparable sales near the actual parcel, matching property type, condition, size, and location." },
+      { question: "What flood-zone checks belong in a Glynn County investment deal?", answer: "Check the exact parcel against current flood maps and ask the appropriate local building department about floodplain permitting and elevation-certificate requirements. Glynn County says development in the floodplain, including alterations, requires a permit and notes that homeowner insurance does not cover flood loss. Obtain property-specific insurance information and include realistic premiums and any required work in the deal budget." },
+      { question: "Are Brunswick and unincorporated Glynn County permits handled by the same office?", answer: "Do not assume so. The City of Brunswick has its own Building Permits & Inspections office, and Glynn County has a separate Building Permitting and Inspections department. Establish municipal jurisdiction for the parcel and confirm the applicable permit checklist before setting a rehab schedule." },
+      { question: "What can AssetLift review for a Brunswick or Glynn County flip?", answer: "AssetLift reviews qualifying business-purpose, non-owner-occupied investment-property requests. Published fix-and-flip terms include up to 95% LTC on purchase and up to 100% of approved rehab, with total leverage generally capped at 70-75% of ARV. The actual amount and structure depend on valuation, scope, credit, experience, liquidity, title, insurance, and the exit; published maximums are not guaranteed proceeds." },
+      { question: "Can a stabilized Glynn County rental be considered for DSCR financing?", answer: "A qualifying non-owner-occupied rental can be reviewed under DSCR programs using supported rent and the full proposed payment, including taxes, insurance, and HOA or other property charges where applicable. Published limits may reach 85% LTV on a purchase and 80% on cash-out refinancing, subject to property performance and program underwriting. Do not assume short-term rental projections qualify; confirm the applicable program and documentation." },
+      { question: "What should I submit for an initial coastal-property financing review?", answer: "Send the property address, contract or target basis, current photos, line-item rehab scope, contractor details, nearby sale comps, supported rent if applicable, tax bill, insurance and flood-insurance details or quotes, requested amount, borrower experience and liquidity, title contact, and intended sale or refinance exit." },
+      { question: "Does AssetLift finance an owner-occupied home in Glynn County?", answer: "No. The programs described here are business-purpose financing for non-owner-occupied investment properties only." },
+    ],
+  },
+
   // Georgia investor-pilot market: Macon-Bibb County
   {
     cityName: "Macon-Bibb County",
