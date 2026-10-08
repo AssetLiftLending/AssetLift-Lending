@@ -264,15 +264,14 @@ export default function DSCRCalculator() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  DSCR is a shortcut for one lender question: does the property itself produce
-                  enough income to support the proposed debt? A higher ratio usually means more
-                  room for vacancy, maintenance pressure, or conservative underwriting.
+                  The ratio compares modeled rent with modeled housing debt costs under the selected
+                  formula. A higher result indicates more coverage under those inputs, but it does
+                  not measure full operating cash flow or establish approval.
                 </p>
                 <p>
-                  This calculator uses monthly rent and debt-related housing costs to estimate that
-                  ratio quickly. It is useful for screening deals before you apply, but the final
-                  lender calculation may still depend on the appraisal rent schedule, reserve
-                  requirements, leverage, and the specific program rules.
+                  This calculator reduces entered rent by the selected vacancy factor and divides it by
+                  monthly P&I, taxes, insurance, and HOA dues. A program may use a different rent source,
+                  vacancy treatment, or qualifying payment. Confirm the method and inputs with the lender.
                 </p>
               </div>
             </div>
@@ -280,16 +279,16 @@ export default function DSCRCalculator() {
             <div className="grid lg:grid-cols-3 gap-6">
               {[
                 {
-                  title: '1.25x and above',
-                  text: 'Usually signals a stronger rental file with more room for pricing flexibility and cleaner approval odds.',
+                  title: 'Above 1.00x',
+                  text: 'The modeled rent exceeds the modeled PITIA payment. It does not establish approval or cash profit.'
                 },
                 {
-                  title: '1.00x to 1.24x',
-                  text: 'Often still workable, but the lender may rely more heavily on leverage, reserves, and overall file quality.',
+                  title: '1.00x',
+                  text: 'The modeled rent equals the modeled PITIA payment before operating costs outside this calculation.'
                 },
                 {
                   title: 'Below 1.00x',
-                  text: 'May require a no-ratio program or a different capital structure if the property cash flow does not support standard DSCR terms.',
+                  text: 'The modeled rent is below PITIA. Program availability and alternatives depend on current lender rules and the full file.'
                 },
               ].map((item) => (
                 <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
@@ -306,17 +305,17 @@ export default function DSCRCalculator() {
                   {
                     question: 'What is a good DSCR for a rental property?',
                     answer:
-                      'A DSCR of 1.25x or better is typically viewed as strong because income exceeds debt service by a meaningful margin. Many files can still work below that level, but the deal usually becomes more sensitive to leverage and reserve requirements.',
+                      'There is no universal ratio that guarantees approval or pricing. A higher result indicates more coverage under the selected formula; eligibility also depends on the lender’s current rules and the whole file.',
                   },
                   {
                     question: 'Does DSCR use gross rent or adjusted rent?',
                     answer:
-                      'That depends on the lender and program. Many lenders start with market rent and compare it against PITIA, but some adjust for vacancy or use a specific appraisal rent figure rather than the borrower’s estimate.',
+                      'A lender may accept a current lease, appraiser-supported market rent, or another program-approved source. This calculator uses entered rent less the entered vacancy factor; the lender may calculate it differently.',
                   },
                   {
                     question: 'Can a property qualify if DSCR is below 1.0x?',
                     answer:
-                      'Sometimes. Some programs allow no-ratio or low-ratio scenarios, but pricing and structure are usually less favorable when the rent does not fully cover the proposed monthly debt service.',
+                      'Some programs may consider a ratio below 1.00x, but availability and terms depend on current guidelines, property, transaction, leverage, borrower, and reserves. Ask for a written review.',
                   },
                 ].map((faq) => (
                   <div key={faq.question}>

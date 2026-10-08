@@ -62,7 +62,7 @@ export default function DSCRCalculatorPage() {
         name: 'What is a good DSCR for a rental property?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "A DSCR of 1.25x or higher is usually considered strong because the property's income materially exceeds the monthly debt load. Some programs can still work below that threshold depending on leverage, reserves, and the lender's guidelines.",
+          text: "A higher ratio indicates more coverage under the selected formula, but there is no universal threshold that guarantees approval or pricing. Program rules, eligible rent, payment method, property, leverage, and reserves all matter.",
         },
       },
       {
@@ -70,7 +70,7 @@ export default function DSCRCalculatorPage() {
         name: 'Does DSCR use gross rent or net rent?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Lenders usually start with market rent and compare it against PITIA, though the exact method depends on the program and whether the file is treated as standard DSCR or no-ratio.',
+          text: 'A lender may accept a current lease, appraiser-supported market rent, or another program-approved source. The method and accepted rent depend on current program guidelines.',
         },
       },
       {
@@ -78,7 +78,7 @@ export default function DSCRCalculatorPage() {
         name: 'Can a property qualify with a DSCR below 1.0x?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Sometimes. Some lenders offer no-ratio or reduced-ratio programs, but pricing, leverage, and reserve requirements are usually tighter when the rent does not fully cover the debt service.',
+          text: 'Some programs may consider a ratio below 1.00x, but availability and terms depend on current guidelines, property, transaction, leverage, borrower, and reserves. Ask for a written review.',
         },
       },
     ],
