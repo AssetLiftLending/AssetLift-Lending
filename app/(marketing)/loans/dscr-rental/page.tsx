@@ -77,6 +77,7 @@ export default function DSCRRentalPage() {
       <LoanProductPage
         product={{ ...product, heroTitle: 'DSCR Loans for Rental Properties' }}
         directAnswer="A DSCR loan finances a non-owner-occupied rental property using the property's rent to measure repayment ability instead of relying mainly on the borrower's W-2 income. Lenders review rent, principal and interest, property taxes, insurance, HOA dues, value, credit, reserves, and property condition before setting leverage, rate, and required DSCR."
+        dscrMethodGuide
         cta={{ heading: 'Check this rental property', copy: 'Send the property address, purchase price or value, monthly rent, taxes, insurance, HOA dues, requested loan amount, and target closing date. AssetLift will review the scenario across available DSCR programs.', primaryLabel: 'Request DSCR Terms', primaryHref: '/apply?loanPurpose=dscr&source=dscr-rental-page', secondaryLabel: 'Calculate DSCR First', secondaryHref: '/tools/dscr-calculator' }}
       />
     </>

@@ -17,6 +17,7 @@ interface LoanProductPageProps {
   directAnswer?: string;
   cta?: { heading: string; copy: string; primaryLabel: string; primaryHref: string; secondaryLabel: string; secondaryHref: string };
   checklist?: string[];
+  dscrMethodGuide?: boolean;
 }
 
 const RELATED_GUIDES: Record<
@@ -230,7 +231,7 @@ const PRODUCT_INSIGHTS: Record<
   },
 };
 
-export default function LoanProductPage({ product, directAnswer, cta, checklist }: LoanProductPageProps) {
+export default function LoanProductPage({ product, directAnswer, cta, checklist, dscrMethodGuide = false }: LoanProductPageProps) {
   const insights = PRODUCT_INSIGHTS[product.slug];
   const isFixAndFlip = product.slug === 'fix-and-flip';
   const isDscr = product.slug === 'dscr-rental';
@@ -362,6 +363,27 @@ export default function LoanProductPage({ product, directAnswer, cta, checklist 
 
       {cta && !checklist && (
         <section className="pb-16"><div className="container px-4 md:px-6"><div className="mx-auto max-w-5xl rounded-3xl border border-border bg-card p-6 md:p-8"><h2 className="mb-3 text-2xl font-bold">{cta.heading}</h2><p className="mb-4 max-w-3xl text-muted-foreground">{cta.copy}</p><p className="mb-5 text-xs font-semibold uppercase tracking-wide text-primary">Business-purpose, non-owner-occupied properties only.</p><div className="flex flex-col gap-3 sm:flex-row"><Button asChild><Link href={cta.primaryHref}>{cta.primaryLabel}</Link></Button><Button asChild variant="outline"><Link href={cta.secondaryHref}>{cta.secondaryLabel}</Link></Button></div></div></div></section>
+      )}
+
+      {dscrMethodGuide && (
+        <section className="py-14 md:py-18 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-4xl rounded-3xl border border-border bg-card p-6 md:p-8">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary">Before you rely on a ratio</p>
+              <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl">A lender DSCR and an investor cash-flow ratio can use different math</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>For a residential rental loan, a common qualifying calculation is eligible monthly rent divided by the qualifying monthly property payment, often principal, interest, taxes, insurance, and association dues (PITIA). Eligible interest-only programs may use interest, taxes, insurance, and dues (ITIA). The actual lender's current program rules decide which rent and payment inputs count.</p>
+                <p>This page's calculator uses a vacancy-adjusted rent estimate over principal, interest, taxes, insurance, and HOA dues. Treat that output as a planning estimate, not a lender decision. Do not subtract property taxes or insurance from rent first and also include them in PITIA: that counts them twice.</p>
+                <p>For your own operating analysis, estimate net operating income after vacancy and operating expenses, then compare that NOI with annual principal-and-interest debt service. Label that separately from lender DSCR. Before you request terms, gather the current lease or accepted rent evidence, tax bill, insurance quote, association dues, proposed loan amount and payment structure. Re-run the numbers if the rent, loan amount, interest rate, amortization, taxes, insurance, or dues change.</p>
+              </div>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <Link href="/tools/dscr-calculator" className="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Estimate the property's ratio <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link href="/apply?loanPurpose=dscr&source=dscr-method-guide" className="inline-flex items-center justify-center rounded-lg border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary/30">Request a DSCR scenario review</Link>
+              </div>
+              <p className="mt-5 text-xs text-muted-foreground">Method reference: theLender, “How to Calculate DSCR for a Rental Property,” updated July 21, 2026: https://retail.thelender.com/post/calculate-dscr-ratio-rental-property. This is general education; current program guidelines control.</p>
+            </div>
+          </div>
+        </section>
       )}
 
       {/* Key Stats */}
