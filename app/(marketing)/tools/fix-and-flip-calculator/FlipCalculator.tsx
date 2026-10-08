@@ -67,7 +67,7 @@ export default function FlipCalculator() {
                 Fix and Flip Loan Calculator
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-5">Estimate total project cost and projected profit before requesting terms.</p>
-              <div className="mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-5 text-left leading-relaxed">A fix-and-flip loan calculator estimates total project cost and potential profit from the purchase price, rehab budget, financing costs, holding expenses, selling costs, and after-repair value. It helps an investor test the margin before requesting terms, but lenders still review local comparable sales, scope, contractor plan, borrower experience, liquidity, reserves, title, property condition, and the proposed exit.</div>
+              <div className="mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-5 text-left leading-relaxed">This tool estimates a fix-and-flip scenario from the purchase price, rehab budget, financing assumptions, hold period, transaction costs, and after-repair value. The result is only as complete as the inputs: it is not a loan quote, approval, or full cash-to-close calculation. Lenders also review local comps, scope, title, condition, borrower and project details, liquidity, and exit.</div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -218,7 +218,11 @@ export default function FlipCalculator() {
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
                   <p className="font-semibold mb-2">Turn this calculation into a loan review</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Keep the purchase price, rehab budget, ARV, financing assumptions, hold period, and projected margin you entered. Add the property address, current photos, borrower experience, requested loan amount, and target closing date.
+                    The calculation is a planning estimate. For a deal review, include the property
+                    address, recent closed comps, current photos, itemized rehab scope, contractor plan,
+                    taxes, insurance, other carrying costs, borrower experience, proposed financing,
+                    reserves, and target closing date. Lender leverage, rate, fees, and draw structure
+                    are set only after review of the complete file.
                   </p>
                   <Button asChild size="lg" className="glow-primary">
                     <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'fix_and_flip', margin_band: marginBand })}>
@@ -240,9 +244,9 @@ export default function FlipCalculator() {
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   A fix and flip calculator is most useful when it helps you pressure-test the deal
-                  instead of confirming the number you want to see. The cleanest projects usually
-                  have enough spread to survive one or two things going wrong without wiping out the
-                  margin.
+                  instead of confirming the number you want to see. Build enough spread to test whether
+                  the project can absorb a rehab change, longer hold, or weaker resale without wiping
+                  out the margin.
                 </p>
                 <p>
                   Start with the purchase, rehab budget, and after-repair value. Then be harder on
@@ -256,15 +260,15 @@ export default function FlipCalculator() {
             <div className="grid lg:grid-cols-3 gap-6">
               {[
                 {
-                  title: 'Watch the ARV',
+                  title: 'Support the ARV',
                   text: 'Use closed comparable sales from the exact neighborhood and avoid stretching into the highest comp unless the finish level truly supports it.',
                 },
                 {
-                  title: 'Model the hold honestly',
-                  text: 'Permits, contractor delays, inspection lag, and resale timing all extend carrying cost. A six-month hold can become eight quickly.',
+                  title: 'Stress-test the hold',
+                  text: 'Permits, contractor delays, inspection lag, and resale timing can extend carrying costs. Compare the base case with a longer hold.'
                 },
                 {
-                  title: 'Protect cash reserves',
+                  title: 'Model cash reserves',
                   text: 'Gross profit can look strong while the actual cash required is still too high. Compare projected margin against the cash you need to control the project.',
                 },
               ].map((item) => (
@@ -282,17 +286,17 @@ export default function FlipCalculator() {
                   {
                     question: 'What profit margin should a house flip target?',
                     answer:
-                      'There is no universal threshold, but strong flips usually have enough projected spread to absorb rehab changes, financing drag, and a softer resale than expected. If the margin disappears with minor pressure, the deal is likely too thin.',
+                      'There is no universal profit target. The right cushion depends on the property, scope, market, leverage, hold time, and reserves. Stress-test higher costs and lower sale proceeds; this tool does not judge whether the deal fits your risk tolerance.',
                   },
                   {
                     question: 'Should I judge a flip by gross profit or ROI?',
                     answer:
-                      'You should use both. Gross profit tells you whether the project is worth the effort in absolute dollars, while ROI shows whether your own capital is being used efficiently compared with other opportunities.',
+                      'Use both, but read the formula. Gross profit is estimated sale proceeds less this model’s included costs; ROI divides that figure by the model’s assumed cash investment. Neither includes every cash need or substitutes for a deal-level cash-flow analysis.',
                   },
                   {
                     question: 'What numbers do investors most often miss?',
                     answer:
-                      'The most common misses are interest carry, utilities, insurance, price reductions, and extra time between rehab completion and the final sale. Those items usually matter more than shaving a few points off the rehab line.',
+                      'Potential omissions include taxes, insurance, utilities, permits, title, lender and draw fees, contingency, concessions, and carrying costs after rehab while listed. Add local estimates and confirm costs with the relevant provider.',
                   },
                 ].map((faq) => (
                   <div key={faq.question}>
