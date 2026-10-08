@@ -69,6 +69,7 @@ export default function GroundUpConstructionPage() {
       <LoanProductPage
         product={{ ...product, heroTitle: 'Ground-Up Construction Financing' }}
         directAnswer="Ground-up construction financing funds a new investment property from land or teardown through completion. Lenders review the land basis, plans, permits, line-item budget, licensed contractor, borrower experience, completed value, local demand, equity, reserves, timeline, and exit. Construction funds are generally released in verified draws, and terms depend on the project, borrower, title, valuation, and market."
+        constructionReadiness
         checklist={['Address or land details', 'Acquisition basis', 'Plans and permit status', 'Line-item budget', 'Licensed contractor', 'Completed-value support', 'Borrower experience', 'Equity and reserves']}
         cta={{ heading: 'Get the construction file reviewed', copy: 'Send the address or land details, acquisition basis, plans and permit status, line-item budget, contractor, completed-value support, borrower experience, equity, reserves, requested loan amount, and target closing date.', primaryLabel: 'Request Construction Terms', primaryHref: '/apply?loanPurpose=ground-up-construction&source=ground-up-construction-page', secondaryLabel: 'See the File Checklist', secondaryHref: '/blog/ground-up-construction-loan-requirements' }}
       />

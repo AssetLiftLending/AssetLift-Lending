@@ -18,6 +18,7 @@ interface LoanProductPageProps {
   cta?: { heading: string; copy: string; primaryLabel: string; primaryHref: string; secondaryLabel: string; secondaryHref: string };
   checklist?: string[];
   dscrMethodGuide?: boolean;
+  constructionReadiness?: boolean;
 }
 
 const RELATED_GUIDES: Record<
@@ -231,7 +232,7 @@ const PRODUCT_INSIGHTS: Record<
   },
 };
 
-export default function LoanProductPage({ product, directAnswer, cta, checklist, dscrMethodGuide = false }: LoanProductPageProps) {
+export default function LoanProductPage({ product, directAnswer, cta, checklist, dscrMethodGuide = false, constructionReadiness = false }: LoanProductPageProps) {
   const insights = PRODUCT_INSIGHTS[product.slug];
   const isFixAndFlip = product.slug === 'fix-and-flip';
   const isDscr = product.slug === 'dscr-rental';
@@ -381,6 +382,40 @@ export default function LoanProductPage({ product, directAnswer, cta, checklist,
                 <Link href="/apply?loanPurpose=dscr&source=dscr-method-guide" className="inline-flex items-center justify-center rounded-lg border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary/30">Request a DSCR scenario review</Link>
               </div>
               <p className="mt-5 text-xs text-muted-foreground">Method reference: theLender, “How to Calculate DSCR for a Rental Property,” updated July 21, 2026: https://retail.thelender.com/post/calculate-dscr-ratio-rental-property. This is general education; current program guidelines control.</p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {constructionReadiness && (
+        <section className="py-14 md:py-18 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-5xl rounded-3xl border border-border bg-card p-6 md:p-8">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary">Before requesting a construction review</p>
+              <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl">Make the project, permit path, and draw plan easy to verify</h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Site and approvals</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">Confirm ownership or purchase terms, parcel boundaries, zoning and permitted use, access, utilities, grading and drainage, environmental or flood concerns, and which approvals are required by the local authority. Attach the current plans, permit status, surveys, and any relevant reports. Requirements vary by address and scope.</p>
+                </div>
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Budget, builder, and draws</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">Organize hard and soft costs, contractor bids, schedule, contingency, borrower equity, and the proposed draw milestones. Identify work already completed, deposits due, and any liens or unpaid suppliers. Ask how inspections, lien waivers, retainage, draw fees, and reimbursement timing work before you rely on construction cash flow.</p>
+                </div>
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Value and exit</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">Support completed value with nearby closed sales matched for location, size, unit mix, and finish. Show whether the exit is a sale, refinance, or rental stabilization, and test a longer build, higher costs, and lower resale or rent. A projected value is not an appraisal or a sale guarantee.</p>
+                </div>
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Useful public checks</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li><a className="text-primary underline" href="https://msc.fema.gov/portal/search" target="_blank" rel="noreferrer">FEMA Flood Map Service Center</a> - check the parcel's mapped flood hazard and verify insurance requirements with the appropriate parties.</li>
+                    <li><a className="text-primary underline" href="https://www.epa.gov/brownfields" target="_blank" rel="noreferrer">EPA brownfields resources</a> - review environmental history where prior uses or site conditions raise concerns; a public lookup does not replace a property-specific assessment.</li>
+                    <li><a className="text-primary underline" href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noreferrer">NMLS Consumer Access</a> - a starting point for applicable company or individual licensing checks, not proof of loan availability or approval.</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="mt-5 text-xs text-muted-foreground">Links are starting points. Verify the responsible local planning/building authority and all parcel-specific requirements before relying on a schedule or budget.</p>
             </div>
           </div>
         </section>

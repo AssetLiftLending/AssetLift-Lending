@@ -176,147 +176,147 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "ground-up-construction",
     title: "Ground-Up Construction Loans - Finance New Builds from the Ground Up",
     description:
-      "AssetLift Lending provides ground-up construction loans for residential builders and investors. Fund land acquisition, vertical construction, and project completion with a single loan from a dedicated construction lender.",
+      "AssetLift Lending reviews ground-up construction loan scenarios for non-owner-occupied residential projects. Share the site, plans, budget, permit status, builder, equity, and exit for a project-specific review.",
     heroTitle: "Ground-Up Construction Loans",
     heroSubtitle:
-      "Build from scratch with confidence. Our construction loans cover land, permits, and vertical build costs so you can focus on delivering a finished product.",
+      "Project-based financing review for residential investors building from the ground up. Terms, eligible costs, leverage, and draw procedures depend on the complete project file.",
     overview:
-      "Ground-up construction loans are specialized financing products that fund the entire lifecycle of a new residential build, from land acquisition through vertical construction to project completion. Unlike fix-and-flip loans that finance the purchase and renovation of existing structures, construction loans are designed for vacant lots, teardowns, and entitled land parcels where the borrower intends to build a new residential property from the foundation up.\n\nAssetLift Lending's construction program finances up to 85% of the total project cost, including land purchase, permits, site preparation, and all hard and soft construction costs. Funds are disbursed through a carefully managed draw schedule tied to construction milestones, ensuring that capital is released only as work progresses. This protects both the borrower and the lender by maintaining alignment between the money deployed and the value created at each stage of the build.\n\nOur construction underwriting team evaluates every project based on the completed value of the finished home, the borrower's construction experience, the qualifications of the general contractor, and the strength of comparable sales in the target market. We finance single-family spec homes, custom builds, townhome developments, and small multifamily projects of up to four units. Projects must be located in markets with demonstrable demand for new construction and sufficient comparable sales data to support the projected completed value.\n\nGround-up construction is the most capital-intensive and complex segment of residential real estate investing, but it also offers the highest potential returns. Building a new home allows the investor to create value from raw materials rather than being limited by the existing structure and layout of a renovation property. For experienced builders and investors ready to take on the challenge, AssetLift Lending provides the capital, structure, and support to bring projects from blueprint to certificate of occupancy.",
+      "Ground-up construction financing is distinct from financing the purchase and renovation of an existing building. A review for a non-owner-occupied residential build can involve the parcel, acquisition basis, plans, zoning and permit status, itemized hard and soft costs, contractor, borrower experience, equity, reserves, valuation evidence, proposed draw process, schedule, and exit.\n\nWhat a lender may finance, how much equity is required, how completed value is assessed, and how construction funds are advanced vary by project and current program. Obtain written, project-specific terms that identify eligible costs, leverage limits, borrower contributions, fees, interest basis, conditions to funding, draw documentation, and maturity. Do not treat illustrative figures or an initial discussion as an approval or commitment.\n\nConstruction introduces entitlement, site, budget, contractor, draw, completion, and market-absorption risks before a finished asset exists. Build a downside case that includes approval delays, cost changes, a longer schedule, and a lower completed value. A projected return, appraisal, draw plan, financing amount, or timing is not guaranteed; each depends on the property, complete file, third parties, and market conditions.",
     keyStats: [
-      { label: "Loan-to-Cost (LTC)", value: "Up to 85%" },
-      { label: "Loan-to-Completed Value", value: "Up to 70%" },
-      { label: "Loan Term", value: "12 to 24 months" },
-      { label: "Minimum Loan Amount", value: "$150,000" },
-      { label: "Interest Rates Starting At", value: "10.5%" },
+      { label: "Site and approvals", value: "Parcel-specific" },
+      { label: "Plans and budget", value: "Itemized review" },
+      { label: "Builder and team", value: "Document experience" },
+      { label: "Draw process", value: "Confirm in writing" },
+      { label: "Financing terms", value: "Project-specific" },
     ],
     features: [
       {
-        title: "Land and Construction in a Single Loan",
+        title: "Confirm Eligible Project Costs",
         description:
-          "Finance the land acquisition and the entire construction budget under one loan, eliminating the need to secure separate land financing and a construction line. This simplifies your capital stack, reduces closing costs, and provides certainty of funding from day one through project completion.",
+          "Ask whether the proposed facility can include land acquisition, construction costs, or both. Eligible costs, closing conditions, funding sequence, and any separately funded items depend on the property and written terms; do not assume all land, soft costs, or future work are covered.",
       },
       {
-        title: "Milestone-Based Draw Schedule",
+        title: "Clarify Draw Procedures",
         description:
-          "Construction funds are released according to a pre-agreed draw schedule aligned with key construction milestones: foundation, framing, rough mechanicals, drywall, and final finishes. Each draw is verified by a third-party inspector before funds are released, ensuring accountability and protecting the project budget.",
+          "Before choosing a project budget, get the lender's proposed draw schedule and written requirements. Confirm milestones, inspection method, documentation, fees, retainage, expected processing times, and whether work must be completed or paid for before an advance. Procedures are specific to the loan.",
       },
       {
-        title: "Interest-Only Payments on Drawn Funds",
+        title: "Confirm Interest and Carrying Costs",
         description:
-          "You pay interest only on the portion of the loan that has been disbursed, not the full loan amount. In the early stages of construction when only a fraction of the budget has been drawn, your monthly payments are proportionally lower. This preserves your cash flow during the capital-intensive build phase.",
+          "Some construction facilities calculate interest on disbursed funds, while other structures may differ. Confirm the exact payment basis, funded balance, draw schedule, interest reserve, and any undrawn fees in the written term sheet before modeling monthly carrying costs.",
       },
       {
         title: "Experienced Construction Underwriting",
         description:
-          "Our underwriting team includes professionals with direct experience in residential construction lending. We understand construction timelines, builder risk factors, and market absorption rates. This expertise allows us to structure loans that align with realistic project schedules rather than applying generic timelines that do not reflect the realities of new construction.",
+          "A project review should connect plans, budget, contractor capacity, milestones, and exit assumptions. Submit supporting documents together and identify open approvals, bids, dependencies, and schedule risks so the review can focus on the actual project rather than an incomplete estimate.",
       },
       {
         title: "Flexible Exit Options",
         description:
-          "Sell the completed home to a retail buyer, refinance into a long-term rental loan if you decide to hold, or roll the finished property into a portfolio refinance. Our construction loans carry no prepayment penalties, giving you full flexibility to choose the most profitable exit based on market conditions at the time of completion.",
+          "Possible exits include selling the completed property or refinancing into rental financing if the property and borrower qualify. Select a primary plan before construction, test an alternate plan, and confirm maturity, extension, prepayment, and refinance terms in writing; no exit value or takeout loan is guaranteed.",
       },
     ],
     eligibility: [
       {
         requirement: "Construction Experience",
         detail:
-          "Borrowers must demonstrate prior experience managing residential construction projects, either as a licensed builder, developer, or investor who has completed at least 2 ground-up builds. First-time builders are considered on a case-by-case basis if partnered with an experienced, licensed general contractor with a verifiable track record.",
+          "Construction experience is one part of project review. Provide a concise record of completed builds or renovations, your role, budget and schedule performance, and any current projects. If you are a first-time builder, describe the experienced professionals responsible for construction and provide their relevant project history. Requirements vary by program and file.",
       },
       {
         requirement: "Licensed General Contractor",
         detail:
-          "All projects must be managed by a licensed general contractor with current insurance coverage (general liability and workers compensation) and a portfolio of completed residential builds. The GC's qualifications are underwritten alongside the borrower's profile, and their experience level directly impacts loan approval and pricing.",
+          "Builder and contractor requirements depend on project scope and program guidelines. Provide the contractor's credentials, relevant completed projects, insurance evidence, trade coverage, project schedule, and references. Verify any required state or local license with the relevant authority before construction begins.",
       },
       {
         requirement: "Approved Plans and Permits",
         detail:
-          "Architectural plans, engineering drawings, and all required building permits must be obtained or in active review before the loan closes. Projects that have not yet begun the permitting process may be approved with a delayed closing contingency that holds the rate and terms while permits are finalized.",
+          "Share current architectural and engineering plans, zoning or land-use status, and the permit application or issued permits. The responsible local authority determines what approvals are required and when work may begin. Whether a project can close before permits are issued depends on its specific risks and written loan terms; do not assume a rate or approval will be held while permits are pending.",
       },
       {
-        requirement: "Minimum Credit Score",
+        requirement: "Borrower and guarantor review",
         detail:
-          "A FICO score of 660 or higher is required for the primary borrower or guarantor. Credit scores above 700 qualify for preferred pricing. The credit review also includes an examination of the borrower's construction-related liabilities, outstanding liens, and any history of contractor disputes or project defaults.",
+          "Borrower and guarantor requirements, including credit review, depend on the current program and project. Be ready to provide requested financial information, liabilities, liquidity, relevant experience, and entity documents; obtain the applicable criteria for the specific scenario.",
       },
       {
         requirement: "Down Payment and Reserves",
         detail:
-          "A minimum equity contribution of 15% of the total project cost is required. This can be in the form of cash, land equity (if the lot is already owned), or a combination. Borrowers must also demonstrate liquid reserves sufficient to cover 3 to 6 months of interest payments as a cushion against construction delays.",
+          "Required equity and reserves depend on the project budget, collateral, experience, valuation, and current program guidelines. Document cash and any proposed land equity separately, and show liquidity for closing costs, draw timing, contingencies, carrying costs, and delays. Confirm the actual amounts and acceptable equity sources in the written terms.",
       },
     ],
     process: [
       {
-        step: "Project Submission and Feasibility Review",
+        step: "Prepare the Project Package",
         description:
-          "Submit your project package including architectural plans, a detailed construction budget, the general contractor's credentials, and comparable sales for the target market. Our team conducts a feasibility review within 48 hours, evaluating the project's completed value, market demand, and overall risk profile before issuing a term sheet.",
+          "Organize the parcel and acquisition details, plans, zoning and permit status, itemized budget, contractor credentials, borrower experience, equity and reserves, completed-value evidence, schedule, and intended exit. Ask the lender which items are needed for an initial screen and which third-party reports may be required later.",
       },
       {
         step: "Underwriting and Due Diligence",
         description:
-          "Upon term sheet acceptance, we commission a full appraisal based on the proposed plans and specifications, review the title report and zoning compliance, verify the general contractor's license and insurance, and complete a background and credit review of the borrower. Many files move from this phase to closing in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+          "The review may include a project appraisal, title and zoning review, plans and budget, borrower and contractor information, and other diligence required for the file. Ask which third-party reports, permits, conditions, and costs apply to your project and what remains before closing. Timing depends on completeness, third parties, title, valuation, and approvals; do not schedule around an unconfirmed closing date.",
       },
       {
         step: "Closing and Initial Funding",
         description:
-          "At closing, the land acquisition cost (if applicable) and initial soft costs (permits, architectural fees, site preparation) are funded. The remaining construction budget is held in a controlled escrow account and released through the draw process. You begin construction immediately after closing with full certainty that the remaining funds are committed.",
+          "Before closing, confirm in writing which costs are financed, how undisbursed funds are held, what conditions must be met before the first advance, and whether deposits or completed work are reimbursed. Do not start work or rely on future draws until the approved budget, funding mechanics, and conditions are clear in the executed documents.",
       },
       {
         step: "Construction Draws and Project Completion",
         description:
-          "As each construction milestone is reached, submit a draw request with supporting documentation (invoices, photos, lien waivers from subcontractors). A third-party inspector verifies the completed work, and funds are released within 3 to 5 business days. Upon project completion, you obtain a certificate of occupancy and execute your exit strategy: sale, refinance, or lease.",
+          "Draw requests may require invoices, photos, inspections, lien waivers, or other evidence. Confirm the steps, approval authority, fees, retainage, timing, and who pays contractors before a draw is released. At completion, obtain the closeout and occupancy approvals required by the local authority; an eventual sale or refinance remains subject to market conditions and separate buyer or lender approval.",
       },
     ],
     useCases: [
       {
         title: "Spec Home Construction",
         description:
-          "Build a new single-family home on a vacant lot for resale to a retail buyer. Spec homes in high-demand submarkets with limited new inventory can command premium pricing and sell quickly, generating returns that exceed typical renovation projects because every element of the home is new and under warranty.",
+          "A spec build depends on the buyer pool, competing inventory, price, finish choices, carrying costs, and completed-sale comparables. Compare the projected exit with recent closed sales and include a slower sale and lower price in the downside case; new construction does not ensure a premium or a quick sale.",
       },
       {
         title: "Teardown and Rebuild",
         description:
-          "Purchase a functionally obsolete home on a valuable lot, demolish the existing structure, and build a modern home that aligns with current buyer preferences and neighborhood comps. Teardown-rebuild projects are common in established neighborhoods where land values are high but existing housing stock is outdated.",
+          "Before valuing a teardown, verify demolition rules, existing utilities, setbacks, tree or historic protections, zoning, and permit requirements with the relevant local authorities. Compare the total acquisition, demolition, site, and build costs against supported completed sales.",
       },
       {
         title: "Infill Development",
         description:
-          "Develop underutilized lots within established neighborhoods, building new homes that fill gaps in local housing supply. Infill projects often face less competition than greenfield development and benefit from established infrastructure, school zones, and neighborhood amenities that support premium pricing.",
+          "Infill projects can still face access, utility-capacity, easement, drainage, neighboring-property, and entitlement constraints. Verify the parcel-specific conditions and avoid assuming nearby infrastructure or amenities make a project feasible or support a particular price.",
       },
       {
         title: "Small Multifamily New Construction",
         description:
-          "Build duplexes, triplexes, or fourplexes in markets with strong rental demand. New construction multifamily properties command top-of-market rents, require minimal near-term maintenance, and appraise favorably for refinancing into long-term DSCR loans after completion and lease-up.",
+          "For a small multifamily build, support unit mix and projected rents with relevant market evidence, and include lease-up, operating costs, vacancy, and reserves in the plan. A later rental refinance depends on completion, occupancy, appraisal, rent support, borrower eligibility, and the takeout lender's guidelines; it is not guaranteed.",
       },
     ],
     faqs: [
       {
         question: "Can I finance the land purchase and construction in one loan?",
         answer:
-          "Yes. Our ground-up construction loan covers both the land acquisition and the full construction budget under a single loan. If you already own the land, its current appraised value can count toward your equity contribution, potentially reducing the cash you need to bring to closing.",
+          "Some construction scenarios may include both site acquisition and construction costs; others may finance construction on land already owned. Eligibility, land-equity treatment, valuation, and required cash depend on the complete file. Request written terms for the specific parcel and plan before assuming that land or soft costs are included.",
       },
       {
         question: "How does the draw process work during construction?",
         answer:
-          "We establish a draw schedule at closing based on your construction timeline and budget. As you complete each milestone (foundation, framing, rough mechanicals, etc.), you submit a draw request through our online portal. A third-party inspector visits the site to verify the work, and upon approval, funds are wired to your account within 3 to 5 business days. Most projects involve 4 to 6 draws over the construction period.",
+          "Draw procedures are set for the specific loan. Before closing, confirm eligible cost categories, required invoices and lien waivers, inspection steps, draw fees, retainage, minimum draw size, reimbursement rules, and expected processing timing. Ask whether the borrower must advance funds before a draw is approved and paid.",
       },
       {
         question: "What if construction takes longer than expected?",
         answer:
-          "Our loan terms include built-in flexibility for reasonable construction delays. If you need additional time beyond the original term, we offer loan extensions on a case-by-case basis, typically for a modest extension fee. To minimize the risk of delays, we encourage borrowers to build a 10% to 15% contingency into their construction budgets and to work with experienced, well-capitalized general contractors.",
+          "A delay can increase interest, taxes, insurance, contractor costs, and the risk of reaching loan maturity before the exit. Ask whether extensions are available, what fees and conditions apply, and whether an extension is guaranteed; do not assume extra time will be granted. Model a project-specific contingency and a slower completion rather than relying on one schedule.",
       },
       {
         question: "Do you finance ADUs or detached guest houses?",
         answer:
-          "Accessory dwelling units (ADUs) and detached structures can be financed as part of a larger construction project that includes a primary residence or as standalone builds in jurisdictions where ADU construction is permitted by right. The completed value must be supported by comparable sales or rental income data. Contact our team to discuss the specifics of your ADU project.",
+          "ADU and detached-structure eligibility depends on local land-use approvals, property type, project scope, valuation, and current financing guidelines. Verify whether the use is allowed at the parcel and ask for written confirmation that the project is eligible before relying on financing.",
       },
       {
         question: "What types of properties can I build?",
         answer:
-          "Our construction loan program covers single-family homes, duplexes, triplexes, four-unit properties, and townhomes. We finance both stick-built and modular construction. We do not currently finance commercial properties, mixed-use buildings with more than 25% commercial space, or large-scale subdivisions of more than 4 units, though we can refer you to lending partners who specialize in those asset classes.",
+          "Eligible property types, unit counts, construction methods, and mixed-use limits depend on the current program and project. Describe the intended use, unit mix, construction type, and ownership structure in your inquiry and request confirmation before incurring design or application costs.",
       },
       {
         question: "Is builder experience absolutely required?",
         answer:
-          "We strongly prefer borrowers with at least 2 completed ground-up construction projects. However, first-time builders who partner with an experienced, licensed general contractor with a strong track record may be considered. In these cases, we may require a higher equity contribution or lower maximum loan-to-cost to offset the inexperience of the borrower.",
+          "Prior construction experience and contractor capacity help support a project review, but requirements vary by program and transaction. If this is your first build, document the experienced professionals on the team, their roles, relevant projects, insurance, and how construction will be supervised. Any compensating conditions depend on current underwriting.",
       },
     ],
   },
