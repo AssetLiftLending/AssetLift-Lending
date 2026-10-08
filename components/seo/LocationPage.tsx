@@ -484,7 +484,7 @@ export default function LocationPage({ state }: LocationPageProps) {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
               { title: 'Fix & Flip Loans', desc: 'Up to 95% LTC on purchase with 100% rehab funding. 13-19 month terms.', href: '/loans/fix-and-flip' },
-              { title: 'Ground-Up Construction', desc: 'Up to 90% LTC with 100% construction funding. 19-24 month terms.', href: '/loans/ground-up-construction' },
+              { title: 'Ground-Up Construction', desc: 'Project-specific terms; confirm eligible costs, leverage, equity, draw procedures, rate, and term in writing.', href: '/loans/ground-up-construction' },
               { title: 'DSCR Rental Loans', desc: 'Up to 85% LTV. 30-year fixed rate. No income verification.', href: '/loans/dscr-rental' },
               { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 5 days. Flexible exit strategies.', href: '/loans/bridge' },
             ].map((program, i) => (

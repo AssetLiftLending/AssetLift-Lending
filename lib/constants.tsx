@@ -24,14 +24,14 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
     subtitle: 'CONSTRUCTION',
     maxLTC: '90%',
     highlights: [
-      'Up to 90% LTC & 70% LTARV',
-      'Up to 100% of construction',
-      'Loans up to $5MM',
-      '19, 24-month term options',
-      'Spec builds, infills, neighborhood developments',
-      'Pay no interest on undrawn construction funds'
+      'Project-specific leverage and completed-value limits',
+      'Ask which site and construction costs are eligible',
+      'Plans, permits, budget, builder, and exit reviewed',
+      'Draw procedures and funding timing confirmed in writing',
+      'Residential investment projects; eligibility varies',
+      'Compare term, fees, interest, equity, and conditions'
     ],
-    otherOptions: 'Build-to-Rent: Flexible DSCR options',
+    otherOptions: 'Request terms for your project',
     color: 'bg-charcoal',
     icon: 'ðŸ—ï¸'
   },
