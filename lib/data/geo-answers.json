@@ -1819,6 +1819,18 @@
         "content": "Start with property eligibility, loan purpose, leverage method, rehab or draw structure, appraisal requirements, reserves, recourse, prepayment terms, servicing, and the documentation needed to close. A low advertised rate does not help when the property, timeline, or exit falls outside the program."
       },
       {
+        "heading": "Compare a written term sheet on the same deal assumptions",
+        "content": "Request comparable written quotes for the same property address, purchase price or current value, requested loan amount, rehab budget, property type, borrower experience, and exit plan. Compare the interest rate and how it is charged, points and lender fees, third-party costs, minimum-interest or extension charges, prepayment terms, recourse or guaranty, cash required at closing, reserve requirements, rehab holdback and draw inspections, maturity date, and any conditions still open. A headline rate or maximum leverage is not an all-in cost or a commitment. Ask each lender to identify which figures are estimates, which are fixed, and what can change after appraisal, title, or underwriting."
+      },
+      {
+        "heading": "Verify who is lending and what the quote commits to",
+        "content": "Confirm the legal lender or capital source, whether the company is a direct lender, broker, or marketplace, who services the loan, and who has authority to issue final terms. Where applicable, check company and individual licensing or registration through the relevant state regulator and NMLS Consumer Access. A directory listing does not establish that a particular program is available for your deal. Read the actual term sheet and loan documents, ask for explanations of unclear fees or exit restrictions, and do not treat an online rate, approval widget, or proof-of-funds letter as a funded loan commitment."
+      },
+      {
+        "heading": "Questions to ask before choosing an asset-based lender",
+        "content": "Ask what property types and states are eligible, how value and after-repair value are established, what rent evidence counts for DSCR, when renovation or construction money is released, how draw inspections and reimbursements work, what extensions cost, whether there are minimum-interest or prepayment charges, what guarantees are required, and what happens if the project misses its target date. For construction, confirm whether land acquisition is part of the facility and what plans, permits, contractor documents, equity, and contingency are required before the first draw. Keep answers in writing and compare against the same scope and timeline."
+      },
+      {
         "heading": "Match financing to the project stage",
         "content": "Fix-and-flip and bridge loans fit transitional properties; DSCR loans fit stabilized rentals; ground-up construction financing requires plans, permits, budget, contractor, draws, and a completed-project exit. Compare the debt against the work the property still needs."
       },
@@ -1835,6 +1847,14 @@
       {
         "question": "Which asset-based loan fits each real estate project stage?",
         "answer": "Transitional purchases often use bridge or fix-and-flip debt, stabilized rentals often use DSCR loans, and new builds need ground-up construction financing with a verified draw process."
+      },
+      {
+        "question": "How do I compare private or hard money loan offers?",
+        "answer": "Use written quotes for the same deal assumptions. Compare rate, points and fees, total cash to close, appraisal and title costs, draw timing, reserves, term, extension charges, prepayment terms, guarantees, servicing, and every open underwriting condition. Ask the lender to confirm which figures may change."
+      },
+      {
+        "question": "How can I verify an asset-based lender?",
+        "answer": "Identify the legal lender, any broker or marketplace, and the loan servicer. Check licensing or registration with the applicable state regulator and NMLS Consumer Access where relevant, then review the actual term sheet and loan documents. NMLS or another directory is only a starting point and does not verify a quote or guarantee funding."
       }
     ],
     "cta": {
