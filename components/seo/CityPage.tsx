@@ -168,6 +168,15 @@ const PRIORITY_CITY_GUIDANCE: Record<
       "Build the Certificate of Code Compliance inspection into the lease-up or resale timeline",
     ],
   },
+  'new-jersey/paterson': {
+    lenderView:
+      "Paterson rental and value-add files need a verified legal unit count, tenant status, permit history, and a clear path through rental inspections and any applicable rent-leveling rules. Nearby property values and rent support can vary materially, so citywide Census measures are context only. A stronger file documents the property, scope, registration and inspection status, carrying costs, borrower liquidity, and a supported sale or refinance exit.",
+    borrowerFocus: [
+      'Verify the legal unit count and owner-occupancy status; confirm any Chapter 381 coverage or exemption with Paterson Rent Leveling',
+      'For a tenant change, confirm the city re-rental inspection and required fire and lead inspection steps before projecting move-in',
+      'Check UCC permits and CO/CCO requirements for the address and scope, then support value or rent with nearby property-specific evidence',
+    ],
+  },
   'new-jersey/jersey-city': {
     lenderView:
       "Jersey City files are reviewed around neighborhood, unit mix, tenant status, and exit liquidity. Downtown, Journal Square, The Heights, Greenville, and Bergen-Lafayette have different values, rents, and buyer pools. Lenders like the rental depth, but they need the legal unit count, certificate of occupancy status, rent-control status, and condo or HOA rules settled before they size the loan.",
