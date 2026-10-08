@@ -6,9 +6,9 @@ import { ArrowRight, Info } from 'lucide-react';
 import { gtagEvent } from '@/lib/gtag';
 
 export default function FlipCalculator() {
-  const [purchasePrice, setPurchasePrice] = useState('');
-  const [rehabCost, setRehabCost] = useState('');
-  const [arv, setArv] = useState('');
+  const [purchasePrice, setPurchasePrice] = useState('280000');
+  const [rehabCost, setRehabCost] = useState('55000');
+  const [arv, setArv] = useState('430000');
   const [holdingMonths, setHoldingMonths] = useState('6');
   const [interestRate, setInterestRate] = useState('10');
   const [closingCostPercent, setClosingCostPercent] = useState('3');
@@ -95,12 +95,12 @@ export default function FlipCalculator() {
             <div className={`mt-1 text-4xl font-extrabold tracking-tight md:text-5xl ${grossProfit >= 0 ? 'text-white' : 'text-rose-300'}`}>{hasValues ? currency(grossProfit) : '—'}</div>
             <p className="mt-2 text-xs text-white/70">After modeled purchase, rehab, carry, and selling costs</p>
             <div className="mt-4 grid grid-cols-2 gap-2">
-              <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Estimated cash needed</span><strong className="mt-1 block text-base">{hasValues ? currency(estimatedCashNeeded) : '—'}</strong></div>
+              <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Estimated cash to close</span><strong className="mt-1 block text-base">{hasValues ? currency(estimatedCashNeeded) : '—'}</strong></div>
               <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Estimated ROI on modeled cash</span><strong className="mt-1 block text-base">{hasValues ? `${roi.toFixed(1)}%` : '—'}</strong></div>
               <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">All-in modeled costs</span><strong className="mt-1 block text-base">{hasValues ? currency(totalCosts) : '—'}</strong></div>
               <div className="rounded-lg border border-white/15 p-3"><span className="block text-[10px] text-white/65">Hold period</span><strong className="mt-1 block text-base">{months} months</strong></div>
             </div>
-            <div className="mt-4 rounded-lg bg-white/5 p-3 text-xs leading-relaxed text-white/75">Cash estimate = purchase-price equity from the financing assumption + full rehab budget + modeled purchase closing costs. Excludes interest/carry reserves, lender and draw fees, taxes, insurance, utilities, contingency, and other costs.</div>
+            <div className="mt-4 rounded-lg bg-white/5 p-3 text-xs leading-relaxed text-white/75">Estimated cash to close = purchase-price equity from the financing assumption + full rehab budget + modeled purchase closing costs. Excludes interest/carry reserves, lender and draw fees, taxes, insurance, utilities, contingency, and other costs.</div>
             <Link href={`/apply?${applyParams}`} onClick={() => gtagEvent('calculator_cta_clicked', { calculator: 'fix_and_flip', margin_band: marginBand })} className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-gold px-4 py-3 text-center text-sm font-bold text-charcoal transition-colors hover:bg-gold-dark">Review my flip scenario <ArrowRight className="h-4 w-4" /></Link>
             <p className="mt-3 text-[10px] leading-relaxed text-white/70">Planning estimate only, not a loan quote, approval, or full cash-to-close estimate. Financing and actual costs depend on lender, property, market, and project details.</p>
           </aside>
