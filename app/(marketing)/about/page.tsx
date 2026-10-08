@@ -18,7 +18,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
-    description: 'Private lending for real estate investors, funded with our capital partners',
+    description: 'Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
