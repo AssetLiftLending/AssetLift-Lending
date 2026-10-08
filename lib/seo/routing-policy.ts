@@ -138,6 +138,7 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/texas/tyler-smith-county',
   '/lending/georgia/macon-bibb-county',
   '/lending/georgia/brunswick-glynn-county',
+  '/lending/connecticut/bridgeport',
 ]);
 
 export const INDEXABLE_STATIC_PATHS = new Set([
