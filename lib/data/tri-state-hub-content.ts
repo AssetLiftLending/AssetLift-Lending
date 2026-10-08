@@ -143,48 +143,48 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
   },
   connecticut: {
     intro:
-      'AssetLift Lending funds business-purpose, non-owner-occupied investment property across Connecticut. Connecticut investors mostly work with older two- to four-family housing in its small cities and with single-family homes in Fairfield County. Prices, rents, and resale speed vary a lot between those two worlds. The sections below cover how we look at each region, how deals usually get structured, and what to have ready so a file moves fast.',
+      'AssetLift Lending reviews business-purpose, non-owner-occupied investment-property scenarios across Connecticut. Fairfield County, the New Haven and Hartford areas, and eastern Connecticut have different price, rent, tax, insurance, and resale patterns, so support each project with parcel- and neighborhood-level evidence. Verify unit legality, municipal approvals, scope, title, borrower liquidity, and the planned sale or refinance exit before relying on a schedule or leverage assumption.',
     regions: [
       {
         name: 'Fairfield County',
         markets: 'Stamford, Norwalk, Bridgeport, Danbury',
         detail:
-          'Higher values in Stamford and Norwalk support larger flips with tighter resale bands. Bridgeport offers lower entry prices and strong multifamily rental demand. Lenders want neighborhood-level comps because the county spans very different price points.',
+          'Fairfield County markets vary substantially by municipality and neighborhood. For Stamford, Norwalk, Bridgeport, and Danbury projects, support after-repair value with nearby closed sales matched for property type, size, condition, and finish; check taxes, insurance, unit legality, and permit status rather than applying one county-wide price assumption.',
       },
       {
         name: 'New Haven County',
         markets: 'New Haven, Waterbury, Meriden, West Haven',
         detail:
-          'Classic multi-family housing stock with steady rental demand from healthcare, universities, and commuters. Many of these properties are a century old, so scope, systems, and lead-safe work need to be in the budget.',
+          'For New Haven, Waterbury, Meriden, and West Haven, verify each building’s legal unit count, occupancy, tax and insurance costs, condition, and rent or sale evidence. Older buildings may need added systems and permit diligence; for paid work disturbing painted surfaces in pre-1978 housing, check EPA RRP requirements and include any required lead-safe work in the scope.',
       },
       {
         name: 'Hartford County',
         markets: 'Hartford, New Britain, East Hartford, Bristol',
         detail:
-          'Affordable prices and rent levels that support cash flow make Hartford County a common rental and BRRRR market. Loan amounts are smaller, so a complete file and realistic rehab numbers matter more than maximum leverage.',
+          'For Hartford, New Britain, East Hartford, and Bristol, model actual taxes, insurance, unit-level rent, vacancy, utilities, repairs, and any required municipal work. Support value with close local comparables; do not assume a rental refinance will qualify until the completed property and borrower meet the takeout lender’s separate requirements.',
       },
       {
         name: 'Eastern Connecticut',
         markets: 'New London, Norwich, Groton',
         detail:
-          'Smaller markets tied to local employers. Deals work when rent and resale comps come from the same town and the business plan does not depend on fast appreciation.',
+          'For New London, Norwich, and Groton, use rent and sale evidence from the same town and property type, and test a slower sale or lease-up. Avoid basing repayment on broad regional averages or assumed appreciation.',
       },
     ],
     structures: [
       {
         title: 'Fix and flip',
         detail:
-          'Short-term financing on the purchase plus rehab funds released in draws as work is completed. Best when the exit is a resale within about a year.',
+          'For purchase-and-renovation projects, organize the contract, approved scope, bids, permit status, nearby after-repair-value comparables, cash-to-close, reserves, and exit. Confirm eligible costs, draw inspections, reimbursement timing, fees, maturity, and payoff terms in writing; available terms are project-specific.',
       },
       {
         title: 'Bridge to DSCR',
         detail:
-          'Bridge financing to buy or reposition a multi-family, then a long-term DSCR loan once units are leased. Qualification is based on the property rent covering the payment.',
+          'A short-term financing plan may be followed by a rental refinance after renovation and lease-up, but the takeout is a separate application. Test rent against the full payment and operating costs, and confirm completed condition, unit legality, occupancy, appraisal, borrower eligibility, and current program criteria before depending on that exit.',
       },
       {
         title: 'Ground-up and major renovation',
         detail:
-          'Construction financing with plans, permits, and budget reviewed up front, most common in Fairfield County infill.',
+          'For a ground-up or major-build scenario, organize parcel control, zoning and permit status, plans, itemized budget, contractor, borrower experience, reserves, completed-value support, and exit. Confirm eligible costs and draw mechanics in project-specific written terms before starting work.',
       },
     ],
     fileChecklist: [
@@ -193,7 +193,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       'Recent comparable sales that support the after-repair value',
       'Rent roll and leases for occupied or rental properties',
       'Entity documents for the borrowing LLC or corporation',
-      'Proof of funds for down payment, closing costs, and reserves',
+      'Proof of funds for borrower contribution, closing costs, reserves, and draw timing needs',
     ],
     localLinks: [
       { label: 'DSCR loans in Connecticut', href: '/lending/connecticut/dscr-loans' },
