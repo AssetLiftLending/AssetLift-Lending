@@ -108,12 +108,11 @@ export default function FixAndFlipCalculatorPage() {
           </h2>
           <div className="mb-6 flex flex-wrap gap-3 text-sm">{[['Fix & Flip Loans','/loans/fix-and-flip'],['Calculate ARV','/blog/how-to-calculate-after-repair-value'],['Rehab draw process','/blog/fix-and-flip-loan-rehab-draw-process'],['Loan requirements','/blog/fix-and-flip-loan-requirements'],['Deal checklist','/resources/fix-and-flip-deal-checklist'],['Borrower package','/resources/fix-and-flip-borrower-package']].map(([label,href]) => <Link key={href} href={href} className="rounded-full border border-border px-3 py-2 hover:border-primary/50">{label}</Link>)}</div>
           <p className="text-muted-foreground leading-relaxed">
-            This calculator models the full cost structure of a house flip so you can see whether
-            the projected spread justifies the risk before you submit an offer. Enter the purchase
-            price, renovation budget, and after-repair value (ARV), then adjust your hold period,
-            interest rate, closing costs, and selling costs. The tool outputs your total project
-            cost, estimated profit, and cash-on-cash return -- the three numbers that determine
-            whether a deal is worth pursuing.
+            This calculator estimates a flip's project cost and profit from purchase price, rehab
+            budget, after-repair value (ARV), financing rate, hold period, purchase closing costs,
+            and sale costs. It uses fixed calculation assumptions described below. The output is a
+            scenario estimate, not a lender quote, loan approval, tax calculation, or guarantee of
+            the final return. Add costs the model does not include before deciding whether a deal works.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             The goal is not to produce a perfect prediction. Rehab timelines slip, material costs
@@ -123,50 +122,67 @@ export default function FixAndFlipCalculatorPage() {
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight mt-12 mb-6">
+            What the model includes and leaves out
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The calculator models purchase price plus rehab as investment, purchase closing costs,
+            interest on a fixed 95% purchase advance for the entered months, and the entered sale-cost
+            percentage. It assumes rehab funding is available as part of the project but does not model
+            draw timing or draw fees. It does not include taxes, insurance, utilities, permits, appraisal,
+            title, lender points or other fees, reserves, contingency, or every source of cash. ROI uses
+            the modeled 5% purchase down payment, rehab budget, and purchase closing costs as its cash
+            denominator. Replace the illustrative inputs with deal-specific quotes and amounts; check
+            that the model fits the actual written financing terms.
+          </p>
+
+          <h2 className="text-3xl font-bold tracking-tight mt-12 mb-6">
             Key Terms Defined
           </h2>
           <div className="grid gap-4 not-prose">
             <div className="rounded-lg border bg-card p-4">
               <p className="font-semibold">ARV (After-Repair Value)</p>
               <p className="text-sm text-muted-foreground mt-1">
-                The estimated market value of the property after renovations are complete. Lenders
-                and investors base this on sold comparable properties in the area with similar
-                square footage, condition, and finish level. Your ARV assumption is the single
-                biggest driver of projected profit -- and the easiest number to get wrong.
+                The estimated resale value after the planned work. Support it with recent closed sales
+                in the same neighborhood that match property type, size, unit count, condition, and
+                finish level. A citywide median or listing price is not a substitute for subject-level
+                comparable sales; appraised value and realized sale price can differ.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-4">
               <p className="font-semibold">LTV (Loan-to-Value) and LTC (Loan-to-Cost)</p>
               <p className="text-sm text-muted-foreground mt-1">
-                LTV compares the loan amount to the property value, while LTC compares it to total
-                project cost (purchase price plus rehab). Fix-and-flip lenders typically cap at
-                85-90% of purchase price and 100% of rehab, with a combined limit of 70-75% of ARV.
-                Understanding both ratios tells you how much cash you need to bring.
+                LTV compares the loan amount to a property's value; LTC compares a loan with eligible
+                project cost. Lender definitions, eligible costs, leverage limits, and ARV caps vary by
+                program and file. This calculator does not determine a lender's maximum advance or
+                cash-to-close amount; use the written term sheet and closing figures.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-4">
               <p className="font-semibold">Holding Costs</p>
               <p className="text-sm text-muted-foreground mt-1">
-                The monthly expenses incurred while you own the property -- loan interest, taxes,
-                insurance, utilities, and any HOA dues. On a $300,000 loan at 10% interest-only,
-                holding costs run roughly $2,500 per month in interest alone before taxes and
-                insurance. Every month of delay erodes profit directly.
+                Recurring project expenses during acquisition, rehab, and sale, which may include
+                interest, property taxes, insurance, utilities, maintenance, HOA dues, and other costs.
+                This calculator estimates interest from the entered purchase-financing assumption,
+                rate, and months; it does not include every carrying expense. Add local amounts and
+                test a longer hold before relying on the margin.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-4">
               <p className="font-semibold">Rehab Draw Schedule</p>
               <p className="text-sm text-muted-foreground mt-1">
                 Most fix-and-flip lenders release renovation funds in stages (draws) as work is
-                completed and inspected. You typically fund work upfront and get reimbursed after
-                a draw inspection. Budget for the cash flow gap between spending and reimbursement.
+                completed and inspected. Payment order, draw inspections, fees, timing, and borrower
+                cash-flow requirements vary by program. Confirm the current written draw terms before
+                relying on rehab advances.
               </p>
             </div>
             <div className="rounded-lg border bg-card p-4">
               <p className="font-semibold">Selling Costs</p>
               <p className="text-sm text-muted-foreground mt-1">
-                Agent commissions, transfer taxes, title fees, seller concessions, and closing costs
-                on the sale side. A realistic estimate is 7-9% of the sale price in most markets.
-                New investors often underwrite this at 5-6% and get surprised at the closing table.
+                Sale-side costs may include brokerage compensation, transfer or recording taxes,
+                title and settlement fees, concessions, and other transaction-specific charges. They
+                vary by state, municipality, contract, and deal structure. Replace the default with
+                quotes or estimates specific to the property; this input is not a universal range.
               </p>
             </div>
           </div>
@@ -175,33 +191,31 @@ export default function FixAndFlipCalculatorPage() {
             Worked Example: Evaluating a Fix and Flip
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Suppose you find a three-bedroom ranch listed at $210,000 in a neighborhood where
-            renovated comps sell for $320,000. The property needs a full kitchen and bath remodel,
-            new flooring, paint, and landscaping. Here is how the numbers break down:
+            Hypothetical inputs: a $210,000 purchase, $55,000 rehab, $320,000 ARV, six-month hold,
+            10% rate, 3% purchase costs, and 8% sale costs. The figures below apply this page's
+            simplified model only; they are not market comps, lender terms, or a deal recommendation.
           </p>
           <div className="rounded-lg border bg-card p-5 my-4 not-prose">
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><span className="font-medium text-foreground">Purchase Price:</span> $210,000</li>
               <li><span className="font-medium text-foreground">Rehab Budget:</span> $55,000</li>
               <li><span className="font-medium text-foreground">Closing Costs (purchase):</span> $6,300 (3%)</li>
-              <li className="pt-2 border-t"><span className="font-medium text-foreground">Loan Amount:</span> $178,500 (85% of purchase) + $55,000 rehab = $233,500 total</li>
-              <li><span className="font-medium text-foreground">Interest (10%, 6 months):</span> ~$11,675</li>
-              <li><span className="font-medium text-foreground">Taxes + Insurance (6 months):</span> ~$2,400</li>
-              <li><span className="font-medium text-foreground">Utilities (6 months):</span> ~$1,200</li>
-              <li className="pt-2 border-t"><span className="font-medium text-foreground">Total Project Cost:</span> ~$286,575</li>
+              <li className="pt-2 border-t"><span className="font-medium text-foreground">Modeled purchase advance:</span> $199,500 (95% of purchase; simplified tool assumption)</li>
+              <li><span className="font-medium text-foreground">Interest (10%, 6 months):</span> ~$9,975</li>
+              <li className="pt-2 border-t"><span className="font-medium text-foreground">Modeled project cost before sale costs:</span> $210,000 + $55,000 + $6,300 + $9,975 = $281,275</li>
               <li><span className="font-medium text-foreground">ARV (sale price):</span> $320,000</li>
               <li><span className="font-medium text-foreground">Selling Costs (8%):</span> -$25,600</li>
-              <li className="pt-2 border-t"><span className="font-medium text-foreground">Gross Profit:</span> $320,000 - $286,575 - $25,600 = <strong className="text-foreground">$7,825</strong></li>
-              <li><span className="font-medium text-foreground">Cash Out of Pocket:</span> ~$48,175 (down payment + closing + draw float)</li>
-              <li><span className="font-medium text-foreground">Cash-on-Cash ROI:</span> ~16%</li>
+              <li className="pt-2 border-t"><span className="font-medium text-foreground">Modeled profit after sale costs:</span> $320,000 - $281,275 - $25,600 = <strong className="text-foreground">$13,125</strong></li>
+              <li><span className="font-medium text-foreground">Modeled cash investment for ROI:</span> $10,500 down payment + $55,000 rehab + $6,300 closing costs = $71,800</li>
+              <li><span className="font-medium text-foreground">Modeled ROI:</span> $13,125 / $71,800 = ~18.3%</li>
             </ul>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            At first glance, $7,825 in profit on a six-month project looks thin -- and it is.
-            If rehab runs $10,000 over budget or the hold extends to nine months, this deal
-            loses money. A stronger version of this project would need either a lower acquisition
-            basis (offer $185,000), a tighter rehab scope, or stronger ARV support. That is
-            exactly why you run the calculator before making the offer, not after.
+            This is an illustrative model, not a quote or prediction. Change the hold, rate, sale-cost,
+            tax, insurance, utility, and contingency assumptions to fit a specific property. The
+            displayed cash-on-cash figure also depends on the calculator's assumed purchase financing
+            and does not include every source and use of cash. Confirm the inputs, include missing costs,
+            and get actual lender/title/contractor estimates before submitting an offer.
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight mt-12 mb-6">
@@ -247,12 +261,10 @@ export default function FixAndFlipCalculatorPage() {
             <div>
               <h3 className="font-semibold text-lg">What profit margin should a house flip target?</h3>
               <p className="text-muted-foreground mt-2">
-                There is no universal rule, but experienced investors typically want to see at least
-                $25,000-$30,000 in projected profit on a standard residential flip, with enough
-                buffer to absorb a 10-15% rehab overrun and a one- to two-month timeline extension
-                without going negative. If the projected margin is under $15,000, the risk-to-reward
-                ratio rarely makes sense unless you are doing the work yourself and have deep local
-                comp knowledge.
+                There is no universal profit target. The required cushion depends on property price,
+                project size, local sale liquidity, renovation scope, leverage, hold time, and your
+                reserves. Stress-test a larger rehab budget, longer hold, lower sale price, and higher
+                costs; the calculator cannot decide whether the risk fits your situation.
               </p>
             </div>
             <div>
@@ -268,22 +280,19 @@ export default function FixAndFlipCalculatorPage() {
             <div>
               <h3 className="font-semibold text-lg">What costs do new flippers usually miss?</h3>
               <p className="text-muted-foreground mt-2">
-                The most common blind spots are: holding costs during the listing period (the clock
-                does not stop when rehab ends), draw delays that create cash flow gaps, builder&apos;s
-                risk insurance premiums, utility costs during renovation, permit and inspection fees,
-                seller concessions to buyers, and the cost of price reductions if the property sits
-                on the market longer than expected. Build a 10-15% contingency into both your rehab
-                budget and your timeline.
+                Items omitted or understated often include taxes, insurance, utilities, permits,
+                inspection fees, lender and draw charges, contingency, price reductions, concessions,
+                and carrying costs after rehab while the property is listed. Check local quotes and
+                project details; there is no one percentage that fits every scope or market.
               </p>
             </div>
             <div>
               <h3 className="font-semibold text-lg">How much of my own cash do I need for a flip?</h3>
               <p className="text-muted-foreground mt-2">
-                Plan for 10-15% of the purchase price as a down payment, plus closing costs (2-4%
-                of the loan amount), plus enough liquidity to cover draw float and holding costs
-                during renovation. On a $250,000 purchase with a $60,000 rehab, budget roughly
-                $45,000-$65,000 in total cash needed. Some programs offer higher leverage for
-                experienced investors with a track record of completed projects.
+                Cash required depends on the purchase advance, eligible rehab draws, closing and third-
+                party costs, initial reserves, and whether you must pay for work before reimbursement.
+                Use a written term sheet and settlement estimate for a real deal; this calculator's
+                modeled ROI denominator is not a complete cash-to-close estimate.
               </p>
             </div>
           </div>
