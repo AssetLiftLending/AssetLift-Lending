@@ -19,6 +19,7 @@ interface LoanProductPageProps {
   checklist?: string[];
   dscrMethodGuide?: boolean;
   constructionReadiness?: boolean;
+  fixFlipReadiness?: boolean;
 }
 
 const RELATED_GUIDES: Record<
@@ -232,7 +233,7 @@ const PRODUCT_INSIGHTS: Record<
   },
 };
 
-export default function LoanProductPage({ product, directAnswer, cta, checklist, dscrMethodGuide = false, constructionReadiness = false }: LoanProductPageProps) {
+export default function LoanProductPage({ product, directAnswer, cta, checklist, dscrMethodGuide = false, constructionReadiness = false, fixFlipReadiness = false }: LoanProductPageProps) {
   const insights = PRODUCT_INSIGHTS[product.slug];
   const isFixAndFlip = product.slug === 'fix-and-flip';
   const isDscr = product.slug === 'dscr-rental';
@@ -416,6 +417,41 @@ export default function LoanProductPage({ product, directAnswer, cta, checklist,
                 </div>
               </div>
               <p className="mt-5 text-xs text-muted-foreground">Links are starting points. Verify the responsible local planning/building authority and all parcel-specific requirements before relying on a schedule or budget.</p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {fixFlipReadiness && (
+        <section className="py-14 md:py-18 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-5xl rounded-3xl border border-border bg-card p-6 md:p-8">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary">Before you put a property under contract</p>
+              <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl">Underwrite the whole project, not just the purchase price</h2>
+              <p className="mb-6 max-w-4xl leading-relaxed text-muted-foreground">A useful first pass should show the cash needed at closing, when rehab funds may become available, how much cash you need to carry the work, and whether a lower sale price or longer hold still leaves a repayment path. Program maximums are not a quote for your property.</p>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Build a complete cost stack</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">Include purchase and closing costs, eligible rehab, contingency, interest and lender fees, taxes, insurance, utilities, permits, staging, selling costs, and any HOA or property-management costs. Separate costs the loan may cover from cash you need before or between draws.</p>
+                </div>
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Support the after-repair value</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">Use nearby closed sales that match location, property type, size, condition, and likely finish. Explain adjustments and flag unusual features. Do not rely only on active listings, the highest sale, or a projected value from a calculator; the lender's valuation and leverage limits may differ.</p>
+                </div>
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Make the scope buildable</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">List work by room or trade with quantities, contractor bids, permit needs, sequencing, and contingency. Identify structural, mechanical, and life-safety work, long-lead items, deposits, and who is responsible for each trade. Confirm how change orders affect the approved budget before work begins.</p>
+                </div>
+                <div className="rounded-2xl bg-secondary/25 p-5">
+                  <h3 className="mb-2 font-semibold">Plan for draws and the exit</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">Ask about inspections, invoices, lien waivers, draw fees, retainage, reimbursements, and payment timing. Model a longer renovation and slower resale at a lower price. If the backup is a refinance, treat it as a new application with separate property, rent, appraisal, borrower, and program requirements.</p>
+                </div>
+              </div>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <Link href="/tools/fix-and-flip-calculator" className="rounded-lg bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground">Run the deal numbers</Link>
+                <Link href="/resources/fix-and-flip-deal-checklist" className="rounded-lg border border-border px-5 py-3 text-center text-sm font-semibold">Open the deal checklist</Link>
+              </div>
+              <p className="mt-5 text-xs text-muted-foreground">Confirm current leverage, eligible costs, borrower contribution, fees, draw rules, payoff provisions, and maturity in the written terms for your project.</p>
             </div>
           </div>
         </section>
