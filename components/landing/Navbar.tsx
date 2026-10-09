@@ -88,6 +88,11 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
+    document.body.toggleAttribute('data-mobile-menu-open', isMobileMenuOpen);
+    return () => document.body.removeAttribute('data-mobile-menu-open');
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };

@@ -334,9 +334,13 @@
   }
 }
 
-/* Phones: keep the chat widget above the sticky Call / Text / Get Terms bar. */
+/* Keep the mobile chat launcher above the sticky actions and out of the open nav. */
 @media (max-width: 767px) {
   body[data-sticky-cta] .chatbot-root {
     bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  body[data-mobile-menu-open] .chatbot-root {
+    display: none;
   }
 }
