@@ -4606,5 +4606,59 @@
         "answer": "AssetLift Lending offers DSCR loans with LTVs up to 85% for purchases and up to 80% for cash-out refinances. These percentages are subject to property type, DSCR ratio, and overall underwriting approval."
       }
     ]
+  },
+  {
+    "slug": "dscr-loan-vacant-lease-up-property",
+    "title": "DSCR Loan on a Vacant or Lease-Up Rental Property: What You Need to Know",
+    "description": "Unlock DSCR loan financing for vacant or lease-up rental properties. Learn about market rent, reserves, and LTVs for your next investment with...",
+    "publishedAt": "2026-10-09T16:55:21.818Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "7 min read",
+    "category": "DSCR Rental",
+    "tags": [
+      "DSCR Loan",
+      "Vacant Property",
+      "Lease-Up Property",
+      "Rental Property Financing",
+      "Real Estate Investor"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "Navigating DSCR Loans for Vacant or Lease-Up Properties: The Core Challenge",
+        "content": "As experienced real estate investors, you know the power of DSCR loans for stabilized rental properties. But what happens when you’re eyeing a deal that’s currently vacant or in a lease-up phase? This scenario presents a unique challenge for traditional DSCR underwriting, which heavily relies on existing rental income to calculate the Debt Service Coverage Ratio. Lenders, including AssetLift, need a clear path to assessing the property's income-generating potential. The key here isn't a hard 'no,' but rather a nuanced approach focusing on verifiable market rent, sufficient reserves, and a solid investor profile. Our DSCR programs typically require a minimum 660 credit score, and for vacant or lease-up properties, a slightly higher credit score or more robust reserves might be beneficial to offset perceived risk. We're looking for a clear path to stabilization, usually within a 3-6 month window post-closing."
+      },
+      {
+        "heading": "Establishing Market Rent for Underwriting: Proving Income Potential",
+        "content": "When a property is vacant or undergoing lease-up, the DSCR calculation can't rely on current leases. Instead, we turn to market rent. This isn't just a guess; it requires professional substantiation. Lenders will typically require a comprehensive appraisal that includes a detailed rent schedule analysis. This analysis must clearly outline the projected market rent for the property, often comparing it to 3-5 recently rented, comparable properties in the immediate vicinity. For instance, if you're acquiring a vacant single-family home in Dallas, Texas, the appraiser will identify similar 3-bed, 2-bath homes that have recently leased for, say, $2,200-$2,400 per month. This validated market rent is then used in our DSCR calculation. While we offer up to 85% LTV for purchases on stabilized properties, for vacant or lease-up scenarios, the LTV might be conservatively adjusted, often hovering around 75-80% LTV, depending on the property type and investor's experience, to account for the lease-up period."
+      },
+      {
+        "heading": "The Role of Reserves: Mitigating Lease-Up Risk",
+        "content": "Even with a strong market rent projection, there's an inherent risk with vacant properties: the time it takes to secure a tenant. This is where reserves become critical. For DSCR loans on vacant or lease-up properties, AssetLift typically requires borrowers to demonstrate liquid reserves sufficient to cover a certain number of months of PITI (Principal, Interest, Taxes, Insurance) payments. A common requirement is 6-12 months of PITI reserves, ensuring you can service the debt even if the property sits vacant for a few months longer than anticipated. For example, if your projected PITI is $1,500/month, you might need to show $9,000 to $18,000 in liquid assets. This demonstrates your capacity to weather the lease-up period and provides confidence to the underwriter that the loan will be serviced consistently. This reserve requirement is in addition to standard closing costs and down payment requirements."
+      },
+      {
+        "heading": "DSCR Loan Parameters and Investor Profile: What Lenders Look For",
+        "content": "Beyond market rent and reserves, your investor profile plays a significant role. Lenders assess your experience in real estate, particularly with lease-ups and property management. A seasoned investor with a track record of successfully leasing properties quickly will be viewed more favorably. Our DSCR programs are available across 46 states, with loan amounts ranging from $100K to $5M. While our rates start from 6.25% for stabilized assets, vacant properties might see a slight premium reflecting the increased risk. The DSCR itself is typically calculated using the market rent, and we generally look for a DSCR of 1.00x or higher. For ground-up construction or heavy rehab projects that will transition to DSCR, we offer bridge loans up to 80% LTV, which can then be refinanced into a long-term DSCR product once stabilized. Every deal is subject to underwriting, but a clear plan for stabilization and a strong financial position will always strengthen your application."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I get a DSCR loan if my rental property is completely vacant?",
+        "answer": "Yes, it is possible. Lenders will rely on a professional appraisal to determine the market rent for the property, which is then used in the DSCR calculation. You'll also need to demonstrate sufficient liquid reserves, typically 6-12 months of PITI, to cover payments during the lease-up period."
+      },
+      {
+        "question": "What DSCR ratio is required for a vacant property?",
+        "answer": "The DSCR ratio required is generally 1.00x or higher, calculated based on the projected market rent of the property. This ensures that the anticipated rental income covers the property's debt service. Specific requirements may vary based on the lender and your investor profile."
+      },
+      {
+        "question": "What LTV can I expect for a DSCR loan on a lease-up property?",
+        "answer": "While stabilized properties can go up to 85% LTV for purchases, vacant or lease-up properties typically see a more conservative LTV, often in the 75-80% range. This lower LTV helps mitigate the lender's risk during the lease-up phase and provides additional equity cushion."
+      },
+      {
+        "question": "What kind of documentation do I need to prove market rent?",
+        "answer": "You will typically need a full appraisal report that includes a detailed rent schedule analysis. This analysis should compare your property to 3-5 similar, recently leased properties in the local market to establish a credible projected market rental income."
+      }
+    ]
   }
 ]
