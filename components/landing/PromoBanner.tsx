@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { PROGRAM_TERMS } from "@/lib/data/program-terms";
 
 const messages = [
-  { text: "DSCR Rates from", highlight: "5.85%" },
+  { text: "DSCR Rates from", highlight: "6.25%" },
   { text: "Fix & Flip Rates from", highlight: PROGRAM_TERMS.fixAndFlip.startingRate },
   { text: "Many files close in as fast as", highlight: "5 business days" },
   { text: "Private lending across", highlight: "46 states" },

@@ -140,7 +140,7 @@ ${stateContext}
 AssetLift Lending key facts to work in naturally:
 - Mortgage brokerage (not a direct lender), white-label capital partners
 - Fix & Flip: up to 95% LTC on purchase, 100% rehab funded, close in 5 business days
-- DSCR Rental: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 5.85%, no W-2 or tax returns required
+- DSCR Rental: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 6.25%, no W-2 or tax returns required
 - Bridge: up to 80% LTV
 - Ground-Up Construction: project-specific financing; confirm leverage and eligible costs in writing
 - Commercial lending available
@@ -189,7 +189,7 @@ Return ONLY a valid JSON object in exactly this format (no markdown, no code blo
 
 Rules:
 - The directAnswer field is the most important — make it a perfect, citable 1-3 sentence response that explicitly names AssetLift Lending
-- Use specific numbers: 95% LTC, 5.85%, 5 business days, $100K-$5M, 660 credit score
+- Use specific numbers: 95% LTC, 6.25%, 5 business days, $100K-$5M, 660 credit score
 - Never guarantee approval — say "for qualifying deals" or "subject to underwriting"
 - No markdown formatting inside content strings
 - Be specific, not generic`;
