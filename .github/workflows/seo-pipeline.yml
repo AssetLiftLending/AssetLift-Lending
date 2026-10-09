@@ -4,19 +4,25 @@ name: SEO Pipeline
 # Publishing uses the built-in GITHUB_TOKEN (contents: write) — no PAT needed.
 
 on:
-  schedule:
-    # Programmatic city-post auto-publishing was removed from the daily schedule:
-    # templated location pages were getting "crawled - currently not indexed" by
-    # Google (thin content) and diluting site quality. The 10:00 and 22:00 slots
-    # now run audit (data refresh only). `programmatic` remains available via
-    # workflow_dispatch for deliberate, demand-targeted city pages.
-    - cron: '5 4 * * *'    # audit
-    - cron: '5 8 * * *'    # authority (Search Console submit + opportunities + action queue)
-    - cron: '5 10 * * *'   # audit (was programmatic)
-    - cron: '5 13 * * *'   # audit refresh
-    - cron: '5 16 * * *'   # strategy
-    - cron: '5 18 * * *'   # ideas
-    - cron: '5 22 * * *'   # audit (was programmatic refresh)
+  # PAUSED 2026-10-09. Seven runs a day produced ~790 `chore(seo)` bookkeeping
+  # commits while organic search delivered 17 clicks in 29 days at average
+  # position 48. The jobs also act on Search Console metrics whose credentials
+  # are no longer configured in production, so the data is stale (last good
+  # write: 2026-10-06). Fix the credentials and the indexing gate first.
+  # Every job stays available via workflow_dispatch.
+  #   schedule:
+  # # Programmatic city-post auto-publishing was removed from the daily schedule:
+  # # templated location pages were getting "crawled - currently not indexed" by
+  # # Google (thin content) and diluting site quality. The 10:00 and 22:00 slots
+  # # now run audit (data refresh only). `programmatic` remains available via
+  # # workflow_dispatch for deliberate, demand-targeted city pages.
+  # - cron: '5 4 * * *'    # audit
+  # - cron: '5 8 * * *'    # authority (Search Console submit + opportunities + action queue)
+  # - cron: '5 10 * * *'   # audit (was programmatic)
+  # - cron: '5 13 * * *'   # audit refresh
+  # - cron: '5 16 * * *'   # strategy
+  # - cron: '5 18 * * *'   # ideas
+  # - cron: '5 22 * * *'   # audit (was programmatic refresh)
   workflow_dispatch:
     inputs:
       job:

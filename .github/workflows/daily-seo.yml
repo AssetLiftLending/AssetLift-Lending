@@ -1,8 +1,12 @@
 name: Daily SEO Content
 
 on:
-  schedule:
-    - cron: '0 10 * * *'   # 10 AM UTC = 6 AM ET daily
+  # PAUSED 2026-10-09. The daily post is written to seo-scheduled-posts.json
+  # but is not added to INDEXABLE_BLOG_SLUGS, so Google never sees it: 380
+  # posts exist and 28 are indexable. Publishing more noindexed pages cannot
+  # move rankings. Re-enable once posts are indexable by default.
+  #   schedule:
+  # - cron: '0 10 * * *'   # 10 AM UTC = 6 AM ET daily
   workflow_dispatch:         # Also allows manual trigger from GitHub Actions tab
 
 # Serialize with the GEO bot and SEO Pipeline so concurrent pushes to main

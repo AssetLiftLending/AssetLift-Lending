@@ -358,12 +358,12 @@ export default function BorrowerPackageForm() {
         }
       }
 
-      const success = await sendFormNotification(submission);
+      const emailOk = await sendFormNotification(submission);
 
       // Record in the CRM regardless of the email result. The uploaded files
       // only travel by email, but the borrower and their deal belong in the CRM
       // either way — that is what someone follows up from.
-      await pushToGHL({
+      const sync = await pushToGHL({
         name: form.name,
         email: form.email,
         phone: form.phone,
@@ -376,10 +376,15 @@ export default function BorrowerPackageForm() {
         source: 'borrower-package',
       });
 
-      if (!success) {
+      // The uploaded documents travel by email only, so a failed send still
+      // needs the borrower to act — but their details are already in the CRM,
+      // so say what is actually missing instead of "try again".
+      if (!emailOk) {
         toast({
-          title: 'Submission Error',
-          description: 'Please try again or email info@assetliftlending.com directly.',
+          title: sync.success ? 'Documents did not attach' : 'Submission Error',
+          description: sync.success
+            ? 'We have your details and will be in touch. Please email your documents to info@assetliftlending.com.'
+            : 'Please try again or email info@assetliftlending.com directly.',
           variant: 'destructive',
         });
         return;
