@@ -26,7 +26,7 @@ const INTENT_LABELS: Record<string, string> = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: 'Real Estate Investor Q&A | Hard Money & DSCR Loan Answers',
+  title: 'Real Estate Investor Q&A | Hard Money & DSCR Loan Answers | AssetLift Lending',
   description: 'Direct answers to the most common real estate investor questions about hard money loans, DSCR rental financing, fix and flip funding, and more.',
   path: '/answers',
   noIndex: true,

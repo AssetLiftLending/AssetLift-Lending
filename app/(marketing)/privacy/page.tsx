@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Privacy Policy',
+  title: 'Privacy Policy | AssetLift Lending',
   description:
     'Read the AssetLift Lending privacy policy to understand how we collect, use, and protect information submitted through our website and loan inquiry forms.',
   path: '/privacy',

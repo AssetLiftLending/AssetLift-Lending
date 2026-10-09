@@ -7,7 +7,7 @@ import { ArrowRight, FileText, Search, ClipboardCheck, Banknote, CheckCircle } f
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'How Our Hard Money Loans Work',
+  title: 'How Our Hard Money Loans Work | AssetLift Lending',
   description:
     'See how AssetLift Lending handles hard money loan quotes, underwriting, due diligence, and closing for fix and flip, bridge, DSCR, and construction deals.',
   path: '/how-it-works',

@@ -11,7 +11,7 @@ import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hard Money & Private Real Estate Lender",
+  title: "Hard Money & Private Real Estate Lender | AssetLift Lending",
   description:
     "Hard money and private lending for real estate investors - fix & flip, DSCR, bridge, and construction loans in Camden County, South Jersey, and nationwide.",
   path: "/",

@@ -13,7 +13,7 @@ function slugifyCategory(category: string) {
 }
 
 export const metadata: Metadata = createMetadata({
-  title: 'Hard Money Loan FAQ | DSCR, Bridge & Fix and Flip',
+  title: 'Hard Money Loan FAQ | DSCR, Bridge & Fix and Flip | AssetLift Lending',
   description:
     'Get answers about hard money loans, fix and flip financing, DSCR rental loans, bridge loans, rates, requirements, closings, and underwriting.',
   path: '/faq',

@@ -10,7 +10,7 @@ import searchConsoleStatus from '@/internal/seo/data/search-console-status.json'
 import { SEO_AUTHORITY_SCHEDULE, SEO_DAILY_PRIORITY_MAP, SEO_JOBS } from '@/lib/seo/config';
 
 export const metadata: Metadata = createMetadata({
-  title: 'SEO Automation Status',
+  title: 'SEO Automation Status | AssetLift Lending',
   description: 'Internal status page for SEO automation, authority tasks, and search console connectivity.',
   path: '/seo-status',
   noIndex: true,

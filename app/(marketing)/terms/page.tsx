@@ -13,7 +13,7 @@ import {
 } from '@/lib/sms-consent';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Terms of Service',
+  title: 'Terms of Service | AssetLift Lending',
   description:
     'Terms of service for AssetLift Lending. Review our website terms, loan disclaimers, SMS terms, and conditions of use.',
   path: '/terms',

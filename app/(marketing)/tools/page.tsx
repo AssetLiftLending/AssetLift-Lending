@@ -6,7 +6,7 @@ import JsonLd from '@/components/JsonLd';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Free Real Estate Investor Tools & Calculators',
+  title: 'Free Real Estate Investor Tools & Calculators | AssetLift Lending',
   description:
     'Free calculators and tools for real estate investors. Analyze fix-and-flip deals, estimate DSCR rental loan eligibility, and underwrite your next investment property.',
   path: '/tools',
