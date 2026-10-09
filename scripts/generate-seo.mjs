@@ -224,7 +224,7 @@ Important rules:
 - AssetLift covers 46 states (not Alaska, North Dakota, South Dakota, or Vermont)
 - Minimum credit score: 660 for most programs
 - Fix & Flip: up to 95% LTC on purchase, 100% rehab funded
-- DSCR: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 5.85%
+- DSCR: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 6.25%
 - Bridge: up to 80% LTV
 - Loan range: $100K to $5M
 - Never guarantee approval — always say "subject to underwriting"

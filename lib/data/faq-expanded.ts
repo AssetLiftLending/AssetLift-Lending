@@ -52,7 +52,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "What are your interest rates?",
-        answer: `Rates vary by program, leverage, execution path, experience, and credit profile. Fix and flip rates start as low as ${PROGRAM_TERMS.fixAndFlip.startingRate}, and DSCR rental rates start as low as 5.85% for qualifying scenarios. Contact us for a personalized quote based on your specific deal.`
+        answer: `Rates vary by program, leverage, execution path, experience, and credit profile. Fix and flip rates start as low as ${PROGRAM_TERMS.fixAndFlip.startingRate}, and DSCR rental rates start as low as 6.25% for qualifying scenarios. Contact us for a personalized quote based on your specific deal.`
       },
     ],
   },

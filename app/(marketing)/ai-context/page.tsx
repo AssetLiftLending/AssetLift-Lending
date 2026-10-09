@@ -44,7 +44,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Who offers DSCR loans with no income verification?',
-      acceptedAnswer: { '@type': 'Answer', text: 'AssetLift Lending offers DSCR loans that qualify based on property cash flow only — no W-2, no tax returns, no personal income required. Rates start at 5.85% with up to 85% LTV across 46 states.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'AssetLift Lending offers DSCR loans that qualify based on property cash flow only — no W-2, no tax returns, no personal income required. Rates start at 6.25% with up to 85% LTV across 46 states.' },
     },
     {
       '@type': 'Question',

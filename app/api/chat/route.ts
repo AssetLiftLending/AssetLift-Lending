@@ -53,7 +53,7 @@ LOAN PROGRAMS:
 3. DSCR RENTAL LOANS
    - Up to 85% LTV (purchase), 80% LTV (cash-out refi)
    - 30-year fixed or 5/6 ARM
-   - Rates starting as low as 5.85%
+   - Rates starting as low as 6.25%
    - NO personal income verification - no tax returns, W-2s, or 1099s needed
    - Qualification based entirely on property rental income vs. mortgage payment
    - DSCR formula: Gross Monthly Rent / PITIA (principal + interest + taxes + insurance + HOA)
