@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T15:02:34.347Z",
+  "generatedAt": "2026-10-10T14:18:09.206Z",
   "latestDay": {
     "date": "2026-10-06",
     "clicks": 1,
@@ -13,13 +13,6 @@
     "positionChange": -7.3
   },
   "days": [
-    {
-      "date": "2026-09-08",
-      "clicks": 3,
-      "impressions": 241,
-      "ctr": 0.0124,
-      "position": 52.3
-    },
     {
       "date": "2026-09-09",
       "clicks": 1,
