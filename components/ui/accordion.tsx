@@ -38,8 +38,12 @@ const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
+  // forceMount keeps closed answers in the server-rendered HTML (hidden until
+  // opened) so Google and AI crawlers can read every FAQ answer. Without it,
+  // Radix leaves closed panels out of the page entirely.
   <AccordionPrimitive.Content
     ref={ref}
+    forceMount
     className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
