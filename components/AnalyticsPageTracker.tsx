@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { trackPageView } from '@/lib/gtag';
+import { captureFirstTouch } from '@/lib/lead-attribution';
 
 export default function AnalyticsPageTracker() {
   const pathname = usePathname();
@@ -12,6 +13,8 @@ export default function AnalyticsPageTracker() {
     if (!pathname) {
       return;
     }
+
+    captureFirstTouch();
 
     const query = searchParams?.toString();
     const path = query ? `${pathname}?${query}` : pathname;

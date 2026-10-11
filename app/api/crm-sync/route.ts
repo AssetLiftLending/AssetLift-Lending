@@ -25,6 +25,10 @@ const dealSchema = z
       .optional(),
     smsConsent: z.boolean().optional(),
     smsConsentAt: z.string().trim().max(40).optional(),
+    // Where the lead came from; passed through to the CRM for lead-source reporting.
+    pageUrl: z.string().trim().max(1000).optional(),
+    landingPage: z.string().trim().max(1000).optional(),
+    referrer: z.string().trim().max(1000).optional(),
   })
   .refine(d => Boolean(d.email || d.phone), {
     message: 'a lead needs at least an email address or a phone number',

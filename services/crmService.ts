@@ -1,4 +1,5 @@
 import type { CrmDealPayload } from '@/lib/crm-types';
+import { getLeadAttribution } from '@/lib/lead-attribution';
 
 export interface LeadSyncOutcome {
   /** True when the CRM accepted the lead. */
@@ -16,7 +17,8 @@ export async function pushToCRM(deal: CrmDealPayload): Promise<LeadSyncOutcome> 
     const res = await fetch('/api/crm-sync', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(deal),
+      // Page and first-touch source, so the CRM can count leads by landing page and channel.
+      body: JSON.stringify({ ...getLeadAttribution(), ...deal }),
       keepalive: true,
     });
 

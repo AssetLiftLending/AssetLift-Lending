@@ -18,4 +18,10 @@ export interface CrmDealPayload {
   source?: 'apply-form' | 'hero-form' | 'portal' | 'contact-form' | 'borrower-package' | 'chatbot';
   smsConsent?: boolean;
   smsConsentAt?: string;
+  /** Page the form was submitted on. */
+  pageUrl?: string;
+  /** First page of the visit, with any utm_* / gclid / fbclid tags. */
+  landingPage?: string;
+  /** Site that sent the visitor (first touch). */
+  referrer?: string;
 }
