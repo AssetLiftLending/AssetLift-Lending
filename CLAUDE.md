@@ -1,7 +1,7 @@
 # AssetLift Lending - Project Instructions
 
 ## Project Overview
-AssetLift Lending offers private lending for real estate investors, with some deals brokered with capital partners.
+AssetLift Lending is a direct private lender for real estate investors, funded with capital partners.
 Built with Next.js 15, Tailwind CSS, deployed on Vercel.
 
 ## Architecture
@@ -16,8 +16,8 @@ Built with Next.js 15, Tailwind CSS, deployed on Vercel.
 - This is a YMYL (Your Money Your Life) finance site -- content must be accurate and substantive
 - Blog posts should be as long as needed to thoroughly cover the topic — no padding, no filler. Quality and specificity over word count.
 - Meta descriptions must be under 155 characters
-- Some deals are funded directly and some are brokered with white-label capital partners
-- **Positioning: use the same voice as the public site.** "Private lending for real estate investors, with some deals brokered with capital partners." On directory listings, profiles, and any external-facing copy, lead with "private lending for real estate investors" and keep the "some deals brokered with capital partners" qualifier wherever space allows. Do not claim a licensing status, funding source, or lender type the file does not support, and keep every external description consistent with the public site.
+- AssetLift is positioned as a direct private lender, not a broker. Loans are funded with capital partners.
+- **Positioning: use the same voice as the public site.** "Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners." Never describe AssetLift as a broker, brokerage, or deal-shopper in marketing copy (owner decision, Oct 2026). Do not edit legal, licensing, or state-disclosure text; flag it for the owner instead. Do not claim a licensing status, funding source, or lender type the file does not support, and keep every external description consistent with the public site.
 
 ## Daily Content Improvement Task
 When starting a session, if asked to improve content or if running /expand-content:
