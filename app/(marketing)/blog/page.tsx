@@ -45,7 +45,7 @@ const CATEGORY_GUIDES: Record<string, { href: string; blurb: string }> = {
 };
 
 export const metadata: Metadata = createMetadata({
-  title: 'Hard Money Lending Blog | Fix & Flip, DSCR & Bridge',
+  title: 'Hard Money Lending Blog | Fix & Flip, DSCR & Bridge | AssetLift Lending',
   description:
     'Read expert guides on hard money loans, fix and flip financing, DSCR rentals, bridge loans, construction lending, and real estate investing strategy.',
   path: '/blog',

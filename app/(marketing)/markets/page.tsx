@@ -9,7 +9,7 @@ import { STATES } from "@/lib/data/states";
 import { CITIES } from "@/lib/data/cities";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hard Money Lender by State | 46 Lending Markets",
+  title: "Hard Money Lender by State | 46 Lending Markets | AssetLift Lending",
   description:
     "Browse AssetLift Lending markets by state and city for hard money loans, fix and flip financing, bridge loans, DSCR rentals, and construction deals.",
   path: "/markets",

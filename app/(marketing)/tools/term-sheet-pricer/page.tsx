@@ -5,7 +5,7 @@ import { createMetadata } from '@/lib/metadata';
 import TermSheetPricer from './TermSheetPricer';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Term Sheet Pricer | Private Lending Deal Structuring Tool',
+  title: 'Term Sheet Pricer | Private Lending Deal Structuring Tool | AssetLift Lending',
   description:
     'Model loan proceeds, leverage caps, closing fees, and cash to close with this private lending term sheet pricer.',
   path: '/tools/term-sheet-pricer',

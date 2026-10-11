@@ -7,7 +7,7 @@ import { createMetadata } from '@/lib/metadata';
 import { COMPARISONS } from '@/lib/data/comparisons';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Hard Money Lending Comparisons and Alternatives',
+  title: 'Hard Money Lending Comparisons and Alternatives | AssetLift Lending',
   description:
     'Compare AssetLift Lending, hard money loans, DSCR options, and alternative financing paths with side-by-side guides built for real estate investors.',
   path: '/compare',

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fix & Flip Deal Checklist',
+  title: 'Fix & Flip Deal Checklist | AssetLift Lending',
   description:
     'Use this fix and flip deal checklist to review leverage, rehab budget, ARV support, closing documents, and exit strategy before you apply.',
   path: '/resources/fix-and-flip-deal-checklist',

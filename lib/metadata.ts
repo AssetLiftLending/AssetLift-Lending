@@ -47,7 +47,7 @@ export function createMetadata({
   const safeDescription = trimDescription(description);
 
   return {
-    title: fitsWithBrand ? title : { absolute: title },
+    title: { absolute: withBrand(title) },
     description: safeDescription,
     ...(keywords && { keywords }),
     ...(category && { category }),

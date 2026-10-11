@@ -8,7 +8,7 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'commercial-lending')!;
 
 export const metadata: Metadata = createMetadata({
-  title: 'Commercial Lending | Investment Property Financing',
+  title: 'Commercial Lending | Investment Property Financing | AssetLift Lending',
   description:
     'Commercial lending for investor acquisition, refinance, bridge, mixed-use, and business-purpose real estate scenarios.',
   path: '/loans/commercial-lending',

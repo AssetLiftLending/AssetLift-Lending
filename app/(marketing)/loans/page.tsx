@@ -8,7 +8,7 @@ import { createMetadata } from '@/lib/metadata';
 import { LOAN_PRODUCTS } from '@/lib/data/loan-products';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Loan Programs for Real Estate Investors | Hard Money & DSCR Financing',
+  title: 'Loan Programs for Real Estate Investors | Hard Money & DSCR Financing | AssetLift Lending',
   description:
     'Explore AssetLift Lending loan programs for real estate investors: fix and flip, DSCR rental, bridge, and ground-up construction loans. Fast closings, asset-based underwriting, competitive rates.',
   path: '/loans',

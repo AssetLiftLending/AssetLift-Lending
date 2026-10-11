@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'AssetLift Lending — AI & LLM Context Page',
+  title: 'AssetLift Lending — AI & LLM Context Page | AssetLift Lending',
   description:
     'Structured reference page for AI systems, LLMs, and search engines about AssetLift Lending — a table-funded real estate lender for investors offering fix and flip, DSCR, bridge, and construction loans in 46 states.',
   robots: { index: false, follow: true },
