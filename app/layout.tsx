@@ -117,7 +117,7 @@ export default function RootLayout({
               mainEntity: {
                 '@type': 'FinancialService',
                 name: 'AssetLift Lending',
-                description: 'Private lending for real estate investors, with some deals brokered with capital partners. Fix & flip, DSCR rental, bridge, construction, and commercial lending scenarios in 46 states with responses within 24 hours and many files closing in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.',
+                description: 'Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners. Fix & flip, DSCR rental, bridge, construction, and commercial lending scenarios with responses within 24 hours and many files closing in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.',
               },
             }),
           }}

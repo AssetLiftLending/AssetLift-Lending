@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: 'Does AssetLift Lending lend directly?',
-    answer: 'AssetLift Lending reviews investor scenarios and may structure or broker deals with capital partners. The funding source and terms depend on the transaction and available programs; the company does not guarantee approval, leverage, pricing, or closing time.',
+    answer: 'Yes. AssetLift Lending is a direct private lender for real estate investors, and loans are funded with our capital partners. Terms depend on the transaction and available programs; the company does not guarantee approval, leverage, pricing, or closing time.',
   },
 ];
 
@@ -109,7 +109,7 @@ export default function AssetBasedLendingPage() {
 
             <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
               <h2 className="text-2xl font-bold mb-3">Discuss an investment-property scenario</h2>
-              <p className="text-muted-foreground mb-5">Share the property location, purchase price or value, requested amount, project budget, rent or exit plan, and target timing. AssetLift Lending can review the scenario across available capital sources. No approval or terms are guaranteed.</p>
+              <p className="text-muted-foreground mb-5">Share the property location, purchase price or value, requested amount, project budget, rent or exit plan, and target timing. AssetLift Lending will review the scenario and respond directly. No approval or terms are guaranteed.</p>
               <div className="flex flex-wrap gap-4"><Link href="/apply?source=asset-based-lending" className="inline-flex items-center bg-primary text-zinc-900 font-bold px-6 py-3 rounded-xl">Submit a deal for review</Link><a href="tel:9296392284" className="inline-flex items-center border border-border px-6 py-3 rounded-xl">Call (929) 639-2284</a></div>
             </section>
           </article>

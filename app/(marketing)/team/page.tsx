@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = createMetadata({
   title: 'AssetLift Lending Team | Private Lending Leadership',
   description:
-    'Meet the AssetLift Lending team behind our table-funded real estate lending platform for fix and flip, DSCR, bridge, and construction financing across 46 states.',
+    'Meet the AssetLift Lending team behind our direct private lending for fix and flip, DSCR, bridge, and construction financing across 46 states.',
   path: '/team',
   noIndex: true,
 });
@@ -43,7 +43,7 @@ export default function TeamPage() {
     name: 'AssetLift Lending',
     url: 'https://www.assetliftlending.com',
     description:
-      'Table-funded real estate lending for investors nationwide — fix and flip, DSCR, bridge, and construction loans in 46 states.',
+      'Direct private lending for investors nationwide — fix and flip, DSCR, bridge, and construction loans in 46 states.',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
     address: {
@@ -129,9 +129,7 @@ export default function TeamPage() {
             <div className="bg-secondary/20 border border-border rounded-2xl p-6 md:p-8">
               <h2 className="text-3xl font-bold mb-5">Our Approach to Lending</h2>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-3xl">
-                AssetLift structures deals through the lending path that best fits the file.
-                In practice, that means originating loans through white-label private capital
-                with capital partners when the program, market, or scenario calls for it. What
+                Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners. What
                 matters to borrowers is clear communication, realistic terms, and a team that stays
                 accountable from inquiry through closing.
               </p>
@@ -142,8 +140,8 @@ export default function TeamPage() {
                     <div>
                       <p className="font-semibold mb-1">Direct Capital, Direct Decisions</p>
                       <p className="text-sm text-muted-foreground">
-                        We work to match each deal to the most reliable private lending or
-                        capital-partner path available for the file.
+                        You work directly with the AssetLift team from quote to closing, with
+                        loans funded by our capital partners.
                       </p>
                     </div>
                   </div>

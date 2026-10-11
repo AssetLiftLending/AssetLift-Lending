@@ -1046,7 +1046,7 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Execution Model vs Platform Model: Why It Matters for Your Deal",
         content:
-          "AssetLift Lending may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market. Borrowers still benefit from a coordinated process and a single team helping move the file forward. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, AssetLift's flexible execution model can create a faster and more workable path because the file can be matched to the most realistic capital route instead of forcing a single structure on every borrower.",
+          "AssetLift Lending is a direct private lender, with loans funded by our capital partners. Borrowers still benefit from a coordinated process and a single team helping move the file forward. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, AssetLift's direct communication can create a faster and more workable path because issues are raised and worked through with the borrower directly.",
       },
     ],
     verdict:
@@ -1075,7 +1075,7 @@ export const COMPARISONS: Comparison[] = [
       {
         question: "How does AssetLift execute loans?",
         answer:
-          "AssetLift may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market.",
+          "AssetLift Lending is a direct private lender, not a broker. Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners.",
       },
       {
         question: "Which lender is better for first-time real estate investors?",
@@ -1935,7 +1935,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "feature": "How to assess fit",
-      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review by AssetLift Lending.",
       "optionB": "Digital application and property-based underwriting"
     },
     {
@@ -1960,7 +1960,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "heading": "How AssetLift Lending fits into the comparison",
-      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+      "content": "AssetLift Lending is a direct private lender for business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction, funded with our capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
     }
   ],
   "verdict": "There is no universal winner. Compare Kiavi’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
@@ -1995,7 +1995,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "feature": "How to assess fit",
-      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review by AssetLift Lending.",
       "optionB": "Broad published product menu"
     },
     {
@@ -2020,7 +2020,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "heading": "How AssetLift Lending fits into the comparison",
-      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+      "content": "AssetLift Lending is a direct private lender for business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction, funded with our capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
     }
   ],
   "verdict": "There is no universal winner. Compare Lima One Capital’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
@@ -2055,7 +2055,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "feature": "How to assess fit",
-      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review by AssetLift Lending.",
       "optionB": "Published program terms by product"
     },
     {
@@ -2080,7 +2080,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "heading": "How AssetLift Lending fits into the comparison",
-      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+      "content": "AssetLift Lending is a direct private lender for business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction, funded with our capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
     }
   ],
   "verdict": "There is no universal winner. Compare RCN Capital’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",
@@ -2115,7 +2115,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "feature": "How to assess fit",
-      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review across available capital sources.",
+      "optionA": "Share property, purchase/value, project budget or rent, requested amount, timeline, and exit for review by AssetLift Lending.",
       "optionB": "Specialized rental focus"
     },
     {
@@ -2140,7 +2140,7 @@ export const COMPARISONS: Comparison[] = [
     },
     {
       "heading": "How AssetLift Lending fits into the comparison",
-      "content": "AssetLift Lending reviews business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction options, and may structure deals with capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
+      "content": "AssetLift Lending is a direct private lender for business-purpose, non-owner-occupied investment-property deals across fix-and-flip, bridge, DSCR rental, and ground-up construction, funded with our capital partners. The best fit depends on the file; compare written terms and execution requirements before deciding. No approval, rate, leverage, or closing date is guaranteed."
     }
   ],
   "verdict": "There is no universal winner. Compare Visio Lending’s current program and written terms with AssetLift Lending’s available options against the same property, timeline, and exit. Verify eligibility and total costs directly before choosing.",

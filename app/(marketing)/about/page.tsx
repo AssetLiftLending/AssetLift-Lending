@@ -18,7 +18,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
-    description: 'Private lending for real estate investors, with some deals brokered with capital partners',
+    description: 'Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -62,13 +62,13 @@ export default function AboutPage() {
               About <span className="gradient-text">AssetLift Lending</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              AssetLift Lending is a mortgage brokerage built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank. We operate as a broker with white-label capital partners, which means we can match each deal to the right lending source instead of forcing every file into one lender&apos;s credit box.
+              AssetLift Lending is a direct private lender built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank, and we are not a broker. Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. The brothers saw an opportunity to build a brokerage that combined hands-on real estate knowledge with access to multiple capital sources, giving borrowers better options and faster execution.
+              Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. The brothers saw an opportunity to build a private lender that combined hands-on real estate knowledge with fast closings and direct communication, giving borrowers clearer answers and faster execution.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to match each file to the lending approach that best fits the strategy.
+              Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to structure each loan around the strategy behind the deal.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We finance deals nationwide across 46 states, with loan amounts from $100,000 to $5,000,000. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing. Based in the New York metro area, we serve borrowers from coast to coast with the same level of responsiveness and attention to detail.
@@ -83,33 +83,33 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-3">Yaakov Pentelnik</h3>
                 <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Yaakov brings deep experience in real estate finance and a borrower-first mindset to every deal AssetLift touches. His background in structuring investment property transactions means he understands the pressure points borrowers face: tight closing deadlines, appraisal gaps, title issues, and the kind of last-minute friction that kills deals. He built AssetLift to eliminate as much of that friction as possible by maintaining relationships with multiple capital partners and staying hands-on through every file.
+                  Yaakov brings deep experience in real estate finance and a borrower-first mindset to every deal AssetLift touches. His background in structuring investment property transactions means he understands the pressure points borrowers face: tight closing deadlines, appraisal gaps, title issues, and the kind of last-minute friction that kills deals. He built AssetLift to eliminate as much of that friction as possible by working closely with our capital partners and staying hands-on through every file.
                 </p>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 md:p-8">
                 <h3 className="text-xl font-semibold mb-3">Yisroel Pentelnik</h3>
                 <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Yisroel focuses on operations, underwriting workflow, and making sure the borrower experience at AssetLift stays fast and transparent as the company scales. He is the person making sure files move through the pipeline without unnecessary delays, that borrowers get honest feedback early, and that the team maintains the responsiveness that sets AssetLift apart from larger shops. His operational discipline keeps the brokerage running efficiently across 46 states.
+                  Yisroel focuses on operations, underwriting workflow, and making sure the borrower experience at AssetLift stays fast and transparent as the company scales. He is the person making sure files move through the pipeline without unnecessary delays, that borrowers get honest feedback early, and that the team maintains the responsiveness that sets AssetLift apart from larger shops. His operational discipline keeps the lending operation running efficiently across 46 states.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Hybrid Broker Model */}
+          {/* Direct Lending */}
           <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-5">The Hybrid Broker Model: Why It Matters</h2>
+            <h2 className="text-3xl font-bold mb-5">Direct Lending: Why It Matters</h2>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              Most borrowers do not care whether their lender is a direct lender, a fund, or a broker. They care about rate, speed, and whether the deal actually closes. But the structure behind the scenes matters more than most people realize, because it determines how flexible the lender can be when the file does not fit neatly into a standard box.
+              Most borrowers do not care whether their lender is a direct lender, a fund, or a broker. They care about rate, speed, and whether the deal actually closes. But who you are actually dealing with matters more than most people realize, because it determines how quickly you get real answers and how much gets lost between the borrower and the decision.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              AssetLift operates as a mortgage brokerage with white-label capital partners. In practice, that means we are not locked into a single lender&apos;s guidelines. If one capital source cannot do the deal because of property type, borrower experience, leverage, or geography, we have other options. A direct lender that turns you down has nowhere else to send the file. A broker with the right relationships can usually find a fit.
+              AssetLift is a direct private lender, and our loans are funded with our capital partners. In practice, that means you work with one AssetLift team from the first call through closing, and questions about leverage, valuation, title, or timing get answered directly instead of being relayed through a chain of intermediaries.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              This model also lets us be more competitive on pricing. Because we work with multiple capital sources, we can shop the deal internally and present the borrower with the best available terms rather than the only available terms. For repeat investors doing multiple deals a year, that difference in rate or leverage can add up to tens of thousands of dollars in savings.
+              Direct communication is also what keeps closings fast. When a condition comes up in underwriting, you hear about it early and from us, which gives you time to fix it before it threatens your closing date. For repeat investors doing multiple deals a year, working with the same lender on every file means less re-explaining and fewer surprises.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              The tradeoff is that we have to be selective about which capital partners we work with. We vet our lending sources for reliability, speed, and fair dealing, because our reputation depends on the borrower&apos;s experience from application through payoff. If a capital partner cannot close on time or creates unnecessary friction, we stop sending them deals.
+              We are also selective about the capital partners who fund our loans. Reliability, speed, and fair dealing matter because our reputation depends on the borrower&apos;s experience from application through payoff.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function AboutPage() {
             {[
               { icon: Zap, title: 'Speed', desc: 'Every inquiry gets a response within 24 hours, usually within a few hours. Many deals close in as few as 5 business days, subject to underwriting, valuation, title, and file complexity. We know that in competitive markets, a slow lender costs you the deal.' },
               { icon: Shield, title: 'Transparency', desc: 'No hidden fees, no bait-and-switch term sheets. We surface potential issues early in the process so you can make informed decisions before you spend more time or money on the file. If we cannot do the deal, we tell you upfront.' },
-              { icon: Users, title: 'Flexibility', desc: 'We focus on experienced investors and organized borrowers with real deals, clear numbers, and executable exit plans. Because we broker through multiple capital partners, we can find solutions for files that a single direct lender would decline. Different deal, different source, same service.' },
+              { icon: Users, title: 'Flexibility', desc: 'We focus on experienced investors and organized borrowers with real deals, clear numbers, and executable exit plans. Fix and flip, DSCR rental, bridge, and construction programs, all funded with our capital partners. Different deal, same team, same service.' },
               { icon: Award, title: 'Expertise', desc: 'Our founders and team bring hands-on real estate investing experience to every file. We understand rehab scopes, ARV analysis, rental market dynamics, and exit strategies because we have been on the borrower side of the table.' },
             ].map((value, i) => (
               <div key={i} className="bg-card border border-border rounded-xl p-6 text-center">

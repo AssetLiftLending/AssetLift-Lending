@@ -487,7 +487,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     heroSubtitle:
       "Finance commercial and mixed-use investment properties with a structure built around the asset, the business plan, and the exit.",
     overview:
-      "Commercial lending is built for investment properties that do not fit neatly into a standard residential loan box. These scenarios can include mixed-use buildings, small commercial assets, multifamily properties beyond residential program limits, and business-purpose real estate where the underwriting needs to focus on collateral value, income, tenancy, and exit strategy.\n\nAssetLift Lending reviews commercial lending requests for acquisitions, refinances, cash-out needs, bridge situations, and transitional assets. Some files may be funded directly and others may be placed with a capital partner when that creates the cleanest execution path. The goal is to understand the property, the borrower, and the payoff plan before forcing the deal into a generic structure.\n\nCommercial files vary more than residential investor loans, so final terms depend on property type, location, occupancy, net operating income, sponsor experience, valuation support, title, and the intended exit. Strong submissions usually include a rent roll, trailing operating statements, purchase contract or payoff statement, property photos, and a clear explanation of how the loan will be repaid.",
+      "Commercial lending is built for investment properties that do not fit neatly into a standard residential loan box. These scenarios can include mixed-use buildings, small commercial assets, multifamily properties beyond residential program limits, and business-purpose real estate where the underwriting needs to focus on collateral value, income, tenancy, and exit strategy.\n\nAssetLift Lending reviews commercial lending requests for acquisitions, refinances, cash-out needs, bridge situations, and transitional assets. The goal is to understand the property, the borrower, and the payoff plan before forcing the deal into a generic structure.\n\nCommercial files vary more than residential investor loans, so final terms depend on property type, location, occupancy, net operating income, sponsor experience, valuation support, title, and the intended exit. Strong submissions usually include a rent roll, trailing operating statements, purchase contract or payoff statement, property photos, and a clear explanation of how the loan will be repaid.",
     keyStats: [
       { label: "Loan Purpose", value: "Purchase, refinance, bridge" },
       { label: "Property Types", value: "Commercial and mixed-use" },
@@ -512,9 +512,9 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
           "For assets that need lease-up, stabilization, repairs, or timing flexibility, commercial bridge structures can provide room to execute before permanent financing or sale.",
       },
       {
-        title: "Capital Partner Placement",
+        title: "Funded With Our Capital Partners",
         description:
-          "When a file is better served by a specialized commercial lender, AssetLift can route the scenario through lending partners rather than forcing it into a residential program.",
+          "Commercial loans are funded with our capital partners, with one AssetLift team handling communication from scenario review through closing.",
       },
       {
         title: "Asset-Based Underwriting",
@@ -558,7 +558,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         step: "Initial Fit Review",
         description:
-          "AssetLift reviews collateral, location, income, sponsor profile, and exit strategy to determine whether the file fits direct lending or a capital partner path.",
+          "AssetLift reviews collateral, location, income, sponsor profile, and exit strategy to determine whether the file fits a commercial program and what structure is realistic.",
       },
       {
         step: "Term Direction",
@@ -588,9 +588,9 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
           "Access equity from a commercial or mixed-use investment property when the asset, income, and sponsor profile support the requested leverage.",
       },
       {
-        title: "Partner-Placed Commercial Loan",
+        title: "Multifamily Beyond Residential Limits",
         description:
-          "Route specialized commercial scenarios to capital partners when a dedicated commercial lender is the most reliable execution path.",
+          "Finance a multifamily property that falls outside standard residential program limits, underwritten on income, occupancy, and market value.",
       },
     ],
     faqs: [
@@ -602,7 +602,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         question: "Are commercial loans funded directly by AssetLift?",
         answer:
-          "Some scenarios may be handled directly and others may be brokered or placed with capital partners. AssetLift routes the file through the path that appears most workable for the property and borrower profile.",
+          "Yes. AssetLift Lending is a direct private lender, and commercial loans are funded with our capital partners. Final terms depend on the property, income, and borrower profile.",
       },
       {
         question: "What documents should I send for a commercial scenario?",
