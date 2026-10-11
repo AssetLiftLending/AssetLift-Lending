@@ -71,6 +71,10 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
     localLinks: [
       { label: 'DSCR loans in New York', href: '/lending/new-york/dscr-loans' },
       { label: 'Fix and flip loans in New York', href: '/lending/new-york/fix-and-flip-loans' },
+      { label: 'DSCR loans in Queens', href: '/lending/new-york/queens' },
+      { label: 'Hard money lenders in Babylon', href: '/lending/new-york/babylon' },
+      { label: 'Hard money lender in Mount Vernon', href: '/lending/new-york/mount-vernon' },
+      { label: 'Hard money lender in Yonkers', href: '/lending/new-york/yonkers' },
       { label: 'Brooklyn investor loans', href: '/lending/new-york/brooklyn' },
       { label: 'Buffalo investor loans', href: '/lending/new-york/buffalo' },
       { label: 'Rochester investor loans', href: '/lending/new-york/rochester' },
@@ -135,6 +139,9 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
     localLinks: [
       { label: 'DSCR loans in New Jersey', href: '/lending/new-jersey/dscr-loans' },
       { label: 'Fix and flip loans in New Jersey', href: '/lending/new-jersey/fix-and-flip-loans' },
+      { label: 'Hard money loans in Jersey City', href: '/lending/new-jersey/jersey-city' },
+      { label: 'Hoboken hard money and asset-based loans', href: '/lending/new-jersey/hoboken' },
+      { label: 'Long Branch hard money loans', href: '/lending/new-jersey/long-branch' },
       { label: 'Camden County investor loans', href: '/lending/new-jersey/camden-county' },
       { label: 'Cherry Hill investor loans', href: '/lending/new-jersey/cherry-hill' },
       { label: 'Pennsauken investor loans', href: '/lending/new-jersey/pennsauken' },
