@@ -66,12 +66,11 @@ export default function ContactPage() {
             <div className="rounded-2xl border border-border bg-secondary/20 p-6 md:p-8">
               <h2 className="text-2xl font-bold mb-3">Before You Reach Out</h2>
               <p className="text-muted-foreground mb-4">
-                AssetLift handles business-purpose financing for non-owner-occupied investment
-                properties. Depending on the file, a transaction may be funded directly or may be
-                placed with a lending partner.
+                AssetLift Lending is a direct private lender for business-purpose financing on
+                non-owner-occupied investment properties. Loans are funded with our capital partners.
               </p>
               <p className="text-muted-foreground">
-                If you want more detail on how those structures work, review our{' '}
+                If you want more detail on how funding works, review our{' '}
                 <Link href="/how-funding-works" className="text-primary hover:text-primary/80 transition-colors">
                   How Funding Works
                 </Link>{' '}

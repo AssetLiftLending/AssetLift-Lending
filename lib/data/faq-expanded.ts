@@ -11,7 +11,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "What is AssetLift Lending?",
-        answer: "AssetLift Lending is a business-purpose real estate investment financing platform. We work with borrowers on fix and flip, ground-up construction, DSCR rental, and bridge scenarios for non-owner-occupied investment properties across 46 states. Depending on the file, a deal may be funded directly or placed with a capital partner."
+        answer: "AssetLift Lending is a business-purpose real estate investment financing platform. We work with borrowers on fix and flip, ground-up construction, DSCR rental, and bridge scenarios for non-owner-occupied investment properties across 46 states. Loans are funded with our capital partners."
       },
       {
         question: "What states do you lend in?",
@@ -19,7 +19,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "Are you a direct lender or a broker?",
-        answer: "It depends on the transaction. AssetLift may provide direct lending on some deals, and some deals may be brokered or placed with capital partners depending on the program, market, borrower profile, and actual file structure. Borrowers should not assume every transaction is funded through the same channel."
+        answer: "AssetLift Lending is a direct private lender, not a broker. Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners."
       },
       {
         question: "Do you work with mortgage brokers?",

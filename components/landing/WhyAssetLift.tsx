@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { ArrowRightLeft, BadgeCheck, Layers3, TrendingUp } from "lucide-react";
+import { BadgeCheck, Handshake, Layers3, TrendingUp } from "lucide-react";
 
 const proofCards = [
   {
@@ -11,10 +11,10 @@ const proofCards = [
     icon: BadgeCheck,
   },
   {
-    title: "We Shop the Deal for You",
+    title: "You Deal Directly With the Lender",
     content:
-      "Some deals fit direct private lending. Some are better handled through capital partners. The job is to route the file through the cleanest closing path, not force one structure everywhere.",
-    icon: ArrowRightLeft,
+      "Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners. No chain of middlemen between you and the answers on your file.",
+    icon: Handshake,
   },
   {
     title: "Keep More Capital Working",
