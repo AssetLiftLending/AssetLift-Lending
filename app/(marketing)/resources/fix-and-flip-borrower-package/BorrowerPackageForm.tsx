@@ -27,7 +27,7 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
 import { sendFormNotification } from '@/services/notificationService';
-import { pushToGHL } from '@/services/ghlService';
+import { pushToCRM } from '@/services/crmService';
 
 type UploadField =
   | 'llcDocumentsFile'
@@ -363,7 +363,7 @@ export default function BorrowerPackageForm() {
       // Record in the CRM regardless of the email result. The uploaded files
       // only travel by email, but the borrower and their deal belong in the CRM
       // either way — that is what someone follows up from.
-      const sync = await pushToGHL({
+      const sync = await pushToCRM({
         name: form.name,
         email: form.email,
         phone: form.phone,

@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CheckCircle, Send } from "lucide-react";
 import { sendNotification } from "@/services/notificationService";
-import { pushToGHL } from "@/services/ghlService";
+import { pushToCRM } from "@/services/crmService";
 
 /**
  * This form asks for "phone or email" in one box, so work out which it is
@@ -50,7 +50,7 @@ export default function ContactForm() {
 
       // Record the enquiry in the CRM independently of the email. This is a
       // general enquiry rather than a deal, so it carries no loan details.
-      const sync = await pushToGHL({
+      const sync = await pushToCRM({
         name: form.name,
         ...splitContact(form.contact),
         notes: form.message,
@@ -99,7 +99,7 @@ export default function ContactForm() {
         <Label htmlFor="c-contact">Phone or Email</Label>
         <Input
           id="c-contact"
-          placeholder="(555) 123-4567 or john@example.com"
+          placeholder="Your phone or email"
           value={form.contact}
           onChange={(e) => setForm((p) => ({ ...p, contact: e.target.value }))}
           className="h-11 rounded-xl"

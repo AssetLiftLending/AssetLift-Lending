@@ -19,7 +19,7 @@ import { toast } from "@/hooks/use-toast";
 import { sendNotification } from "@/services/notificationService";
 import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
 import { metaTrackLead } from "@/lib/meta-pixel";
-import { pushToGHL } from "@/services/ghlService";
+import { pushToCRM } from "@/services/crmService";
 import {
   SMS_CONSENT_TEXT,
   SMS_CONSENT_NOT_A_CONDITION,
@@ -270,7 +270,7 @@ const ApplyForm = () => {
       // The CRM is an independent delivery channel from the notification email.
       // Push regardless of the email result, otherwise an SMTP outage drops the
       // lead entirely instead of just delaying the notification.
-      const sync = await pushToGHL({
+      const sync = await pushToCRM({
         name: formData.name,
         email: formData.email,
         phone: formData.phone,

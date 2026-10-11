@@ -2,13 +2,13 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, X, Send, Sparkles, Phone, MessageSquare } from 'lucide-react';
+import { MessageCircle, X, Send, Sparkles, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { getGeminiResponse } from '@/services/geminiService';
 import { sendNotification } from '@/services/notificationService';
-import { pushToGHL } from '@/services/ghlService';
+import { pushToCRM } from '@/services/crmService';
 import { Message } from '@/lib/types';
 
 const WHATSAPP_URL =
@@ -31,65 +31,6 @@ const ChatBot = () => {
     }
   }, [messages, isLoading]);
 
-  const lcLoadedRef = useRef(false);
-
-  /** Find the LC bubble button inside the shadow DOM */
-  const getLcBubble = () => {
-    const widget = document.querySelector('chat-widget');
-    if (!widget?.shadowRoot) return null;
-    return widget.shadowRoot.querySelector<HTMLElement>('#lc_text-widget--btn');
-  };
-
-  /** Hide the LC launcher bubble & prompt inside the shadow DOM */
-  const hideLcBubble = () => {
-    const widget = document.querySelector('chat-widget');
-    if (!widget?.shadowRoot) return;
-    const sr = widget.shadowRoot;
-    const bubble = sr.querySelector<HTMLElement>('#lc_text-widget--btn');
-    const prompt = sr.querySelector<HTMLElement>('.lc_text-widget--prompt');
-    if (bubble) bubble.style.display = 'none';
-    if (prompt) prompt.style.display = 'none';
-  };
-
-  const openLeadConnector = () => {
-    setMenuOpen(false);
-
-    // If LC script already loaded, click the bubble to open chat
-    if (lcLoadedRef.current) {
-      const lcBtn = getLcBubble();
-      if (lcBtn) {
-        lcBtn.style.display = '';  // Unhide temporarily to click
-        lcBtn.click();
-        // Re-hide the bubble after chat opens
-        setTimeout(hideLcBubble, 500);
-      }
-      return;
-    }
-
-    // Dynamically inject the LC script on first click
-    const script = document.createElement('script');
-    script.src = 'https://widgets.leadconnectorhq.com/loader.js';
-    script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
-    script.setAttribute('data-widget-id', '69bae59888f7834d50ca2684');
-    script.async = true;
-    document.body.appendChild(script);
-    lcLoadedRef.current = true;
-
-    // Wait for the widget to render inside shadow DOM, then open + hide bubble
-    const checkAndOpen = setInterval(() => {
-      const lcBtn = getLcBubble();
-      if (lcBtn) {
-        clearInterval(checkAndOpen);
-        lcBtn.click();
-        // Hide the bubble + prompt after the chat window opens
-        setTimeout(hideLcBubble, 500);
-      }
-    }, 300);
-
-    // Stop checking after 10 seconds
-    setTimeout(() => clearInterval(checkAndOpen), 10000);
-  };
-
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
@@ -111,7 +52,7 @@ const ChatBot = () => {
       // now they existed only in a transcript email. The chat never asks for a
       // name, so the record is labelled by where it came from rather than
       // inventing one, and the message is kept as the note.
-      void pushToGHL({
+      void pushToCRM({
         name: 'Chatbot enquiry',
         email: emailMatch?.[0],
         phone: phoneMatch?.[0],
@@ -280,23 +221,11 @@ const ChatBot = () => {
             transition={{ duration: 0.2 }}
             className="flex w-[calc(100vw-1.5rem)] max-w-sm flex-col gap-2 mb-2"
           >
-            {/* Option 1: Chat with Us (LeadConnector) */}
-            <motion.button
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.05 }}
-              onClick={openLeadConnector}
-              className="flex w-full items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity cursor-pointer sm:rounded-full sm:px-5"
-            >
-              <MessageSquare className="w-5 h-5" />
-              <span className="text-sm font-semibold">Chat with Us</span>
-            </motion.button>
-
-            {/* Option 2: WhatsApp */}
+            {/* Option 1: WhatsApp */}
             <motion.a
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.1 }}
+              transition={{ delay: 0.05 }}
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -308,11 +237,11 @@ const ChatBot = () => {
               <span className="text-sm font-semibold">WhatsApp</span>
             </motion.a>
 
-            {/* Option 3: Analyze a Deal */}
+            {/* Option 2: Analyze a Deal */}
             <motion.button
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.15 }}
+              transition={{ delay: 0.1 }}
               onClick={() => { setChatOpen(true); setMenuOpen(false); }}
               className="flex w-full items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity cursor-pointer sm:rounded-full sm:px-5"
             >

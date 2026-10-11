@@ -16,7 +16,7 @@ import {
 import { sendNotification } from '@/services/notificationService';
 import { gtagEvent, gtagReportConversion } from '@/lib/gtag';
 import { metaTrackLead } from '@/lib/meta-pixel';
-import { pushToGHL } from '@/services/ghlService';
+import { pushToCRM } from '@/services/crmService';
 import {
   SMS_CONSENT_TEXT,
   SMS_CONSENT_NOT_A_CONDITION,
@@ -128,7 +128,7 @@ export default function Hero() {
       // The CRM is an independent delivery channel from the notification email,
       // so push before the email result is considered. Otherwise a failed send
       // returns early and the lead never reaches the CRM either.
-      const sync = await pushToGHL({
+      const sync = await pushToCRM({
         name: form.name,
         email: form.email,
         phone: form.phone,

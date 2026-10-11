@@ -1,9 +1,8 @@
-import type { GHLDealPayload } from './ghl-sync';
+import type { CrmDealPayload } from './crm-types';
 
 /**
- * The CRM is the durable record for a website lead. GoHighLevel and the
- * notification email are both best-effort on top of this: if either is down the
- * lead still exists in the CRM, which is what we reconcile against.
+ * The CRM is the durable record for a website lead. The notification email is a
+ * separate fallback channel: if email is down, the lead still exists in the CRM.
  *
  * The CRM owns its own Supabase credentials, so we post to its webhook rather
  * than writing to the database from here.
@@ -20,7 +19,7 @@ export interface CrmSyncResult {
   dealId: string | null;
 }
 
-export async function syncLeadToCrm(deal: GHLDealPayload): Promise<CrmSyncResult> {
+export async function syncLeadToCrm(deal: CrmDealPayload): Promise<CrmSyncResult> {
   const endpoint = process.env.CRM_LEAD_WEBHOOK_URL;
   const secret = process.env.CRM_LEAD_WEBHOOK_SECRET;
 
