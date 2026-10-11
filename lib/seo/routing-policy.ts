@@ -2,7 +2,7 @@ import scheduledPosts from '@/lib/data/seo-scheduled-posts.json';
 
 export const BASE_URL = 'https://www.assetliftlending.com';
 
-export const PRIORITY_STATE_SLUGS = new Set(['new-york', 'new-jersey', 'connecticut']);
+export const PRIORITY_STATE_SLUGS = new Set(['new-york', 'new-jersey', 'connecticut', 'georgia', 'texas']);
 
 export const PRIORITY_CITY_PATHS = new Set([
   '/lending/new-jersey/camden-county',
@@ -138,6 +138,16 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/texas/tyler-smith-county',
   '/lending/georgia/macon-bibb-county',
   '/lending/georgia/brunswick-glynn-county',
+  '/lending/georgia/atlanta',
+  '/lending/georgia/savannah',
+  '/lending/georgia/columbus-ga',
+  '/lending/texas/houston',
+  '/lending/texas/dallas',
+  '/lending/texas/san-antonio',
+  '/lending/texas/austin',
+  '/lending/texas/fort-worth',
+  '/lending/georgia/augusta-richmond-county',
+  '/lending/georgia/athens-clarke-county',
   '/lending/connecticut/stamford',
   '/lending/connecticut/new-haven',
   '/lending/connecticut/bridgeport',

@@ -19,6 +19,8 @@ const PRIORITY_STATE_SLUGS = [
   "new-jersey",
   "new-york",
   "connecticut",
+  "georgia",
+  "texas",
 ];
 
 const PRIORITY_CITY_SLUGS = [

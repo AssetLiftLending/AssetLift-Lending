@@ -22,6 +22,14 @@ const FEATURED_CITY_SLUGS = [
   "ocean-county",
   "lakewood",
   "new-haven",
+  "atlanta",
+  "savannah",
+  "augusta-richmond-county",
+  "houston",
+  "dallas",
+  "fort-worth",
+  "austin",
+  "san-antonio",
 ];
 
 const FEATURED_CITIES = CITIES.filter((city) => FEATURED_CITY_SLUGS.includes(city.citySlug));

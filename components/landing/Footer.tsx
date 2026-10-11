@@ -6,6 +6,8 @@ const FEATURED_MARKETS = [
   { label: "New York", href: "/lending/new-york" },
   { label: "New Jersey", href: "/lending/new-jersey" },
   { label: "Connecticut", href: "/lending/connecticut" },
+  { label: "Georgia", href: "/lending/georgia" },
+  { label: "Texas", href: "/lending/texas" },
   { label: "Camden County, NJ", href: "/lending/new-jersey/camden-county" },
   { label: "Cherry Hill, NJ", href: "/lending/new-jersey/cherry-hill" },
   { label: "Pennsauken, NJ", href: "/lending/new-jersey/pennsauken" },
@@ -16,6 +18,9 @@ const FEATURED_MARKETS = [
   { label: "Jersey City, NJ", href: "/lending/new-jersey/jersey-city" },
   { label: "Newark, NJ", href: "/lending/new-jersey/newark" },
   { label: "Ocean County, NJ", href: "/lending/new-jersey/ocean-county" },
+  { label: "Atlanta, GA", href: "/lending/georgia/atlanta" },
+  { label: "Houston, TX", href: "/lending/texas/houston" },
+  { label: "Dallas, TX", href: "/lending/texas/dallas" },
   { label: "State Disclosures", href: "/state-disclosures" },
 ];
 

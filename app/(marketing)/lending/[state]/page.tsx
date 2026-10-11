@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!state) return {};
   return createMetadata({
     title: `Hard Money Loans in ${state.name}`,
-    description: `Hard money loans in ${state.name}. Fix & flip, bridge, DSCR, and construction financing. Close in as fast as 5 business days.`,
+    description: state.metaDescription ?? `Hard money loans in ${state.name}. Fix & flip, bridge, DSCR, and construction financing. Close in as fast as 5 business days.`,
     path: `/lending/${state.slug}`,
     noIndex: !shouldIndexState(state.slug),
   });
