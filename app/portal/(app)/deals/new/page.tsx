@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ArrowLeft, Save } from 'lucide-react';
 import { usePortalDeals } from '@/lib/portal-store';
 import { Deal, LoanType, DealStatus, LOAN_TYPE_LABELS, STATUS_CONFIG } from '@/lib/portal-types';
-import { pushToGHL } from '@/services/ghlService';
+import { pushToCRM } from '@/services/crmService';
 
 const LOAN_TYPES: LoanType[] = ['fix-flip', 'dscr-rental', 'bridge', 'ground-up', 'commercial'];
 const STATUSES: DealStatus[] = ['submitted', 'under_review', 'term_sheet_issued', 'docs_required', 'closing', 'funded', 'declined'];
@@ -81,7 +81,7 @@ export default function NewDealPage() {
     addDeal(deal);
     // Awaited before navigating: router.push tears down this page, which would
     // cancel an in-flight unawaited request and drop the deal silently.
-    await pushToGHL({
+    await pushToCRM({
       name: form.borrowerName,
       email: form.borrowerEmail,
       phone: form.borrowerPhone,
