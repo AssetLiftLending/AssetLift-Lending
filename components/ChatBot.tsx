@@ -10,7 +10,6 @@ import { getGeminiResponse } from '@/services/geminiService';
 import { sendNotification } from '@/services/notificationService';
 import { pushToGHL } from '@/services/ghlService';
 import { Message } from '@/lib/types';
-import { findCollisionFreePosition } from '@/lib/chatbot-collision';
 
 const WHATSAPP_URL =
   'https://wa.me/19296392284?text=Hi%2C%20I%27m%20interested%20in%20getting%20financing%20for%20a%20real%20estate%20deal.%20Can%20you%20help%3F';
@@ -31,67 +30,6 @@ const ChatBot = () => {
       scrollRef.current.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
     }
   }, [messages, isLoading]);
-
-  // Move the global launcher only when it would cover visible page controls.
-  useEffect(() => {
-    let frame = 0;
-    const reposition = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const root = document.querySelector<HTMLElement>('.chatbot-root');
-        if (!root) return;
-        if (window.innerWidth >= 768 || chatOpen || menuOpen) {
-          root.style.removeProperty('bottom');
-          root.style.removeProperty('left');
-          root.style.removeProperty('right');
-          root.style.removeProperty('visibility');
-          return;
-        }
-        root.style.bottom = '12px';
-        root.style.visibility = 'visible';
-        const rect = root.getBoundingClientRect();
-        const controls = Array.from(document.querySelectorAll<HTMLElement>(
-          'a[href], button, input, select, textarea, label, [role="button"], [tabindex="0"]'
-        )).filter((control) => {
-          if (root.contains(control) || (control instanceof HTMLButtonElement && control.disabled) || control.getAttribute('aria-hidden') === 'true') return false;
-          const style = getComputedStyle(control);
-          if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0) return false;
-          const bounds = control.getBoundingClientRect();
-          return bounds.width > 0 && bounds.height > 0 && bounds.bottom > 0 && bounds.top < window.innerHeight;
-        }).map((control) => {
-          const bounds = control.getBoundingClientRect();
-          return { left: bounds.left, right: bounds.right, top: bounds.top, bottom: bounds.bottom, width: bounds.width, height: bounds.height };
-        });
-        const placement = findCollisionFreePosition(
-          { width: rect.width, height: rect.height },
-          controls,
-          window.innerWidth,
-          window.innerHeight,
-          12,
-          12,
-          12,
-          72,
-        );
-        root.style.left = `${placement.left}px`;
-        root.style.right = 'auto';
-        root.style.bottom = `${placement.bottom}px`;
-        root.style.visibility = placement.hidden ? 'hidden' : 'visible';
-      });
-    };
-    reposition();
-    window.addEventListener('scroll', reposition, { passive: true });
-    window.addEventListener('resize', reposition);
-    document.addEventListener('focusin', reposition);
-    const observer = new MutationObserver(reposition);
-    observer.observe(document.body, { childList: true, subtree: true });
-    return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener('scroll', reposition);
-      window.removeEventListener('resize', reposition);
-      document.removeEventListener('focusin', reposition);
-      observer.disconnect();
-    };
-  }, [chatOpen, menuOpen]);
 
   const lcLoadedRef = useRef(false);
 
@@ -332,7 +270,7 @@ const ChatBot = () => {
 
   /* =========== Parent Bubble + Expandable Menu =========== */
   return (
-    <div className="chatbot-root fixed bottom-3 right-3 z-50 flex flex-col items-end gap-2 sm:bottom-6 sm:right-6 sm:gap-3">
+    <div className="chatbot-root fixed right-3 z-50 flex flex-col items-end gap-2 sm:bottom-6 sm:right-6 sm:gap-3">
       <AnimatePresence>
         {menuOpen && (
           <motion.div
