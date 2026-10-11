@@ -3028,8 +3028,8 @@ export const CITIES: CityData[] = [
     areaServedType: "City",
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Jersey City, New Jersey. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
     ctaDescription: "For an initial Jersey City review, send the address, purchase basis, legal use and unit count, current occupancy, photos, line-item scope, nearby comparable sales or supported rent, taxes and insurance, rent-control and certificate status if known, requested amount, and planned sale or refinance exit. A review is not approval or a commitment to lend.",
-    metadataTitle: "Hard Money Loans Jersey City, NJ | AssetLift Lending",
-    metadataDescription: "Jersey City, NJ investment-property financing review with local zoning and permit, certificate of occupancy, rent-control status, and deal-preparation guidance from AssetLift Lending.",
+    metadataTitle: "Hard Money & Fix and Flip Loans Jersey City, NJ | AssetLift Lending",
+    metadataDescription: "Hard money loans in Jersey City, NJ for fix-and-flip, bridge & DSCR investors, with zoning, CO and rent-control guidance. Call 929-639-2284.",
     marketEvidence: [
       { label: "Jersey City population", value: "302,013", context: "U.S. Census Bureau estimate, July 1, 2025; city geography.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/fact/table/jerseycitycitynewjersey/PST045225" },
       { label: "Owner-occupied housing rate", value: "27.9%", context: "U.S. Census Bureau ACS 2020-2024; citywide households.", sourceLabel: "U.S. Census QuickFacts", sourceUrl: "https://www.census.gov/quickfacts/fact/table/jerseycitycitynewjersey/PST045225" },
