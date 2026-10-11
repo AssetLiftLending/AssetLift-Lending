@@ -157,6 +157,7 @@ export const PRIORITY_CITY_PATHS = new Set([
 export const INDEXABLE_STATIC_PATHS = new Set([
   '/',
   '/apply',
+  '/pre-approval',
   '/about',
   '/contact',
   '/how-it-works',
