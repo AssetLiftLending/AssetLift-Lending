@@ -50,16 +50,18 @@ export default function ContactForm() {
 
       // Record the enquiry in the CRM independently of the email. This is a
       // general enquiry rather than a deal, so it carries no loan details.
-      await pushToGHL({
+      const sync = await pushToGHL({
         name: form.name,
         ...splitContact(form.contact),
         notes: form.message,
         source: 'contact-form',
       });
 
-      // Only confirm receipt if the message actually went out. Showing the
-      // success panel on a failed send silently loses the enquiry.
-      if (notified) {
+      // Confirm receipt if the enquiry reached either channel. It is only
+      // lost when both the email and the CRM rejected it — reporting failure
+      // on an email outage alone pushed people to resubmit an enquiry that
+      // had already landed.
+      if (notified || sync.success) {
         setSubmitted(true);
       } else {
         setFailed(true);

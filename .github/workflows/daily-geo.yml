@@ -1,8 +1,10 @@
 name: Daily GEO Content
 
 on:
-  schedule:
-    - cron: '0 14 * * *'   # 2 PM UTC = 10 AM ET daily (offset from SEO bot at 10 AM UTC)
+  # PAUSED 2026-10-09. Same reason as daily-seo: the generated pages are not
+  # indexable by default, so each run adds content Google will not rank.
+  #   schedule:
+  # - cron: '0 14 * * *'   # 2 PM UTC = 10 AM ET daily (offset from SEO bot at 10 AM UTC)
   workflow_dispatch:
 
 # Serialize with the SEO bot and SEO Pipeline so concurrent pushes to main

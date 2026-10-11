@@ -109,7 +109,7 @@ export default function Hero() {
     const consent = buildSmsConsentRecord(smsConsent, 'homepage-hero-form');
     try {
       const value = Number(form.purchasePrice.replace(/\D/g, ''));
-      const success = await sendNotification('form', {
+      const emailOk = await sendNotification('form', {
         ...consent,
         name: form.name,
         phone: form.phone,
@@ -128,7 +128,7 @@ export default function Hero() {
       // The CRM is an independent delivery channel from the notification email,
       // so push before the email result is considered. Otherwise a failed send
       // returns early and the lead never reaches the CRM either.
-      await pushToGHL({
+      const sync = await pushToGHL({
         name: form.name,
         email: form.email,
         phone: form.phone,
@@ -143,7 +143,13 @@ export default function Hero() {
         smsConsentAt: consent.smsConsentAt ?? undefined,
       });
 
-      if (!success) {
+      // A lead counts as captured if ANY durable channel accepted it. Gating
+      // this on the email alone meant an SMTP outage both hid a lead that had
+      // already reached the CRM and reported zero conversions to Google Ads,
+      // starving Smart Bidding of the signal it optimises against.
+      const captured = emailOk || sync.success;
+
+      if (!captured) {
         setError('We could not send the form. Please call or text (929) 639-2284.');
         return;
       }

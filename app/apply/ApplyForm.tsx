@@ -251,7 +251,7 @@ const ApplyForm = () => {
     const consent = buildSmsConsentRecord(smsConsent, "apply-form");
 
     try {
-      const success = await sendNotification("form", {
+      const emailOk = await sendNotification("form", {
         ...consent,
         name: formData.name,
         email: formData.email,
@@ -270,7 +270,7 @@ const ApplyForm = () => {
       // The CRM is an independent delivery channel from the notification email.
       // Push regardless of the email result, otherwise an SMTP outage drops the
       // lead entirely instead of just delaying the notification.
-      await pushToGHL({
+      const sync = await pushToGHL({
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -286,7 +286,10 @@ const ApplyForm = () => {
         smsConsentAt: consent.smsConsentAt ?? undefined,
       });
 
-      if (success) {
+      // Captured if any durable channel accepted the lead — see Hero.tsx.
+      const captured = emailOk || sync.success;
+
+      if (captured) {
         gtagReportConversion();
         gtagEvent('quote_submitted', { source: queryRef.current?.get('source') || 'apply', query_intent: queryRef.current?.get('loanPurpose') || formData.strategy });
         gtagEvent('generate_lead', {
