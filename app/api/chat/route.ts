@@ -60,6 +60,7 @@ LOAN PROGRAMS:
    - Min DSCR: 1.0 (1.25+ for best rates; 0.75-0.99 possible with compensating factors)
    - Min FICO: 660 (best at 720+)
    - No limit on number of DSCR loans
+   - Loan range: $100K - $5MM
    - Close in LLC or entity name from day one
    - Interest-only option available (first 5-10 years)
    - Cash-out refinance up to 80% LTV
