@@ -12,6 +12,8 @@ export interface StateData {
   medianHomePrice: string;
   marketHighlight: string;
   faqs: StateFAQ[];
+  /** Search snippet; falls back to a generic description when absent. */
+  metaDescription?: string;
 }
 
 export const STATES: StateData[] = [
@@ -243,29 +245,12 @@ export const STATES: StateData[] = [
     name: "Georgia",
     abbreviation: "GA",
     slug: "georgia",
-    overview:
-      "Georgia's real estate market is anchored by metro Atlanta, one of the largest and most investor-friendly markets in the Southeast. The city's diverse economy, major transportation hub status, and strong population growth create opportunities across every investment strategy. Savannah's historic charm draws tourism-driven rental investors, while Augusta and Macon offer deep-value plays with high cap rates.",
-    topCities: ["Atlanta", "Savannah", "Augusta", "Macon", "Columbus", "Marietta"],
-    medianHomePrice: "$365,000",
-    marketHighlight:
-      "Metro Atlanta's film industry expansion (now called 'Y'allywood') has created a unique niche for investors providing furnished rentals to production crews on multi-month contracts.",
-    faqs: [
-      {
-        question: "What types of hard money loans are available in Georgia?",
-        answer:
-          "Georgia investors can access fix-and-flip loans, bridge loans, rental property loans (DSCR), new construction financing, and cash-out refinance loans through hard money lenders. AssetLift offers all of these products for investment properties throughout Georgia.",
-      },
-      {
-        question: "Is Georgia favorable for hard money lenders in terms of foreclosure?",
-        answer:
-          "Yes. Georgia is a non-judicial foreclosure state with one of the fastest foreclosure timelines in the country, often as short as 37 days from notice to sale. This lender-friendly environment contributes to competitive hard money rates and higher LTVs in Georgia.",
-      },
-      {
-        question: "Can foreign nationals get hard money loans for Georgia investment properties?",
-        answer:
-          "Yes. Since hard money loans are asset-based, foreign nationals can qualify for investment property financing in Georgia. Additional documentation such as a valid passport, U.S. tax ID (ITIN), and a larger down payment (typically 30-40%) are usually required.",
-      },
-    ],
+    overview: "Georgia investor lending centers on metro Atlanta, with distinct markets in Savannah, Columbus, Macon, Augusta, and the coast. AssetLift reviews qualifying business-purpose fix-and-flip, bridge, DSCR rental, and residential construction financing for non-owner-occupied Georgia properties. Georgia's state rules work in an investor's favor in a few specific ways: no local rent control, no local rental registries, and an intangible recording tax that applies only to long-term notes, which leaves out most short-term loans.",
+    topCities: ["Atlanta", "Savannah", "Columbus", "Macon", "Augusta", "Athens", "Brunswick"],
+    medianHomePrice: "$303,300",
+    marketHighlight: "The Census Bureau estimates Georgia's population at 11,302,748 on July 1, 2025. Its 2020-2024 ACS reports a 65.7% owner-occupied housing rate, a $303,300 median owner-occupied value, and $1,393 median gross rent. Statewide medians hide large local differences, so every file is underwritten on nearby comps and rents.",
+    metaDescription: "Georgia fix-and-flip, bridge & DSCR loans for investors in Atlanta, Savannah, Columbus and Macon. Georgia tax rules explained. Call 929-639-2284.",
+    faqs: [{"question": "Will I pay Georgia's intangible recording tax on a bridge or flip loan?", "answer": "Usually not. The tax applies only to long-term notes. Since July 1, 2025, a note counts as long-term only if part of the principal is due more than 62 months after the note date (previously three years), so most bridge and fix-and-flip loans are not taxed. Confirm the treatment with your closing attorney. A long-term loan such as a 30-year DSCR loan pays $1.50 per $500 of the note, capped at $25,000 per note."}, {"question": "How much is Georgia's real estate transfer tax?", "answer": "Georgia's transfer tax is $1.00 for the first $1,000 of the sale price plus $0.10 for each additional $100, or about $1 per $1,000. The seller is legally liable, though purchase contracts sometimes shift it to the buyer."}, {"question": "Do Georgia cities have rent control or rental registries?", "answer": "No. Georgia law bars counties and cities from regulating rents on private residential rental property, and from requiring registration of residential rental property. Local property maintenance codes still apply."}, {"question": "How are Georgia property taxes assessed?", "answer": "Georgia assesses taxable property at 40% of fair market value. An owner who disagrees with an assessment notice must file an appeal within 45 days of the date the notice was mailed. For DSCR underwriting, use the actual tax bill and the most recent assessment notice."}, {"question": "What notice does a Georgia landlord give before filing for nonpayment?", "answer": "For residential leases entered into or renewed on or after July 1, 2024, a landlord must give a notice to vacate or pay before filing a dispossessory action for nonpayment, and the tenant then has three business days to pay. Build that into rental operating plans."}, {"question": "Does AssetLift finance owner-occupied homes in Georgia?", "answer": "No. The programs described here are business-purpose financing for non-owner-occupied investment properties only."}],
   },
   {
     name: "Hawaii",
@@ -1111,29 +1096,12 @@ export const STATES: StateData[] = [
     name: "Texas",
     abbreviation: "TX",
     slug: "texas",
-    overview:
-      "Texas is the largest real estate investment market in the country by volume, with four major metros (Dallas-Fort Worth, Houston, San Antonio, Austin) each large enough to be considered independent investment markets. The state's zero income tax, pro-business environment, and massive corporate relocations (Tesla, Oracle, CBRE, Caterpillar) drive relentless population growth. From luxury flips in Austin to workforce housing in San Antonio, Texas offers something for every investor profile.",
-    topCities: ["Dallas", "Houston", "Austin", "San Antonio", "Fort Worth", "El Paso"],
-    medianHomePrice: "$340,000",
-    marketHighlight:
-      "Dallas-Fort Worth added more residents than any metro in the U.S. in recent years, surpassing even Florida metros, while corporate relocations continue to drive employment growth across all major Texas cities.",
-    faqs: [
-      {
-        question: "How do Texas property taxes affect hard money investment returns?",
-        answer:
-          "Texas has some of the highest property tax rates in the nation (1.6-2.5% depending on county and city), which significantly impacts holding costs and rental cash flow. This is the trade-off for zero state income tax. Successful Texas investors account for property taxes in every deal analysis. Despite high taxes, the strong appreciation and rent growth in Texas metros more than compensate.",
-      },
-      {
-        question: "Which Texas market is best for hard money-funded fix-and-flip?",
-        answer:
-          "Dallas-Fort Worth currently offers the best combination of volume, margins, and speed. Houston provides more deals at lower price points but can have longer days-on-market. Austin commands premium ARVs but requires more capital. San Antonio is the most affordable entry point with solid, if more modest, returns.",
-      },
-      {
-        question: "Does Texas have any unique hard money lending considerations?",
-        answer:
-          "Texas's constitution includes unique provisions regarding home equity lending and homestead protections. For investment properties (non-homestead), standard hard money lending applies without these restrictions. Texas is a deed of trust state with non-judicial foreclosure (approximately 27 days, one of the fastest in the nation), which is very favorable for lenders and contributes to competitive loan terms.",
-      },
-    ],
+    overview: "Texas investor lending spans several independent metro markets, including Houston, Dallas-Fort Worth, San Antonio, and Austin, plus secondary markets like Tyler. AssetLift reviews qualifying business-purpose fix-and-flip, bridge, DSCR rental, and residential construction financing for non-owner-occupied Texas properties. Property taxes and insurance drive Texas hold math more than almost anything else, so those numbers come first in every file.",
+    topCities: ["Houston", "Dallas", "San Antonio", "Fort Worth", "Austin", "Tyler"],
+    medianHomePrice: "$283,800",
+    marketHighlight: "The Census Bureau estimates Texas's population at 31,709,821 on July 1, 2025. Its 2020-2024 ACS reports a 62.6% owner-occupied housing rate, a $283,800 median owner-occupied value, and $1,403 median gross rent. Each metro behaves differently, so every file is underwritten on nearby comps and rents.",
+    metaDescription: "Texas fix-and-flip, bridge & DSCR loans for investors in Houston, Dallas, San Antonio and Tyler. Texas tax and title rules explained. Call 929-639-2284.",
+    faqs: [{"question": "Who sets property taxes on a Texas investment property?", "answer": "Texas has no state property tax. Local appraisal districts set value, and local taxing units set rates. If you disagree with an appraisal, you can protest to the appraisal review board, generally by May 15 or 30 days after the appraisal notice is delivered, whichever is later."}, {"question": "Does Texas tax real estate transfers?", "answer": "The Texas Constitution bars any law enacted after January 1, 2016 from taxing a transaction that conveys fee simple title to real property, with narrow exceptions such as a tax on issuing title insurance. Confirm your full closing costs with your title company."}, {"question": "Are Texas title insurance rates negotiable?", "answer": "Title insurance premiums aren't. The Texas Department of Insurance sets them, so every title company charges the same premium for a policy, and TDI's most recent rate order cut basic premium rates 6.2%, effective March 1, 2026. Escrow and other closing fees can vary, so compare them."}, {"question": "Can Texas cities impose rent control?", "answer": "Only in narrow circumstances. A city may adopt rent control only if its council finds a housing emergency caused by a disaster and the governor approves the ordinance. Otherwise rents are set by the market and the lease."}, {"question": "Does AssetLift finance owner-occupied homes in Texas?", "answer": "No. The programs described here are business-purpose financing for non-owner-occupied investment properties only."}],
   },
   {
     name: "Utah",
