@@ -7,9 +7,9 @@ import { ArrowRight, FileText, Search, ClipboardCheck, Banknote, CheckCircle } f
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'How Our Hard Money Loans Work | AssetLift Lending',
+  title: 'Hard Money Loan Process in 4 Steps',
   description:
-    'See how AssetLift Lending handles hard money loan quotes, underwriting, due diligence, and closing for fix and flip, bridge, DSCR, and construction deals.',
+    'Submit a fix-and-flip, bridge, DSCR or construction deal, get a reply within 24 hours, then valuation, title and closing. Call 929-639-2284.',
   path: '/how-it-works',
 });
 

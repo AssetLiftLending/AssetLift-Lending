@@ -8,9 +8,9 @@ import { Button } from '@/components/ui/button';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact | Hard Money Loan Quotes | AssetLift Lending',
+  title: 'Contact AssetLift Lending | Hard Money Loan Quotes',
   description:
-    'Contact AssetLift Lending for fast hard money loan quotes on fix and flip, DSCR, bridge, construction, and commercial lending deals. Call, email, or apply online today.',
+    'Send a fix-and-flip, bridge, DSCR or construction deal to a direct private lender and hear back within 24 hours. Call 929-639-2284.',
   path: '/contact',
 });
 
