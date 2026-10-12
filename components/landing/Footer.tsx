@@ -69,7 +69,7 @@ const Footer = () => {
                 <Link href="/brokers" className="hover:text-primary transition-colors">Broker Partners</Link>
               </li>
               <li>
-                <Link href="/portal" className="hover:text-primary transition-colors">Broker Login</Link>
+                <Link href="/broker/login" className="hover:text-primary transition-colors">Broker Login</Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
