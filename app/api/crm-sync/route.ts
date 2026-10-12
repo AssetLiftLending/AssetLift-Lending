@@ -21,8 +21,12 @@ const dealSchema = z
     flipsCompleted: z.string().trim().max(20).optional(),
     notes: z.string().trim().max(2000).optional(),
     source: z
-      .enum(['apply-form', 'hero-form', 'portal', 'contact-form', 'borrower-package', 'chatbot'])
+      .enum(['apply-form', 'hero-form', 'portal', 'contact-form', 'borrower-package', 'chatbot', 'pre-approval'])
       .optional(),
+    requestType: z.literal('pre_approval').optional(),
+    entityName: z.string().trim().max(120).optional(),
+    propertyStatus: z.enum(['identified', 'shopping']).optional(),
+    businessPurpose: z.boolean().optional(),
     smsConsent: z.boolean().optional(),
     smsConsentAt: z.string().trim().max(40).optional(),
     // Where the lead came from; passed through to the CRM for lead-source reporting.

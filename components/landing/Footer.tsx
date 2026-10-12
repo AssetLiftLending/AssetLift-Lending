@@ -63,6 +63,9 @@ const Footer = () => {
                 <Link href="/apply" className="hover:text-primary transition-colors">Apply Now</Link>
               </li>
               <li>
+                <Link href="/pre-approval" className="hover:text-primary transition-colors">Get Pre-Approved</Link>
+              </li>
+              <li>
                 <Link href="/brokers" className="hover:text-primary transition-colors">Broker Partners</Link>
               </li>
               <li>
