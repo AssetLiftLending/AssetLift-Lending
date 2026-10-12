@@ -78,12 +78,14 @@ export default function Hero() {
 
     const observer = new IntersectionObserver(([entry]) => {
       document.body.toggleAttribute('data-home-intents-visible', entry.isIntersecting);
+      document.body.toggleAttribute('data-home-intents-out', !entry.isIntersecting);
     });
 
     observer.observe(intentLinksElement);
     return () => {
       observer.disconnect();
       document.body.removeAttribute('data-home-intents-visible');
+      document.body.removeAttribute('data-home-intents-out');
     };
   }, []);
 

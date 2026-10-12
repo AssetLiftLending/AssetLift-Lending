@@ -349,7 +349,7 @@
 /* Hide the mobile chat launcher from first paint while homepage borrower tiles are in view. */
 @media (max-width: 767px) {
   @supports selector(body:has([data-home-intent-tiles])) {
-    body:has([data-home-intent-tiles]) .chatbot-root {
+    body:has([data-home-intent-tiles]):not([data-home-intents-out]) .chatbot-root {
       display: none;
     }
   }
