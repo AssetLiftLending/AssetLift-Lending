@@ -233,7 +233,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div ref={intentLinksRef} className="mb-6 grid grid-cols-2 gap-2 sm:mb-7 sm:grid-cols-4">
+            <div ref={intentLinksRef} data-home-intent-tiles className="mb-6 grid grid-cols-2 gap-2 sm:mb-7 sm:grid-cols-4">
               {intentLinks.map((item) => (
                 <Link
                   key={item.href}
