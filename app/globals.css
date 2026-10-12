@@ -340,7 +340,17 @@
     bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
   }
 
-  body[data-mobile-menu-open] .chatbot-root {
+  body[data-mobile-menu-open] .chatbot-root,
+  body[data-home-intents-visible] .chatbot-root {
     display: none;
+  }
+}
+
+/* Hide the mobile chat launcher from first paint while homepage borrower tiles are in view. */
+@media (max-width: 767px) {
+  @supports selector(body:has([data-home-intent-tiles])) {
+    body:has([data-home-intent-tiles]):not([data-home-intents-out]) .chatbot-root {
+      display: none;
+    }
   }
 }
