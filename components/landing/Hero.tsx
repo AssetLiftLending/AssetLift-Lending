@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Building2, CheckCircle, Clock3, Coins, Hammer, Home, MessageSquare, Phone, Repeat2 } from 'lucide-react';
