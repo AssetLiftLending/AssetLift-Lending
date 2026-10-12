@@ -69,7 +69,7 @@ const Footer = () => {
                 <Link href="/brokers" className="hover:text-primary transition-colors">Broker Partners</Link>
               </li>
               <li>
-                <Link href="/broker/login" className="hover:text-primary transition-colors">Broker Login</Link>
+                <Link href="https://crm.assetliftlending.com/broker/login" className="hover:text-primary transition-colors">Broker Login</Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>

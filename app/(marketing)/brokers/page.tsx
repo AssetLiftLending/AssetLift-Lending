@@ -52,7 +52,7 @@ export default function BrokersPage() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" className="rounded-full font-bold">
-                  <Link href="/broker/login">
+                  <Link href="https://crm.assetliftlending.com/broker/login">
                     Broker Login
                     <LockKeyhole className="ml-2 h-4 w-4" />
                   </Link>
