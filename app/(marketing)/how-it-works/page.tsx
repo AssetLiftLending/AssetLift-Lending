@@ -7,7 +7,7 @@ import { ArrowRight, FileText, Search, ClipboardCheck, Banknote, CheckCircle } f
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Hard Money Loan Process in 4 Steps',
+  title: 'Hard Money Loan Process in 4 Steps | AssetLift Lending',
   description:
     'Submit a fix-and-flip, bridge, DSCR or construction deal, get a reply within 24 hours, then valuation, title and closing. Call 929-639-2284.',
   path: '/how-it-works',
