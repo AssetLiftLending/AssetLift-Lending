@@ -3,9 +3,9 @@ import { createMetadata } from "@/lib/metadata";
 import ApplyForm from "./ApplyForm";
 
 export const metadata: Metadata = createMetadata({
-  title: "Apply for Hard Money Loans | Get a Quote Fast | AssetLift Lending",
+  title: "Apply for a Hard Money or DSCR Loan",
   description:
-    "Apply for fix and flip, DSCR rental, bridge, construction, or commercial lending. Submit your deal and get a hard money loan quote from AssetLift Lending fast.",
+    "Send your fix-and-flip, DSCR, bridge or construction deal for review. Business-purpose loans only. Reply within 24 hours. Call 929-639-2284.",
   path: "/apply",
 });
 
