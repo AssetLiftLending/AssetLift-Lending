@@ -141,8 +141,8 @@
 **Current metrics:** SEO audit grade B+ (April 2026), 524 indexed URLs, 248 blog posts, 13 comparison pages, 77+ geo pages
 
 ## Founders
-- Yaakov Pentelnik (Co-founder)
-- Yisroel Pentelnik (Co-founder)
+- Do not name the founders in any public-facing copy, schema, or external listing (owner decision, Oct 2026).
+  Refer to leadership by role only: origination / borrower relationships, and capital markets / operations.
 
 ## Contact
 - Phone: 929-639-2284
