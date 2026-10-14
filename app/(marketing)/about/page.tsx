@@ -65,7 +65,7 @@ export default function AboutPage() {
               AssetLift Lending is a direct private lender built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank, and we are not a broker. Private lending for real estate investors in 46 states. Fast closings, direct communication, funded with our capital partners.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. The brothers saw an opportunity to build a private lender that combined hands-on real estate knowledge with fast closings and direct communication, giving borrowers clearer answers and faster execution.
+              AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. Our founders saw an opportunity to build a private lender that combined hands-on real estate knowledge with fast closings and direct communication, giving borrowers clearer answers and faster execution.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to structure each loan around the strategy behind the deal.
@@ -77,20 +77,20 @@ export default function AboutPage() {
 
           {/* Founders */}
           <div className="max-w-5xl mx-auto mb-20">
-            <h2 className="text-3xl font-bold mb-6 text-center">Meet the Founders</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">Our Leadership</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-card border border-border rounded-xl p-6 md:p-8">
-                <h3 className="text-xl font-semibold mb-3">Yaakov Pentelnik</h3>
+                <h3 className="text-xl font-semibold mb-3">Origination &amp; Borrower Relationships</h3>
                 <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Yaakov brings deep experience in real estate finance and a borrower-first mindset to every deal AssetLift touches. His background in structuring investment property transactions means he understands the pressure points borrowers face: tight closing deadlines, appraisal gaps, title issues, and the kind of last-minute friction that kills deals. He built AssetLift to eliminate as much of that friction as possible by working closely with our capital partners and staying hands-on through every file.
+                  Deep experience in real estate finance and a borrower-first mindset shape every deal AssetLift touches. A background in structuring investment property transactions means we understand the pressure points borrowers face: tight closing deadlines, appraisal gaps, title issues, and the kind of last-minute friction that kills deals. AssetLift was built to eliminate as much of that friction as possible by working closely with our capital partners and staying hands-on through every file.
                 </p>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 md:p-8">
-                <h3 className="text-xl font-semibold mb-3">Yisroel Pentelnik</h3>
+                <h3 className="text-xl font-semibold mb-3">Operations &amp; Underwriting</h3>
                 <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Yisroel focuses on operations, underwriting workflow, and making sure the borrower experience at AssetLift stays fast and transparent as the company scales. He is the person making sure files move through the pipeline without unnecessary delays, that borrowers get honest feedback early, and that the team maintains the responsiveness that sets AssetLift apart from larger shops. His operational discipline keeps the lending operation running efficiently across 46 states.
+                  Operations and underwriting workflow keep the borrower experience at AssetLift fast and transparent as the company scales: files moving through the pipeline without unnecessary delays, borrowers getting honest feedback early, and a team that maintains the responsiveness setting AssetLift apart from larger shops. That operational discipline keeps the lending operation running efficiently across 46 states.
                 </p>
               </div>
             </div>

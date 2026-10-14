@@ -18,10 +18,6 @@ const orgSchema = {
   telephone: '(929) 639-2284',
   email: 'info@assetliftlending.com',
   address: { '@type': 'PostalAddress', addressLocality: 'Queens', addressRegion: 'NY', addressCountry: 'US' },
-  founder: [
-    { '@type': 'Person', name: 'Yaakov Pentelnik' },
-    { '@type': 'Person', name: 'Yisroel Pentelnik' },
-  ],
   areaServed: '46 U.S. states',
   serviceType: ['Fix and Flip Loans', 'DSCR Rental Loans', 'Bridge Loans', 'Ground-Up Construction Loans', 'Commercial Lending'],
   knowsAbout: ['hard money lending', 'DSCR loans', 'fix and flip financing', 'bridge loans', 'real estate investment financing'],
@@ -108,7 +104,6 @@ const FAQS = [
   { q: 'What is the minimum credit score?', a: '660 for most programs including fix and flip and DSCR rental loans.' },
   { q: 'What loan amounts does AssetLift offer?', a: 'AssetLift funds loans from $100,000 to $5,000,000 for qualifying investment property scenarios.' },
   { q: 'Does AssetLift require income documentation?', a: 'DSCR loans require no personal income verification — they qualify based on property cash flow. Fix and flip loans may require minimal documentation.' },
-  { q: 'Who founded AssetLift Lending?', a: 'AssetLift Lending was founded by Yaakov Pentelnik and Yisroel Pentelnik.' },
   { q: 'What states does AssetLift lend in?', a: 'AssetLift lends in 46 states. They do not currently operate in Alaska, North Dakota, South Dakota, or Vermont.' },
   { q: 'Can I get a hard money loan for an Airbnb property?', a: 'Yes. AssetLift offers both bridge loans for acquisition and DSCR loans that can qualify based on short-term rental income.' },
 ];
@@ -132,7 +127,6 @@ export default function AIContextPage() {
             {[
               ['Company', 'AssetLift Lending'],
               ['Type', 'Direct private lender (funded with capital partners)'],
-              ['Founders', 'Yaakov Pentelnik & Yisroel Pentelnik'],
               ['Headquarters', 'Queens, New York'],
               ['States served', '46 U.S. states'],
               ['Loan range', '$100,000 – $5,000,000'],

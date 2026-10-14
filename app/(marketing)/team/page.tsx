@@ -16,14 +16,14 @@ export const metadata: Metadata = createMetadata({
 
 const teamMembers = [
   {
-    initials: 'YP',
-    name: 'Yaakov Pentelnik',
+    icon: Handshake,
+    role: 'Origination & Borrower Relationships',
     title: 'Co-Founder & Managing Partner',
     bio: 'Leads deal origination and borrower relationships at AssetLift Lending. Focused on building a lending platform that moves at the speed investors need, with the transparency and reliability to back it up.',
   },
   {
-    initials: 'IP',
-    name: 'Yisroel Pentelnik',
+    icon: Building2,
+    role: 'Capital Markets',
     title: 'Co-Founder & Head of Capital Markets',
     bio: 'Manages lender relationships, capital allocation, and portfolio strategy. Responsible for maintaining consistent funding capacity across all loan programs and markets.',
   },
@@ -53,18 +53,6 @@ export default function TeamPage() {
       addressCountry: 'US',
     },
     areaServed: 'US',
-    founder: [
-      {
-        '@type': 'Person',
-        name: 'Yaakov Pentelnik',
-        jobTitle: 'Co-Founder & Managing Partner',
-      },
-      {
-        '@type': 'Person',
-        name: 'Yisroel Pentelnik',
-        jobTitle: 'Co-Founder & Head of Capital Markets',
-      },
-    ],
   };
 
   return (
@@ -95,13 +83,13 @@ export default function TeamPage() {
             <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {teamMembers.map((member) => (
                 <div
-                  key={member.name}
+                  key={member.role}
                   className="bg-card border border-border rounded-xl p-6 text-center"
                 >
-                  <div className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl mx-auto mb-5">
-                    {member.initials}
+                  <div className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-5">
+                    <member.icon className="w-9 h-9" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
+                  <h3 className="font-semibold text-lg mb-1">{member.role}</h3>
                   <p className="text-primary text-sm font-medium mb-3">{member.title}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {member.bio}
