@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-14T12:33:53.912Z",
+  "generatedAt": "2026-10-15T11:54:18.327Z",
   "connected": true,
   "dateRange": {
-    "startDate": "2026-09-13",
-    "endDate": "2026-10-11"
+    "startDate": "2026-09-14",
+    "endDate": "2026-10-12"
   },
   "summary": {
-    "clicks": 17,
-    "impressions": 4733,
-    "ctr": 0.0036,
-    "position": 46.9
+    "clicks": 23,
+    "impressions": 4750,
+    "ctr": 0.0048,
+    "position": 46.5
   },
   "strikingDistanceQueries": [
     {
       "query": "hard money jersey city",
-      "impressions": 36,
+      "impressions": 38,
       "clicks": 0,
       "ctr": 0,
-      "position": 14.2,
+      "position": 14.1,
       "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "query": "lift lending",
-      "impressions": 11,
+      "impressions": 12,
       "clicks": 0,
       "ctr": 0,
       "position": 19.2,
@@ -46,11 +46,19 @@
     },
     {
       "query": "business loans hoboken nj",
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 5.5,
+      "recommendation": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+    },
+    {
+      "query": "fix to rent loans nj",
       "impressions": 10,
       "clicks": 0,
       "ctr": 0,
-      "position": 5.6,
-      "recommendation": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+      "position": 18.6,
+      "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "query": "asset based lending llc hoboken nj",
@@ -62,11 +70,19 @@
     },
     {
       "query": "hard money lenders near me",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 10.8,
+      "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "query": "commercial loans hoboken nj",
       "impressions": 8,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.6,
-      "recommendation": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+      "position": 13.1,
+      "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "query": "peekskill ny title insurance",
@@ -77,11 +93,11 @@
       "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
-      "query": "commercial loans hoboken nj",
+      "query": "dscr loan queens ny",
       "impressions": 7,
       "clicks": 0,
       "ctr": 0,
-      "position": 14,
+      "position": 15.3,
       "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -98,14 +114,6 @@
       "clicks": 0,
       "ctr": 0,
       "position": 12.8,
-      "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "query": "dscr loan queens ny",
-      "impressions": 5,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 15,
       "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -135,19 +143,11 @@
   ],
   "weakCtrPages": [
     {
-      "page": "/",
-      "impressions": 203,
-      "clicks": 6,
-      "ctr": 0.0296,
-      "position": 15.7,
-      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
-    },
-    {
-      "page": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
-      "impressions": 139,
+      "page": "/tools/fix-and-flip-calculator",
+      "impressions": 261,
       "clicks": 1,
-      "ctr": 0.0072,
-      "position": 6.2,
+      "ctr": 0.0038,
+      "position": 19.7,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
@@ -155,23 +155,23 @@
       "impressions": 116,
       "clicks": 0,
       "ctr": 0,
-      "position": 12.2,
+      "position": 11.9,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
       "page": "/how-it-works",
-      "impressions": 68,
+      "impressions": 74,
       "clicks": 0,
       "ctr": 0,
-      "position": 3.1,
+      "position": 3,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
       "page": "/lending/new-jersey/hoboken",
-      "impressions": 66,
+      "impressions": 70,
       "clicks": 0,
       "ctr": 0,
-      "position": 18.6,
+      "position": 18.2,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
@@ -180,6 +180,14 @@
       "clicks": 0,
       "ctr": 0,
       "position": 10.6,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/markets",
+      "impressions": 43,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 19.7,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
@@ -199,35 +207,43 @@
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
+      "page": "/blog/dscr-loan-llc-vs-personal-name",
+      "impressions": 35,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 7.5,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
       "page": "/terms",
-      "impressions": 34,
+      "impressions": 31,
       "clicks": 0,
       "ctr": 0,
       "position": 7,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
-      "page": "/blog/dscr-loan-llc-vs-personal-name",
-      "impressions": 33,
+      "page": "/privacy",
+      "impressions": 27,
       "clicks": 0,
       "ctr": 0,
-      "position": 7.4,
+      "position": 8.2,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
-      "page": "/privacy",
-      "impressions": 28,
+      "page": "/lending/new-york/valley-stream",
+      "impressions": 24,
       "clicks": 0,
       "ctr": 0,
-      "position": 8,
+      "position": 4.5,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
       "page": "/licensing",
-      "impressions": 25,
+      "impressions": 24,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.4,
+      "position": 6.6,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
@@ -242,39 +258,39 @@
   "topQueries": [
     {
       "query": "dscr loan for rental property",
-      "impressions": 88,
+      "impressions": 79,
       "clicks": 0,
-      "position": 70.8
+      "position": 70.1
     },
     {
       "query": "dscr loan calculator",
-      "impressions": 67,
+      "impressions": 69,
       "clicks": 0,
-      "position": 51.8
+      "position": 51.6
     },
     {
       "query": "ground up construction loans",
-      "impressions": 53,
+      "impressions": 54,
       "clicks": 0,
-      "position": 71.2
-    },
-    {
-      "query": "fix and flip loans phoenix",
-      "impressions": 52,
-      "clicks": 0,
-      "position": 30.5
+      "position": 71.8
     },
     {
       "query": "ground up construction financing",
       "impressions": 49,
       "clicks": 0,
-      "position": 62
+      "position": 62.1
     },
     {
       "query": "hard money lenders nj",
       "impressions": 49,
       "clicks": 0,
       "position": 70.2
+    },
+    {
+      "query": "fix and flip loans phoenix",
+      "impressions": 47,
+      "clicks": 0,
+      "position": 30.4
     },
     {
       "query": "dscr loans new york",
@@ -284,123 +300,135 @@
     },
     {
       "query": "fix and flip calculator",
-      "impressions": 42,
+      "impressions": 41,
       "clicks": 0,
-      "position": 36.9
-    },
-    {
-      "query": "dscr loan new jersey",
-      "impressions": 40,
-      "clicks": 0,
-      "position": 73
+      "position": 36.7
     },
     {
       "query": "hard money lender yonkers",
       "impressions": 40,
       "clicks": 0,
-      "position": 21.7
+      "position": 21.1
     },
     {
-      "query": "fix and flip loans new york",
+      "query": "dscr loan new jersey",
+      "impressions": 39,
+      "clicks": 0,
+      "position": 72.9
+    },
+    {
+      "query": "hard money jersey city",
       "impressions": 38,
       "clicks": 0,
-      "position": 68.9
+      "position": 14.1
     },
     {
       "query": "credit builder loan nc",
-      "impressions": 37,
+      "impressions": 36,
       "clicks": 0,
       "position": 97
     },
     {
       "query": "fix and flip loans jersey city",
-      "impressions": 37,
+      "impressions": 36,
       "clicks": 0,
       "position": 37.3
     },
     {
-      "query": "ground up construction loan",
-      "impressions": 37,
-      "clicks": 0,
-      "position": 66.9
-    },
-    {
-      "query": "hard money jersey city",
+      "query": "fix and flip loans new york",
       "impressions": 36,
       "clicks": 0,
-      "position": 14.2
+      "position": 68.9
     },
     {
-      "query": "fix and flip loans connecticut",
-      "impressions": 34,
+      "query": "ground up construction loan",
+      "impressions": 36,
       "clicks": 0,
-      "position": 64.8
-    },
-    {
-      "query": "fix and flip loan calculator",
-      "impressions": 33,
-      "clicks": 1,
-      "position": 34.3
-    },
-    {
-      "query": "dscr rental loans",
-      "impressions": 33,
-      "clicks": 0,
-      "position": 64.3
+      "position": 67
     },
     {
       "query": "fix and flip loan new jersey",
-      "impressions": 32,
+      "impressions": 34,
       "clicks": 0,
       "position": 70.4
     },
     {
       "query": "hard money lenders new jersey",
-      "impressions": 31,
+      "impressions": 34,
       "clicks": 0,
-      "position": 74.8
+      "position": 74.7
     },
     {
-      "query": "credit builder loan north carolina",
-      "impressions": 29,
+      "query": "fix and flip loan calculator",
+      "impressions": 33,
+      "clicks": 1,
+      "position": 33.9
+    },
+    {
+      "query": "fix and flip loans connecticut",
+      "impressions": 32,
       "clicks": 0,
-      "position": 95.7
+      "position": 65.1
     },
     {
       "query": "fix and flip loan new york",
-      "impressions": 29,
+      "impressions": 31,
       "clicks": 0,
-      "position": 66.6
+      "position": 67.3
     },
     {
-      "query": "secured line of credit in north carolina",
-      "impressions": 29,
+      "query": "credit builder loan north carolina",
+      "impressions": 30,
       "clicks": 0,
-      "position": 73.7
+      "position": 96.1
+    },
+    {
+      "query": "dscr rental loans",
+      "impressions": 30,
+      "clicks": 0,
+      "position": 63.9
     },
     {
       "query": "fix flip calculator",
-      "impressions": 28,
+      "impressions": 29,
       "clicks": 0,
-      "position": 35.5
+      "position": 35.4
     },
     {
-      "query": "hard money vs traditional loans",
+      "query": "secured line of credit in north carolina",
       "impressions": 28,
       "clicks": 0,
-      "position": 38.3
+      "position": 73.6
     },
     {
       "query": "fix and flip loan connecticut",
       "impressions": 27,
       "clicks": 0,
-      "position": 70.9
+      "position": 70.6
     },
     {
       "query": "hard money loans new jersey",
       "impressions": 27,
       "clicks": 0,
-      "position": 62
+      "position": 63.5
+    },
+    {
+      "query": "hard money vs traditional loans",
+      "impressions": 26,
+      "clicks": 0,
+      "position": 38.6
+    },
+    {
+      "query": "hard money lenders connecticut",
+      "impressions": 25,
+      "clicks": 0,
+      "position": 66
+    },
+    {
+      "query": "nassau county mortgage refinance",
+      "impressions": 25,
+      "clicks": 0,
+      "position": 54
     },
     {
       "query": "dscr rental loan",
@@ -409,46 +437,10 @@
       "position": 61.9
     },
     {
-      "query": "hard money lenders connecticut",
-      "impressions": 24,
-      "clicks": 0,
-      "position": 65
-    },
-    {
-      "query": "nassau county mortgage refinance",
-      "impressions": 24,
-      "clicks": 0,
-      "position": 54.2
-    },
-    {
-      "query": "fix and flip loans maricopa",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 43
-    },
-    {
       "query": "nassau county mortgage banker",
-      "impressions": 23,
+      "impressions": 24,
       "clicks": 0,
-      "position": 50.9
-    },
-    {
-      "query": "hard money lenders nyc",
-      "impressions": 22,
-      "clicks": 0,
-      "position": 63.1
-    },
-    {
-      "query": "dscr calculator rental property",
-      "impressions": 21,
-      "clicks": 0,
-      "position": 42
-    },
-    {
-      "query": "fix and flip loans new jersey",
-      "impressions": 21,
-      "clicks": 0,
-      "position": 69.9
+      "position": 50.5
     },
     {
       "query": "hard money lenders babylon",
@@ -457,28 +449,64 @@
       "position": 10.6
     },
     {
+      "query": "hard money lenders nassau county",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 33.8
+    },
+    {
+      "query": "long term line of credit in north carolina",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 76.3
+    },
+    {
+      "query": "nassau mortgage refinancing",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 53.8
+    },
+    {
       "query": "asset‑based bridge loans",
       "impressions": 20,
       "clicks": 0,
       "position": 70.3
     },
     {
-      "query": "hard money lenders nassau county",
+      "query": "fix and flip loans new jersey",
       "impressions": 20,
       "clicks": 0,
-      "position": 34
+      "position": 70.3
     },
     {
-      "query": "long term line of credit in north carolina",
+      "query": "hard money lenders nyc",
       "impressions": 20,
       "clicks": 0,
-      "position": 76.5
+      "position": 63.4
     },
     {
-      "query": "nassau mortgage refinancing",
+      "query": "hard money loans north carolina",
       "impressions": 20,
       "clicks": 0,
-      "position": 54.2
+      "position": 71.3
+    },
+    {
+      "query": "nassau county mortgage broker",
+      "impressions": 20,
+      "clicks": 0,
+      "position": 49.2
+    },
+    {
+      "query": "brooklyn conventional loans",
+      "impressions": 19,
+      "clicks": 0,
+      "position": 58.5
+    },
+    {
+      "query": "dscr calculator rental property",
+      "impressions": 19,
+      "clicks": 0,
+      "position": 41.1
     },
     {
       "query": "hard money loans long branch",
@@ -487,70 +515,64 @@
       "position": 5.6
     },
     {
-      "query": "nassau county mortgage broker",
+      "query": "new jersey hard money lenders",
       "impressions": 19,
       "clicks": 0,
-      "position": 49.9
+      "position": 67.7
     },
     {
-      "query": "brooklyn conventional loans",
-      "impressions": 18,
+      "query": "new jersey portfolio lenders",
+      "impressions": 19,
       "clicks": 0,
-      "position": 59.2
-    },
-    {
-      "query": "hard money lenders in ct",
-      "impressions": 18,
-      "clicks": 0,
-      "position": 60.8
-    },
-    {
-      "query": "hard money loans north carolina",
-      "impressions": 18,
-      "clicks": 0,
-      "position": 71.7
-    },
-    {
-      "query": "new jersey hard money lenders",
-      "impressions": 18,
-      "clicks": 0,
-      "position": 66.3
-    },
-    {
-      "query": "dscr calculator",
-      "impressions": 17,
-      "clicks": 0,
-      "position": 53.9
-    },
-    {
-      "query": "dscr loan nj",
-      "impressions": 17,
-      "clicks": 0,
-      "position": 81.9
-    },
-    {
-      "query": "fix and flip lenders new york",
-      "impressions": 17,
-      "clicks": 0,
-      "position": 66.7
-    },
-    {
-      "query": "hard money lender connecticut",
-      "impressions": 17,
-      "clicks": 0,
-      "position": 61.1
+      "position": 67.5
     },
     {
       "query": "nassau county mortgage refinancing",
-      "impressions": 17,
+      "impressions": 18,
       "clicks": 0,
-      "position": 55.7
+      "position": 55.1
     },
     {
-      "query": "connecticut hard money lenders",
+      "query": "fix and flip loans maricopa",
+      "impressions": 17,
+      "clicks": 0,
+      "position": 43.4
+    },
+    {
+      "query": "hard money lender kingston",
+      "impressions": 17,
+      "clicks": 0,
+      "position": 23.6
+    },
+    {
+      "query": "hard money lenders brooklyn ny",
+      "impressions": 17,
+      "clicks": 0,
+      "position": 42.9
+    },
+    {
+      "query": "hard money lenders in ct",
+      "impressions": 17,
+      "clicks": 0,
+      "position": 61
+    },
+    {
+      "query": "mortgages in nassau county",
+      "impressions": 17,
+      "clicks": 0,
+      "position": 65.1
+    },
+    {
+      "query": "dscr loan nj",
       "impressions": 16,
       "clicks": 0,
-      "position": 58.4
+      "position": 82.8
+    },
+    {
+      "query": "hard money lender connecticut",
+      "impressions": 16,
+      "clicks": 0,
+      "position": 63.4
     },
     {
       "query": "hard money lender hoboken",
@@ -559,28 +581,34 @@
       "position": 36.9
     },
     {
-      "query": "hard money lender kingston",
+      "query": "hard money lender new rochelle",
       "impressions": 16,
       "clicks": 0,
-      "position": 24
+      "position": 34.1
     },
     {
-      "query": "hard money lenders brooklyn ny",
+      "query": "hard money newark",
       "impressions": 16,
       "clicks": 0,
-      "position": 42.7
+      "position": 23.6
     },
     {
-      "query": "mortgages in nassau county",
+      "query": "yonkers hard money loans",
       "impressions": 16,
       "clicks": 0,
-      "position": 65.4
+      "position": 20.2
     },
     {
-      "query": "new jersey portfolio lenders",
-      "impressions": 16,
+      "query": "dscr calculator",
+      "impressions": 15,
       "clicks": 0,
-      "position": 63.3
+      "position": 53.8
+    },
+    {
+      "query": "fix and flip lenders nj",
+      "impressions": 15,
+      "clicks": 0,
+      "position": 80.7
     },
     {
       "query": "hard money lender islip",
@@ -589,10 +617,10 @@
       "position": 27.8
     },
     {
-      "query": "hard money newark",
-      "impressions": 15,
+      "query": "connecticut hard money lenders",
+      "impressions": 14,
       "clicks": 0,
-      "position": 23.7
+      "position": 58.8
     },
     {
       "query": "dscr loan ct",
@@ -607,16 +635,16 @@
       "position": 66.3
     },
     {
-      "query": "fix and flip bridge loans new york",
+      "query": "fix and flip lenders new york",
       "impressions": 14,
       "clicks": 0,
-      "position": 49.8
+      "position": 64.3
     },
     {
-      "query": "fix and flip loan north carolina",
+      "query": "hard money loans patchogue",
       "impressions": 14,
       "clicks": 0,
-      "position": 57.5
+      "position": 29.5
     },
     {
       "query": "nassau county mortgage lender",
@@ -625,40 +653,16 @@
       "position": 37.9
     },
     {
-      "query": "yonkers hard money loans",
-      "impressions": 14,
-      "clicks": 0,
-      "position": 22.4
-    },
-    {
       "query": "dscr loan new york",
       "impressions": 13,
       "clicks": 0,
       "position": 81.2
     },
     {
-      "query": "dscr loans for airbnb properties",
+      "query": "fix and flip bridge loans new york",
       "impressions": 13,
       "clicks": 0,
-      "position": 77.5
-    },
-    {
-      "query": "ground-up construction financing",
-      "impressions": 13,
-      "clicks": 0,
-      "position": 62.5
-    },
-    {
-      "query": "hard money loans patchogue",
-      "impressions": 13,
-      "clicks": 0,
-      "position": 29.5
-    },
-    {
-      "query": "dscr fix and flip loans",
-      "impressions": 12,
-      "clicks": 0,
-      "position": 59.6
+      "position": 50
     },
     {
       "query": "dscr loans north carolina",
@@ -667,16 +671,22 @@
       "position": 65.7
     },
     {
-      "query": "fix and flip lenders new jersey",
+      "query": "fix and flip loan north carolina",
       "impressions": 12,
       "clicks": 0,
-      "position": 71.8
+      "position": 57.8
     },
     {
       "query": "hard money lender new jersey",
       "impressions": 12,
       "clicks": 0,
       "position": 72.9
+    },
+    {
+      "query": "lift lending",
+      "impressions": 12,
+      "clicks": 0,
+      "position": 19.2
     },
     {
       "query": "portfolio lenders ny",
@@ -691,16 +701,28 @@
       "position": 73.1
     },
     {
-      "query": "asset lend",
-      "impressions": 11,
+      "query": "top hard money lenders in ct",
+      "impressions": 12,
       "clicks": 0,
-      "position": 45.3
+      "position": 59.8
     },
     {
-      "query": "fix and flip lender new york",
+      "query": "business loans hoboken nj",
       "impressions": 11,
       "clicks": 0,
-      "position": 63.6
+      "position": 5.5
+    },
+    {
+      "query": "dscr fix and flip loans",
+      "impressions": 11,
+      "clicks": 0,
+      "position": 59.7
+    },
+    {
+      "query": "dscr loans for airbnb properties",
+      "impressions": 11,
+      "clicks": 0,
+      "position": 77.5
     },
     {
       "query": "fix and flip loans newark",
@@ -709,10 +731,16 @@
       "position": 26.9
     },
     {
-      "query": "fix and flip loans north carolina",
+      "query": "ground-up construction financing",
       "impressions": 11,
       "clicks": 0,
-      "position": 61.3
+      "position": 62.5
+    },
+    {
+      "query": "hard money loans margate nj",
+      "impressions": 11,
+      "clicks": 0,
+      "position": 54.1
     },
     {
       "query": "hard money loans ocean county nj",
@@ -721,28 +749,10 @@
       "position": 32.5
     },
     {
-      "query": "lift lending",
-      "impressions": 11,
-      "clicks": 0,
-      "position": 19.2
-    },
-    {
       "query": "nassau mortgage refinance",
       "impressions": 11,
       "clicks": 0,
       "position": 58.8
-    },
-    {
-      "query": "new york hard money lenders",
-      "impressions": 11,
-      "clicks": 0,
-      "position": 61.9
-    },
-    {
-      "query": "nyc hard money loans",
-      "impressions": 11,
-      "clicks": 0,
-      "position": 65.2
     },
     {
       "query": "phone-based lending services in north carolina",
@@ -751,10 +761,10 @@
       "position": 32.3
     },
     {
-      "query": "top hard money lenders in ct",
-      "impressions": 11,
+      "query": "asset lend",
+      "impressions": 10,
       "clicks": 0,
-      "position": 60.1
+      "position": 42.6
     },
     {
       "query": "bergen county apartment loans",
@@ -763,16 +773,16 @@
       "position": 36.3
     },
     {
-      "query": "business loans hoboken nj",
-      "impressions": 10,
-      "clicks": 0,
-      "position": 5.6
-    },
-    {
       "query": "construction loans cherry hill",
       "impressions": 10,
       "clicks": 0,
       "position": 42.7
+    },
+    {
+      "query": "dscr calculator real estate",
+      "impressions": 10,
+      "clicks": 0,
+      "position": 47.6
     },
     {
       "query": "dscr loans nj",
@@ -781,16 +791,40 @@
       "position": 79.1
     },
     {
-      "query": "hard money loans margate nj",
+      "query": "fix and flip lenders new jersey",
       "impressions": 10,
       "clicks": 0,
-      "position": 55.6
+      "position": 72.4
     },
     {
-      "query": "hudson county apartment loans",
+      "query": "fix and flip loans north carolina",
       "impressions": 10,
       "clicks": 0,
-      "position": 32
+      "position": 61.3
+    },
+    {
+      "query": "fix to rent loans nj",
+      "impressions": 10,
+      "clicks": 0,
+      "position": 18.6
+    },
+    {
+      "query": "hard money lender smithtown",
+      "impressions": 10,
+      "clicks": 0,
+      "position": 27.8
+    },
+    {
+      "query": "new york hard money lenders",
+      "impressions": 10,
+      "clicks": 0,
+      "position": 61.8
+    },
+    {
+      "query": "nyc hard money loans",
+      "impressions": 10,
+      "clicks": 0,
+      "position": 65
     },
     {
       "query": "yonkers apartment loans",
@@ -817,12 +851,6 @@
       "position": 75.6
     },
     {
-      "query": "dscr calculator real estate",
-      "impressions": 9,
-      "clicks": 0,
-      "position": 46.9
-    },
-    {
       "query": "dscr loan rental property",
       "impressions": 9,
       "clicks": 0,
@@ -835,22 +863,28 @@
       "position": 68.7
     },
     {
+      "query": "fix and flip lender new york",
+      "impressions": 9,
+      "clicks": 0,
+      "position": 61.7
+    },
+    {
       "query": "fix and flip loans long island",
       "impressions": 9,
       "clicks": 0,
       "position": 82.7
     },
     {
-      "query": "fix to rent loans nj",
+      "query": "free dscr calculator rental property",
       "impressions": 9,
       "clicks": 0,
-      "position": 20.4
+      "position": 46.6
     },
     {
-      "query": "hard money lender new rochelle",
+      "query": "hard money lenders near me",
       "impressions": 9,
       "clicks": 0,
-      "position": 25
+      "position": 10.8
     },
     {
       "query": "hard money lenders new york",
@@ -877,6 +911,12 @@
       "position": 59.7
     },
     {
+      "query": "hudson county apartment loans",
+      "impressions": 9,
+      "clicks": 0,
+      "position": 32
+    },
+    {
       "query": "llc loan for investment property",
       "impressions": 9,
       "clicks": 0,
@@ -901,10 +941,22 @@
       "position": 67.4
     },
     {
-      "query": "connecticut bridge loans",
+      "query": "asset rental finance",
       "impressions": 8,
       "clicks": 0,
-      "position": 65.4
+      "position": 91.3
+    },
+    {
+      "query": "calculate dscr for rental property",
+      "impressions": 8,
+      "clicks": 0,
+      "position": 54.5
+    },
+    {
+      "query": "commercial loans hoboken nj",
+      "impressions": 8,
+      "clicks": 0,
+      "position": 13.1
     },
     {
       "query": "connecticut fix and flip loans",
@@ -925,40 +977,10 @@
       "position": 49.5
     },
     {
-      "query": "dscr mortgage calculator",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 63.8
-    },
-    {
       "query": "fix and flip financing jersey shore",
       "impressions": 8,
       "clicks": 0,
       "position": 31.6
-    },
-    {
-      "query": "fix and flip lenders nj",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 81.8
-    },
-    {
-      "query": "ground up construction lenders",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 69.4
-    },
-    {
-      "query": "hard money lender smithtown",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 27.9
-    },
-    {
-      "query": "hard money lenders brooklyn",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 38
     },
     {
       "query": "hard money lenders nc",
@@ -967,16 +989,16 @@
       "position": 77.3
     },
     {
-      "query": "hard money lenders near me",
+      "query": "hard money loan new jersey",
       "impressions": 8,
       "clicks": 0,
-      "position": 8.6
+      "position": 71.9
     },
     {
       "query": "hard money loans nj",
       "impressions": 8,
       "clicks": 0,
-      "position": 65
+      "position": 65.1
     },
     {
       "query": "hard money loans st. petersburg",
@@ -997,22 +1019,10 @@
       "position": 11
     },
     {
-      "query": "real estate investor loans ny",
-      "impressions": 8,
-      "clicks": 0,
-      "position": 76.5
-    },
-    {
       "query": "asheville hard money lenders",
       "impressions": 7,
       "clicks": 0,
       "position": 4.9
-    },
-    {
-      "query": "asset rental finance",
-      "impressions": 7,
-      "clicks": 0,
-      "position": 91.6
     },
     {
       "query": "bridge loans in ct",
@@ -1021,16 +1031,16 @@
       "position": 73.1
     },
     {
-      "query": "calculate dscr for rental property",
+      "query": "calculate dscr ratio for rental property",
       "impressions": 7,
       "clicks": 0,
-      "position": 54.6
+      "position": 64.6
     },
     {
-      "query": "commercial loans hoboken nj",
+      "query": "connecticut bridge loans",
       "impressions": 7,
       "clicks": 0,
-      "position": 14
+      "position": 65.1
     },
     {
       "query": "denver hard money loans",
@@ -1043,6 +1053,18 @@
       "impressions": 7,
       "clicks": 0,
       "position": 64
+    },
+    {
+      "query": "dscr loan florida calculator",
+      "impressions": 7,
+      "clicks": 0,
+      "position": 47.6
+    },
+    {
+      "query": "dscr loan queens ny",
+      "impressions": 7,
+      "clicks": 0,
+      "position": 15.3
     },
     {
       "query": "dscr long island ny",
@@ -1063,12 +1085,6 @@
       "position": 52.1
     },
     {
-      "query": "free dscr calculator rental property",
-      "impressions": 7,
-      "clicks": 0,
-      "position": 48.3
-    },
-    {
       "query": "ground up construction lender",
       "impressions": 7,
       "clicks": 0,
@@ -1087,16 +1103,22 @@
       "position": 57.7
     },
     {
-      "query": "hard money loans nyc",
+      "query": "hard money loans smithtown",
       "impressions": 7,
       "clicks": 0,
-      "position": 62.4
+      "position": 37.4
     },
     {
       "query": "newark apartment loans",
       "impressions": 7,
       "clicks": 0,
       "position": 29.3
+    },
+    {
+      "query": "newark hard money lender",
+      "impressions": 7,
+      "clicks": 0,
+      "position": 21.6
     },
     {
       "query": "north carolina credit builder loan",
@@ -1111,6 +1133,12 @@
       "position": 23
     },
     {
+      "query": "real estate investor loans ny",
+      "impressions": 7,
+      "clicks": 0,
+      "position": 76.1
+    },
+    {
       "query": "rental property loans new york",
       "impressions": 7,
       "clicks": 0,
@@ -1123,31 +1151,19 @@
       "position": 39
     },
     {
-      "query": "calculate dscr ratio for rental property",
+      "query": "commercial lending hoboken nj",
       "impressions": 6,
       "clicks": 0,
-      "position": 65.2
-    },
-    {
-      "query": "connecticut hard money",
-      "impressions": 6,
-      "clicks": 0,
-      "position": 62.3
-    },
-    {
-      "query": "dscr lenders jersey city",
-      "impressions": 6,
-      "clicks": 0,
-      "position": 69.3
+      "position": 3.8
     }
   ],
   "categories": [
     {
       "name": "Hard Money",
-      "queries": 137,
-      "impressions": 950,
+      "queries": 136,
+      "impressions": 968,
       "clicks": 0,
-      "position": 47.7,
+      "position": 47.5,
       "topQueries": [
         {
           "query": "hard money lenders nj",
@@ -1157,75 +1173,41 @@
         {
           "query": "hard money lender yonkers",
           "impressions": 40,
-          "position": 21.7
+          "position": 21.1
         },
         {
           "query": "hard money jersey city",
-          "impressions": 36,
-          "position": 14.2
+          "impressions": 38,
+          "position": 14.1
         },
         {
           "query": "hard money lenders new jersey",
-          "impressions": 31,
-          "position": 74.8
-        },
-        {
-          "query": "hard money vs traditional loans",
-          "impressions": 28,
-          "position": 38.3
-        }
-      ]
-    },
-    {
-      "name": "Fix & Flip",
-      "queries": 111,
-      "impressions": 742,
-      "clicks": 1,
-      "position": 55.4,
-      "topQueries": [
-        {
-          "query": "fix and flip loans phoenix",
-          "impressions": 52,
-          "position": 30.5
-        },
-        {
-          "query": "fix and flip calculator",
-          "impressions": 42,
-          "position": 36.9
-        },
-        {
-          "query": "fix and flip loans new york",
-          "impressions": 38,
-          "position": 68.9
-        },
-        {
-          "query": "fix and flip loans jersey city",
-          "impressions": 37,
-          "position": 37.3
-        },
-        {
-          "query": "fix and flip loans connecticut",
           "impressions": 34,
-          "position": 64.8
+          "position": 74.7
+        },
+        {
+          "query": "hard money loans new jersey",
+          "impressions": 27,
+          "position": 63.5
         }
       ]
     },
     {
       "name": "DSCR / Rental",
-      "queries": 105,
-      "impressions": 734,
+      "queries": 106,
+      "impressions": 728,
       "clicks": 0,
-      "position": 63.9,
+      "position": 63.1,
       "topQueries": [
         {
           "query": "dscr loan for rental property",
-          "impressions": 88,
-          "position": 70.8
+          "impressions": 79,
+          "position": 70.1
         },
         {
           "query": "dscr loan calculator",
-          "impressions": 67,
-          "position": 51.8
+          "impressions": 69,
+          "position": 51.6
         },
         {
           "query": "dscr loans new york",
@@ -1234,41 +1216,75 @@
         },
         {
           "query": "dscr loan new jersey",
-          "impressions": 40,
-          "position": 73
+          "impressions": 39,
+          "position": 72.9
         },
         {
           "query": "dscr rental loans",
-          "impressions": 33,
-          "position": 64.3
+          "impressions": 30,
+          "position": 63.9
+        }
+      ]
+    },
+    {
+      "name": "Fix & Flip",
+      "queries": 111,
+      "impressions": 720,
+      "clicks": 1,
+      "position": 55.8,
+      "topQueries": [
+        {
+          "query": "fix and flip loans phoenix",
+          "impressions": 47,
+          "position": 30.4
+        },
+        {
+          "query": "fix and flip calculator",
+          "impressions": 41,
+          "position": 36.7
+        },
+        {
+          "query": "fix and flip loans jersey city",
+          "impressions": 36,
+          "position": 37.3
+        },
+        {
+          "query": "fix and flip loans new york",
+          "impressions": 36,
+          "position": 68.9
+        },
+        {
+          "query": "fix and flip loan new jersey",
+          "impressions": 34,
+          "position": 70.4
         }
       ]
     },
     {
       "name": "Construction",
       "queries": 31,
-      "impressions": 231,
+      "impressions": 230,
       "clicks": 0,
-      "position": 63.3,
+      "position": 63.5,
       "topQueries": [
         {
           "query": "ground up construction loans",
-          "impressions": 53,
-          "position": 71.2
+          "impressions": 54,
+          "position": 71.8
         },
         {
           "query": "ground up construction financing",
           "impressions": 49,
-          "position": 62
+          "position": 62.1
         },
         {
           "query": "ground up construction loan",
-          "impressions": 37,
-          "position": 66.9
+          "impressions": 36,
+          "position": 67
         },
         {
           "query": "ground-up construction financing",
-          "impressions": 13,
+          "impressions": 11,
           "position": 62.5
         },
         {
@@ -1283,7 +1299,7 @@
       "queries": 26,
       "impressions": 117,
       "clicks": 0,
-      "position": 32.9,
+      "position": 32.4,
       "topQueries": [
         {
           "query": "bergen county apartment loans",
@@ -1291,19 +1307,19 @@
           "position": 36.3
         },
         {
-          "query": "hudson county apartment loans",
-          "impressions": 10,
-          "position": 32
-        },
-        {
           "query": "yonkers apartment loans",
           "impressions": 10,
           "position": 23.4
         },
         {
+          "query": "hudson county apartment loans",
+          "impressions": 9,
+          "position": 32
+        },
+        {
           "query": "commercial loans hoboken nj",
-          "impressions": 7,
-          "position": 14
+          "impressions": 8,
+          "position": 13.1
         },
         {
           "query": "newark apartment loans",
@@ -1315,9 +1331,9 @@
     {
       "name": "Bridge",
       "queries": 23,
-      "impressions": 95,
+      "impressions": 94,
       "clicks": 0,
-      "position": 66.4,
+      "position": 66.3,
       "topQueries": [
         {
           "query": "asset‑based bridge loans",
@@ -1335,34 +1351,27 @@
           "position": 75.6
         },
         {
-          "query": "connecticut bridge loans",
-          "impressions": 8,
-          "position": 65.4
-        },
-        {
           "query": "bridge loans in ct",
           "impressions": 7,
           "position": 73.1
+        },
+        {
+          "query": "connecticut bridge loans",
+          "impressions": 7,
+          "position": 65.1
         }
       ]
     }
   ],
   "recent": {
-    "startDate": "2026-10-04",
-    "endDate": "2026-10-11",
-    "clicks": 6,
-    "impressions": 1664,
-    "ctr": 0.0036,
-    "position": 46.6
+    "startDate": "2026-10-05",
+    "endDate": "2026-10-12",
+    "clicks": 12,
+    "impressions": 1456,
+    "ctr": 0.0082,
+    "position": 45.2
   },
   "dailyMetrics": [
-    {
-      "date": "2026-09-13",
-      "clicks": 0,
-      "impressions": 152,
-      "ctr": 0,
-      "position": 57.1
-    },
     {
       "date": "2026-09-14",
       "clicks": 0,
@@ -1558,7 +1567,14 @@
       "impressions": 235,
       "ctr": 0.0085,
       "position": 50
+    },
+    {
+      "date": "2026-10-12",
+      "clicks": 6,
+      "impressions": 169,
+      "ctr": 0.0355,
+      "position": 45.9
     }
   ],
-  "message": "Found 15 striking-distance queries and 13 pages with weak click-through over the last 28 days."
+  "message": "Found 16 striking-distance queries and 14 pages with weak click-through over the last 28 days."
 }
