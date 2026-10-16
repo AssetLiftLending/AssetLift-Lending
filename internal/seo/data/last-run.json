@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:55:21.901Z",
+  "generatedAt": "2026-10-16T12:26:56.151Z",
   "job": "authority",
   "published": true,
   "changedUrls": [
@@ -14,7 +14,7 @@
     "AI platforms such as ChatGPT, Perplexity, Claude, Gemini, and Copilot generally discover brands through crawlable pages, citations, backlinks, structured data, and trusted third-party mentions; this job improves those inputs but cannot force inclusion in a model index.",
     "This job cannot create third-party backlinks by itself; it can only keep the queue current and update submission status.",
     "Google Search Console sitemap submission is supported here. Google indexing for ordinary webpages is not directly force-triggered via the public Indexing API.",
-    "Anchor rotation index: 5",
+    "Anchor rotation index: 7",
     "Page rotation index: 6"
   ]
 }
