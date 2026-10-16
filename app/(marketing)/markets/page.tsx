@@ -9,9 +9,9 @@ import { STATES } from "@/lib/data/states";
 import { CITIES } from "@/lib/data/cities";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hard Money Lender by State | 46 Lending Markets | AssetLift Lending",
+  title: "Hard Money Lenders by State & City | AssetLift Lending",
   description:
-    "Browse AssetLift Lending markets by state and city for hard money loans, fix and flip financing, bridge loans, DSCR rentals, and construction deals.",
+    "Private lending for real estate investors in 46 states. Find fix-and-flip, bridge, DSCR and construction loans by state and city. Call 929-639-2284.",
   path: "/markets",
 });
 
