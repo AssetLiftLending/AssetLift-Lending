@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T12:26:56.151Z",
+  "generatedAt": "2026-10-17T11:54:23.670Z",
   "job": "authority",
   "published": true,
   "changedUrls": [
@@ -8,13 +8,13 @@
   "notes": [
     "Backlink queue refreshed from existing authority plan.",
     "Sitemap submitted to Google Search Console successfully.",
-    "Found 16 striking-distance queries and 14 pages with weak click-through over the last 28 days.",
+    "Found 16 striking-distance queries and 15 pages with weak click-through over the last 28 days.",
     "25 prioritized actions from real Search Console demand (top priority: /tools/fix-and-flip-calculator).",
     "AI visibility targets refreshed: llms.txt, llms-full.txt, entity facts, product pages, and high-authority citation targets.",
     "AI platforms such as ChatGPT, Perplexity, Claude, Gemini, and Copilot generally discover brands through crawlable pages, citations, backlinks, structured data, and trusted third-party mentions; this job improves those inputs but cannot force inclusion in a model index.",
     "This job cannot create third-party backlinks by itself; it can only keep the queue current and update submission status.",
     "Google Search Console sitemap submission is supported here. Google indexing for ordinary webpages is not directly force-triggered via the public Indexing API.",
-    "Anchor rotation index: 7",
-    "Page rotation index: 6"
+    "Anchor rotation index: 6",
+    "Page rotation index: 10"
   ]
 }
