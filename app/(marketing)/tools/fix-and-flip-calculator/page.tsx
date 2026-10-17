@@ -6,9 +6,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FlipCalculator from './FlipCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Free Fix and Flip Calculator',
+  title: 'Fix and Flip Loan Calculator: Profit & Cash Needed',
   description:
-    'Use this free fix and flip calculator to estimate project costs, cash needed, profit, and ROI from purchase, rehab, financing, hold, and sale assumptions.',
+    'Free fix and flip calculator: enter purchase, rehab, ARV, rate and hold time to see profit, cash needed and loan amount. Call 929-639-2284.',
   path: '/tools/fix-and-flip-calculator',
 });
 
