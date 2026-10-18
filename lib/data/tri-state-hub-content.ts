@@ -76,6 +76,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Hard money lender in Mount Vernon', href: '/lending/new-york/mount-vernon' },
       { label: 'Hard money lender in Yonkers', href: '/lending/new-york/yonkers' },
       { label: 'Hard money lender in New Rochelle', href: '/lending/new-york/new-rochelle' },
+      { label: 'Westchester County hard money and apartment loans', href: '/lending/new-york/westchester-county' },
       { label: 'Hard money lender in Valley Stream', href: '/lending/new-york/valley-stream' },
       { label: 'Brooklyn investor loans', href: '/lending/new-york/brooklyn' },
       { label: 'Buffalo investor loans', href: '/lending/new-york/buffalo' },
