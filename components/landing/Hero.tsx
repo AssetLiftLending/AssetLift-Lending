@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Building2, CheckCircle, Clock3, Coins, Hammer, Home, MessageSquare, Phone, Repeat2 } from 'lucide-react';
@@ -70,6 +70,24 @@ export default function Hero() {
   // one that blocks submission, is not valid consent for A2P purposes.
   const [smsConsent, setSmsConsent] = useState(false);
   const started = useRef(false);
+  const intentLinksRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const intentLinksElement = intentLinksRef.current;
+    if (!intentLinksElement) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      document.body.toggleAttribute('data-home-intents-visible', entry.isIntersecting);
+      document.body.toggleAttribute('data-home-intents-out', !entry.isIntersecting);
+    });
+
+    observer.observe(intentLinksElement);
+    return () => {
+      observer.disconnect();
+      document.body.removeAttribute('data-home-intents-visible');
+      document.body.removeAttribute('data-home-intents-out');
+    };
+  }, []);
 
   const update = (name: keyof typeof initialForm, value: string) => {
     const formatted =
@@ -217,7 +235,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="mb-6 grid grid-cols-2 gap-2 sm:mb-7 sm:grid-cols-4">
+            <div ref={intentLinksRef} data-home-intent-tiles className="mb-6 grid grid-cols-2 gap-2 sm:mb-7 sm:grid-cols-4">
               {intentLinks.map((item) => (
                 <Link
                   key={item.href}
