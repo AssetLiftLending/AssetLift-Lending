@@ -8,6 +8,11 @@ import { Label } from "@/components/ui/label";
 import { CheckCircle, Send } from "lucide-react";
 import { sendNotification } from "@/services/notificationService";
 import { pushToCRM } from "@/services/crmService";
+import {
+  SMS_CONSENT_TEXT,
+  SMS_CONSENT_NOT_A_CONDITION,
+  buildSmsConsentRecord,
+} from "@/lib/sms-consent";
 
 /**
  * This form asks for "phone or email" in one box, so work out which it is
@@ -24,6 +29,9 @@ export default function ContactForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [failed, setFailed] = useState(false);
+  // Optional and never required to submit: carriers reject a campaign whose
+  // consent box is pre-ticked or gates the form.
+  const [smsConsent, setSmsConsent] = useState(false);
 
   const isValid = form.name.trim().length >= 2 && form.contact.trim().length >= 5 && form.message.trim().length >= 5;
 
@@ -32,8 +40,14 @@ export default function ContactForm() {
     if (!isValid) return;
     setSubmitting(true);
     setFailed(false);
+
+    // Captured once, so the notification email and the CRM describe the same
+    // act of consent.
+    const consent = buildSmsConsentRecord(smsConsent, "contact-form");
+
     try {
       const notified = await sendNotification("form", {
+        ...consent,
         name: form.name,
         phone: form.contact,
         email: form.contact,
@@ -55,6 +69,8 @@ export default function ContactForm() {
         ...splitContact(form.contact),
         notes: form.message,
         source: 'contact-form',
+        smsConsent: consent.smsConsent,
+        smsConsentAt: consent.smsConsentAt ?? undefined,
       });
 
       // Confirm receipt if the enquiry reached either channel. It is only
@@ -115,6 +131,22 @@ export default function ContactForm() {
           onChange={(e) => setForm((p) => ({ ...p, message: e.target.value }))}
           className="rounded-xl resize-none"
         />
+      </div>
+      <div className="rounded-xl border border-border bg-secondary/15 p-4 text-sm text-muted-foreground">
+        <label htmlFor="c-sms-consent" className="flex cursor-pointer items-start gap-3">
+          <input
+            id="c-sms-consent"
+            name="smsConsent"
+            type="checkbox"
+            checked={smsConsent}
+            onChange={(e) => setSmsConsent(e.target.checked)}
+            className="mt-0.5 h-5 w-5 flex-shrink-0 cursor-pointer rounded border-border accent-primary"
+          />
+          <span className="leading-relaxed">
+            {SMS_CONSENT_TEXT}{' '}
+            <strong className="text-foreground">{SMS_CONSENT_NOT_A_CONDITION}</strong>
+          </span>
+        </label>
       </div>
       <Button
         type="submit"

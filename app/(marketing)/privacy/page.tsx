@@ -93,7 +93,8 @@ export default function PrivacyPage() {
                 are not shared with lead buyers or affiliates for marketing purposes.
               </p>
               <p>
-                Text messages are optional and are never a condition of any loan or service. You can
+                Text messages are optional and are never a condition of any loan or service.
+                Message frequency varies. Message and data rates may apply. You can
                 stop them at any time by replying STOP to any message from us, or reply HELP for
                 help. You may also get help by emailing info@assetliftlending.com or calling
                 +1 (929) 639-2284. Full details are in the

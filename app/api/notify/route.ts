@@ -160,6 +160,10 @@ export async function POST(req: NextRequest) {
       }
 
       payload.uploadedDocuments = uploadedDocuments;
+
+      // Multipart values arrive as strings, so the literal "false" would be
+      // truthy and the email would claim consent that was never given.
+      payload.smsConsent = payload.smsConsent === 'true';
     } else {
       const json = await req.json();
       type = json.type;
