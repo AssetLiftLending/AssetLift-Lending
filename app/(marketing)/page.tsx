@@ -13,7 +13,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = createMetadata({
   title: "Hard Money & Private Real Estate Lender | AssetLift Lending",
   description:
-    "Hard money and private lending for real estate investors - fix & flip, DSCR, bridge, and construction loans in Camden County, South Jersey, and nationwide.",
+    "Hard money and private lending for investors in 46 states: fix & flip, DSCR, bridge and construction, funded with our capital partners. Call 929-639-2284.",
   path: "/",
   keywords: [
     "hard money lender",
