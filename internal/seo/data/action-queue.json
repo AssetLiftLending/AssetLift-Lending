@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T11:53:31.787Z",
+  "generatedAt": "2026-10-22T11:55:58.970Z",
   "connected": true,
   "summary": "25 prioritized actions from real Search Console demand (top priority: /tools/fix-and-flip-calculator).",
   "items": [
@@ -9,49 +9,39 @@
       "category": "Fix & Flip",
       "priority": 522,
       "impressions": 261,
-      "position": 18.9,
-      "rationale": "261 impressions at position 18.9 but only 1 clicks.",
+      "position": 18.8,
+      "rationale": "261 impressions at position 18.8 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
       "category": "General",
-      "priority": 368,
-      "impressions": 184,
-      "position": 6.2,
-      "rationale": "184 impressions at position 6.2 but only 5 clicks.",
+      "priority": 396,
+      "impressions": 198,
+      "position": 6.4,
+      "rationale": "198 impressions at position 6.4 but only 5 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 290,
-      "impressions": 290,
+      "priority": 277,
+      "impressions": 277,
       "position": 0,
-      "rationale": "290 impressions across 12 queries mention New Jersey.",
+      "rationale": "277 impressions across 12 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 242,
-      "impressions": 242,
+      "priority": 249,
+      "impressions": 249,
       "position": 0,
-      "rationale": "242 impressions across 9 queries mention New York.",
+      "rationale": "249 impressions across 9 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Connecticut",
-      "category": "Geo",
-      "priority": 222,
-      "impressions": 222,
-      "position": 0,
-      "rationale": "222 impressions across 14 queries mention Connecticut.",
-      "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
@@ -65,6 +55,16 @@
     },
     {
       "type": "build-demand-page",
+      "target": "Connecticut",
+      "category": "Geo",
+      "priority": 192,
+      "impressions": 192,
+      "position": 0,
+      "rationale": "192 impressions across 11 queries mention Connecticut.",
+      "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
       "target": "North Carolina",
       "category": "Geo",
       "priority": 185,
@@ -72,16 +72,6 @@
       "position": 0,
       "rationale": "185 impressions across 9 queries mention North Carolina.",
       "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/lending/new-jersey/hoboken",
-      "category": "General",
-      "priority": 174,
-      "impressions": 87,
-      "position": 19.6,
-      "rationale": "87 impressions at position 19.6 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
@@ -107,10 +97,10 @@
       "type": "expand-content",
       "target": "hard money jersey city",
       "category": "Hard Money",
-      "priority": 78,
-      "impressions": 52,
+      "priority": 83,
+      "impressions": 55,
       "position": 13.9,
-      "rationale": "Ranking at position 13.9 with 52 impressions — within striking distance of page 1.",
+      "rationale": "Ranking at position 13.9 with 55 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -127,10 +117,10 @@
       "type": "improve-meta",
       "target": "/markets",
       "category": "General",
-      "priority": 74,
-      "impressions": 37,
-      "position": 15.9,
-      "rationale": "37 impressions at position 15.9 but only 0 clicks.",
+      "priority": 72,
+      "impressions": 36,
+      "position": 16.3,
+      "rationale": "36 impressions at position 16.3 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -149,9 +139,19 @@
       "category": "Hard Money",
       "priority": 62,
       "impressions": 41,
-      "position": 20,
-      "rationale": "Ranking at position 20 with 41 impressions — within striking distance of page 1.",
+      "position": 19.6,
+      "rationale": "Ranking at position 19.6 with 41 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/lending/new-york/new-rochelle",
+      "category": "General",
+      "priority": 56,
+      "impressions": 28,
+      "position": 15.9,
+      "rationale": "28 impressions at position 15.9 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
@@ -171,16 +171,6 @@
       "impressions": 27,
       "position": 7.4,
       "rationale": "27 impressions at position 7.4 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/lending/new-york/new-rochelle",
-      "category": "General",
-      "priority": 54,
-      "impressions": 27,
-      "position": 16.2,
-      "rationale": "27 impressions at position 16.2 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -214,13 +204,23 @@
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
+      "type": "improve-meta",
+      "target": "/licensing",
+      "category": "General",
+      "priority": 42,
+      "impressions": 21,
+      "position": 7.4,
+      "rationale": "21 impressions at position 7.4 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
       "type": "expand-content",
       "target": "hard money lenders babylon",
       "category": "Hard Money",
-      "priority": 36,
-      "impressions": 24,
-      "position": 16.1,
-      "rationale": "Ranking at position 16.1 with 24 impressions — within striking distance of page 1.",
+      "priority": 35,
+      "impressions": 23,
+      "position": 14.3,
+      "rationale": "Ranking at position 14.3 with 23 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -247,10 +247,10 @@
       "type": "expand-content",
       "target": "fix to rent loans nj",
       "category": "General",
-      "priority": 20,
-      "impressions": 13,
-      "position": 16.8,
-      "rationale": "Ranking at position 16.8 with 13 impressions — within striking distance of page 1.",
+      "priority": 21,
+      "impressions": 14,
+      "position": 15.8,
+      "rationale": "Ranking at position 15.8 with 14 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
