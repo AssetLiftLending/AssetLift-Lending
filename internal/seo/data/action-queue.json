@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T12:18:55.830Z",
+  "generatedAt": "2026-10-24T11:53:50.274Z",
   "connected": true,
   "summary": "25 prioritized actions from real Search Console demand (top priority: /tools/fix-and-flip-calculator).",
   "items": [
@@ -7,40 +7,40 @@
       "type": "improve-meta",
       "target": "/tools/fix-and-flip-calculator",
       "category": "Fix & Flip",
-      "priority": 510,
-      "impressions": 255,
-      "position": 18.8,
-      "rationale": "255 impressions at position 18.8 but only 1 clicks.",
+      "priority": 504,
+      "impressions": 252,
+      "position": 19.3,
+      "rationale": "252 impressions at position 19.3 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
       "category": "General",
-      "priority": 408,
-      "impressions": 204,
+      "priority": 420,
+      "impressions": 210,
       "position": 6.4,
-      "rationale": "204 impressions at position 6.4 but only 5 clicks.",
+      "rationale": "210 impressions at position 6.4 but only 6 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 300,
-      "impressions": 300,
+      "priority": 298,
+      "impressions": 298,
       "position": 0,
-      "rationale": "300 impressions across 13 queries mention New Jersey.",
+      "rationale": "298 impressions across 13 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 262,
-      "impressions": 262,
+      "priority": 271,
+      "impressions": 271,
       "position": 0,
-      "rationale": "262 impressions across 9 queries mention New York.",
+      "rationale": "271 impressions across 9 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -49,38 +49,38 @@
       "category": "General",
       "priority": 206,
       "impressions": 103,
-      "position": 10.7,
-      "rationale": "103 impressions at position 10.7 but only 0 clicks.",
+      "position": 11.2,
+      "rationale": "103 impressions at position 11.2 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "North Carolina",
       "category": "Geo",
-      "priority": 187,
-      "impressions": 187,
+      "priority": 191,
+      "impressions": 191,
       "position": 0,
-      "rationale": "187 impressions across 9 queries mention North Carolina.",
+      "rationale": "191 impressions across 9 queries mention North Carolina.",
       "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 182,
-      "impressions": 182,
+      "priority": 183,
+      "impressions": 183,
       "position": 0,
-      "rationale": "182 impressions across 10 queries mention Connecticut.",
+      "rationale": "183 impressions across 9 queries mention Connecticut.",
       "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/how-it-works",
       "category": "General",
-      "priority": 138,
-      "impressions": 69,
-      "position": 3,
-      "rationale": "69 impressions at position 3 but only 0 clicks.",
+      "priority": 136,
+      "impressions": 68,
+      "position": 3.2,
+      "rationale": "68 impressions at position 3.2 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -97,10 +97,10 @@
       "type": "expand-content",
       "target": "hard money jersey city",
       "category": "Hard Money",
-      "priority": 84,
-      "impressions": 56,
-      "position": 13.9,
-      "rationale": "Ranking at position 13.9 with 56 impressions — within striking distance of page 1.",
+      "priority": 89,
+      "impressions": 59,
+      "position": 13.8,
+      "rationale": "Ranking at position 13.8 with 59 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -115,22 +115,22 @@
     },
     {
       "type": "improve-meta",
-      "target": "/apply",
+      "target": "/markets",
       "category": "General",
-      "priority": 68,
-      "impressions": 34,
-      "position": 5.1,
-      "rationale": "34 impressions at position 5.1 but only 0 clicks.",
+      "priority": 74,
+      "impressions": 37,
+      "position": 15.3,
+      "rationale": "37 impressions at position 15.3 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
-      "target": "/markets",
+      "target": "/lending/new-york/new-rochelle",
       "category": "General",
-      "priority": 68,
-      "impressions": 34,
-      "position": 17,
-      "rationale": "34 impressions at position 17 but only 0 clicks.",
+      "priority": 72,
+      "impressions": 36,
+      "position": 18.7,
+      "rationale": "36 impressions at position 18.7 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -139,58 +139,58 @@
       "category": "Hard Money",
       "priority": 63,
       "impressions": 42,
-      "position": 19.3,
-      "rationale": "Ranking at position 19.3 with 42 impressions — within striking distance of page 1.",
+      "position": 18.9,
+      "rationale": "Ranking at position 18.9 with 42 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "improve-meta",
-      "target": "/lending/new-york/new-rochelle",
+      "target": "/apply",
       "category": "General",
-      "priority": 60,
-      "impressions": 30,
-      "position": 16.7,
-      "rationale": "30 impressions at position 16.7 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/blog/dscr-loan-llc-vs-personal-name",
-      "category": "DSCR / Rental",
-      "priority": 54,
-      "impressions": 27,
-      "position": 7.4,
-      "rationale": "27 impressions at position 7.4 but only 0 clicks.",
+      "priority": 62,
+      "impressions": 31,
+      "position": 5.7,
+      "rationale": "31 impressions at position 5.7 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-york/valley-stream",
       "category": "General",
-      "priority": 52,
-      "impressions": 26,
-      "position": 6.6,
-      "rationale": "26 impressions at position 6.6 but only 0 clicks.",
+      "priority": 58,
+      "impressions": 29,
+      "position": 6.1,
+      "rationale": "29 impressions at position 6.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/terms",
       "category": "General",
-      "priority": 50,
-      "impressions": 25,
-      "position": 6,
-      "rationale": "25 impressions at position 6 but only 0 clicks.",
+      "priority": 54,
+      "impressions": 27,
+      "position": 6.4,
+      "rationale": "27 impressions at position 6.4 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/dscr-loan-llc-vs-personal-name",
+      "category": "DSCR / Rental",
+      "priority": 52,
+      "impressions": 26,
+      "position": 7.2,
+      "rationale": "26 impressions at position 7.2 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/privacy",
       "category": "General",
-      "priority": 48,
-      "impressions": 24,
-      "position": 8.2,
-      "rationale": "24 impressions at position 8.2 but only 0 clicks.",
+      "priority": 52,
+      "impressions": 26,
+      "position": 8,
+      "rationale": "26 impressions at position 8 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -201,16 +201,6 @@
       "impressions": 22,
       "position": 9.5,
       "rationale": "22 impressions at position 9.5 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/answers/asset-based-loan-companies-real-estate-investors",
-      "category": "General",
-      "priority": 40,
-      "impressions": 20,
-      "position": 13.8,
-      "rationale": "20 impressions at position 13.8 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -251,6 +241,16 @@
       "impressions": 15,
       "position": 14.9,
       "rationale": "Ranking at position 14.9 with 15 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "commercial loans hoboken nj",
+      "category": "Commercial / Multifamily",
+      "priority": 18,
+      "impressions": 12,
+      "position": 19,
+      "rationale": "Ranking at position 19 with 12 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
