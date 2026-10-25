@@ -125,44 +125,65 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'NJ',
     programSlug: 'fix-and-flip-loans',
     programName: 'Fix & Flip Loans',
-    title: 'New Jersey Fix & Flip Loans | Hard Money Lender NJ',
+    title: 'Fix & Flip and Fix-to-Rent Loans in NJ',
     description:
-      'New Jersey fix and flip loans from a hard money lender focused on experienced investors. Fast review for NJ acquisition and rehab deals.',
-    h1: 'New Jersey Fix & Flip Loans for Experienced Investors',
+      'NJ fix-and-flip and fix-to-rent loans: purchase and rehab funding, DSCR refinance exit, lead-safe and transfer-fee checks. Call 929-639-2284.',
+    h1: 'New Jersey Fix & Flip and Fix-to-Rent Loans for Investors',
     intro:
-      'AssetLift helps New Jersey flippers move quickly when a property needs acquisition and rehab capital. We focus on non-owner-occupied investor deals with clear ARV support, borrower experience, and a realistic close-to-resale timeline.',
+      'AssetLift reviews New Jersey fix-and-flip and fix-to-rent loans for non-owner-occupied investment properties. A flip ends in a sale; a fix-to-rent plan renovates, leases, and then refinances the short-term rehab loan into a long-term DSCR rental loan. Both need clear value support, a line-item scope, and an exit that accounts for New Jersey rules: lead-safe certification before renting older units, landlord registration, tenant protections on occupied purchases, and seller-paid transfer fees on a sale.',
     markets: ['North Jersey', 'Jersey City', 'Newark', 'Paterson', 'Elizabeth', 'Central Jersey', 'South Jersey'],
     fit: [
       ...sharedQualification,
       'Purchase and rehab files with a documented scope',
-      'Experienced borrowers buying into proven resale corridors',
+      'Fix-to-rent plans with supported market rent and a DSCR refinance exit',
+      'Experienced borrowers buying into proven resale or rental corridors',
     ],
     localNotes: [
-      'North Jersey files often need block-level comp support because buyer demand changes quickly by town and transit access.',
-      'Older housing stock can create title, permit, and contractor timing issues if the scope is not prepared early.',
-      'Property taxes and holding costs should be modeled conservatively before pushing leverage.',
+      'Fix-to-rent exit: New Jersey requires a lead-based paint inspection of most rental units built before 1978 at tenant turnover (or every three years, whichever comes first), unless a valid lead-safe certificate is in place. Certificates last two years. Budget the inspection and any remediation before you lease up and refinance.',
+      'Landlord registration: New Jersey law requires a landlord certificate of registration. One- and two-unit non-owner-occupied rentals generally file with the municipal clerk, multiple dwellings file with the DCA Bureau of Housing Inspection, and N.J.S.A. 46:8-28.5 separately requires owners of tenant-occupied one- and two-family homes to register with the Bureau. Confirm the filing with the town and DCA. An amended certificate is due within 20 days of a change in the registered information.',
+      'Occupied purchases: the Anti-Eviction Act covers most residential rentals, and a sale is not by itself a ground to remove a tenant. A narrow exception applies when the owner of a building with three or fewer units has contracted to sell to a buyer who will personally occupy it and the contract requires vacancy at closing; it requires at least two months\' notice and an expired lease, and it does not help an investor buyer take possession at purchase. Do not underwrite vacant delivery on an occupied building unless the tenant has agreed to leave or that exception clearly applies.',
+      'Flip exit costs: New Jersey\'s Realty Transfer Fee is imposed on the seller (a purchase contract can change who bears the cost, but not who the fee is legally imposed on). On sales over $1,000,000 of one- to four-unit residential property, co-op units, or most commercial property (not 5+ unit apartment buildings), the seller also owes the Graduated Percent Fee, 1% to 3.5% of the full price, on deeds submitted for recording on or after July 10, 2025. Net both out of projected sale proceeds.',
+      'Permits and occupancy: work under the Uniform Construction Code needs permits and a final inspection, and many New Jersey towns also require their own certificate of occupancy or rental inspection on resale or a new tenancy. Confirm the town\'s rule before setting a closing or lease-up date.',
+      'Comps and carry: North Jersey values can change block by block, and New Jersey property taxes are high, so model taxes, insurance, and interest through the full rehab, lease-up, and refinance timeline before pushing leverage.',
     ],
     whatToPrepare: [
       'Contract price and expected closing date',
       'Scope of work with line-item rehab budget',
-      'After-repair value support',
+      'After-repair value support from nearby sales',
+      'Exit plan: resale comps, or market rent support for a fix-to-rent refinance',
+      'Year built, current occupancy, and any existing leases',
       'Borrower track record and liquidity snapshot',
     ],
     faqs: [
       {
         question: 'Do you offer fix and flip loans in New Jersey?',
         answer:
-          'Yes. AssetLift reviews New Jersey fix and flip loans for experienced investors working non-owner-occupied investment properties.',
+          'Yes. AssetLift reviews New Jersey fix and flip loans for investors working on non-owner-occupied investment properties. Published terms may allow up to 95% of the purchase price and up to 100% of the approved rehab budget, subject to a total 70-75% after-repair value cap, borrower and property review, and underwriting.',
       },
       {
-        question: 'What New Jersey markets are a fit?',
+        question: 'What is a fix-to-rent loan in New Jersey?',
         answer:
-          'We review deals across North Jersey, Central Jersey, South Jersey, and shore-adjacent markets when the comps, rehab scope, and borrower plan are clear.',
+          'It is a two-step plan. A short-term fix-and-flip or bridge loan funds the purchase and renovation; once the property is renovated and leased, you refinance into a 30-year DSCR rental loan based on the property\'s rent rather than your personal income. Qualifying DSCR cash-out refinances may reach up to 80% of appraised value, subject to rent coverage, credit, reserves, seasoning, and program rules. Plan the refinance before you buy: the rent has to cover the full payment, including New Jersey property taxes and insurance.',
+      },
+      {
+        question: 'How does the math work on a New Jersey fix-to-rent deal?',
+        answer:
+          'Illustration only: a $300,000 purchase with an $80,000 rehab and a $480,000 after-repair value. At a 70% ARV cap, the rehab loan tops out at $336,000, so you bring about $44,000 plus closing costs and interest. If the renovated property appraises at $480,000 and the lease supports the payment, an 80% cash-out DSCR refinance would be up to $384,000, enough to repay the $336,000 rehab loan with room for refinance costs. A lower appraisal, weaker rent, or tighter program limit shrinks that number, so underwrite the exit conservatively.',
+      },
+      {
+        question: 'Do I need a lead-safe certificate before renting a renovated New Jersey property?',
+        answer:
+          'Usually, if it was built before 1978. New Jersey requires single-family, two-family, and multiple rental dwellings built before 1978 to be inspected for lead-based paint hazards at tenant turnover or every three years, whichever comes first, unless an exemption applies, such as a property certified lead-free, or a single- or two-family seasonal rental let for less than six months a year. A passing inspection produces a lead-safe certificate valid for two years. Check with the municipality or a DCA-certified lead evaluation contractor.',
+      },
+      {
+        question: 'Can I buy an occupied New Jersey property and deliver it vacant to my buyer?',
+        answer:
+          'Often not. New Jersey\'s Anti-Eviction Act limits tenant removal to listed grounds, and a sale to an investor is not one of them. The main exception lets the owner of a building with three or fewer units seek possession when the buyer will personally occupy the unit and the sale contract requires the unit to be vacant at closing, with at least two months\' notice and only after the lease expires. Price an occupied flip as an occupied sale unless the tenant leaves voluntarily, and get advice from a New Jersey attorney.',
       },
       {
         question: 'Can I get rehab funds included?',
         answer:
-          'Many fix and flip structures can include approved rehab funding, subject to underwriting, ARV, borrower experience, and draw controls.',
+          'Many fix and flip structures can include approved rehab funding, released in draws as work is verified, subject to underwriting, ARV, borrower experience, and draw controls.',
       },
     ],
   },
@@ -188,6 +209,7 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
       'New Jersey taxes can materially affect DSCR, so the expense assumptions need to be current.',
       'Urban multifamily files should separate actual leases from optimistic market rent projections.',
       'Condo or HOA properties need early review of association costs and eligibility.',
+      'Rental units built before 1978 generally need a lead-based paint inspection at tenant turnover unless a valid two-year lead-safe certificate is in place, so have that status ready for a purchase or refinance file.',
     ],
     whatToPrepare: [
       'Rent roll or market rent support',
@@ -210,6 +232,11 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
         question: 'Do I need W-2 income for a DSCR loan?',
         answer:
           'DSCR loans focus on property cash flow rather than personal W-2 income, though credit, liquidity, experience, and property details still matter.',
+      },
+      {
+        question: 'Can I refinance a renovated New Jersey property out of a fix-and-flip loan into a DSCR loan?',
+        answer:
+          'Yes, that is the fix-to-rent or BRRRR exit. Once the property is renovated and leased, a DSCR refinance can repay the short-term rehab loan when the appraised value and rent support the new loan. Qualifying cash-out refinances may reach up to 80% LTV, subject to rent coverage, credit, reserves, seasoning, and program rules. See our New Jersey fix and flip and fix-to-rent loans page for the rehab side of the plan.',
       },
     ],
   },
