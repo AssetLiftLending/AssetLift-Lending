@@ -73,6 +73,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Fix and flip loans in New York', href: '/lending/new-york/fix-and-flip-loans' },
       { label: 'DSCR loans in Queens', href: '/lending/new-york/queens' },
       { label: 'Hard money lenders in Babylon', href: '/lending/new-york/babylon' },
+      { label: 'Hard money loans in Patchogue', href: '/lending/new-york/patchogue' },
       { label: 'Hard money lender in Mount Vernon', href: '/lending/new-york/mount-vernon' },
       { label: 'Hard money lender in Yonkers', href: '/lending/new-york/yonkers' },
       { label: 'Hard money lender in New Rochelle', href: '/lending/new-york/new-rochelle' },
