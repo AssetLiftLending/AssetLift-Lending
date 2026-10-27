@@ -152,6 +152,7 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/connecticut/new-haven',
   '/lending/connecticut/bridgeport',
   '/lending/connecticut/hartford',
+  '/lending/texas/plano',
 ]);
 
 export const INDEXABLE_STATIC_PATHS = new Set([
