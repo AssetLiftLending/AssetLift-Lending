@@ -183,7 +183,7 @@ export default function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-3xl text-white">
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/45 bg-zinc-950/45 px-4 py-2 text-xs font-medium text-primary shadow-sm backdrop-blur-md sm:text-sm">
-              Private lending for real estate investors
+              Direct private lender for real estate investors
             </p>
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:mb-6 sm:text-5xl md:text-6xl">
               Private Money &amp; Hard Money Lender for Real Estate Investors

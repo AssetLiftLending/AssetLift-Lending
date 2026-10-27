@@ -13,7 +13,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = createMetadata({
   title: "Hard Money & Private Real Estate Lender | AssetLift Lending",
   description:
-    "Hard money and private lending for investors in 46 states: fix & flip, DSCR, bridge and construction, funded with our capital partners. Call 929-639-2284.",
+    "Direct private lender for investors in 46 states: fix & flip, DSCR, bridge and construction loans funded with our capital partners. Call 929-639-2284.",
   path: "/",
   keywords: [
     "hard money lender",
@@ -61,7 +61,7 @@ export default function HomePage() {
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
     description:
-      'Private lending for real estate investors. Business-purpose fix and flip, DSCR rental, bridge, and ground-up construction loans from $100K to $5M, 660+ credit preferred.',
+      'Direct private lender for real estate investors. Business-purpose fix and flip, DSCR rental, bridge, and ground-up construction loans from $100K to $5M, 660+ credit preferred.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',

@@ -71,8 +71,8 @@ export default function TermsPage() {
                   Rates, terms, fees, and leverage are subject to change without notice.
                 </li>
                 <li>
-                  Loan programs may be funded directly, brokered, or placed with third-party
-                  lending partners depending on the transaction.
+                  Loans are made by AssetLift Lending as a direct private lender and funded with
+                  our capital partners.
                 </li>
                 <li>
                   Past performance of funded loans does not guarantee future results.
@@ -87,15 +87,14 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-3">Execution and Funding Channels</h2>
               <p className="mb-4">
-                Website references to lending products, rates, timelines, or program availability
-                do not mean that every transaction is funded directly by AssetLift Lending. Depending
-                on the transaction, AssetLift may act in a lending, brokering, referral, or
-                capital-partner placement capacity to help move the file toward closing.
+                AssetLift Lending is a direct private lender. Loans close in AssetLift Lending&apos;s
+                name and are funded with our capital partners. Website references to lending
+                products, rates, timelines, or program availability are not a commitment to lend or
+                a guarantee that any transaction will be approved or funded.
               </p>
               <p>
-                Borrowers should review all transaction-specific disclosures, lender documents,
-                compensation disclosures where applicable, and state-specific notices provided in
-                connection with the actual loan structure.
+                Borrowers should review all transaction-specific disclosures, loan documents, and
+                state-specific notices provided in connection with their loan.
               </p>
             </section>
 
