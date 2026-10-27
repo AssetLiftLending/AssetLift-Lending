@@ -7,9 +7,9 @@ import { Button } from '@/components/ui/button';
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createMetadata({
-  title: 'How Funding Works | Direct & Brokered',
+  title: 'How Funding Works | Direct Private Lending',
   description:
-    'Learn how AssetLift Lending handles direct private lending, brokered transactions, and capital-partner execution for business-purpose real estate investment loans.',
+    'AssetLift Lending is the direct private lender on its loans: they close in AssetLift\'s name and are funded with our capital partners. Call 929-639-2284.',
   path: '/how-funding-works',
 });
 
@@ -19,7 +19,7 @@ export default function HowFundingWorksPage() {
     '@type': 'WebPage',
     name: 'How Funding Works at AssetLift Lending',
     description:
-      'Disclosure page explaining when AssetLift may provide direct lending and when a transaction may be brokered or placed with a capital partner.',
+      'Disclosure page explaining how AssetLift Lending makes business-purpose loans as a direct private lender funded with its capital partners.',
     url: 'https://www.assetliftlending.com/how-funding-works',
   };
 
@@ -38,9 +38,8 @@ export default function HowFundingWorksPage() {
             </h1>
             <p className="text-lg text-muted-foreground mb-10">
               AssetLift works with real estate investors on business-purpose loans for non-owner-occupied
-              investment properties. Depending on the deal, program, market, and borrower profile,
-              a transaction may be funded directly by AssetLift or may be brokered or placed with a
-              capital partner.
+              investment properties. AssetLift is the direct private lender on its loans: each loan
+              closes in AssetLift&apos;s name and is funded with our capital partners.
             </p>
 
             <div className="space-y-10 text-muted-foreground leading-relaxed">
@@ -48,33 +47,33 @@ export default function HowFundingWorksPage() {
                 <h2 className="text-2xl font-bold text-foreground mb-3">Plain-English Summary</h2>
                 <div className="space-y-4">
                   <p>
-                    AssetLift is not presented on this website as a lender that necessarily funds every
-                    transaction with its own capital. Some transactions may be funded directly, while
-                    others may be arranged through third-party lending partners.
+                    AssetLift is your lender. The loan closes in AssetLift&apos;s name, and the capital
+                    behind it comes from our capital partners. We do not shop your file to other lenders
+                    or hand you off to a third party to close.
                   </p>
                   <p>
                     What stays consistent is the borrower experience: one team reviewing the file,
-                    communicating what is realistic, and helping move the transaction toward the most
-                    workable execution path available.
+                    communicating what is realistic, and taking the loan from application through
+                    closing.
                   </p>
                 </div>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-3">Three Ways a Deal May Be Handled</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-3">How an AssetLift Loan Is Funded</h2>
                 <div className="grid md:grid-cols-3 gap-4">
                   {[
                     {
-                      title: 'Direct Lending',
-                      text: 'In some cases, AssetLift may provide the lending execution directly for the transaction.',
+                      title: 'AssetLift Is the Lender',
+                      text: 'Your loan closes in AssetLift\'s name, and AssetLift is the lender you deal with from term sheet to closing.',
                     },
                     {
-                      title: 'Brokered Execution',
-                      text: 'In some cases, AssetLift may act as a broker or intermediary and place the loan with a third-party lender or capital partner.',
+                      title: 'Funded With Capital Partners',
+                      text: 'The capital for AssetLift loans comes from our capital partners, which lets us fund loans across 46 states.',
                     },
                     {
-                      title: 'Capital-Partner Structure',
-                      text: 'In some cases, the transaction may be closed through a partner-capital, white-label, or similar third-party funding structure depending on the file.',
+                      title: 'One Team, Start to Close',
+                      text: 'The same AssetLift team reviews the file, issues terms, and works through underwriting, title, and closing with you.',
                     },
                   ].map((item) => (
                     <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
@@ -89,10 +88,10 @@ export default function HowFundingWorksPage() {
                 <h2 className="text-2xl font-bold text-foreground mb-3">What Borrowers Should Expect</h2>
                 <div className="space-y-3">
                   {[
-                    'Loan terms, rates, fees, and timelines depend on the actual execution path, underwriting decision, property, and borrower profile.',
-                    'Not every program is available in every state, and not every file qualifies for the same lending channel.',
-                    'Nothing on this website is a commitment to lend, a promise of approval, or a guarantee that a specific transaction will be funded directly by AssetLift.',
-                    'Where required by law, applicable lender, broker, licensing, and closing disclosures should be reviewed carefully before proceeding.',
+                    'Loan terms, rates, fees, and timelines depend on the program, underwriting decision, property, and borrower profile.',
+                    'Not every program is available in every state, and not every file qualifies for every program.',
+                    'Nothing on this website is a commitment to lend, a promise of approval, or a guarantee that a specific transaction will be funded.',
+                    'Where required by law, applicable lender, licensing, and closing disclosures should be reviewed carefully before proceeding.',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -106,9 +105,9 @@ export default function HowFundingWorksPage() {
                 <h2 className="text-2xl font-bold text-foreground mb-3">Why We Explain This Publicly</h2>
                 <div className="space-y-4">
                   <p>
-                    Borrowers should be able to understand whether a company may lend directly,
-                    broker a deal, or work through capital partners. The point of this page is to
-                    make that visible and reduce ambiguity in advertising and website copy.
+                    Borrowers should know who their lender is and where the capital comes from. The
+                    point of this page is to make that clear: AssetLift is the lender, funded with our
+                    capital partners.
                   </p>
                   <p>
                     If you have questions about how a specific transaction would be handled, contact

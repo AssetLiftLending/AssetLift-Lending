@@ -118,21 +118,19 @@ export default function LicensingPage() {
               <h2 className="text-2xl font-bold text-foreground mb-3">Execution Model Disclosure</h2>
               <div className="space-y-4">
                 <p>
-                  AssetLift Lending may handle transactions through direct lending, brokered
-                  execution, or capital-partner / third-party funding structures depending on the
-                  deal, program, market, and borrower profile.
+                  AssetLift Lending is a direct private lender. Loans close in AssetLift&apos;s name
+                  and are funded with our capital partners.
                 </p>
                 <p>
-                  This website should not be read to mean that every transaction is funded directly
-                  by AssetLift or that every program is available through the same lending channel.
+                  This website should not be read to mean that every program is available in every
+                  state or that any particular file will be approved or funded.
                 </p>
                 <p>
-                  If a transaction is placed with a third-party lender or capital partner, the
-                  borrower may receive additional lender-specific, broker, licensing, or closing
-                  disclosures as required by applicable law and the actual transaction structure.
+                  Borrowers receive the lender, licensing, and closing disclosures required by
+                  applicable law for their transaction.
                 </p>
                 <p>
-                  For a plain-English explanation of how deals may be handled, review our{' '}
+                  For a plain-English explanation of how AssetLift loans are funded, review our{' '}
                   <a href="/how-funding-works" className="underline hover:text-primary transition-colors">
                     How Funding Works
                   </a>{' '}
@@ -174,9 +172,8 @@ export default function LicensingPage() {
                   state-specific availability.
                 </p>
                 <p>
-                  State-specific licensing obligations can vary depending on whether a transaction
-                  is originated, brokered, table-funded, white-labeled, or otherwise executed
-                  through a partner channel. If you have questions about lending activity in a
+                  State-specific licensing obligations can vary by state, entity, and transaction
+                  structure. If you have questions about lending activity in a
                   particular state, contact us directly before relying on any website description.
                 </p>
                 <p>

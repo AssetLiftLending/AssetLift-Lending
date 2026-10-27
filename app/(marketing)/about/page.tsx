@@ -126,7 +126,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Structure</p>
-                <p className="text-muted-foreground">Mortgage brokerage with white-label capital partners</p>
+                <p className="text-muted-foreground">Direct private lender; loans close in AssetLift&apos;s name, funded with our capital partners</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Phone</p>
