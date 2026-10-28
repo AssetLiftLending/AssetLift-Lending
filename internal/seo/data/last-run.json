@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T12:26:54.318Z",
+  "generatedAt": "2026-10-28T11:55:13.126Z",
   "job": "authority",
   "published": true,
   "changedUrls": [
@@ -15,6 +15,6 @@
     "This job cannot create third-party backlinks by itself; it can only keep the queue current and update submission status.",
     "Google Search Console sitemap submission is supported here. Google indexing for ordinary webpages is not directly force-triggered via the public Indexing API.",
     "Anchor rotation index: 6",
-    "Page rotation index: 3"
+    "Page rotation index: 6"
   ]
 }
