@@ -178,6 +178,7 @@ export const INDEXABLE_STATIC_PATHS = new Set([
   '/loans/ground-up-construction',
   '/loans/bridge',
   '/loans/asset-based-lending',
+  '/loans/no-fee-refinance',
   '/tools',
   '/tools/fix-and-flip-calculator',
   '/tools/dscr-calculator',
