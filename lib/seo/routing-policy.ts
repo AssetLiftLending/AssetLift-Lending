@@ -155,6 +155,7 @@ export const PRIORITY_CITY_PATHS = new Set([
   '/lending/texas/plano',
   '/lending/texas/arlington',
   '/lending/texas/el-paso',
+  '/lending/texas/dallas-county',
 ]);
 
 export const INDEXABLE_STATIC_PATHS = new Set([
