@@ -808,7 +808,7 @@ export const STATES: StateData[] = [
       {
         question: "Can I get a hard money loan for a Shore rental property?",
         answer:
-          "Yes. The Jersey Shore (LBI, Cape May, Asbury Park, Point Pleasant) is an active market for hard money-funded vacation rental investments. Seasonal rental income can be substantial ($30,000-$80,000+ per summer season). Lenders will evaluate the property's year-round value and seasonal income potential.",
+          "Yes. AssetLift reviews business-purpose fix-and-flip, bridge, and DSCR loans on non-owner-occupied shore properties, from Monmouth and Ocean counties to Cape May County. Check the town's rental license and inspection rules, flood zone and insurance cost, and lead-safe requirements before you buy. An eligible short-term rental may be reviewed for a DSCR loan using a third-party rental projection or 12 months of booking history, and seasonal income is underwritten more conservatively than a year-round lease.",
       },
     ],
   },

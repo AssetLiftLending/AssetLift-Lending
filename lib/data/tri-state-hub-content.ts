@@ -109,7 +109,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       },
       {
         name: 'Central Jersey and the Shore',
-        markets: 'Middlesex, Monmouth, and Ocean counties, Toms River, Lakewood, Asbury Park',
+        markets: 'Middlesex, Monmouth, Ocean, and Cape May counties, Toms River, Lakewood, Asbury Park, Ocean City',
         detail:
           'A mix of year-round rentals, seasonal rentals, and flips. Flood zone status and insurance cost are the first questions on shore properties. Seasonal rental income is underwritten more conservatively than a year-round lease.',
       },
@@ -146,6 +146,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Hard money loans in Jersey City', href: '/lending/new-jersey/jersey-city' },
       { label: 'Hoboken hard money and asset-based loans', href: '/lending/new-jersey/hoboken' },
       { label: 'Long Branch hard money loans', href: '/lending/new-jersey/long-branch' },
+      { label: 'Cape May County hard money and shore rental loans', href: '/lending/new-jersey/cape-may-county' },
       { label: 'Camden County investor loans', href: '/lending/new-jersey/camden-county' },
       { label: 'Cherry Hill investor loans', href: '/lending/new-jersey/cherry-hill' },
       { label: 'Pennsauken investor loans', href: '/lending/new-jersey/pennsauken' },
