@@ -32,7 +32,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "What types of loans do you offer?",
-        answer: "We offer four main loan programs: Fix & Flip loans (up to 95% LTC on the purchase), Ground-Up Construction loans (up to 90% LTC), DSCR Rental loans (up to 85% LTV with 30-year terms), and Bridge loans (up to 80% LTV with quick closings)."
+        answer: "We offer four main loan programs: Fix & Flip loans (up to 95% LTC on the purchase), Ground-Up Construction loans (up to 92.5% LTC), DSCR Rental loans (up to 85% LTV with 30-year terms), and Bridge loans (up to 80% LTV with quick closings)."
       },
       {
         question: "What is the minimum and maximum loan amount?",
@@ -81,7 +81,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "How much down payment do I need?",
-        answer: "Down payment requirements vary by program: Fix & Flip requires as little as 5% of the purchase price on qualifying scenarios, Ground-Up Construction requires 10% (at 90% LTC), DSCR Rental requires as little as 15% (at 85% LTV), and Bridge requires 20% (at 80% LTV)."
+        answer: "Down payment requirements vary by program: Fix & Flip requires as little as 5% of the purchase price on qualifying scenarios, Ground-Up Construction requires 7.5% (at 92.5% LTC), DSCR Rental requires as little as 15% (at 85% LTV), and Bridge requires 20% (at 80% LTV)."
       },
     ],
   },

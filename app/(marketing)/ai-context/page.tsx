@@ -93,7 +93,7 @@ const PROGRAMS = [
   {
     name: 'Ground-Up Construction',
     href: '/loans/ground-up-construction',
-    facts: ['Up to 90% LTC', 'Milestone-based draws', 'Residential new builds'],
+    facts: ['Up to 92.5% LTC', 'Milestone-based draws', 'Residential new builds'],
   },
   {
     name: 'Commercial Lending',
