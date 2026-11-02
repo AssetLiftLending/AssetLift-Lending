@@ -33,7 +33,7 @@ const LoanPrograms = () => {
       id: "ground-up",
       title: "Ground-Up",
       subtitle: "New build financing",
-      maxValue: "90",
+      maxValue: "92.5",
       loanType: "LTC",
       loanTypeLabel: "COST",
       highlights: [

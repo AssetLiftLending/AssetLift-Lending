@@ -23,7 +23,7 @@ export const PROGRAM_TERMS = {
       'Bridge terms depend on collateral, exit plan, title, valuation, borrower profile, and file complexity.',
   },
   groundUp: {
-    maxLtc: 'Up to 90% LTC',
+    maxLtc: 'Up to 92.5% LTC',
     maxCompletedValue: 'Up to 70% completed value',
     loanRange: '$150K to $5MM',
     drawStructure: 'Construction draws released as work is verified',
