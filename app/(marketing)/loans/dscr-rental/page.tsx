@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { createMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -80,6 +81,13 @@ export default function DSCRRentalPage() {
         dscrMethodGuide
         cta={{ heading: 'Check this rental property', copy: 'Send the property address, purchase price or value, monthly rent, taxes, insurance, HOA dues, requested loan amount, and target closing date. AssetLift will review the scenario across available DSCR programs.', primaryLabel: 'Request DSCR Terms', primaryHref: '/apply?loanPurpose=dscr&source=dscr-rental-page', secondaryLabel: 'Calculate DSCR First', secondaryHref: '/tools/dscr-calculator' }}
       />
+      <div className="container px-4 md:px-6 pb-16">
+        <p className="text-sm text-muted-foreground">
+          <Link href="/loans/no-fee-refinance" className="underline hover:text-foreground">
+            Rate-and-term and cash-out refinance
+          </Link>
+        </p>
+      </div>
     </>
   );
 }
