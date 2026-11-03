@@ -28,6 +28,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
 import { sendFormNotification } from '@/services/notificationService';
 import { pushToCRM } from '@/services/crmService';
+import {
+  SMS_CONSENT_TEXT,
+  SMS_CONSENT_NOT_A_CONDITION,
+  buildSmsConsentRecord,
+} from '@/lib/sms-consent';
 
 type UploadField =
   | 'llcDocumentsFile'
@@ -186,6 +191,9 @@ export default function BorrowerPackageForm() {
   ]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  // Optional and never required to submit: carriers reject a campaign whose
+  // consent box is pre-ticked or gates the form.
+  const [smsConsent, setSmsConsent] = useState(false);
   const maxUploadBytes = 10 * 1024 * 1024;
 
   const schema = {
@@ -322,6 +330,10 @@ export default function BorrowerPackageForm() {
 
     setIsSubmitting(true);
 
+    // Captured once, so the notification email and the CRM describe the same
+    // act of consent.
+    const consent = buildSmsConsentRecord(smsConsent, 'borrower-package');
+
     try {
       const submission = new FormData();
       submission.append('type', 'form');
@@ -340,6 +352,10 @@ export default function BorrowerPackageForm() {
       submission.append('ssnLast4', form.ssnLast4);
       submission.append('appraisalPaymentStatus', form.appraisalPaymentStatus);
       submission.append('message', form.notes);
+      submission.append('smsConsent', String(consent.smsConsent));
+      submission.append('smsConsentAt', consent.smsConsentAt ?? '');
+      submission.append('smsConsentText', consent.smsConsentText ?? '');
+      submission.append('smsConsentSource', consent.smsConsentSource ?? '');
 
       const onlineWorksheets = hasAnyWorksheetData();
       if (onlineWorksheets.hasData) {
@@ -374,6 +390,8 @@ export default function BorrowerPackageForm() {
         rehabAmount: form.rehabAmount || undefined,
         notes: form.notes || undefined,
         source: 'borrower-package',
+        smsConsent: consent.smsConsent,
+        smsConsentAt: consent.smsConsentAt ?? undefined,
       });
 
       // The uploaded documents travel by email only, so a failed send still
@@ -800,9 +818,25 @@ export default function BorrowerPackageForm() {
                       />
                     </div>
 
-                    <div className="rounded-2xl border border-border bg-secondary/15 p-5 text-sm text-muted-foreground">
-                      This resource is for business-purpose investment property financing only.
-                      Do not submit a full SSN or full credit card information through this form.
+                    <div className="space-y-4 rounded-2xl border border-border bg-secondary/15 p-5 text-sm text-muted-foreground">
+                      <label htmlFor="smsConsent" className="flex cursor-pointer items-start gap-3">
+                        <input
+                          id="smsConsent"
+                          name="smsConsent"
+                          type="checkbox"
+                          checked={smsConsent}
+                          onChange={(e) => setSmsConsent(e.target.checked)}
+                          className="mt-0.5 h-5 w-5 flex-shrink-0 cursor-pointer rounded border-border accent-primary"
+                        />
+                        <span className="leading-relaxed">
+                          {SMS_CONSENT_TEXT}{' '}
+                          <strong className="text-foreground">{SMS_CONSENT_NOT_A_CONDITION}</strong>
+                        </span>
+                      </label>
+                      <div className="border-t border-border pt-4">
+                        This resource is for business-purpose investment property financing only.
+                        Do not submit a full SSN or full credit card information through this form.
+                      </div>
                     </div>
 
                     <Button type="submit" size="lg" className="w-full rounded-full py-7 text-lg glow-primary" disabled={isSubmitting}>
