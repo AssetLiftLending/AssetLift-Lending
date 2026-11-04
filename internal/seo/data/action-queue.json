@@ -1,57 +1,47 @@
 {
-  "generatedAt": "2026-11-03T12:54:00.151Z",
+  "generatedAt": "2026-11-04T12:53:25.095Z",
   "connected": true,
-  "summary": "25 prioritized actions from real Search Console demand (top priority: /?utm_source=google&utm_medium=organic&utm_campaign=gbp).",
+  "summary": "25 prioritized actions from real Search Console demand (top priority: New York).",
   "items": [
-    {
-      "type": "improve-meta",
-      "target": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
-      "category": "General",
-      "priority": 420,
-      "impressions": 210,
-      "position": 6.8,
-      "rationale": "210 impressions at position 6.8 but only 6 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 367,
-      "impressions": 367,
+      "priority": 384,
+      "impressions": 384,
       "position": 0,
-      "rationale": "367 impressions across 10 queries mention New York.",
+      "rationale": "384 impressions across 11 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 340,
-      "impressions": 340,
+      "priority": 370,
+      "impressions": 370,
       "position": 0,
-      "rationale": "340 impressions across 14 queries mention New Jersey.",
+      "rationale": "370 impressions across 14 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/contact",
-      "category": "General",
-      "priority": 226,
-      "impressions": 113,
-      "position": 16.1,
-      "rationale": "113 impressions at position 16.1 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 223,
-      "impressions": 223,
+      "priority": 245,
+      "impressions": 245,
       "position": 0,
-      "rationale": "223 impressions across 8 queries mention Connecticut.",
+      "rationale": "245 impressions across 9 queries mention Connecticut.",
       "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/contact",
+      "category": "General",
+      "priority": 230,
+      "impressions": 115,
+      "position": 16.4,
+      "rationale": "115 impressions at position 16.4 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
@@ -67,51 +57,71 @@
       "type": "build-demand-page",
       "target": "North Carolina",
       "category": "Geo",
-      "priority": 151,
-      "impressions": 151,
+      "priority": 144,
+      "impressions": 144,
       "position": 0,
-      "rationale": "151 impressions across 7 queries mention North Carolina.",
+      "rationale": "144 impressions across 7 queries mention North Carolina.",
       "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/how-it-works",
       "category": "General",
-      "priority": 128,
-      "impressions": 64,
-      "position": 3.9,
-      "rationale": "64 impressions at position 3.9 but only 0 clicks.",
+      "priority": 130,
+      "impressions": 65,
+      "position": 3.8,
+      "rationale": "65 impressions at position 3.8 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/lending/new-york/new-rochelle",
+      "category": "General",
+      "priority": 110,
+      "impressions": 55,
+      "position": 19.8,
+      "rationale": "55 impressions at position 19.8 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-york/valley-stream",
       "category": "General",
-      "priority": 102,
-      "impressions": 51,
-      "position": 11.2,
-      "rationale": "51 impressions at position 11.2 but only 0 clicks.",
+      "priority": 106,
+      "impressions": 53,
+      "position": 11.3,
+      "rationale": "53 impressions at position 11.3 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/compare/assetlift-alternatives-kiavi",
       "category": "General",
-      "priority": 98,
-      "impressions": 49,
-      "position": 16.8,
-      "rationale": "49 impressions at position 16.8 but only 0 clicks.",
+      "priority": 100,
+      "impressions": 50,
+      "position": 16.5,
+      "rationale": "50 impressions at position 16.5 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
       "target": "hard money jersey city",
       "category": "Hard Money",
-      "priority": 93,
-      "impressions": 62,
-      "position": 13.7,
-      "rationale": "Ranking at position 13.7 with 62 impressions — within striking distance of page 1.",
+      "priority": 96,
+      "impressions": 64,
+      "position": 14.6,
+      "rationale": "Ranking at position 14.6 with 64 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/dscr-loans-explained",
+      "category": "DSCR / Rental",
+      "priority": 80,
+      "impressions": 40,
+      "position": 11.6,
+      "rationale": "40 impressions at position 11.6 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
@@ -134,34 +144,24 @@
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
-      "type": "expand-content",
-      "target": "hard money lender new rochelle",
-      "category": "Hard Money",
-      "priority": 59,
-      "impressions": 39,
-      "position": 16.3,
-      "rationale": "Ranking at position 16.3 with 39 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
       "type": "improve-meta",
       "target": "/compare/assetlift-alternatives-rcn-capital",
       "category": "General",
-      "priority": 56,
-      "impressions": 28,
-      "position": 9.7,
-      "rationale": "28 impressions at position 9.7 but only 0 clicks.",
+      "priority": 68,
+      "impressions": 34,
+      "position": 9.4,
+      "rationale": "34 impressions at position 9.4 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
-      "type": "improve-meta",
-      "target": "/blog/dscr-loans-explained",
-      "category": "DSCR / Rental",
-      "priority": 54,
-      "impressions": 27,
-      "position": 13.2,
-      "rationale": "27 impressions at position 13.2 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+      "type": "expand-content",
+      "target": "hard money lender new rochelle",
+      "category": "Hard Money",
+      "priority": 62,
+      "impressions": 41,
+      "position": 15.8,
+      "rationale": "Ranking at position 15.8 with 41 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "improve-meta",
@@ -171,6 +171,36 @@
       "impressions": 24,
       "position": 6.1,
       "rationale": "24 impressions at position 6.1 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "add-internal-links",
+      "target": "how do lenders verify rent for a dscr loan?",
+      "category": "DSCR / Rental",
+      "priority": 45,
+      "impressions": 30,
+      "position": 8.6,
+      "rationale": "Ranking at position 8.6 with 30 impressions — within striking distance of page 1.",
+      "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/compare/assetlift-alternatives-lima-one",
+      "category": "General",
+      "priority": 44,
+      "impressions": 22,
+      "position": 6.7,
+      "rationale": "22 impressions at position 6.7 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/apply",
+      "category": "General",
+      "priority": 42,
+      "impressions": 21,
+      "position": 7.4,
+      "rationale": "21 impressions at position 7.4 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -194,26 +224,6 @@
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
-      "type": "expand-content",
-      "target": "hard money newark",
-      "category": "Hard Money",
-      "priority": 41,
-      "impressions": 27,
-      "position": 20,
-      "rationale": "Ranking at position 20 with 27 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/apply",
-      "category": "General",
-      "priority": 40,
-      "impressions": 20,
-      "position": 7.7,
-      "rationale": "20 impressions at position 7.7 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
       "type": "improve-meta",
       "target": "/compare/assetlift-vs-new-silver",
       "category": "General",
@@ -227,21 +237,11 @@
       "type": "expand-content",
       "target": "yonkers hard money loans",
       "category": "Hard Money",
-      "priority": 39,
-      "impressions": 26,
-      "position": 19.1,
-      "rationale": "Ranking at position 19.1 with 26 impressions — within striking distance of page 1.",
+      "priority": 36,
+      "impressions": 24,
+      "position": 14.3,
+      "rationale": "Ranking at position 14.3 with 24 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "add-internal-links",
-      "target": "how do lenders verify rent for a dscr loan?",
-      "category": "DSCR / Rental",
-      "priority": 30,
-      "impressions": 20,
-      "position": 8.7,
-      "rationale": "Ranking at position 8.7 with 20 impressions — within striking distance of page 1.",
-      "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
     },
     {
       "type": "expand-content",
