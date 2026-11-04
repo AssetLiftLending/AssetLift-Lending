@@ -7,9 +7,9 @@ import { ArrowRight, Shield, Zap, Users, Award, Phone, Mail, MapPin } from 'luci
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Us | Private Real Estate Lending',
+  title: 'About AssetLift Lending | Direct Private Real Estate Lender',
   description:
-    'AssetLift Lending provides private financing for real estate investors. Fix & flip, DSCR, bridge, and construction loans in 46 states.',
+    'AssetLift Lending is a direct private lender for real estate investors in 46 states: fix and flip, DSCR, bridge and construction loans. Call 929-639-2284.',
   path: '/about',
 });
 
