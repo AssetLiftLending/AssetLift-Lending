@@ -31,7 +31,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       },
       {
         name: 'Westchester and the Hudson Valley',
-        markets: 'Yonkers, Mount Vernon, New Rochelle, White Plains, Newburgh, Poughkeepsie',
+        markets: 'Yonkers, Mount Vernon, New Rochelle, White Plains, Newburgh, Poughkeepsie, Kingston',
         detail:
           'Older two- to four-family housing stock near rail lines draws both flippers and rental buyers. Lenders look closely at permits, older systems, and whether the finish level fits the local resale bracket. Rental holds in these markets often refinance into DSCR once units are leased.',
       },
@@ -78,6 +78,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Hard money lender in Yonkers', href: '/lending/new-york/yonkers' },
       { label: 'Hard money lender in New Rochelle', href: '/lending/new-york/new-rochelle' },
       { label: 'Westchester County hard money and apartment loans', href: '/lending/new-york/westchester-county' },
+      { label: 'Hard money lender in Kingston', href: '/lending/new-york/kingston' },
       { label: 'Hard money lender in Valley Stream', href: '/lending/new-york/valley-stream' },
       { label: 'Brooklyn investor loans', href: '/lending/new-york/brooklyn' },
       { label: 'Buffalo investor loans', href: '/lending/new-york/buffalo' },
