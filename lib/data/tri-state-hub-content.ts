@@ -98,7 +98,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       },
       {
         name: 'Hudson and Essex counties',
-        markets: 'Jersey City, Hoboken, Bayonne, Newark, East Orange, Irvington',
+        markets: 'Jersey City, Hoboken, Bayonne, Union City, West New York, Newark, East Orange, Irvington',
         detail:
           'Two- to four-family houses and small mixed-use buildings dominate. Files move faster when the legal unit count, tenant status, and rent support are documented up front. Jersey City and Hoboken carry higher values and tighter resale bands; Newark and the Oranges offer more spread with more scope risk.',
       },
@@ -147,6 +147,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Hard money loans in Jersey City', href: '/lending/new-jersey/jersey-city' },
       { label: 'Hard money and fix and flip loans in Newark', href: '/lending/new-jersey/newark' },
       { label: 'Hoboken hard money and asset-based loans', href: '/lending/new-jersey/hoboken' },
+      { label: 'Hudson County apartment and multifamily loans', href: '/lending/new-jersey/hudson-county' },
       { label: 'Long Branch hard money loans', href: '/lending/new-jersey/long-branch' },
       { label: 'Cape May County hard money and shore rental loans', href: '/lending/new-jersey/cape-may-county' },
       { label: 'Camden County investor loans', href: '/lending/new-jersey/camden-county' },
