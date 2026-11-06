@@ -1,25 +1,18 @@
 {
-  "generatedAt": "2026-11-05T15:13:46.280Z",
+  "generatedAt": "2026-11-06T12:54:14.633Z",
   "latestDay": {
-    "date": "2026-11-02",
-    "clicks": 0,
-    "impressions": 273,
-    "ctr": 0,
-    "position": 40.5
+    "date": "2026-11-03",
+    "clicks": 1,
+    "impressions": 220,
+    "ctr": 0.0045,
+    "position": 51.8
   },
   "dayOverDay": {
-    "clicks": 0,
-    "impressions": -117,
-    "positionChange": 16
+    "clicks": 1,
+    "impressions": -53,
+    "positionChange": -11.3
   },
   "days": [
-    {
-      "date": "2026-10-05",
-      "clicks": 1,
-      "impressions": 258,
-      "ctr": 0.0039,
-      "position": 40.5
-    },
     {
       "date": "2026-10-06",
       "clicks": 1,
@@ -215,6 +208,13 @@
       "impressions": 273,
       "ctr": 0,
       "position": 40.5
+    },
+    {
+      "date": "2026-11-03",
+      "clicks": 1,
+      "impressions": 220,
+      "ctr": 0.0045,
+      "position": 51.8
     }
   ]
 }
