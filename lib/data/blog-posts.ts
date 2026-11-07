@@ -108,7 +108,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     title:
       "DSCR Loans Explained: How to Qualify Without Income Verification",
     description:
-      "Discover how DSCR loans let real estate investors qualify based on rental income, not personal income. Learn requirements, calculations, and how to apply.",
+      "How DSCR loans work: qualify on a rental's income, not your W-2s. See the formula, how lenders verify rent, and a worked example. Call 929-639-2284.",
     publishedAt: "2026-02-07T08:00:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
