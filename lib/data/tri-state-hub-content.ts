@@ -83,7 +83,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Brooklyn investor loans', href: '/lending/new-york/brooklyn' },
       { label: 'Buffalo investor loans', href: '/lending/new-york/buffalo' },
       { label: 'Rochester investor loans', href: '/lending/new-york/rochester' },
-      { label: 'Syracuse investor loans', href: '/lending/new-york/syracuse' },
+      { label: 'Hard money lenders in Syracuse', href: '/lending/new-york/syracuse' },
     ],
   },
   'new-jersey': {
