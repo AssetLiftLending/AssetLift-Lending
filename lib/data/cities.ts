@@ -2735,7 +2735,7 @@ export const CITIES: CityData[] = [
       },
       {
         question: "What hard money loan options are available in Albuquerque?",
-        answer: "Fix-and-flip, bridge, and DSCR loans are available in Albuquerque through national and regional lenders. The market's lower property values mean some lenders set minimum loan floors that exclude smaller transactions. AssetLift funds deals from $100,000 across New Mexico.",
+        answer: "Fix-and-flip, bridge, and DSCR loans are available in Albuquerque through national and regional lenders. The market's lower property values mean some lenders set minimum loan floors that exclude smaller transactions. AssetLift funds deals from $50,000 across New Mexico.",
       },
       {
         question: "How does Albuquerque compare to other New Mexico markets?",
@@ -2793,7 +2793,7 @@ export const CITIES: CityData[] = [
     topNeighborhoods: ["North Omaha", "South Omaha", "Midtown", "Benson", "Dundee", "Millard", "Bellevue", "Papillion"],
     faqs: [
       { question: "Why is Omaha popular with cash flow investors?", answer: "Omaha's median home price of around $230,000 produces rent-to-price ratios that support DSCR qualification well above 1.0. The city's economic stability and low vacancy rates mean cash flow is consistent year-over-year rather than volatile." },
-      { question: "What types of hard money loans are available in Omaha?", answer: "Fix-and-flip, bridge, DSCR, and limited ground-up construction financing are available in Omaha. Some national lenders have minimum loan size requirements that exclude smaller transactions common in this market — AssetLift funds deals from $100,000 across Nebraska." },
+      { question: "What types of hard money loans are available in Omaha?", answer: "Fix-and-flip, bridge, DSCR, and limited ground-up construction financing are available in Omaha. Some national lenders have minimum loan size requirements that exclude smaller transactions common in this market — AssetLift funds deals from $50,000 across Nebraska." },
       { question: "Is Omaha a good fix-and-flip market?", answer: "Omaha works for fix-and-flip when the investor understands the resale market and targets neighborhoods with active buyer demand. North Omaha and older parts of the metro offer the lowest entry prices and genuine value-add opportunity, but require local market knowledge to execute profitably." },
     ],
   },
@@ -2810,7 +2810,7 @@ export const CITIES: CityData[] = [
     investmentHighlight: "Tulsa's extremely low entry prices relative to achievable rents produce some of the highest DSCR ratios of any market in the country. Investors focused on cash flow and yield rather than appreciation find Tulsa consistently delivers strong returns.",
     topNeighborhoods: ["North Tulsa", "East Tulsa", "Midtown", "Brookside", "Owen Park", "Kendall-Whittier", "Turley", "Jenks"],
     faqs: [
-      { question: "What are hard money loan rates in Tulsa?", answer: "Tulsa hard money rates typically range from 9% to 11.5% with 1 to 2 points at closing. The market's low property values mean smaller average loan amounts, and some national lenders may require minimum loan sizes. AssetLift funds qualifying deals in Tulsa from $100,000." },
+      { question: "What are hard money loan rates in Tulsa?", answer: "Tulsa hard money rates typically range from 9% to 11.5% with 1 to 2 points at closing. The market's low property values mean smaller average loan amounts, and some national lenders may require minimum loan sizes. AssetLift funds qualifying deals in Tulsa from $50,000." },
       { question: "Why is Tulsa popular with DSCR investors?", answer: "Tulsa's purchase prices are among the lowest of any major metro in the country, while rents remain at levels that support DSCR ratios of 1.3 to 1.8 on many well-priced acquisitions. This exceptional cash flow makes Tulsa attractive for investors building yield-focused portfolios." },
       { question: "Is Tulsa safe for real estate investment?", answer: "Like many affordable markets, Tulsa has significant neighborhood-level variation. Midtown, Brookside, and South Tulsa are more stable markets with consistent appreciation. North and East Tulsa offer higher yields but require deeper local knowledge to underwrite crime, vacancy, and tenant quality accurately." },
     ],
@@ -2888,7 +2888,7 @@ export const CITIES: CityData[] = [
     topNeighborhoods: ["Bay View", "Walker's Point", "Riverwest", "Harambee", "Sherman Park", "Clarke Square", "Brewer's Hill", "Riverdale"],
     faqs: [
       { question: "What makes Milwaukee attractive for cash flow investors?", answer: "Milwaukee's sub-$200,000 median home price combined with achievable market rents of $900-$1,500 per month produces DSCR ratios that comfortably exceed 1.0 on qualifying properties. The city's large renter population and consistent employment base support low vacancy rates for well-maintained rental properties." },
-      { question: "What hard money loan options are available in Milwaukee?", answer: "Fix-and-flip, bridge, and DSCR loans are available in Milwaukee. Some national lenders may have minimum loan amounts that affect smaller Milwaukee deals. AssetLift funds qualifying investment property loans from $100,000 across Wisconsin." },
+      { question: "What hard money loan options are available in Milwaukee?", answer: "Fix-and-flip, bridge, and DSCR loans are available in Milwaukee. Some national lenders may have minimum loan amounts that affect smaller Milwaukee deals. AssetLift funds qualifying investment property loans from $50,000 across Wisconsin." },
       { question: "What risks should investors watch in Milwaukee?", answer: "Milwaukee has significant neighborhood-level variation in tenant quality, vacancy, and property condition. Investors new to the market should research submarket fundamentals carefully and work with local property managers who have proven track records. Tax rates and delinquency rates vary significantly by neighborhood." },
     ],
   },
@@ -2924,7 +2924,7 @@ export const CITIES: CityData[] = [
     topNeighborhoods: ["West Greenville", "North Main", "Nicholtown", "Southernside", "Augusta Road Corridor", "Greer", "Mauldin", "Simpsonville"],
     faqs: [
       { question: "What makes Greenville SC a good investment market?", answer: "Greenville's BMW and Michelin manufacturing base creates stable, high-income employment that supports both homebuying demand and quality rental fundamentals. The city's downtown revitalization has driven appreciation in nearby neighborhoods, creating value-add opportunity for investors who entered before the transformation completed." },
-      { question: "What hard money options are available in Greenville SC?", answer: "Fix-and-flip, bridge, and DSCR loans are available in the Greenville-Spartanburg metro through national and regional lenders. AssetLift funds qualifying investment property deals from $100,000 across South Carolina." },
+      { question: "What hard money options are available in Greenville SC?", answer: "Fix-and-flip, bridge, and DSCR loans are available in the Greenville-Spartanburg metro through national and regional lenders. AssetLift funds qualifying investment property deals from $50,000 across South Carolina." },
       { question: "Is the Greenville market competitive for fix-and-flip investors?", answer: "Greenville has become increasingly competitive as its profile has risen nationally. Investors who can move quickly on off-market or distressed properties and execute efficiently find viable margins. West Greenville and Nicholtown continue to offer value-add opportunity for experienced operators." },
     ],
   },

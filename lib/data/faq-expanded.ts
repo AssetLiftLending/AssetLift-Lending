@@ -35,8 +35,12 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
         answer: "We offer four main loan programs: Fix & Flip loans (up to 95% LTC on the purchase), Ground-Up Construction loans (up to 92.5% LTC), DSCR Rental loans (up to 85% LTV with 30-year terms), and Bridge loans (up to 80% LTV with quick closings)."
       },
       {
+        question: "Do you offer 100% financing on a fix and flip?",
+        answer: "Yes, on a limited tier. 100% LTC covers the purchase and the approved rehab with no borrower cash into the deal, and all four conditions apply: 10 or more completed flips in the last 3 years, a 740+ FICO, a light renovation scope, and liquid reserves equal to 10% of total project cost verified in your account. Files that do not meet every one of these are underwritten on the standard program, which goes up to 95% of purchase with up to 100% of the approved rehab budget."
+      },
+      {
         question: "What is the minimum and maximum loan amount?",
-        answer: "Our minimum loan amount is $100,000 and our standard maximum is $5,000,000 per asset. For larger portfolio deals exceeding $5MM, we can facilitate institutional-grade funding through our capital partners."
+        answer: "Our minimum loan amount is $50,000 on fix and flip, $100,000 on DSCR and bridge, and $150,000 on ground-up construction. Our standard maximum is $5,000,000 per asset. For larger portfolio deals exceeding $5MM, we can facilitate institutional-grade funding through our capital partners."
       },
       {
         question: "What types of properties do you finance?",

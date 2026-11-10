@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: "What are your minimum loan requirements?",
-      answer: "Most programs start at $100,000 and go up to $5,000,000. We generally look for a 660+ credit profile, enough liquidity to support the deal, and a business plan that makes sense for the property and exit.",
+      answer: "Fix and flip starts at $50,000, DSCR and bridge at $100,000, and ground-up construction at $150,000, each up to $5,000,000. We generally look for a 660+ credit profile, enough liquidity to support the deal, and a business plan that makes sense for the property and exit.",
     },
     {
       question: "Do you require personal guarantees?",
