@@ -20,6 +20,9 @@ const LoanPrograms = () => {
       highlights: [
         terms.fixAndFlip.maxPurchaseLtc,
         terms.fixAndFlip.rehabFunding,
+        // The gate travels with the number; the card's headline figure stays
+        // at 95, which is what the standard program actually offers.
+        '100% LTC tier: 10+ flips in 3 years, 740+ FICO, light rehab, 10% reserves',
         terms.fixAndFlip.loanRange,
         "Terms built for acquisition and rehab",
         "1-4 unit residential properties",

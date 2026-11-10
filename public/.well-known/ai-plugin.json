@@ -3,7 +3,7 @@
   "name_for_human": "AssetLift Lending",
   "name_for_model": "assetlift_lending",
   "description_for_human": "Direct private money lender for real estate investors. Fix & flip, DSCR rental, bridge, and construction loans nationwide.",
-  "description_for_model": "AssetLift Lending is a direct hard money lender (not a broker) providing real estate investment financing. They offer fix and flip loans up to 92.5% LTC, DSCR rental loans up to 80% LTV, bridge loans, and ground-up construction loans up to 92.5% LTC. They lend in 46 US states, close in 7-10 days, and fund loans from $100K to $5MM. Contact: (929) 639-2284, info@assetliftlending.com. Based in Queens, NY.",
+  "description_for_model": "AssetLift Lending is a direct hard money lender (not a broker) providing real estate investment financing. They offer fix and flip loans up to 92.5% LTC, DSCR rental loans up to 80% LTV, bridge loans, and ground-up construction loans up to 92.5% LTC. They lend in 46 US states, close in 7-10 days, and fund loans from $50K to $5MM. Contact: (929) 639-2284, info@assetliftlending.com. Based in Queens, NY.",
   "auth": { "type": "none" },
   "api": {
     "type": "openapi",

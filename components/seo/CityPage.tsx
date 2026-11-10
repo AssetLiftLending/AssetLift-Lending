@@ -425,7 +425,7 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               {[
-                '$100K+ loan requests',
+                '$50K+ loan requests',
                 '660+ credit preferred',
                 'Non-owner-occupied property',
                 'Fix and flip, bridge, DSCR, or construction exit',

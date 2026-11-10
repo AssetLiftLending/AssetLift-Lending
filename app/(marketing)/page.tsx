@@ -47,7 +47,7 @@ export default function HomePage() {
     {
       question: "What are your minimum loan requirements?",
       answer:
-        "Our minimum loan amount is $100,000 and maximum is $5,000,000. We require a minimum credit score of 660 and prioritize borrowers with a clear investment property strategy, documented numbers, and a credible exit plan.",
+        "Our minimum loan amount is $50,000 on fix and flip, $100,000 on DSCR and bridge, and $150,000 on ground-up construction. The maximum is $5,000,000. We require a minimum credit score of 660 and prioritize borrowers with a clear investment property strategy, documented numbers, and a credible exit plan.",
     },
     {
       question: "What states do you lend in?",
@@ -61,11 +61,11 @@ export default function HomePage() {
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
     description:
-      'Direct private lender for real estate investors. Business-purpose fix and flip, DSCR rental, bridge, and ground-up construction loans from $100K to $5M, 660+ credit preferred.',
+      'Direct private lender for real estate investors. Business-purpose fix and flip, DSCR rental, bridge, and ground-up construction loans from $50K to $5M, 660+ credit preferred.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
-    priceRange: '$100,000 - $5,000,000',
+    priceRange: '$50,000 - $5,000,000',
     currenciesAccepted: 'USD',
     address: {
       '@type': 'PostalAddress',
