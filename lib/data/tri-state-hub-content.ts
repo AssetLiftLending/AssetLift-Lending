@@ -80,6 +80,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Westchester County hard money and apartment loans', href: '/lending/new-york/westchester-county' },
       { label: 'Hard money lender in Kingston', href: '/lending/new-york/kingston' },
       { label: 'Hard money lender in Valley Stream', href: '/lending/new-york/valley-stream' },
+      { label: 'Hard money lenders in Hempstead', href: '/lending/new-york/hempstead' },
       { label: 'Brooklyn investor loans', href: '/lending/new-york/brooklyn' },
       { label: 'Buffalo investor loans', href: '/lending/new-york/buffalo' },
       { label: 'Rochester investor loans', href: '/lending/new-york/rochester' },
