@@ -20,6 +20,7 @@ const RESOURCES = [
   { label: 'Compare', href: '/compare' },
   { label: 'Broker Partners', href: '/brokers' },
   { label: 'Markets', href: '/markets' },
+  { label: 'Funded Deals', href: '/funded-deals' },
   { label: 'How Funding Works', href: '/how-funding-works' },
   { label: 'State Disclosures', href: '/state-disclosures' },
   { label: 'Fix & Flip Borrower Package', href: '/resources/fix-and-flip-borrower-package' },

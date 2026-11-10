@@ -120,6 +120,7 @@ export const SEO_CORE_PAGE_TARGETS = [
   '/about',
   '/how-it-works',
   '/how-funding-works',
+  '/funded-deals',
   '/contact',
   '/faq',
   '/compare',

@@ -85,6 +85,9 @@ const Footer = () => {
                 <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
               </li>
               <li>
+                <Link href="/funded-deals" className="hover:text-primary transition-colors">Funded Deals</Link>
+              </li>
+              <li>
                 <Link href="/answers/asset-based-loan-companies-real-estate-investors" className="hover:text-primary transition-colors">Asset-Based Lenders</Link>
               </li>
               <li>

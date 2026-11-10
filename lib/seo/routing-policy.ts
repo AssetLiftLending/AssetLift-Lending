@@ -167,6 +167,7 @@ export const INDEXABLE_STATIC_PATHS = new Set([
   '/contact',
   '/how-it-works',
   '/how-funding-works',
+  '/funded-deals',
   '/state-disclosures',
   '/privacy',
   '/terms',
