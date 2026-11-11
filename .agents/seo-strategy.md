@@ -5,6 +5,34 @@
 > page count or vanity traffic. Every page and every automated action must move a
 > qualified investor-borrower toward `/apply`.
 
+## Owner rules (binding, effective Nov 10, 2026)
+
+These are the owner's standing rules. They override everything else in this file,
+in `CLAUDE.md`, and in any other repo doc, prompt, or automation. Where anything
+disagrees with them, these rules win.
+
+**Above all: never go backward.** Nothing may change anything already in place
+that ranks. Every improvement must move the site forward, never backward. If you
+cannot verify from Search Console data that a change is safe for a page that
+ranks, hold the change and flag it for the owner instead.
+
+1. **Additive-only on ranking pages, Search Console checked first.** Check Search
+   Console before touching a page. Pages with clicks or a top-20 position on any
+   query get additive changes only (new sections, FAQs, internal links,
+   structured data). Never rewrite, replace, or delete their title, H1, or
+   existing copy. Every title keeps the "| AssetLift Lending" suffix.
+2. **The owner merges every PR himself.** Open the PR, wait for the Vercel
+   preview check, and stop. Never merge or commit to main.
+3. **No term, rate, or licensing changes without approval.** No changes to rates,
+   loan minimums or maximums, terms, licensing text, phone numbers, or
+   legal/privacy pages without the owner's explicit approval of that specific
+   change.
+4. **Free only.** No paid SEO tools, paid backlinks, paid placements,
+   fee-charging directories, or new subscriptions.
+5. **Brand-only outreach.** Outreach and profiles are "AssetLift Lending" only: no
+   personal names, business mailbox only. Draft for the owner's approval; never
+   send, register, or publish on your own.
+
 ## Objectives
 1. Increase qualified lending leads/applications.
 2. Dominate high-intent commercial lending searches.

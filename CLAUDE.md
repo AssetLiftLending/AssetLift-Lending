@@ -11,6 +11,15 @@ Built with Next.js 15, Tailwind CSS, deployed on Vercel.
 - Marketing context: `.agents/product-marketing-context.md`
 - SEO audit: `SEO-Audit-AssetLiftLending.md`
 
+## Owner Rules (binding, effective Nov 10, 2026)
+The owner's standing rules are stated in full in `.agents/seo-strategy.md` under "Owner rules". They override everything in this file and in any other repo doc or automation:
+- **Above all: never go backward.** Nothing may change anything already in place that ranks. If you cannot verify from Search Console data that a change is safe for a page that ranks, hold it and flag it for the owner.
+- **Additive-only on ranking pages, Search Console checked first.** Pages with clicks or a top-20 position on any query get additive changes only (new sections, FAQs, internal links, structured data). Never rewrite, replace, or delete their title, H1, or existing copy. Every title keeps the "| AssetLift Lending" suffix.
+- **The owner merges every PR.** Open the PR, wait for the Vercel preview check, and stop. Never merge or commit to main.
+- **No changes to rates, loan minimums or maximums, terms, licensing text, phone numbers, or legal/privacy pages** without the owner's explicit approval of that specific change.
+- **Free only:** no paid SEO tools, paid backlinks, paid placements, fee-charging directories, or new subscriptions.
+- **Brand-only outreach:** outreach and profiles are "AssetLift Lending" only, no personal names, business mailbox only. Draft for the owner's approval; never send, register, or publish on your own.
+
 ## Key Rules
 - Do NOT change UI/visual design unless explicitly asked
 - This is a YMYL (Your Money Your Life) finance site -- content must be accurate and substantive
@@ -23,12 +32,12 @@ Built with Next.js 15, Tailwind CSS, deployed on Vercel.
 When starting a session, if asked to improve content or if running /expand-content:
 
 1. Read `lib/data/blog-posts.ts` and identify blog posts with thin or generic content
-2. Pick the highest-priority post to improve (Fix & Flip and DSCR categories first)
+2. Pick the highest-priority post to improve (Fix & Flip and DSCR categories first). Check Search Console for it first: if it has clicks or a top-20 position on any query, make additive changes only and never rewrite its title, H1, or existing copy; if you cannot verify the change is safe, hold it and flag it for the owner.
 3. Focus on: specific dollar examples, real percentages, actionable steps, and answering the questions a borrower would actually ask. Every sentence should earn its place.
 4. Do NOT pad content to hit a word count. A tight 800-word post that nails the intent is better than a bloated 2,000-word post with filler.
 5. Maintain the existing voice: professional, direct, investor-to-investor
 6. After improving, update the `readTime` field to reflect actual length
-7. Commit with message: "Improve blog post: [post title]"
+7. Commit on a new branch with message "Improve blog post: [post title]", open a pull request, wait for the Vercel preview check, and stop. Never merge or commit to main; the owner merges every PR.
 
 ### Content Priority Queue (work through in order):
 1. Fix & Flip category posts (highest traffic potential)
