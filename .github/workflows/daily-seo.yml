@@ -30,12 +30,35 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Publication blackout check (Shabbat / Jewish holidays)
+        id: blackout
+        # Owner rule: no publishing on Shabbat or Jewish holidays and their eves.
+        # Fails closed: if this step errors, the guarded steps below are skipped.
+        run: |
+          mkdir -p "$RUNNER_TEMP/blackout"
+          cp scripts/publication-blackout.mjs "$RUNNER_TEMP/blackout/"
+          npm install --prefix "$RUNNER_TEMP/blackout" --no-save --no-audit --no-fund @hebcal/core@6.14.6
+          node "$RUNNER_TEMP/blackout/publication-blackout.mjs"
+
       - name: Generate SEO content
+        if: steps.blackout.outputs.blackout == 'false'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generate-seo.mjs
 
+      - name: Publication blackout re-check before push
+        id: blackout_recheck
+        # Owner rule: no publishing on Shabbat or Jewish holidays and their eves.
+        # Fails closed: if this step errors, the guarded steps below are skipped.
+        if: steps.blackout.outputs.blackout == 'false'
+        run: |
+          mkdir -p "$RUNNER_TEMP/blackout"
+          cp scripts/publication-blackout.mjs "$RUNNER_TEMP/blackout/"
+          npm install --prefix "$RUNNER_TEMP/blackout" --no-save --no-audit --no-fund @hebcal/core@6.14.6
+          node "$RUNNER_TEMP/blackout/publication-blackout.mjs"
+
       - name: Commit and push if content was added
+        if: steps.blackout.outputs.blackout == 'false' && steps.blackout_recheck.outputs.blackout == 'false'
         run: |
           git config user.name "AssetLift SEO Bot"
           git config user.email "seo-bot@assetliftlending.com"
