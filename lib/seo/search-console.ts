@@ -5,6 +5,7 @@ import type {
   SeoOpportunitiesReport,
   SeoOpportunityPage,
   SeoOpportunityQuery,
+  SeoPageRow,
   SeoTopQuery,
   SeoWindowSummary,
 } from './types';
@@ -237,6 +238,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       dailyMetrics: [],
       message:
         'Missing Google Search Console service account configuration. Set GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, and GOOGLE_SEARCH_CONSOLE_SITE_URL.',
+      pages: [],
     };
   }
 
@@ -314,6 +316,18 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
           'High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn.',
       }));
 
+    // Full page-level rows (unfiltered), persisted as an additive measurement
+    // field. Same path normalization as weakCtrPages; ordered by impressions.
+    const pages: SeoPageRow[] = [...pageRows]
+      .sort((a, b) => (b.impressions ?? 0) - (a.impressions ?? 0))
+      .map((row) => ({
+        page: (row.keys?.[0] ?? '').replace(config.property, '/'),
+        clicks: row.clicks ?? 0,
+        impressions: row.impressions ?? 0,
+        ctr: Number((row.ctr ?? 0).toFixed(4)),
+        position: Number((row.position ?? 0).toFixed(1)),
+      }));
+
     const topQueries: SeoTopQuery[] = [...queryRows]
       .sort((a, b) => (b.impressions ?? 0) - (a.impressions ?? 0))
       .slice(0, 150)
@@ -371,6 +385,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       recent,
       dailyMetrics,
       message: `Found ${strikingDistanceQueries.length} striking-distance queries and ${weakCtrPages.length} pages with weak click-through over the last ${ANALYTICS_DAYS} days.`,
+      pages,
     };
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Unknown Search Console analytics error';
@@ -386,6 +401,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       recent: null,
       dailyMetrics: [],
       message,
+      pages: [],
     };
   }
 }
