@@ -57,7 +57,18 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
+      - name: Publication blackout check (Shabbat / Jewish holidays)
+        id: blackout
+        # Owner rule: no publishing on Shabbat or Jewish holidays and their eves.
+        # Fails closed: if this step errors, the guarded steps below are skipped.
+        run: |
+          mkdir -p "$RUNNER_TEMP/blackout"
+          cp scripts/publication-blackout.mjs "$RUNNER_TEMP/blackout/"
+          npm install --prefix "$RUNNER_TEMP/blackout" --no-save --no-audit --no-fund @hebcal/core@6.14.6
+          node "$RUNNER_TEMP/blackout/publication-blackout.mjs"
+
       - name: Pick job for this schedule slot
+        if: steps.blackout.outputs.blackout == 'false'
         id: pick
         run: |
           if [ -n "${{ github.event.inputs.job }}" ]; then
@@ -82,9 +93,11 @@ jobs:
           echo "Running SEO job: $JOB (schedule: ${{ github.event.schedule }})"
 
       - name: Install dependencies
+        if: steps.blackout.outputs.blackout == 'false'
         run: npm ci
 
       - name: Run SEO job
+        if: steps.blackout.outputs.blackout == 'false'
         env:
           SEO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SEO_GITHUB_REPO: ${{ github.repository }}
