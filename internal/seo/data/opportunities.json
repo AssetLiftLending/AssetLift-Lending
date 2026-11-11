@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T12:53:51.116Z",
+  "generatedAt": "2026-11-11T13:22:41.036Z",
   "connected": true,
   "dateRange": {
     "startDate": "2026-10-11",
@@ -1544,5 +1544,1064 @@
       "position": 49.4
     }
   ],
-  "message": "Found 20 striking-distance queries and 6 pages with weak click-through over the last 28 days."
+  "message": "Found 20 striking-distance queries and 6 pages with weak click-through over the last 28 days.",
+  "pages": [
+    {
+      "page": "/loans/fix-and-flip",
+      "clicks": 2,
+      "impressions": 758,
+      "ctr": 0.0026,
+      "position": 64.3
+    },
+    {
+      "page": "/lending/new-york/nassau-county",
+      "clicks": 0,
+      "impressions": 591,
+      "ctr": 0,
+      "position": 47.9
+    },
+    {
+      "page": "/lending/new-york",
+      "clicks": 2,
+      "impressions": 502,
+      "ctr": 0.004,
+      "position": 67
+    },
+    {
+      "page": "/lending/connecticut",
+      "clicks": 0,
+      "impressions": 446,
+      "ctr": 0,
+      "position": 67.5
+    },
+    {
+      "page": "/tools/dscr-calculator",
+      "clicks": 0,
+      "impressions": 432,
+      "ctr": 0,
+      "position": 40.1
+    },
+    {
+      "page": "/lending/new-jersey/newark",
+      "clicks": 0,
+      "impressions": 364,
+      "ctr": 0,
+      "position": 50.5
+    },
+    {
+      "page": "/loans/ground-up-construction",
+      "clicks": 0,
+      "impressions": 360,
+      "ctr": 0,
+      "position": 65.4
+    },
+    {
+      "page": "/lending/new-jersey/jersey-city",
+      "clicks": 0,
+      "impressions": 334,
+      "ctr": 0,
+      "position": 37.6
+    },
+    {
+      "page": "/lending/new-jersey",
+      "clicks": 0,
+      "impressions": 329,
+      "ctr": 0,
+      "position": 65.3
+    },
+    {
+      "page": "/tools/fix-and-flip-calculator",
+      "clicks": 2,
+      "impressions": 324,
+      "ctr": 0.0062,
+      "position": 20.8
+    },
+    {
+      "page": "/loans/dscr-rental",
+      "clicks": 0,
+      "impressions": 300,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "page": "/lending/new-york/brooklyn",
+      "clicks": 0,
+      "impressions": 236,
+      "ctr": 0,
+      "position": 56.5
+    },
+    {
+      "page": "/lending/north-carolina",
+      "clicks": 0,
+      "impressions": 224,
+      "ctr": 0,
+      "position": 68.7
+    },
+    {
+      "page": "/",
+      "clicks": 12,
+      "impressions": 208,
+      "ctr": 0.0577,
+      "position": 26.1
+    },
+    {
+      "page": "/lending/new-jersey/sussex-county",
+      "clicks": 0,
+      "impressions": 204,
+      "ctr": 0,
+      "position": 23.4
+    },
+    {
+      "page": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "clicks": 6,
+      "impressions": 176,
+      "ctr": 0.0341,
+      "position": 7.7
+    },
+    {
+      "page": "/lending/new-jersey/west-new-york",
+      "clicks": 0,
+      "impressions": 162,
+      "ctr": 0,
+      "position": 53.9
+    },
+    {
+      "page": "/blog/fix-and-flip-loan-requirements",
+      "clicks": 0,
+      "impressions": 154,
+      "ctr": 0,
+      "position": 66.7
+    },
+    {
+      "page": "/lending/new-jersey/cape-may-county",
+      "clicks": 0,
+      "impressions": 154,
+      "ctr": 0,
+      "position": 28.5
+    },
+    {
+      "page": "/lending/new-jersey/camden",
+      "clicks": 0,
+      "impressions": 135,
+      "ctr": 0,
+      "position": 60.9
+    },
+    {
+      "page": "/lending/new-york/yonkers",
+      "clicks": 0,
+      "impressions": 132,
+      "ctr": 0,
+      "position": 21.3
+    },
+    {
+      "page": "/lending/texas/san-antonio",
+      "clicks": 0,
+      "impressions": 128,
+      "ctr": 0,
+      "position": 41.3
+    },
+    {
+      "page": "/loans/bridge",
+      "clicks": 1,
+      "impressions": 113,
+      "ctr": 0.0088,
+      "position": 59.9
+    },
+    {
+      "page": "/lending/new-jersey/manalapan",
+      "clicks": 0,
+      "impressions": 99,
+      "ctr": 0,
+      "position": 37.6
+    },
+    {
+      "page": "/compare/assetlift-alternatives-kiavi",
+      "clicks": 0,
+      "impressions": 97,
+      "ctr": 0,
+      "position": 30.4
+    },
+    {
+      "page": "/lending/new-jersey/lakewood",
+      "clicks": 0,
+      "impressions": 90,
+      "ctr": 0,
+      "position": 58.8
+    },
+    {
+      "page": "/lending/new-york/peekskill",
+      "clicks": 0,
+      "impressions": 87,
+      "ctr": 0,
+      "position": 52.7
+    },
+    {
+      "page": "/lending/new-jersey/hoboken",
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "page": "/contact",
+      "clicks": 0,
+      "impressions": 83,
+      "ctr": 0,
+      "position": 22.4
+    },
+    {
+      "page": "/lending/new-jersey/burlington-county",
+      "clicks": 0,
+      "impressions": 83,
+      "ctr": 0,
+      "position": 32.4
+    },
+    {
+      "page": "/markets",
+      "clicks": 0,
+      "impressions": 81,
+      "ctr": 0,
+      "position": 27.5
+    },
+    {
+      "page": "/blog/dscr-loans-explained",
+      "clicks": 0,
+      "impressions": 79,
+      "ctr": 0,
+      "position": 11.1
+    },
+    {
+      "page": "/lending/texas/houston",
+      "clicks": 0,
+      "impressions": 77,
+      "ctr": 0,
+      "position": 55.1
+    },
+    {
+      "page": "/lending/texas/austin",
+      "clicks": 0,
+      "impressions": 76,
+      "ctr": 0,
+      "position": 45.3
+    },
+    {
+      "page": "/lending/new-york/fix-and-flip-loans",
+      "clicks": 0,
+      "impressions": 75,
+      "ctr": 0,
+      "position": 57.5
+    },
+    {
+      "page": "/lending/connecticut/fix-and-flip-loans",
+      "clicks": 0,
+      "impressions": 68,
+      "ctr": 0,
+      "position": 50.5
+    },
+    {
+      "page": "/about",
+      "clicks": 2,
+      "impressions": 66,
+      "ctr": 0.0303,
+      "position": 9.2
+    },
+    {
+      "page": "/faq",
+      "clicks": 0,
+      "impressions": 63,
+      "ctr": 0,
+      "position": 35.4
+    },
+    {
+      "page": "/lending/new-york/kingston",
+      "clicks": 0,
+      "impressions": 63,
+      "ctr": 0,
+      "position": 41.3
+    },
+    {
+      "page": "/lending/new-york/new-rochelle",
+      "clicks": 0,
+      "impressions": 63,
+      "ctr": 0,
+      "position": 18.3
+    },
+    {
+      "page": "/lending/new-york/valley-stream",
+      "clicks": 0,
+      "impressions": 62,
+      "ctr": 0,
+      "position": 16.6
+    },
+    {
+      "page": "/lending/new-york/port-chester",
+      "clicks": 0,
+      "impressions": 61,
+      "ctr": 0,
+      "position": 47.6
+    },
+    {
+      "page": "/lending/texas/fort-worth",
+      "clicks": 0,
+      "impressions": 58,
+      "ctr": 0,
+      "position": 27.1
+    },
+    {
+      "page": "/lending/new-jersey/kearny",
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 47.6
+    },
+    {
+      "page": "/lending/new-jersey/ocean-county",
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 40.6
+    },
+    {
+      "page": "/lending/new-york/beacon",
+      "clicks": 0,
+      "impressions": 47,
+      "ctr": 0,
+      "position": 69.7
+    },
+    {
+      "page": "/how-it-works",
+      "clicks": 0,
+      "impressions": 43,
+      "ctr": 0,
+      "position": 4.1
+    },
+    {
+      "page": "/lending/new-jersey/wayne",
+      "clicks": 1,
+      "impressions": 42,
+      "ctr": 0.0238,
+      "position": 30.2
+    },
+    {
+      "page": "/lending/new-jersey/egg-harbor-township",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 29.9
+    },
+    {
+      "page": "/lending/new-jersey/pennsauken",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 70.6
+    },
+    {
+      "page": "/lending/new-york/patchogue",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 25.7
+    },
+    {
+      "page": "/lending/new-york/ithaca",
+      "clicks": 0,
+      "impressions": 35,
+      "ctr": 0,
+      "position": 22.9
+    },
+    {
+      "page": "/lending/new-jersey/cumberland-county",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 27.3
+    },
+    {
+      "page": "/lending/new-york/smithtown",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 24.3
+    },
+    {
+      "page": "/compare/assetlift-alternatives-rcn-capital",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 9.7
+    },
+    {
+      "page": "/lending/new-jersey/camden-county",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 31.9
+    },
+    {
+      "page": "/lending/new-jersey/cherry-hill",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 31.8
+    },
+    {
+      "page": "/lending/new-jersey/washington-township-gloucester",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 25.4
+    },
+    {
+      "page": "/blog/ground-up-construction-timeline-investors",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 54.5
+    },
+    {
+      "page": "/lending/new-jersey/hackensack",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 32.2
+    },
+    {
+      "page": "/blog/can-you-get-dscr-loan-for-airbnb",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 73.9
+    },
+    {
+      "page": "/lending/new-jersey/mercer-county",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 35.9
+    },
+    {
+      "page": "/lending/georgia/augusta-richmond-county",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 41.4
+    },
+    {
+      "page": "/lending/new-jersey/voorhees",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "page": "/lending/new-jersey/deptford",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 49
+    },
+    {
+      "page": "/privacy",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 4.8
+    },
+    {
+      "page": "/resources/fix-and-flip-borrower-package",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 14.8
+    },
+    {
+      "page": "/lending/new-jersey/fix-and-flip-loans",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 60.1
+    },
+    {
+      "page": "/lending/new-jersey/piscataway",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 41.8
+    },
+    {
+      "page": "/terms",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "page": "/blog/dscr-loan-llc-vs-personal-name",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 8.8
+    },
+    {
+      "page": "/lending/new-jersey/north-bergen",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 40.4
+    },
+    {
+      "page": "/licensing",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 11.2
+    },
+    {
+      "page": "/compare/assetlift-vs-new-silver",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "page": "/lending/new-york/hempstead",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "page": "/answers/asset-based-loan-companies-real-estate-investors",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 24.3
+    },
+    {
+      "page": "/lending/missouri/st-louis",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 15.9
+    },
+    {
+      "page": "/lending/new-jersey/gloucester-county",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 24.9
+    },
+    {
+      "page": "/lending/new-york/dscr-loans",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 41.4
+    },
+    {
+      "page": "/compare/assetlift-alternatives-lima-one",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 7.2
+    },
+    {
+      "page": "/blog/ground-up-construction-loan-requirements",
+      "clicks": 1,
+      "impressions": 12,
+      "ctr": 0.0833,
+      "position": 16.5
+    },
+    {
+      "page": "/apply",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 6.2
+    },
+    {
+      "page": "/blog/fix-and-flip-loans-in-florida",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "page": "/lending/new-jersey/hamilton-township-mercer",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "page": "/lending/new-jersey/salem-county",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 42
+    },
+    {
+      "page": "/blog/construction-loan-vs-hard-money-loan",
+      "clicks": 1,
+      "impressions": 11,
+      "ctr": 0.0909,
+      "position": 4.3
+    },
+    {
+      "page": "/compare/hard-money-loans-vs-conventional-mortgages",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 42.1
+    },
+    {
+      "page": "/lending/new-jersey/union-city",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "page": "/lending/new-york/middletown",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 65.3
+    },
+    {
+      "page": "/lending/new-york/ossining",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 27.8
+    },
+    {
+      "page": "/portal",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 21.1
+    },
+    {
+      "page": "/lending/connecticut/dscr-loans",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 47.3
+    },
+    {
+      "page": "/lending/new-jersey/wall-township",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "page": "/lending/new-york/hicksville",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 39.9
+    },
+    {
+      "page": "/lending/connecticut/hartford",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 49.6
+    },
+    {
+      "page": "/lending/new-jersey/fort-lee",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 31.9
+    },
+    {
+      "page": "/answers/best-bridge-loan-lender-real-estate",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 32.3
+    },
+    {
+      "page": "/compare/assetlift-alternatives-visio-lending",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 4.9
+    },
+    {
+      "page": "/lending/connecticut/stamford",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 15.4
+    },
+    {
+      "page": "/lending/new-jersey/perth-amboy",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 21.3
+    },
+    {
+      "page": "/lending/new-jersey/evesham",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 16.5
+    },
+    {
+      "page": "/lending/new-jersey/warren-county",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 14.8
+    },
+    {
+      "page": "/lending/new-york/niagara-falls",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 33
+    },
+    {
+      "page": "/lending/new-jersey/red-bank",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 12.6
+    },
+    {
+      "page": "/lending/new-york/garden-city",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.6
+    },
+    {
+      "page": "/state-disclosures",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.8
+    },
+    {
+      "page": "/blog/real-estate-investing-with-llc-guide",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 12
+    },
+    {
+      "page": "/blog/what-is-a-hard-money-loan-for-real-estate-investors",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.3
+    },
+    {
+      "page": "/compare/fix-and-flip-vs-bridge-loan",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 13.3
+    },
+    {
+      "page": "/compare/rental-property-loan-vs-dscr-loan",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "/lending/new-york/binghamton",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.8
+    },
+    {
+      "page": "/lending/new-york/buffalo",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 27
+    },
+    {
+      "page": "/lending/new-york/huntington",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.8
+    },
+    {
+      "page": "/lending/new-york/riverhead",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 51.3
+    },
+    {
+      "page": "/pre-approval",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.8
+    },
+    {
+      "page": "/answers/hard-money-lenders-texas",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333,
+      "position": 37
+    },
+    {
+      "page": "/how-funding-works",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7.7
+    },
+    {
+      "page": "/lending/new-jersey/dscr-loans",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 44.7
+    },
+    {
+      "page": "/lending/new-jersey/long-branch",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "/lending/new-york/levittown",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 94.7
+    },
+    {
+      "page": "/lending/new-york/schenectady",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "/blog/assetlift-vs-roc-capital",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "/blog/bridge-loans-sacramento-ca",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 42.5
+    },
+    {
+      "page": "/blog/fix-and-flip-loans-for-experienced-investors",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 91.5
+    },
+    {
+      "page": "/blog/hard-money-loans-philadelphia-pa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "page": "/blog/how-to-choose-hard-money-lender",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "/blog/investor-closing-costs-checklist",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "/blog/when-does-a-bridge-loan-make-sense",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "/compare/bridge-loans-vs-hard-money-loans",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 19
+    },
+    {
+      "page": "/lending/connecticut/bridgeport",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "page": "/lending/new-jersey/brick",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 14.5
+    },
+    {
+      "page": "/lending/new-york/mount-vernon",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "/lending/new-york/rockland-county",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "/answers/best-hard-money-lender-fix-and-flip",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "page": "/blog/brrrr-method-complete-guide-2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "/blog/fix-and-flip-loans-orlando-fl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "page": "/blog/hard-money-lender-prepayment-penalty",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "/blog/investment-property-insurance-guide",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 71
+    },
+    {
+      "page": "/blog/real-estate-investor-guide-wisconsin",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "/lending/arizona/tucson",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "page": "/lending/georgia/brunswick-glynn-county",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "/lending/new-jersey/howell",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "/lending/new-jersey/montclair",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "/lending/new-jersey/somerset-county",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "/lending/new-jersey/vineland",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "/lending/new-york/brentwood",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "page": "/lending/new-york/islip",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "/lending/new-york/manhattan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "page": "/lending/new-york/newburgh",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "/lending/new-york/spring-valley",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "/loans/asset-based-lending",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    }
+  ]
 }
