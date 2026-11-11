@@ -28,6 +28,8 @@ export interface CityData {
   neighborhoodsHeading?: string;
   hideNeighborhoods?: boolean;
   localExecution?: { heading: string; intro: string; checklist: string[] };
+  /** Additive local-rules section rendered alongside the existing template sections (used on ranking pages where existing copy must stay). */
+  localChecks?: { heading: string; intro: string; checklist: string[]; sources: Array<{ label: string; href: string }> };
 }
 
 export const CITIES: CityData[] = [
@@ -3473,7 +3475,28 @@ export const CITIES: CityData[] = [
       { question: "Can a Lakewood rental qualify for a DSCR loan?", answer: "Yes. A stabilized non-owner-occupied Lakewood rental can qualify when documented or supported market rent covers the proposed payment under the applicable program. Taxes, insurance, HOA dues, value, credit, reserves, entity documents, and property condition also affect the result." },
       { question: "Does AssetLift review new-construction scenarios in Lakewood?", answer: "Yes. Qualifying Lakewood ground-up and major renovation scenarios can be reviewed with plans, permits or permit status, a line-item budget, builder information, borrower experience, liquidity, and a clear sale or refinance exit." },
       { question: "Are AssetLift loans available for owner-occupied homes in Lakewood?", answer: "No. AssetLift's programs are business-purpose financing for non-owner-occupied investment properties only." },
+      { question: "Do I need a rental certificate of occupancy to rent out a Lakewood property?", answer: "Yes. Lakewood Township's code says no apartment or dwelling may be leased, rented, or sold to a tenant without a certificate of occupancy, and a vacated unit may not be re-rented until it is inspected. The Township's rental C.O. application carries a $65 fee, must be filed with a copy of the signed lease, and has required a lead-safe certification since July 22, 2022. Confirm current requirements with Lakewood Code Enforcement before you set a lease-up date." },
+      { question: "Does Lakewood have rent control?", answer: "Yes. Lakewood Township has a rent control ordinance and a Rent Control Board. Covered units are generally limited to one increase a year of 6.5% when the landlord supplies heat or 5% when it does not, and landlords post their rent lists with the Township Clerk by July 1 each year. The ordinance lists exemptions, including owner-occupied buildings with four or fewer rental units that are not part of a larger complex and, for seven years from the unit's initial certificate of occupancy, newly constructed units and units placed on the rental market for the first time, with written notice to tenants. Check a building's status before underwriting rent increases." },
+      { question: "How does the New Jersey lead-safe rule affect a Lakewood rental purchase?", answer: "New Jersey's lead-safe law requires lead-based paint inspections of single-family, two-family, and multiple rental dwellings built before 1978. The first inspection was due by July 22, 2024 or at tenant turnover, whichever came first, and inspections now recur every three years or at turnover, whichever is earlier. Exemptions include certified lead-free units and certain seasonal rentals and long-registered multiple dwellings. Lead-safe certificates are valid for two years. If an inspection finds hazards, the owner must remediate them, so price that work and its timing into the rehab budget and lease-up plan." },
     ],
+    localChecks: {
+      heading: "Lakewood rental checks: rental C.O., rent control, and lead-safe certification",
+      intro: "Three rules, two from the Township and one from the State, shape most rent-and-hold, BRRRR, and DSCR files here. First, Township code requires a certificate of occupancy before an apartment or dwelling is leased or sold to a tenant, and a vacated unit must be inspected before a new tenant moves in; the code says the inspection and a C.O. or violation notice should follow within five days of application. Second, Lakewood has a rent control ordinance: covered units are generally limited to one increase a year (6.5% with landlord-supplied heat, 5% without), with listed exemptions and a Rent Control Board for other increases. Third, New Jersey's lead-based paint law requires inspection of pre-1978 rental dwellings, and Lakewood's rental C.O. application requires a lead-safe certification. Building the inspection, any repairs, and the real rent path into the plan before closing keeps the exit honest. Confirm current requirements with Lakewood Code Enforcement and the Township Clerk for the specific property.",
+      checklist: [
+        "Before you set a lease-up date, budget for a Lakewood rental C.O. application ($65 per the Township form), filed with a copy of the signed lease, and have the unit ready for inspection with working smoke and carbon monoxide alarms",
+        "Confirm the owner has registered with the Township Clerk; for one- and two-unit dwellings that means the Township's Landlord Identity Statement under N.J.S.A. 46:8-28",
+        "Check whether the units are covered by Lakewood rent control or fall under a listed exemption, and underwrite DSCR on the rents the ordinance allows rather than assumed market resets",
+        "For a rental built before 1978, confirm whether a current lead-safe certificate exists (it is valid for two years); if not, plan for an inspection before the next tenant and price any remediation into the scope",
+        "Use comps from the same section and property type; township-wide Census medians are context, not an after-repair value or rent comp",
+      ],
+      sources: [
+        { label: "Lakewood Township Code: rental C.O. and multiple dwellings", href: "https://ecode360.com/35458645" },
+        { label: "Lakewood Township Code: rent control", href: "https://ecode360.com/35458775" },
+        { label: "Lakewood rental C.O. application and lead-safe notice (2022)", href: "https://www.lakewoodnj.gov/images/db/admin-2710-Rental-C.O.-Application-and-lead-paint-notification-2022.pdf" },
+        { label: "Lakewood Landlord Identity Statement (one- and two-unit dwellings)", href: "https://www.lakewoodnj.gov/images/db/admin-7849-Landlord-Registration-Form.pdf" },
+        { label: "NJ DCA: lead-based paint inspections in rental dwellings", href: "https://www.nj.gov/dca/codes/resources/leadpaint.shtml" },
+      ],
+    },
   },
   {
     cityName: "Toms River",
