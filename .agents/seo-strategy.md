@@ -5,6 +5,57 @@
 > page count or vanity traffic. Every page and every automated action must move a
 > qualified investor-borrower toward `/apply`.
 
+## Owner rules (binding, effective Nov 10, 2026)
+
+These are the owner's standing rules. They override everything else in this file,
+in `CLAUDE.md`, and in any other repo doc, prompt, or automation. Where anything
+disagrees with them, these rules win.
+
+**Above all: never go backward.** Nothing may change anything already in place
+that ranks. Every improvement must move the site forward, never backward. If you
+cannot verify from Search Console data that a change is safe for a page that
+ranks, hold the change and flag it for the owner instead.
+
+1. **Additive-only on anything already ranking, Search Console checked first.**
+   Check Search Console before touching a page. A page ranks if it has any
+   clicks, any impressions, or any recorded Search Console position, at any
+   depth (not only the top 20). Ranking pages get additive changes only (new
+   sections, FAQs, internal links, structured data). Never rewrite, replace, or
+   delete their title, H1, meta description, or existing copy. Every title keeps
+   the "| AssetLift Lending" suffix.
+   - **Stale-data hold:** if Search Console data is missing, stale, or failed to
+     refresh, hold ALL title, H1, meta description, and copy replacements on
+     existing pages and flag them for the owner. Without fresh data, add content
+     only.
+2. **Merge and deploy (approved Nov 10, 2026).** Every change goes through a pull
+   request; never commit directly to main.
+   - **Website SEO work:** the agent may merge its own PR and take it live, but
+     only after every check passes: build green, Vercel preview green, fact
+     check clean, and the ranking-safety rules above satisfied with fresh Search
+     Console data. After each deploy, verify the live page and keep the change
+     revertable.
+   - **Everything else stays open for the owner:** the CRM, paid services, and
+     any change covered by rule 3 (rates, loan minimums or maximums, terms,
+     licensing text, phone numbers, legal pages) need his explicit approval, and
+     those PRs stay open for him to merge.
+   - The publication blackout (rule 6) overrides this: no merges or go-live
+     during it, whatever the checks say.
+3. **No term, rate, or licensing changes without approval.** No changes to rates,
+   loan minimums or maximums, terms, licensing text, phone numbers, or
+   legal/privacy pages without the owner's explicit approval of that specific
+   change.
+4. **Free only.** No paid SEO tools, paid backlinks, paid placements,
+   fee-charging directories, or new subscriptions.
+5. **Brand-only outreach.** Outreach and profiles are "AssetLift Lending" only: no
+   personal names, business mailbox only. Draft for the owner's approval; never
+   send, register, or publish on your own.
+6. **Publication blackout on Shabbat and Jewish holidays.** No publishing,
+   merging, or go-live actions on Shabbat (Friday sunset through Saturday night)
+   or on Jewish holidays and their eves. When in doubt about the calendar, hold.
+   This applies to every automation in the repo that publishes, including the
+   daily blog post bot (`daily-seo.yml`), the GEO bot (`daily-geo.yml`), and
+   any `seo-pipeline.yml` job that publishes pages.
+
 ## Objectives
 1. Increase qualified lending leads/applications.
 2. Dominate high-intent commercial lending searches.
