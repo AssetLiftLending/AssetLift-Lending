@@ -21,6 +21,8 @@ export interface CityData {
   areaServedType?: 'City' | 'AdministrativeArea';
   programSummaries?: Array<{ title: string; desc: string; href: string }>;
   heroDescription?: string;
+  /** Answer-first summary shown directly under the H1 (GEO). Additive only: never replaces heroDescription. */
+  answerFirst?: string;
   marketSources?: Array<{ label: string; href: string }>;
   ctaDescription?: string;
   metadataTitle?: string;
@@ -2943,6 +2945,7 @@ export const CITIES: CityData[] = [
     hideNeighborhoods: true,
     areaServedType: "City",
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Newark, New Jersey. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in Newark, NJ, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and residential construction projects on non-owner-occupied Newark properties, subject to underwriting. Larger multifamily and mixed-use buildings beyond residential program limits are reviewed under our commercial lending program.",
     ctaDescription: "For an initial Newark review, send the property address, purchase basis, current occupancy and legal unit count, photos, line-item scope, recent nearby sales or supported rent, current taxes and insurance, requested amount, borrower experience and liquidity, and intended sale or refinance exit. Or call 929-639-2284. A review is not approval or a commitment to lend.",
     metadataTitle: "Hard Money & Fix and Flip Loans Newark, NJ | AssetLift Lending",
     metadataDescription: "Hard money and fix and flip loans in Newark, NJ, with rent-control, rental registration and lead-safe checks for investors. Call 929-639-2284.",
@@ -3012,6 +3015,7 @@ export const CITIES: CityData[] = [
     hideNeighborhoods: true,
     areaServedType: "City",
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Jersey City, New Jersey. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in Jersey City, NJ, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and residential construction projects on non-owner-occupied Jersey City properties, subject to underwriting.",
     ctaDescription: "For an initial Jersey City review, send the address, purchase basis, legal use and unit count, current occupancy, photos, line-item scope, nearby comparable sales or supported rent, taxes and insurance, rent-control and certificate status if known, requested amount, and planned sale or refinance exit. A review is not approval or a commitment to lend.",
     metadataTitle: "Hard Money & Fix and Flip Loans Jersey City, NJ | AssetLift Lending",
     metadataDescription: "Hard money loans in Jersey City, NJ for fix-and-flip, bridge & DSCR investors, with zoning, CO and rent-control guidance. Call 929-639-2284.",
@@ -3854,6 +3858,7 @@ export const CITIES: CityData[] = [
     investmentHighlight: "The Census Bureau estimates Yonkers' population at 212,603 on July 1, 2025. Its 2020-2024 ACS reports a 46.2% owner-occupied housing rate, a $501,600 median owner-occupied value, and $1,784 median gross rent. Yonkers holds about 42% of Westchester's registered rent-stabilized units, so apartment-building income often comes with regulated rents.",
     topNeighborhoods: ["Getty Square", "Nodine Hill", "Park Hill", "Ludlow", "Lawrence Park West", "Cedar Knolls", "Crestwood", "Dunwoodie"],
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Yonkers, Westchester County, NY. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in Yonkers, NY, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and residential construction projects on non-owner-occupied Yonkers properties, subject to underwriting.",
     ctaDescription: "For an initial Yonkers review, send the address, purchase basis, legal unit count and certificate of occupancy, rent-stabilization status, current leases, photos, line-item scope, nearby sales or supported rent, taxes and insurance, and your exit. Or call 929-639-2284. A review is not approval or a commitment to lend.",
     metadataTitle: "Hard Money Lender & Loans in Yonkers, NY | AssetLift Lending",
     metadataDescription: "Hard money loans in Yonkers, NY for flips, bridge and DSCR rentals, with rent-stabilization, CO and transfer-tax guidance. Call 929-639-2284.",
@@ -4896,6 +4901,7 @@ export const CITIES: CityData[] = [
     hideNeighborhoods: true,
     areaServedType: "City",
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Valley Stream, Nassau County, NY. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in Valley Stream, NY, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and residential construction projects on non-owner-occupied Valley Stream properties, subject to underwriting.",
     ctaDescription: "For an initial Valley Stream review, send the address, purchase basis, legal use and certificate of occupancy, rental-permit status if rented, photos, line-item scope, nearby sales or supported rent, taxes and insurance, and your exit. Or call 929-639-2284. A review is not approval or a commitment to lend.",
     metadataTitle: "Hard Money Lender Valley Stream, NY | AssetLift Lending",
     metadataDescription: "Valley Stream, NY fix-and-flip, bridge & DSCR loans for investors, with Village rental-permit and CO guidance. Call 929-639-2284.",
@@ -5134,6 +5140,7 @@ export const CITIES: CityData[] = [
     investmentHighlight: "The Census Bureau estimates New Rochelle's population at 85,864 on July 1, 2025. Its 2020-2024 ACS reports a 53.7% owner-occupied housing rate, a $702,500 median owner-occupied value, and $1,917 median gross rent. Downtown apartments, the waterfront, and the North End's single-family streets behave like different markets, so underwrite from leases and nearby comps, not citywide medians.",
     topNeighborhoods: ["Downtown", "West End", "North End", "Wykagyl", "Residence Park", "Davenport Neck", "Beechmont"],
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in New Rochelle, Westchester County, NY. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in New Rochelle, NY, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and residential construction projects on non-owner-occupied New Rochelle properties, subject to underwriting.",
     ctaDescription: "For an initial New Rochelle review, send the address, purchase basis, legal unit count and certificate of occupancy, rent-regulation status, flood zone, current leases, photos, line-item scope, nearby sales or supported rent, taxes and insurance, and your exit. Or call 929-639-2284. A review is not approval or a commitment to lend.",
     metadataTitle: "Hard Money Lender New Rochelle, NY | AssetLift Lending",
     metadataDescription: "Hard money lender in New Rochelle, NY: fix-and-flip, bridge & DSCR loans, with rent, CO, flood and transfer-tax checks. Call 929-639-2284.",
