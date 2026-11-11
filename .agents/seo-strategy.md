@@ -16,11 +16,17 @@ that ranks. Every improvement must move the site forward, never backward. If you
 cannot verify from Search Console data that a change is safe for a page that
 ranks, hold the change and flag it for the owner instead.
 
-1. **Additive-only on ranking pages, Search Console checked first.** Check Search
-   Console before touching a page. Pages with clicks or a top-20 position on any
-   query get additive changes only (new sections, FAQs, internal links,
-   structured data). Never rewrite, replace, or delete their title, H1, or
-   existing copy. Every title keeps the "| AssetLift Lending" suffix.
+1. **Additive-only on anything already ranking, Search Console checked first.**
+   Check Search Console before touching a page. A page ranks if it has any
+   clicks, any impressions, or any recorded Search Console position, at any
+   depth (not only the top 20). Ranking pages get additive changes only (new
+   sections, FAQs, internal links, structured data). Never rewrite, replace, or
+   delete their title, H1, meta description, or existing copy. Every title keeps
+   the "| AssetLift Lending" suffix.
+   - **Stale-data hold:** if Search Console data is missing, stale, or failed to
+     refresh, hold ALL title, H1, meta description, and copy replacements on
+     existing pages and flag them for the owner. Without fresh data, add content
+     only.
 2. **The owner merges every PR himself.** Open the PR, wait for the Vercel
    preview check, and stop. Never merge or commit to main.
 3. **No term, rate, or licensing changes without approval.** No changes to rates,
@@ -32,6 +38,12 @@ ranks, hold the change and flag it for the owner instead.
 5. **Brand-only outreach.** Outreach and profiles are "AssetLift Lending" only: no
    personal names, business mailbox only. Draft for the owner's approval; never
    send, register, or publish on your own.
+6. **Publication blackout on Shabbat and Jewish holidays.** No publishing,
+   merging, or go-live actions on Shabbat (Friday sunset through Saturday night)
+   or on Jewish holidays and their eves. When in doubt about the calendar, hold.
+   This applies to every automation in the repo that publishes, including the
+   daily blog post bot (`daily-seo.yml`), the GEO bot (`daily-geo.yml`), and
+   any `seo-pipeline.yml` job that publishes pages.
 
 ## Objectives
 1. Increase qualified lending leads/applications.
