@@ -599,6 +599,30 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
         </section>
       )}
 
+      {city.localChecks && (
+        <section className="py-16 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{city.localChecks.heading}</h2>
+                <p className="text-muted-foreground text-lg leading-relaxed">{city.localChecks.intro}</p>
+              </div>
+              <div className="rounded-2xl border border-border bg-card p-6">
+                <h3 className="text-xl font-semibold mb-4">What to verify on this deal</h3>
+                <ul className="space-y-3">
+                  {city.localChecks.checklist.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-muted-foreground"><span className="text-primary font-bold">•</span><span>{item}</span></li>
+                  ))}
+                </ul>
+                {city.localChecks.sources.map((source) => (
+                  <a key={source.href} href={source.href} target="_blank" rel="noreferrer" className="inline-block text-sm font-medium text-primary underline mt-4 mr-4">{source.label}</a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Programs Available */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">

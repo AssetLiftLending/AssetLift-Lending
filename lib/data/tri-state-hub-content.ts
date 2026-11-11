@@ -150,6 +150,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Hoboken hard money and asset-based loans', href: '/lending/new-jersey/hoboken' },
       { label: 'Hudson County apartment and multifamily loans', href: '/lending/new-jersey/hudson-county' },
       { label: 'Long Branch hard money loans', href: '/lending/new-jersey/long-branch' },
+      { label: 'Hard money lenders in Lakewood', href: '/lending/new-jersey/lakewood' },
       { label: 'Cape May County hard money and shore rental loans', href: '/lending/new-jersey/cape-may-county' },
       { label: 'Camden County investor loans', href: '/lending/new-jersey/camden-county' },
       { label: 'Cherry Hill investor loans', href: '/lending/new-jersey/cherry-hill' },
