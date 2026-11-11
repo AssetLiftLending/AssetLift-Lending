@@ -284,6 +284,9 @@ export default function CityPage({ city, nearby = [] }: CityPageProps) {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
               Hard Money Loans in {city.cityName}
             </h1>
+            {city.answerFirst && (
+              <p className="text-lg text-foreground max-w-2xl mb-4">{city.answerFirst}</p>
+            )}
             <p className="text-lg text-muted-foreground max-w-2xl mb-8">
               {city.heroDescription ?? `Fast, flexible real estate investment financing for ${city.cityName} investors. Fix & flip, bridge, DSCR rental, and construction loans with responses within 24 hours and closings in as fast as 5 days.`}
             </p>
