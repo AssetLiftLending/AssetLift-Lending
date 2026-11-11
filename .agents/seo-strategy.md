@@ -27,8 +27,19 @@ ranks, hold the change and flag it for the owner instead.
      refresh, hold ALL title, H1, meta description, and copy replacements on
      existing pages and flag them for the owner. Without fresh data, add content
      only.
-2. **The owner merges every PR himself.** Open the PR, wait for the Vercel
-   preview check, and stop. Never merge or commit to main.
+2. **Merge and deploy (approved Nov 10, 2026).** Every change goes through a pull
+   request; never commit directly to main.
+   - **Website SEO work:** the agent may merge its own PR and take it live, but
+     only after every check passes: build green, Vercel preview green, fact
+     check clean, and the ranking-safety rules above satisfied with fresh Search
+     Console data. After each deploy, verify the live page and keep the change
+     revertable.
+   - **Everything else stays open for the owner:** the CRM, paid services, and
+     any change covered by rule 3 (rates, loan minimums or maximums, terms,
+     licensing text, phone numbers, legal pages) need his explicit approval, and
+     those PRs stay open for him to merge.
+   - The publication blackout (rule 6) overrides this: no merges or go-live
+     during it, whatever the checks say.
 3. **No term, rate, or licensing changes without approval.** No changes to rates,
    loan minimums or maximums, terms, licensing text, phone numbers, or
    legal/privacy pages without the owner's explicit approval of that specific
