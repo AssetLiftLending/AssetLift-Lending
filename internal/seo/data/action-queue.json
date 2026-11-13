@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T12:54:24.805Z",
+  "generatedAt": "2026-11-13T14:55:45.548Z",
   "connected": true,
   "summary": "25 prioritized actions from real Search Console demand (top priority: New York).",
   "items": [
@@ -7,101 +7,101 @@
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 446,
-      "impressions": 446,
+      "priority": 451,
+      "impressions": 451,
       "position": 0,
-      "rationale": "446 impressions across 12 queries mention New York.",
+      "rationale": "451 impressions across 12 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "category": "General",
+      "priority": 342,
+      "impressions": 171,
+      "position": 7.5,
+      "rationale": "171 impressions at position 7.5 but only 2 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 318,
-      "impressions": 318,
+      "priority": 313,
+      "impressions": 313,
       "position": 0,
-      "rationale": "318 impressions across 11 queries mention New Jersey.",
+      "rationale": "313 impressions across 11 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-york/yonkers",
       "category": "General",
-      "priority": 256,
-      "impressions": 128,
-      "position": 19.3,
-      "rationale": "128 impressions at position 19.3 but only 0 clicks.",
+      "priority": 252,
+      "impressions": 126,
+      "position": 19.4,
+      "rationale": "126 impressions at position 19.4 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 239,
-      "impressions": 239,
+      "priority": 237,
+      "impressions": 237,
       "position": 0,
-      "rationale": "239 impressions across 8 queries mention Connecticut.",
+      "rationale": "237 impressions across 8 queries mention Connecticut.",
       "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/blog/dscr-loans-explained",
       "category": "DSCR / Rental",
-      "priority": 160,
-      "impressions": 80,
+      "priority": 162,
+      "impressions": 81,
       "position": 11,
-      "rationale": "80 impressions at position 11 but only 0 clicks.",
+      "rationale": "81 impressions at position 11 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-york/new-rochelle",
       "category": "General",
-      "priority": 130,
-      "impressions": 65,
-      "position": 18,
-      "rationale": "65 impressions at position 18 but only 0 clicks.",
+      "priority": 136,
+      "impressions": 68,
+      "position": 17.5,
+      "rationale": "68 impressions at position 17.5 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-york/valley-stream",
       "category": "General",
-      "priority": 120,
-      "impressions": 60,
-      "position": 17.4,
-      "rationale": "60 impressions at position 17.4 but only 0 clicks.",
+      "priority": 114,
+      "impressions": 57,
+      "position": 18.1,
+      "rationale": "57 impressions at position 18.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "add-internal-links",
       "target": "how do lenders verify rent for a dscr loan?",
       "category": "DSCR / Rental",
-      "priority": 104,
-      "impressions": 69,
+      "priority": 105,
+      "impressions": 70,
       "position": 9.4,
-      "rationale": "Ranking at position 9.4 with 69 impressions — within striking distance of page 1.",
+      "rationale": "Ranking at position 9.4 with 70 impressions — within striking distance of page 1.",
       "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
     },
     {
       "type": "build-demand-page",
       "target": "North Carolina",
       "category": "Geo",
-      "priority": 93,
-      "impressions": 93,
+      "priority": 88,
+      "impressions": 88,
       "position": 0,
-      "rationale": "93 impressions across 5 queries mention North Carolina.",
+      "rationale": "88 impressions across 5 queries mention North Carolina.",
       "action": "Strengthen the North Carolina state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/how-it-works",
-      "category": "General",
-      "priority": 84,
-      "impressions": 42,
-      "position": 4.3,
-      "rationale": "42 impressions at position 4.3 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
@@ -114,14 +114,24 @@
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
-      "type": "expand-content",
+      "type": "add-internal-links",
       "target": "hard money lender new rochelle",
       "category": "Hard Money",
-      "priority": 80,
-      "impressions": 53,
-      "position": 14,
-      "rationale": "Ranking at position 14 with 53 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+      "priority": 77,
+      "impressions": 51,
+      "position": 9,
+      "rationale": "Ranking at position 9 with 51 impressions — within striking distance of page 1.",
+      "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/how-it-works",
+      "category": "General",
+      "priority": 74,
+      "impressions": 37,
+      "position": 4.8,
+      "rationale": "37 impressions at position 4.8 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
@@ -129,8 +139,8 @@
       "category": "Hard Money",
       "priority": 65,
       "impressions": 43,
-      "position": 18.2,
-      "rationale": "Ranking at position 18.2 with 43 impressions — within striking distance of page 1.",
+      "position": 18.1,
+      "rationale": "Ranking at position 18.1 with 43 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -147,11 +157,21 @@
       "type": "expand-content",
       "target": "hard money lender kingston",
       "category": "Hard Money",
-      "priority": 50,
-      "impressions": 33,
-      "position": 16.6,
-      "rationale": "Ranking at position 16.6 with 33 impressions — within striking distance of page 1.",
+      "priority": 51,
+      "impressions": 34,
+      "position": 16.3,
+      "rationale": "Ranking at position 16.3 with 34 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/lending/new-york/smithtown",
+      "category": "General",
+      "priority": 50,
+      "impressions": 25,
+      "position": 18.8,
+      "rationale": "25 impressions at position 18.8 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
@@ -175,22 +195,22 @@
     },
     {
       "type": "expand-content",
-      "target": "yonkers hard money loans",
-      "category": "Hard Money",
-      "priority": 39,
-      "impressions": 26,
-      "position": 12.9,
-      "rationale": "Ranking at position 12.9 with 26 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
       "target": "hard money newark",
       "category": "Hard Money",
       "priority": 36,
       "impressions": 24,
-      "position": 19.7,
-      "rationale": "Ranking at position 19.7 with 24 impressions — within striking distance of page 1.",
+      "position": 19.4,
+      "rationale": "Ranking at position 19.4 with 24 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "yonkers hard money loans",
+      "category": "Hard Money",
+      "priority": 36,
+      "impressions": 24,
+      "position": 13.6,
+      "rationale": "Ranking at position 13.6 with 24 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -205,22 +225,12 @@
     },
     {
       "type": "expand-content",
-      "target": "hard money lenders hempstead",
-      "category": "Hard Money",
+      "target": "san antonio apartment loans",
+      "category": "Commercial / Multifamily",
       "priority": 24,
       "impressions": 16,
-      "position": 17.8,
-      "rationale": "Ranking at position 17.8 with 16 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
-      "target": "fix to rent loans nj",
-      "category": "General",
-      "priority": 23,
-      "impressions": 15,
-      "position": 11.1,
-      "rationale": "Ranking at position 11.1 with 15 impressions — within striking distance of page 1.",
+      "position": 13.9,
+      "rationale": "Ranking at position 13.9 with 16 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -229,18 +239,8 @@
       "category": "Hard Money",
       "priority": 23,
       "impressions": 15,
-      "position": 20,
-      "rationale": "Ranking at position 20 with 15 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
-      "target": "san antonio apartment loans",
-      "category": "Commercial / Multifamily",
-      "priority": 23,
-      "impressions": 15,
-      "position": 13.3,
-      "rationale": "Ranking at position 13.3 with 15 impressions — within striking distance of page 1.",
+      "position": 18.6,
+      "rationale": "Ranking at position 18.6 with 15 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
