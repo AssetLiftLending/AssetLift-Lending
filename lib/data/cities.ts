@@ -5082,6 +5082,7 @@ export const CITIES: CityData[] = [
     medianHomePrice: "$650,000",
     overview: "Smithtown is a north-shore Suffolk town - strong schools, the Nissequogue River corridor, and Kings Park, St. James, and Commack hamlets - a higher-basis renovation market with deep resale demand.",
     investmentHighlight: "Smithtown's hamlets price at a premium with school-driven demand; comps must match the hamlet and school zone. AssetLift reviews business-purpose fix-and-flip, bridge, and DSCR rental scenarios here.",
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in Smithtown, NY, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and qualifying construction projects on non-owner-occupied Smithtown properties, subject to underwriting.",
     topNeighborhoods: ["Kings Park", "St. James", "Commack", "Nesconset", "Smithtown hamlet", "Hauppauge", "Nissequogue", "Head of the Harbor"],
     faqs: [
       { question: "Can investors get hard money loans in Smithtown, NY?", answer: "Yes. AssetLift reviews business-purpose loans for non-owner-occupied Smithtown investment properties, including fix-and-flip, bridge, DSCR rental, and qualifying construction scenarios. Approval, leverage, pricing, and timing depend on the property, borrower, valuation, title, scope, liquidity, and exit plan." },
@@ -5089,7 +5090,28 @@ export const CITIES: CityData[] = [
       { question: "Can a Smithtown rental qualify for a DSCR loan?", answer: "Yes. A stabilized non-owner-occupied rental can qualify when documented or supported market rent covers the proposed payment under the applicable program. New York property taxes, insurance, HOA dues, value, credit, reserves, entity documents, and property condition also affect the result." },
       { question: "Does AssetLift use citywide comps for Smithtown deals?", answer: "No. Smithtown includes neighborhoods and property types with different values and rental profiles. Underwriting should use nearby comparable sales or rents that match the specific neighborhood, property type, unit count, condition, and timing of the subject property." },
       { question: "Are AssetLift loans available for owner-occupied homes?", answer: "No. AssetLift's programs are business-purpose financing for non-owner-occupied investment properties only." },
+      { question: "How much can I borrow on a Smithtown fix-and-flip?", answer: "Published fix-and-flip terms allow up to 95% LTC on the purchase and up to 100% of the approved rehab budget, with the total loan capped at 70% to 75% of after-repair value. Illustration only: on a $600,000 purchase with a $120,000 rehab and a $950,000 ARV supported by nearby sales in the same hamlet, 95% of purchase ($570,000) plus the full rehab is $690,000. A 75% ARV cap ($712,500) leaves that intact, so the borrower brings $30,000 plus closing costs, interest carry, and reserves; a 70% cap ($665,000) limits the loan to $665,000, and the borrower brings $55,000 plus those costs. Actual leverage depends on the property, valuation, borrower, and underwriting." },
+      { question: "What transfer taxes come off a Smithtown flip sale?", answer: "New York State's real estate transfer tax is $2 for each $500 of consideration (0.4%) and is paid by the seller, so a $950,000 resale carries $3,800 of state transfer tax. New York also charges a 1% additional tax, the mansion tax, on residential property, such as a one- to three-family house or a condo or co-op unit, when the price is $1 million or more; the buyer pays it. At Smithtown price points, a resale at $1,000,000 costs the buyer $10,000 more than one just below that line, which can matter when you set a list price. Ask your title company for the full closing-cost estimate for the specific deal." },
+      { question: "Should I check the flood zone before buying in Smithtown?", answer: "Yes. Parts of the Town sit along the Nissequogue River and Long Island Sound, and Smithtown's Town Code includes a Flood Damage Prevention chapter (Chapter 168). Look up the parcel on FEMA's Flood Map Service Center before you set a rehab budget, and confirm with the Town what the floodplain rules mean for the planned scope. Price flood insurance into the payment before sizing a DSCR loan or a hold." },
     ],
+    localChecks: {
+      heading: "Smithtown deal checks: transfer taxes, flood zones, and comps by hamlet",
+      intro: "Smithtown is a higher-basis Suffolk County market, so closing costs and the exit price line deserve as much attention as the rehab. New York State's transfer tax is $2 per $500 of consideration (about 0.4%), paid by the seller, and New York adds a 1% mansion tax, paid by the buyer, on residential property sold for $1 million or more. Waterfront and low-lying parcels near the Nissequogue River and Long Island Sound also need a flood check: the Town Code includes a Flood Damage Prevention chapter (Chapter 168), and FEMA's flood map shows the parcel's current zone. Confirm permit and certificate requirements for the specific address and scope with the Town before relying on a schedule.",
+      checklist: [
+        "Net New York State's seller-paid transfer tax (about 0.4%) from projected sale proceeds before relying on an ARV",
+        "If the planned resale is near $1 million, remember the buyer's 1% mansion tax starts at $1,000,000 and may shape your list price",
+        "Look up the parcel on FEMA's Flood Map Service Center and price flood insurance before sizing a DSCR payment or setting a rehab budget",
+        "Confirm the Town's permit and certificate requirements for the address and scope before setting a construction or lease-up schedule",
+        "Use closed sales from the same hamlet and school district as the subject; Town-wide figures are not comps",
+        "For a rental, provide leases or supported rent and the full proposed payment, including actual Suffolk County property taxes and insurance",
+      ],
+      sources: [
+        { label: "NYS Tax Department: real estate transfer tax and mansion tax", href: "https://www.tax.ny.gov/bus/transfer/rptidx.htm" },
+        { label: "NYS Tax Department: additional (mansion) tax on residential property", href: "https://tax.ny.gov/pubs_and_bulls/tg_bulletins/rett/additional_rett.htm" },
+        { label: "Town of Smithtown Code (eCode360), incl. Chapter 168 Flood Damage Prevention", href: "https://ecode360.com/SM0115" },
+        { label: "FEMA Flood Map Service Center", href: "https://msc.fema.gov/portal/home" },
+      ],
+    },
   },
   {
     cityName: "Brentwood",
