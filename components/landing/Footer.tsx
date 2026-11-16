@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import PreferredSourceButton from "@/components/PreferredSourceButton";
 
 const FEATURED_MARKETS = [
   { label: "Where We Lend", href: "/markets" },
@@ -38,6 +39,7 @@ const Footer = () => {
               Private real estate lending for investors buying, renovating, building, refinancing,
               and scaling investment property portfolios.
             </p>
+            <PreferredSourceButton className="mt-4" />
           </div>
 
           {/* Loan Programs */}
