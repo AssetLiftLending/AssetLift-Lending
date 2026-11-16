@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import type { BlogPost } from '@/lib/data/blog-posts';
+import PreferredSourceButton from '@/components/PreferredSourceButton';
 
 interface BlogPostLayoutProps {
   post: BlogPost;
@@ -251,6 +252,7 @@ export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayo
                 <p className="text-sm text-muted-foreground">
                   The AssetLift Team provides expert insights on real estate investing, hard money lending, and portfolio growth strategies.
                 </p>
+                <PreferredSourceButton className="mt-4" />
               </div>
             </div>
           </div>
