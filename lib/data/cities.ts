@@ -3651,6 +3651,7 @@ export const CITIES: CityData[] = [
     overview: "Long Branch is a Monmouth County shore city with an oceanfront redevelopment corridor, established inland neighborhoods, and year-round rental demand. AssetLift reviews qualifying business-purpose fix-and-flip, bridge, DSCR rental, and residential construction financing for non-owner-occupied Long Branch properties. Shore files should price flood zones, insurance, and the City's certificate-of-occupancy rules into the plan from the start.",
     investmentHighlight: "The Census Bureau estimates Long Branch's population at 33,321 on July 1, 2025. Its 2020-2024 ACS reports a 42.5% owner-occupied housing rate, a $574,000 median owner-occupied value, and $1,876 median gross rent. Oceanfront, Pier Village-area, and inland neighborhoods behave like different markets, so underwriting relies on nearby comparable sales and rents.",
     topNeighborhoods: ["Pier Village area", "West End", "Elberon", "North Long Branch", "Downtown Long Branch", "Branchport", "Broadway corridor"],
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in Long Branch, NJ, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and residential construction projects on non-owner-occupied Long Branch properties, subject to underwriting.",
     heroDescription: "Business-purpose financing review for qualifying non-owner-occupied investment properties in Long Branch, Monmouth County, NJ. AssetLift reviews fix-and-flip, bridge, DSCR rental, and residential construction scenarios; eligibility, terms, and timing depend on the property, file, program, and underwriting.",
     ctaDescription: "For an initial Long Branch review, send the address, purchase basis, legal use and unit count, flood zone, photos, line-item scope, nearby sales or supported rent, taxes and insurance, and your exit. Or call 929-639-2284. A review is not approval or a commitment to lend.",
     metadataTitle: "Long Branch NJ Hard Money Lender & Loans | AssetLift Lending",
@@ -5050,13 +5051,45 @@ export const CITIES: CityData[] = [
     overview: "The Town of Islip spans central Suffolk's south shore - Bay Shore, Brentwood, Central Islip, and Islip hamlet - with some of Long Island's deepest value-add inventory and direct LIRR and ferry access to Fire Island.",
     investmentHighlight: "Islip's hamlets underwrite separately: Bay Shore's waterfront and village sections price differently from Brentwood and Central Islip's more attainable stock. AssetLift reviews business-purpose fix-and-flip, bridge, and DSCR rental scenarios here.",
     topNeighborhoods: ["Bay Shore", "Brentwood", "Central Islip", "Islip hamlet", "East Islip", "West Islip", "Hauppauge border", "Ronkonkoma border"],
+    answerFirst: "AssetLift Lending is a direct private lender that makes hard money loans in the Town of Islip, NY, funded with our capital partners. Real estate investors use these business-purpose loans for fix-and-flip, bridge, DSCR rental, and qualifying construction projects on non-owner-occupied properties in Bay Shore, Brentwood, Central Islip, and the Town's other hamlets, subject to underwriting.",
     faqs: [
       { question: "Can investors get hard money loans in Islip, NY?", answer: "Yes. AssetLift reviews business-purpose loans for non-owner-occupied Islip investment properties, including fix-and-flip, bridge, DSCR rental, and qualifying construction scenarios. Approval, leverage, pricing, and timing depend on the property, borrower, valuation, title, scope, liquidity, and exit plan." },
       { question: "What should I send for a Islip fix-and-flip quote?", answer: "Send the property address, purchase contract or target price, line-item rehab budget, current photos, after-repair value support from nearby comparable sales, borrower experience, liquidity, and the target closing date. A complete file gets a more useful answer than an address alone." },
       { question: "Can a Islip rental qualify for a DSCR loan?", answer: "Yes. A stabilized non-owner-occupied rental can qualify when documented or supported market rent covers the proposed payment under the applicable program. New York property taxes, insurance, HOA dues, value, credit, reserves, entity documents, and property condition also affect the result." },
       { question: "Does AssetLift use citywide comps for Islip deals?", answer: "No. Islip includes neighborhoods and property types with different values and rental profiles. Underwriting should use nearby comparable sales or rents that match the specific neighborhood, property type, unit count, condition, and timing of the subject property." },
       { question: "Are AssetLift loans available for owner-occupied homes?", answer: "No. AssetLift's programs are business-purpose financing for non-owner-occupied investment properties only." },
+      {
+        question: "Do I need a Town of Islip rental permit to rent out an investment property?",
+        answer: "Yes. The Town Code makes it unlawful to let anyone other than the owner occupy a dwelling unit in the Town without a valid rental occupancy permit, and the permit is issued only to the owner. A Code Enforcement Official inspects the unit before issuing it, permits last two years, and a renewal must be filed at least 60 days before the old permit expires. Because permits don't transfer, a buyer of a rental must register the property within 30 days of closing. Non-owner-occupied units rented for fewer than 14 nights are transient rentals under the Code and cannot get a permit (the Code excludes Fire Island units and licensed lodging from that definition). If the property is in an incorporated village, confirm which local rules apply, and confirm the requirements for the specific address with the Town."
+      },
+      {
+        question: "Does the Town of Islip rental permit affect a DSCR loan?",
+        answer: "It can. Rent only supports a DSCR loan when it comes from a legal unit, so underwriting looks at the certificate of occupancy, the permit status, and the leases together. A unit that can't be permitted, including a short-stay rental under 14 nights, is not a dependable income source. On a purchase, plan the inspection and the 30-day registration into the closing timeline."
+      },
+      {
+        question: "What should I check on a south-shore Islip property before I buy?",
+        answer: "Hamlets such as Bay Shore, Islip, and East Islip run along Great South Bay, so look up the parcel on FEMA's Flood Map Service Center and get a flood insurance quote before you set the rehab budget or size a DSCR payment. Also net New York State's seller-paid transfer tax, $2 per $500 of the price (0.4%), from flip proceeds, and remember the buyer's 1% mansion tax applies to one- to three-family homes, condos, and co-op units sold for $1 million or more."
+      }
     ],
+    localChecks: {
+      heading: "Town of Islip deal checks: rental permits, flood zones, and transfer taxes",
+      intro: "Most Islip investment files turn on three things: whether the unit can hold a Town rental occupancy permit, where the parcel sits on FEMA's flood map, and what comes off the sale price at closing. The Town requires a rental occupancy permit before anyone other than the owner occupies a dwelling unit; permits are issued to the owner after an on-site inspection, last two years, and must be renewed at least 60 days before they expire. A new owner of a rental must register it within 30 days of closing, and rentals of fewer than 14 nights can't be permitted. On the sale, New York State's transfer tax of $2 per $500 of consideration is paid by the seller, and the buyer pays a 1% mansion tax on a one- to three-family home, condo, or co-op unit sold for $1 million or more. If the property is inside an incorporated village, confirm which local rules apply.",
+      checklist: [
+        "Confirm the unit has, or can get, a Town of Islip rental occupancy permit before counting its rent toward a DSCR loan",
+        "When buying a property that is or will stay a rental, register it with the Town within 30 days of closing (permits don't transfer to a new owner), and schedule the permit inspection into the plan",
+        "Don't underwrite stays of fewer than 14 nights: the Town bars rental permits for transient rentals",
+        "Look up south-shore parcels on FEMA's Flood Map Service Center and price flood insurance before setting a rehab budget or a payment",
+        "Net New York State's seller-paid transfer tax (0.4%) from projected flip proceeds, and watch the buyer's 1% mansion tax at $1 million",
+        "Use comps from the same hamlet and property type; Bay Shore, Brentwood, and Central Islip price differently",
+      ],
+      sources: [
+        { label: "Town of Islip Code Ch. 68 (Zoning): rental occupancy permits (eCode360)", href: "https://ecode360.com/11752150" },
+        { label: "Town of Islip Code Ch. 68 (Zoning): rental permit renewals and transient rentals (eCode360)", href: "https://ecode360.com/11752247" },
+        { label: "Town of Islip: code enforcement forms, including the rental occupancy permit application", href: "https://islipny.gov/community-and-services/documents/code-enforcement" },
+        { label: "NYS Tax Department: real estate transfer tax and mansion tax", href: "https://www.tax.ny.gov/bus/transfer/rptidx.htm" },
+        { label: "FEMA Flood Map Service Center", href: "https://msc.fema.gov/portal/home" },
+      ],
+    },
   },
   {
     cityName: "Brookhaven",
