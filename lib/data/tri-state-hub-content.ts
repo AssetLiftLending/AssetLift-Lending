@@ -82,6 +82,7 @@ export const TRI_STATE_HUB_CONTENT: Record<string, TriStateHubContent> = {
       { label: 'Hard money lender in Valley Stream', href: '/lending/new-york/valley-stream' },
       { label: 'Hard money lenders in Hempstead', href: '/lending/new-york/hempstead' },
       { label: 'Hard money loans in Smithtown', href: '/lending/new-york/smithtown' },
+      { label: 'Hard money lender in Islip', href: '/lending/new-york/islip' },
       { label: 'Brooklyn investor loans', href: '/lending/new-york/brooklyn' },
       { label: 'Buffalo investor loans', href: '/lending/new-york/buffalo' },
       { label: 'Rochester investor loans', href: '/lending/new-york/rochester' },
