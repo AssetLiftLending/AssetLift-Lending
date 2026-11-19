@@ -29,7 +29,7 @@ export default function AboutPage() {
       addressCountry: 'US',
     },
     areaServed: 'US',
-    priceRange: '$100,000 - $5,000,000',
+    priceRange: '$50,000 - $5,000,000',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
@@ -71,7 +71,7 @@ export default function AboutPage() {
               Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to structure each loan around the strategy behind the deal.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We finance deals nationwide across 46 states, with loan amounts from $100,000 to $5,000,000. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing. Based in the New York metro area, we serve borrowers from coast to coast with the same level of responsiveness and attention to detail.
+              We finance deals nationwide across 46 states, with loan amounts from $50,000 to $5,000,000. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing. Based in the New York metro area, we serve borrowers from coast to coast with the same level of responsiveness and attention to detail.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Coverage</p>
-                <p className="text-muted-foreground">46 U.S. states, loans from $100K to $5M</p>
+                <p className="text-muted-foreground">46 U.S. states, loans from $50K to $5M</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Structure</p>

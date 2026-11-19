@@ -171,6 +171,11 @@ const BASE_BLOG_POSTS: BlogPost[] = [
         answer:
           "Most DSCR lenders do not impose a hard cap on the number of loans you can have. This is in contrast to conventional lenders, which limit borrowers to 10 financed properties under Fannie Mae guidelines. Your ability to get additional DSCR loans depends on your credit, reserves, and the quality of each individual deal.",
       },
+      {
+        question: "How do lenders verify rent for a DSCR loan?",
+        answer:
+          "Most DSCR lenders check rent from two directions and compare them. The first is documents: a signed lease for each occupied unit and, when the lease is above market rent or an existing lease is being assumed, proof the rent is actually being collected, such as recent bank statements showing the deposits. The second is the appraisal: on a one-unit rental, the appraiser completes a comparable rent schedule (Fannie Mae Form 1007, the Single-Family Comparable Rent Schedule) that estimates market rent from nearby rentals, and two- to four-unit properties are appraised on Fannie Mae Form 1025, the Small Residential Income Property Appraisal Report. When the lease and the appraiser's market rent differ, each lender applies its own rule, and some use the lower of the two, so an above-market lease may not count in full. On a vacant purchase, the appraiser's market rent estimate usually stands in for a lease. For short-term rentals, lenders typically use a projection from a third-party data platform such as AirDNA or about 12 months of booking history. To get a useful answer quickly, send the leases, a rent roll, and recent proof of rent collection with your request.",
+      },
     ],
   },
 

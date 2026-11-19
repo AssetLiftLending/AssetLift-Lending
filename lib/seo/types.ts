@@ -78,6 +78,25 @@ export interface SeoOpportunityPage {
   recommendation: string;
 }
 
+/** One Search Console page-dimension row for the report window (unfiltered). */
+export interface SeoPageRow {
+  page: string;
+  clicks: number;
+  impressions: number;
+  ctr: number;
+  position: number;
+}
+
+/** One Search Console query + page row for the report window (unfiltered). */
+export interface SeoQueryPageRow {
+  query: string;
+  page: string;
+  clicks: number;
+  impressions: number;
+  ctr: number;
+  position: number;
+}
+
 export interface SeoTopQuery {
   query: string;
   impressions: number;
@@ -120,6 +139,17 @@ export interface SeoOpportunitiesReport {
   recent: SeoWindowSummary | null;
   dailyMetrics: SeoDailyMetric[];
   message: string;
+  /**
+   * Every page-dimension row Search Console returned for the window (up to the
+   * 250-row request limit), unfiltered. Additive measurement field; optional so
+   * older reports without it still type-check.
+   */
+  pages?: SeoPageRow[];
+  /**
+   * Query + landing-page pairs Search Console returned for the window (up to
+   * the 1000-row request limit), unfiltered. Additive measurement field.
+   */
+  queryPages?: SeoQueryPageRow[];
 }
 
 export interface SeoDailyMetric {

@@ -43,6 +43,11 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
           "Borrow up to 95% LTC on the purchase for qualifying fix and flip projects, reducing the out-of-pocket capital required to get into a deal. Combined with 100% rehab financing, you can control a property with as little as 5% of the purchase price in cash, freeing up liquidity for additional projects or reserves.",
       },
       {
+        title: "100% LTC Tier for High-Volume Flippers",
+        description:
+          "A limited tier finances 100% of total project cost, purchase and approved rehab, with no borrower cash into the deal. It is not the standard program and all four conditions apply: 10 or more completed flips in the last 3 years, a 740+ FICO, a light renovation scope, and liquid reserves equal to 10% of total project cost verified in your account. The same underwriting, valuation, title, and ARV limits as the standard program still apply, and the tier is not available on every file.",
+      },
+      {
         title: "Full Renovation Budget Coverage",
         description:
           "We finance up to 100% of the renovation budget through a structured draw process. Submit your scope of work at origination, and funds are released in stages as each phase of construction is completed and inspected. This eliminates the need to fund renovations out of pocket and keeps your capital working across multiple deals.",
@@ -73,6 +78,11 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
         requirement: "Minimum Credit Score",
         detail:
           "A FICO score of 620 or higher is required. Borrowers with scores above 700 qualify for the most competitive rate tiers. Scores between 620 and 660 are eligible with compensating factors such as higher down payments or demonstrated flipping experience.",
+      },
+      {
+        requirement: "100% LTC Tier Requirements",
+        detail:
+          "To finance 100% of total project cost with no cash into the deal, a borrower must meet all four of these: 10 or more completed flips in the last 3 years, a FICO of 740 or higher, a light renovation scope, and liquid reserves equal to 10% of total project cost, verified in your account. Borrowers who do not meet every one of these are underwritten on the standard program, which goes up to 95% of purchase with up to 100% of the approved rehab budget.",
       },
       {
         requirement: "Down Payment",

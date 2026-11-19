@@ -3,7 +3,24 @@ export const PROGRAM_TERMS = {
     startingRate: '8.25%',
     maxPurchaseLtc: 'Up to 95% of purchase',
     rehabFunding: 'Up to 100% of approved rehab budget',
-    loanRange: '$100K to $5MM',
+    loanRange: '$50K to $5MM',
+    // A separate tier, not the standard program. 100% LTC means no borrower
+    // cash into purchase or rehab, so it is only offered where the track
+    // record, credit, scope and liquidity all clear a higher bar. Every place
+    // this figure is shown has to show these four conditions with it.
+    hundredLtc: {
+      headline: '100% LTC tier',
+      summary:
+        'Qualifying borrowers can finance 100% of total project cost - purchase and approved rehab - on a limited tier.',
+      requirements: [
+        '10 or more completed flips in the last 3 years',
+        '740+ FICO',
+        'Light renovation scope',
+        'Liquid reserves of 10% of total project cost, verified in your account',
+      ],
+      disclosure:
+        'All four conditions apply. The tier is subject to the same underwriting, valuation, title, and ARV limits as the standard program, and is not available on every file.',
+    },
     disclosure:
       'Maximum leverage depends on credit, experience, liquidity, property, scope, valuation, title, and deal strength.',
   },

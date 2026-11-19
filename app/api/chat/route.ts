@@ -15,7 +15,7 @@ COMPANY INFO:
 - Email: info@assetliftlending.com
 - Hours: Mon-Fri 9AM-6PM EST, Weekends by appointment
 - Coverage: 46 U.S. states (we do NOT lend in Alaska, North Dakota, South Dakota, or Vermont)
-- Loan range: $100K - $5MM+ per asset
+- Loan range: $50K - $5MM+ per asset
 - Apply page: assetliftlending.com/apply
 
 LOAN PROGRAMS:

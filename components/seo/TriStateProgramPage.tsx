@@ -79,7 +79,7 @@ export default function TriStateProgramPage({ page }: Props) {
               <div className="grid gap-3 sm:grid-cols-3 mb-8">
                 <div className="rounded-xl border border-border bg-card px-4 py-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Loan Size</p>
-                  <p className="mt-1 font-bold">$100K-$5MM</p>
+                  <p className="mt-1 font-bold">$50K-$5MM</p>
                 </div>
                 <div className="rounded-xl border border-border bg-card px-4 py-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Borrower</p>

@@ -19,7 +19,7 @@ export interface TriStateProgramPage {
 
 const sharedQualification = [
   'Business-purpose loans for non-owner-occupied investment properties only',
-  '$100K minimum loan size',
+  '$50K minimum loan size on fix and flip',
   '660+ credit preferred',
   'Best fit for experienced operators with a clear exit plan',
 ];
@@ -58,7 +58,7 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
       {
         question: 'Do you fund fix and flip loans in New York?',
         answer:
-          'Yes. AssetLift reviews New York fix and flip scenarios for non-owner-occupied investment properties, with a focus on experienced borrowers and $100K+ loan requests.',
+          'Yes. AssetLift reviews New York fix and flip scenarios for non-owner-occupied investment properties, with a focus on experienced borrowers and $50K+ loan requests.',
       },
       {
         question: 'What makes a New York flip file stronger?',

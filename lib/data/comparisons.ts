@@ -978,7 +978,7 @@ export const COMPARISONS: Comparison[] = [
       },
       {
         feature: "Loan Amounts",
-        optionA: "Loans from $100K to $5M covering single-family, multifamily, and mixed-use investment properties",
+        optionA: "Loans from $50K to $5M covering single-family, multifamily, and mixed-use investment properties",
         optionB: "Loans starting at $100K with maximums varying by program; typically up to $3M on bridge products",
       },
       {

@@ -98,6 +98,8 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Google "preferred sources" button library (renders [google-add-preferred-source-btn]) */}
+        <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
         {/* GEO: llms.txt for AI crawlers */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt - AI-readable site description" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs-full.txt - Comprehensive AI-readable content" />
