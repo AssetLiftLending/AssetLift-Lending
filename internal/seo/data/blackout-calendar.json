@@ -16,7 +16,11 @@
     "state": "NY",
     "stateName": "New York"
   },
-  "coverage": {
+  "queriedRange": {
+    "start": "2026-11-23",
+    "end": "2027-12-31"
+  },
+  "range": {
     "start": "2026-11-27",
     "end": "2027-12-31"
   },
