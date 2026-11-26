@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:53:43.348Z",
+  "generatedAt": "2026-11-26T12:53:42.368Z",
   "connected": true,
   "summary": "25 prioritized actions from real Search Console demand (top priority: /tools/fix-and-flip-calculator).",
   "items": [
@@ -7,100 +7,90 @@
       "type": "improve-meta",
       "target": "/tools/fix-and-flip-calculator",
       "category": "Fix & Flip",
-      "priority": 680,
-      "impressions": 340,
-      "position": 19.9,
-      "rationale": "340 impressions at position 19.9 but only 1 clicks.",
+      "priority": 654,
+      "impressions": 327,
+      "position": 19.4,
+      "rationale": "327 impressions at position 19.4 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-jersey/jersey-city",
       "category": "General",
-      "priority": 606,
-      "impressions": 303,
-      "position": 17.4,
-      "rationale": "303 impressions at position 17.4 but only 0 clicks.",
+      "priority": 620,
+      "impressions": 310,
+      "position": 15.6,
+      "rationale": "310 impressions at position 15.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 491,
-      "impressions": 491,
+      "priority": 475,
+      "impressions": 475,
       "position": 0,
-      "rationale": "491 impressions across 12 queries mention New York.",
+      "rationale": "475 impressions across 11 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 379,
-      "impressions": 379,
+      "priority": 341,
+      "impressions": 341,
       "position": 0,
-      "rationale": "379 impressions across 13 queries mention New Jersey.",
+      "rationale": "341 impressions across 12 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Connecticut",
-      "category": "Geo",
-      "priority": 317,
-      "impressions": 317,
-      "position": 0,
-      "rationale": "317 impressions across 11 queries mention Connecticut.",
-      "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
       "category": "General",
-      "priority": 316,
-      "impressions": 158,
-      "position": 7,
-      "rationale": "158 impressions at position 7 but only 0 clicks.",
+      "priority": 326,
+      "impressions": 163,
+      "position": 6.5,
+      "rationale": "163 impressions at position 6.5 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
-      "type": "improve-meta",
-      "target": "/lending/new-york/yonkers",
-      "category": "General",
-      "priority": 192,
-      "impressions": 96,
-      "position": 11.8,
-      "rationale": "96 impressions at position 11.8 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "expand-content",
-      "target": "fix and flip calculator",
-      "category": "Fix & Flip",
-      "priority": 186,
-      "impressions": 124,
-      "position": 18.6,
-      "rationale": "Ranking at position 18.6 with 124 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+      "type": "build-demand-page",
+      "target": "Connecticut",
+      "category": "Geo",
+      "priority": 312,
+      "impressions": 312,
+      "position": 0,
+      "rationale": "312 impressions across 11 queries mention Connecticut.",
+      "action": "Strengthen the Connecticut state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "expand-content",
       "target": "fix and flip loans jersey city",
       "category": "Fix & Flip",
-      "priority": 173,
-      "impressions": 115,
-      "position": 18.5,
-      "rationale": "Ranking at position 18.5 with 115 impressions — within striking distance of page 1.",
+      "priority": 186,
+      "impressions": 124,
+      "position": 16.6,
+      "rationale": "Ranking at position 16.6 with 124 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "fix and flip calculator",
+      "category": "Fix & Flip",
+      "priority": 185,
+      "impressions": 123,
+      "position": 18.1,
+      "rationale": "Ranking at position 18.1 with 123 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "improve-meta",
-      "target": "/lending/new-york/valley-stream",
+      "target": "/lending/new-york/yonkers",
       "category": "General",
-      "priority": 166,
-      "impressions": 83,
-      "position": 19.2,
-      "rationale": "83 impressions at position 19.2 but only 0 clicks.",
+      "priority": 184,
+      "impressions": 92,
+      "position": 11.6,
+      "rationale": "92 impressions at position 11.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -115,22 +105,42 @@
     },
     {
       "type": "improve-meta",
+      "target": "/lending/new-york/valley-stream",
+      "category": "General",
+      "priority": 164,
+      "impressions": 82,
+      "position": 19.4,
+      "rationale": "82 impressions at position 19.4 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
       "target": "/lending/new-york/new-rochelle",
       "category": "General",
       "priority": 142,
       "impressions": 71,
-      "position": 8,
-      "rationale": "71 impressions at position 8 but only 0 clicks.",
+      "position": 7.5,
+      "rationale": "71 impressions at position 7.5 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
       "target": "fix and flip loans newark",
       "category": "Fix & Flip",
-      "priority": 126,
-      "impressions": 84,
-      "position": 17.6,
-      "rationale": "Ranking at position 17.6 with 84 impressions — within striking distance of page 1.",
+      "priority": 129,
+      "impressions": 86,
+      "position": 17,
+      "rationale": "Ranking at position 17 with 86 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "hard money jersey city",
+      "category": "Hard Money",
+      "priority": 113,
+      "impressions": 75,
+      "position": 11.1,
+      "rationale": "Ranking at position 11.1 with 75 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -139,19 +149,9 @@
       "category": "Hard Money",
       "priority": 108,
       "impressions": 72,
-      "position": 8.2,
-      "rationale": "Ranking at position 8.2 with 72 impressions — within striking distance of page 1.",
+      "position": 8.1,
+      "rationale": "Ranking at position 8.1 with 72 impressions — within striking distance of page 1.",
       "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
-    },
-    {
-      "type": "expand-content",
-      "target": "hard money jersey city",
-      "category": "Hard Money",
-      "priority": 107,
-      "impressions": 71,
-      "position": 11.3,
-      "rationale": "Ranking at position 11.3 with 71 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "add-internal-links",
@@ -167,10 +167,20 @@
       "type": "expand-content",
       "target": "hard money lenders nassau county",
       "category": "Hard Money",
-      "priority": 69,
-      "impressions": 46,
-      "position": 15.9,
-      "rationale": "Ranking at position 15.9 with 46 impressions — within striking distance of page 1.",
+      "priority": 72,
+      "impressions": 48,
+      "position": 14.9,
+      "rationale": "Ranking at position 14.9 with 48 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "hard money newark",
+      "category": "Hard Money",
+      "priority": 62,
+      "impressions": 41,
+      "position": 10.1,
+      "rationale": "Ranking at position 10.1 with 41 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -179,39 +189,29 @@
       "category": "Hard Money",
       "priority": 60,
       "impressions": 40,
-      "position": 12.5,
-      "rationale": "Ranking at position 12.5 with 40 impressions — within striking distance of page 1.",
+      "position": 12.4,
+      "rationale": "Ranking at position 12.4 with 40 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "expand-content",
-      "target": "hard money newark",
+      "target": "hard money lenders lakewood",
       "category": "Hard Money",
-      "priority": 60,
-      "impressions": 40,
-      "position": 10.8,
-      "rationale": "Ranking at position 10.8 with 40 impressions — within striking distance of page 1.",
+      "priority": 59,
+      "impressions": 39,
+      "position": 14.5,
+      "rationale": "Ranking at position 14.5 with 39 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "improve-meta",
       "target": "/how-it-works",
       "category": "General",
-      "priority": 56,
-      "impressions": 28,
-      "position": 7.3,
-      "rationale": "28 impressions at position 7.3 but only 0 clicks.",
+      "priority": 58,
+      "impressions": 29,
+      "position": 7.1,
+      "rationale": "29 impressions at position 7.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "expand-content",
-      "target": "fix and flip loan calculator",
-      "category": "Fix & Flip",
-      "priority": 56,
-      "impressions": 37,
-      "position": 19.5,
-      "rationale": "Ranking at position 19.5 with 37 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "expand-content",
@@ -225,12 +225,12 @@
     },
     {
       "type": "expand-content",
-      "target": "hard money lenders lakewood",
-      "category": "Hard Money",
-      "priority": 54,
-      "impressions": 36,
-      "position": 14.7,
-      "rationale": "Ranking at position 14.7 with 36 impressions — within striking distance of page 1.",
+      "target": "fix and flip loan calculator",
+      "category": "Fix & Flip",
+      "priority": 51,
+      "impressions": 34,
+      "position": 18.9,
+      "rationale": "Ranking at position 18.9 with 34 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
@@ -244,14 +244,14 @@
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
-      "type": "expand-content",
-      "target": "hard money loans long branch",
-      "category": "Hard Money",
-      "priority": 42,
-      "impressions": 28,
+      "type": "improve-meta",
+      "target": "/lending/georgia/augusta-richmond-county",
+      "category": "General",
+      "priority": 48,
+      "impressions": 24,
       "position": 17.6,
-      "rationale": "Ranking at position 17.6 with 28 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+      "rationale": "24 impressions at position 17.6 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     }
   ]
 }
