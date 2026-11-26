@@ -39,6 +39,11 @@ const RELATED_GUIDES: Record<
     { label: 'Fix & Flip Loans in Cherry Hill, NJ', href: '/lending/new-jersey/cherry-hill' },
     { label: 'Fix & Flip Loans in Lakewood, NJ', href: '/lending/new-jersey/lakewood' },
     { label: 'Fix & Flip Loans in Freehold, NJ', href: '/lending/new-jersey/freehold' },
+    { label: 'Fix & Flip Loans in Houston, TX', href: '/lending/texas/houston' },
+    { label: 'Fix & Flip Loans in San Antonio, TX', href: '/lending/texas/san-antonio' },
+    { label: 'Fix & Flip Loans in Fort Worth, TX', href: '/lending/texas/fort-worth' },
+    { label: 'Fix & Flip Loans in Austin, TX', href: '/lending/texas/austin' },
+    { label: 'Fix & Flip Loans in Atlanta, GA', href: '/lending/georgia/atlanta' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   'dscr-rental': [
@@ -56,6 +61,11 @@ const RELATED_GUIDES: Record<
     { label: 'DSCR Loans in Pennsauken, NJ', href: '/lending/new-jersey/pennsauken' },
     { label: 'DSCR Loans in Toms River, NJ', href: '/lending/new-jersey/toms-river' },
     { label: 'DSCR Loans in Edison, NJ', href: '/lending/new-jersey/edison' },
+    { label: 'DSCR Loans in Fort Worth, TX', href: '/lending/texas/fort-worth' },
+    { label: 'DSCR Loans in Houston, TX', href: '/lending/texas/houston' },
+    { label: 'DSCR Loans in Dallas, TX', href: '/lending/texas/dallas' },
+    { label: 'DSCR Loans in Atlanta, GA', href: '/lending/georgia/atlanta' },
+    { label: 'DSCR Loans in Augusta, GA', href: '/lending/georgia/augusta-richmond-county' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   bridge: [
@@ -67,6 +77,9 @@ const RELATED_GUIDES: Record<
     { label: 'How It Works', href: '/how-it-works' },
     { label: 'Bridge Loans in Red Bank, NJ', href: '/lending/new-jersey/red-bank' },
     { label: 'Bridge Loans in New Brunswick, NJ', href: '/lending/new-jersey/new-brunswick' },
+    { label: 'Bridge Loans in Fort Worth, TX', href: '/lending/texas/fort-worth' },
+    { label: 'Bridge Loans in San Antonio, TX', href: '/lending/texas/san-antonio' },
+    { label: 'Bridge Loans in Atlanta, GA', href: '/lending/georgia/atlanta' },
     { label: 'View all loan programs', href: '/loans' },
   ],
   'ground-up-construction': [
@@ -77,6 +90,8 @@ const RELATED_GUIDES: Record<
     { label: 'How It Works', href: '/how-it-works' },
     { label: 'Construction Loans in Howell, NJ', href: '/lending/new-jersey/howell' },
     { label: 'Construction Loans in Woodbridge, NJ', href: '/lending/new-jersey/woodbridge' },
+    { label: 'Construction Loans in Houston, TX', href: '/lending/texas/houston' },
+    { label: 'Construction Loans in Atlanta, GA', href: '/lending/georgia/atlanta' },
     { label: 'View all loan programs', href: '/loans' },
   ],
 };
